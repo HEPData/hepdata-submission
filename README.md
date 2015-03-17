@@ -48,7 +48,7 @@ We have created two versions of the JSON representation, one verbose, and one th
 
 #### Verbose JSON
 
-```
+```json
 {
   "name": "Table 3",
   "title": "Upper limit at 95% CL on the fiducial cross section for ℓ±ℓ± pairs from non-SM signals. The expected limits and their 1σ uncertainties are given together with the observed limits derived from the data. Limits are given separately for the e±e±,e±μ± and μ±μ± channel inclusively and separated by charge.",
@@ -117,7 +117,7 @@ YAML may be a little more difficult to format than JSON, but it is widely used a
 
 #### Verbose YAML
 
-```
+```yaml
 Table:
   name: "Table 3"
   title: "Upper limit at 95% CL on the fiducial cross section for ℓ±ℓ± pairs from non-SM signals. The expected limits and their 1σ uncertainties are given together with the observed limits derived from the data. Limits are given separately for the e±e±,e±μ± and μ±μ± channel inclusively and separated by charge."
