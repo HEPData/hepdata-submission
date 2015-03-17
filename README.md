@@ -52,7 +52,7 @@ We have created two versions of the JSON representation, one verbose, and one th
 {
   "name": "Table 3",
   "title": "Upper limit at 95% CL on the fiducial cross section for ℓ±ℓ± pairs from non-SM signals. The expected limits and their 1σ uncertainties are given together with the observed limits derived from the data. Limits are given separately for the e±e±,e±μ± and μ±μ± channel inclusively and separated by charge.",
-  "reaction": "P P --> $e/\mu{\pm} e/\mu{\pm}$ (+X)",
+  "reaction": "P P --> $e/\\mu{\\pm} e/\\mu{\\pm}$ (+X)",
   "qualifiers": [
     {
       "type": "sqrt(s)",
@@ -67,7 +67,7 @@ We have created two versions of the JSON representation, one verbose, and one th
     {
       "x": {
         "header": "mass range [GeV]",
-        "value": "m($e^{\pm}e^{\pm}$"
+        "value": "m($e^{\\pm}e^{\\pm}$"
       },
       "y": [
         {
@@ -107,9 +107,74 @@ We have created two versions of the JSON representation, one verbose, and one th
     }
   ]
 }
+
 ```
 
 #### Compact JSON
+
+
+```json
+
+{
+  "name": "Table 3",
+  "title": "Upper limit at 95% CL on the fiducial cross section for ℓ±ℓ± pairs from non-SM signals. The expected limits and their 1σ uncertainties are given together with the observed limits derived from the data. Limits are given separately for the e±e±,e±μ± and μ±μ± channel inclusively and separated by charge.",
+  "reaction": "P P --> $e/\\mu{\\pm} e/\\mu{\\pm}$ (+X)",
+  "qualifiers": [
+    {
+      "type": "sqrt(s)",
+      "value": "8000.0 GeV"
+    },
+    {
+      "type": "",
+      "value": "95% CL upper limit [fb]"
+    }
+  ],
+  "data": [
+    {
+      "x": {
+        "header": "mass range [GeV]",
+        "values": [
+          "m($e^{\\pm}e^{\\pm}$",
+          ">15.0"
+        ]
+      },
+      "y": [
+        {
+          "header": "Expected",
+          "values": [
+            {
+              "value": 39,
+              "err_minus": -13,
+              "err_plus": 10
+            },
+            {
+              "value": 19,
+              "err_minus": 6,
+              "err_plus": -6
+            }
+          ]
+        },
+        {
+          "header": "Observed",
+          "values": [
+            {
+              "value": 32,
+              "err_minus": 0,
+              "err_plus": 0
+            },
+            {
+              "value": 14,
+              "err_minus": 0,
+              "err_plus": 0
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+
+```
 
 ### YAML
 
