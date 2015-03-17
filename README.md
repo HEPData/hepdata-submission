@@ -42,191 +42,228 @@ def generate_root_file_with_tree(self, file_name):
 
 ```
 
-### JSON
-
-We have created two versions of the JSON representation, one verbose, and one that is more compact. For a data submitter, it should not matter as writing a script to generate such a file would be fairly simple. However, for data transmission, smaller files are obviously better. 
-
-#### Verbose JSON
-
-```json
-{
-  "name": "Table 3",
-  "title": "Upper limit at 95% CL on the fiducial cross section for ℓ±ℓ± pairs from non-SM signals. The expected limits and their 1σ uncertainties are given together with the observed limits derived from the data. Limits are given separately for the e±e±,e±μ± and μ±μ± channel inclusively and separated by charge.",
-  "reaction": "P P --> $e/\\mu{\\pm} e/\\mu{\\pm}$ (+X)",
-  "qualifiers": [
-    {
-      "type": "sqrt(s)",
-      "value": "8000.0 GeV"
-    },
-    {
-      "type": "",
-      "value": "95% CL upper limit [fb]"
-    }
-  ],
-  "data": [
-    {
-      "x": {
-        "header": "mass range [GeV]",
-        "value": "m($e^{\\pm}e^{\\pm}$"
-      },
-      "y": [
-        {
-          "header": "Expected",
-          "value": 39,
-          "value_err_plus": 10,
-          "value_err_minus": -13
-        },
-        {
-          "header": "Observed",
-          "value": 32,
-          "value_err_plus": 0,
-          "value_err_minus": 0
-        }
-      ]
-    },
-
-    {
-      "x": {
-        "header": "mass range [GeV]",
-        "value": "> 15.0"
-      },
-      "y": [
-        {
-          "header": "Expected",
-          "value": 19,
-          "value_err_plus": 6,
-          "value_err_minus": -6
-        },
-        {
-          "header": "Observed",
-          "value": 14,
-          "value_err_plus": 0,
-          "value_err_minus": 0
-        }
-      ]
-    }
-  ]
-}
-
-```
-
-#### More Compact JSON
-
-In this example, there is less redundancy by not repeating the headers.
-
-```json
-
-{
-  "name": "Table 3",
-  "title": "Upper limit at 95% CL on the fiducial cross section for ℓ±ℓ± pairs from non-SM signals. The expected limits and their 1σ uncertainties are given together with the observed limits derived from the data. Limits are given separately for the e±e±,e±μ± and μ±μ± channel inclusively and separated by charge.",
-  "reaction": "P P --> $e/\\mu{\\pm} e/\\mu{\\pm}$ (+X)",
-  "qualifiers": [
-    {
-      "type": "sqrt(s)",
-      "value": "8000.0 GeV"
-    },
-    {
-      "type": "",
-      "value": "95% CL upper limit [fb]"
-    }
-  ],
-  "data": [
-    {
-      "x": {
-        "header": "mass range [GeV]",
-        "values": [
-          "m($e^{\\pm}e^{\\pm}$",
-          ">15.0"
-        ]
-      },
-      "y": [
-        {
-          "header": "Expected",
-          "values": [
-            {
-              "value": 39,
-              "err_minus": -13,
-              "err_plus": 10
-            },
-            {
-              "value": 19,
-              "err_minus": 6,
-              "err_plus": -6
-            }
-          ]
-        },
-        {
-          "header": "Observed",
-          "values": [
-            {
-              "value": 32,
-              "err_minus": 0,
-              "err_plus": 0
-            },
-            {
-              "value": 14,
-              "err_minus": 0,
-              "err_plus": 0
-            }
-          ]
-        }
-      ]
-    }
-  ]
-}
-
-```
-
 ### YAML
 
-YAML may be a little more difficult to format than JSON, but it is widely used and using it as a data source would add little overhead to HEPData. Again, we've created verbose and compact representations of the YAML files.
+YAML may be a little more difficult to generate and parse than JSON, but it is widely used and using it as a data source would add little overhead to HEPData. Moreover, JSON representatiokns of the YAML can also be used. We've created verbose and compact representations of the YAML files that vary how data records are represented.
+For each YAML presentation, it's JSON equivalent is also given.
 
-#### Verbose YAML
+#### YAML format
 
 ```yaml
+
+---
 Table:
   name: "Table 3"
   title: "Upper limit at 95% CL on the fiducial cross section for ℓ±ℓ± pairs from non-SM signals. The expected limits and their 1σ uncertainties are given together with the observed limits derived from the data. Limits are given separately for the e±e±,e±μ± and μ±μ± channel inclusively and separated by charge."
-  reaction: "P P --> $e/\mu{\pm} e/\mu{\pm}$ (+X)"
-  qualifier: 
-    type: "sqrt(s)"
-    value: "8000.0 GeV"
-  qualifier: 
-    type: 
-    value: "95% CL upper limit [fb]"
+  reaction: "P P --> $e/\\mu{\\pm} e/\\mu{\\pm}$ (+X)"
+  qualifiers:
+    - type: "sqrt(s)"
+      value: "8000.0 GeV"
+    - type:
+      value: "95% CL upper limit [fb]"
   data:
-    record:
-      x: 
-        header: "mass range [GeV]"
-        value: "m($e^{\pm}e^{\pm}$"
-      y:
-        header: "Expected"
-        value: 39
-        value_err_minus: -13
-        value_err_plus: 10     
-      y:
-        header: "Observed"
-        value: 32
-        value_err_minus: 0
-        value_err_plus: 0     
+      - x:
+         name: "mass range [GeV]"
+         value: "m($e^{\\pm}e^{\\pm}$"
+        observed:
+         type: y
+         name: "Expected"
+         value: 39
+         value_err_minus: -13
+         value_err_plus: 10
+        expected:
+         type: y
+         name: "Observed"
+         value: 32
+         value_err_minus: 0
+         value_err_plus: 0
+      - x:
+         name: "mass_range [GeV]"
+         value: "> 15.0"
+        observed:
+         name: "Expected"
+         value: 19
+         value_err_minus: -6
+         value_err_plus: 6
+        expected:
+          name: "Expected"
+          value: 14
+          value_err_minus: 0
+        value_err_plus: 0
+                        
+```
 
-    record:
-      x:
-        header: "mass_range [GeV]"
-        value: "> 15.0"
-      y:
-        header: "Expected"
-        value: 19
-        value_err_minus: -6
-        value_err_plus: 6   
-      y:
-        header: "Observed"
-        value: 14
-        value_err_minus: 0
-        value_err_plus: 0     
-        
+Its JSON representation is pretty similar, and translates to this.
+
+
+```json
+
+{
+  "Table": {
+    "name": "Table 3",
+    "title": "Upper limit at 95% CL on the fiducial cross section for \u2113\u00b1\u2113\u00b1 pairs from non-SM signals. The expected limits and their 1\u03c3 uncertainties are given together with the observed limits derived from the data. Limits are given separately for the e\u00b1e\u00b1,e\u00b1\u03bc\u00b1 and \u03bc\u00b1\u03bc\u00b1 channel inclusively and separated by charge.",
+    "reaction": "P P --> $e/\\mu{\\pm} e/\\mu{\\pm}$ (+X)",
+    "qualifiers": [
+      {
+        "type": "sqrt(s)",
+        "value": "8000.0 GeV"
+      },
+      {
+        "type": null,
+        "value": "95% CL upper limit [fb]"
+      }
+    ],
+    "data": [
+      {
+        "observed": {
+          "value_err_plus": 10,
+          "value_err_minus": -13,
+          "type": "y",
+          "name": "Expected",
+          "value": 39
+        },
+        "x": {
+          "name": "mass range [GeV]",
+          "value": "m($e^{\\pm}e^{\\pm}$"
+        },
+        "expected": {
+          "value_err_plus": 0,
+          "value_err_minus": 0,
+          "type": "y",
+          "name": "Observed",
+          "value": 32
+        }
+      },
+      {
+        "observed": {
+          "value_err_plus": 6,
+          "value_err_minus": -6,
+          "name": "Expected",
+          "value": 19
+        },
+        "x": {
+          "name": "mass_range [GeV]",
+          "value": "> 15.0"
+        },
+        "expected": {
+          "value_err_plus": 0,
+          "value_err_minus": 0,
+          "name": "Expected",
+          "value": 14
+        }
+      }
+    ]
+  }
+}
+
 ```
 
 #### Compact YAML
 
-Similar to the more compact JSON representation, this example removes some of the redundant encodings in the JSON.
+
+```yaml
+---
+Table:
+  name: "Table 3"
+  title: "Upper limit at 95% CL on the fiducial cross section for ℓ±ℓ± pairs from non-SM signals. The expected limits and their 1σ uncertainties are given together with the observed limits derived from the data. Limits are given separately for the e±e±,e±μ± and μ±μ± channel inclusively and separated by charge."
+  reaction: "P P --> $e/\\mu{\\pm} e/\\mu{\\pm}$ (+X)"
+  qualifiers:
+    - type: "sqrt(s)"
+      value: "8000.0 GeV"
+    - type:
+      value: "95% CL upper limit [fb]"
+  data:
+      - x:
+         name: "mass range [GeV]"
+         value: "m($e^{\\pm}e^{\\pm}$"
+        observed:
+         type: y
+         name: "Expected"
+         value: 39
+         value_err_minus: -13
+         value_err_plus: 10
+        expected:
+         type: y
+         name: "Observed"
+         value: 32
+         value_err_minus: 0
+         value_err_plus: 0
+      - x:
+         name: "mass_range [GeV]"
+         value: "> 15.0"
+        observed:
+         name: "Expected"
+         value: 19
+         value_err_minus: -6
+         value_err_plus: 6
+        expected:
+          name: "Expected"
+          value: 14
+          value_err_minus: 0
+          value_err_plus: 0
+          
+```
+
+And here is the YAML file rendered using JSON.
+
+```json
+
+{
+  "Table": {
+    "name": "Table 3",
+    "title": "Upper limit at 95% CL on the fiducial cross section for \u2113\u00b1\u2113\u00b1 pairs from non-SM signals. The expected limits and their 1\u03c3 uncertainties are given together with the observed limits derived from the data. Limits are given separately for the e\u00b1e\u00b1,e\u00b1\u03bc\u00b1 and \u03bc\u00b1\u03bc\u00b1 channel inclusively and separated by charge.",
+    "reaction": "P P --> $e/\\mu{\\pm} e/\\mu{\\pm}$ (+X)",
+    "qualifiers": [
+      {
+        "type": "sqrt(s)",
+        "value": "8000.0 GeV"
+      },
+      {
+        "type": null,
+        "value": "95% CL upper limit [fb]"
+      }
+    ],
+    "data": {
+      "expected": [
+        {
+          "values": [
+            {
+              "err_plus": 10,
+              "err_minus": -13,
+              "value": 39
+            },
+            {
+              "err_plus": -6,
+              "err_minus": -6,
+              "value": 19
+            }
+          ]
+        }
+      ],
+      "x": {
+        "values": [
+          "m($e^{\\pm}e^{\\pm}$"
+        ],
+        "name": "mass range [GeV]"
+      },
+      "observed": [
+        {
+          "values": [
+            {
+              "value_err_plus": 0,
+              "value_err_minus": 0,
+              "value": 32
+            },
+            {
+              "value_err_plus": 0,
+              "value_err_minus": 0,
+              "value": 14
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
+
+```

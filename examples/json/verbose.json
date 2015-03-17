@@ -1,58 +1,57 @@
 {
-  "name": "Table 3",
-  "title": "Upper limit at 95% CL on the fiducial cross section for ℓ±ℓ± pairs from non-SM signals. The expected limits and their 1σ uncertainties are given together with the observed limits derived from the data. Limits are given separately for the e±e±,e±μ± and μ±μ± channel inclusively and separated by charge.",
-  "reaction": "P P --> $e/\\mu{\\pm} e/\\mu{\\pm}$ (+X)",
-  "qualifiers": [
-    {
-      "type": "sqrt(s)",
-      "value": "8000.0 GeV"
-    },
-    {
-      "type": "",
-      "value": "95% CL upper limit [fb]"
-    }
-  ],
-  "data": [
-    {
-      "x": {
-        "header": "mass range [GeV]",
-        "value": "m($e^{\\pm}e^{\\pm}$"
+  "Table": {
+    "name": "Table 3",
+    "title": "Upper limit at 95% CL on the fiducial cross section for \u2113\u00b1\u2113\u00b1 pairs from non-SM signals. The expected limits and their 1\u03c3 uncertainties are given together with the observed limits derived from the data. Limits are given separately for the e\u00b1e\u00b1,e\u00b1\u03bc\u00b1 and \u03bc\u00b1\u03bc\u00b1 channel inclusively and separated by charge.",
+    "reaction": "P P --> $e/\\mu{\\pm} e/\\mu{\\pm}$ (+X)",
+    "qualifiers": [
+      {
+        "type": "sqrt(s)",
+        "value": "8000.0 GeV"
       },
-      "y": [
-        {
-          "header": "Expected",
-          "value": 39,
+      {
+        "type": null,
+        "value": "95% CL upper limit [fb]"
+      }
+    ],
+    "data": [
+      {
+        "observed": {
           "value_err_plus": 10,
-          "value_err_minus": -13
+          "value_err_minus": -13,
+          "type": "y",
+          "name": "Expected",
+          "value": 39
         },
-        {
-          "header": "Observed",
-          "value": 32,
+        "x": {
+          "name": "mass range [GeV]",
+          "value": "m($e^{\\pm}e^{\\pm}$"
+        },
+        "expected": {
           "value_err_plus": 0,
-          "value_err_minus": 0
+          "value_err_minus": 0,
+          "type": "y",
+          "name": "Observed",
+          "value": 32
         }
-      ]
-    },
-
-    {
-      "x": {
-        "header": "mass range [GeV]",
-        "value": "> 15.0"
       },
-      "y": [
-        {
-          "header": "Expected",
-          "value": 19,
+      {
+        "observed": {
           "value_err_plus": 6,
-          "value_err_minus": -6
+          "value_err_minus": -6,
+          "name": "Expected",
+          "value": 19
         },
-        {
-          "header": "Observed",
-          "value": 14,
+        "x": {
+          "name": "mass_range [GeV]",
+          "value": "> 15.0"
+        },
+        "expected": {
           "value_err_plus": 0,
-          "value_err_minus": 0
+          "value_err_minus": 0,
+          "name": "Expected",
+          "value": 14
         }
-      ]
-    }
-  ]
+      }
+    ]
+  }
 }
