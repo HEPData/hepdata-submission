@@ -110,8 +110,9 @@ We have created two versions of the JSON representation, one verbose, and one th
 
 ```
 
-#### Compact JSON
+#### More Compact JSON
 
+In this example, there is less redundancy by not repeating the headers.
 
 ```json
 
@@ -227,3 +228,5 @@ Table:
 ```
 
 #### Compact YAML
+
+Similar to the more compact JSON representation, this example removes some of the redundant encodings in the JSON.
