@@ -1,10 +1,19 @@
 # HEP Data Submission
 
+HEP data submission will largely involve the upload of ROOT files that specify the plots for the publication, and the data that underlay these plots.
+It is unclear if ROOT will be completely suitable for the inclusion of data. This is a topic for discussion in the coming days.
+
+However, there also needs to be an exchange format between the ROOT data extraction API and the front end to render the results. JSON would be used for this purpose regardless.
+
 ## Submission Format
+
+The submission format would ideally be just via the ROOT files. These files should include the plots (that will be automatically plotted), and the data tables related to these plots.
 
 ### ROOT Data Files
 
 Creating [ROOT TTrees](https://root.cern.ch/root/html/TTree.html) is relatively easy. Formatting the data correctly is the hard part. We've tried to structure the tree to make it both easy to get the data in to the files, and to make it easy for us to reconstruct the data table following submission.
+
+** IN DRAFT **
 
 ```python
 def generate_root_file_with_tree(self, file_name):
@@ -44,7 +53,9 @@ def generate_root_file_with_tree(self, file_name):
 
 ### YAML
 
-YAML may be a little more difficult to generate and parse than JSON, but it is widely used and using it as a data source would add little overhead to HEPData. Moreover, JSON representatiokns of the YAML can also be used. We've created verbose and compact representations of the YAML files that vary how data records are represented.
+YAML may be a little more difficult to generate and parse than JSON, but it is generally seen as more readable than JSON. YAML could be used and then translated to JSON (or use JSON directly for the upload).
+Moreover, JSON representations of the YAML can also be used.
+We've created verbose and compact representations of the YAML files that vary how data records are represented.
 For each YAML presentation, it's JSON equivalent is also given.
 
 #### YAML format
