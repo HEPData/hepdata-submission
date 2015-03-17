@@ -19,37 +19,52 @@ Creating [ROOT TTrees](https://root.cern.ch/root/html/TTree.html) is relatively 
 ** IN DRAFT **
 
 ```python
-def generate_root_file_with_tree(self, file_name):
-        f = root_open(file_name, "recreate")
-		
-        tree = Tree(name="Table1",
-                    title="The W dependence of the cross section after integrating..")
-        # F - Float, I - Integer
-        tree.create_branches(
-            {'W_in_GEV_low': 'F',
-             'W_in_GEV_high': 'F',
-             'SIG_IN_NB_(<0.8)_ystatminus': 'F',
-             'SIG_IN_NB_(<0.8)_ystat': 'F',
-             'SIG_IN_NB_(<0.8)_ystatplus': 'F',
-             'SIG_IN_NB_(<0.6)_ystatminus': 'F',
-             'SIG_IN_NB_(<0.6)_ystat': 'F',
-             'SIG_IN_NB_(<0.6)_ystatplus': 'F',
-             'i': 'I'})
-	 
- # Now we create our tree :)
-        for i in xrange(10000):
-            tree['W_in_GEV_low'] = gauss(1., 4.)
-            tree['W_in_GEV_high'] = gauss(.3, 2.)
-            tree['SIG_IN_NB_(<0.8)_ystatminus'] = gauss(0., 0.1)
-            tree['SIG_IN_NB_(<0.8)_ystat'] = gauss(0., 5.)
-            tree['SIG_IN_NB_(<0.8)_ystatplus'] = gauss(0., 0.1)
-            tree['SIG_IN_NB_(<0.6)_ystatminus'] = gauss(0., 0.1)
-            tree['SIG_IN_NB_(<0.6)_ystat'] = gauss(0., 5.)
-            tree['SIG_IN_NB_(<0.6)_ystatplus'] = gauss(0., 0.1)
-            tree.i = i
-            tree.fill()
 
-        tree.write()
+class DataValue(TreeModel):
+    """
+        For each value, we have its error on the X and Y axes
+    """
+    val = FloatCol()
+    err_y_minus = FloatCol()
+    err_y_plus = FloatCol()
+    err_x_minus = FloatCol()
+    err_x_plus = FloatCol()
+
+
+class DataRecord(DataValue.prefix('x_'), DataValue.prefix('expected_'), DataValue.prefix('observed_')):
+    i = IntCol()
+
+
+class DataGenerator(object):
+
+    def generate_root_file_with_tree(self, file_name, mode="update"):
+
+        f = root_open(file_name, mode)
+        trees = ["hpx", "hpxpy", "hprof"]
+
+        for tree_name in trees:
+
+            tree = Tree(name=tree_name, title=tree_name, model=DataRecord)
+            # F - Float, I - Integer
+
+            for i in xrange(1000):
+                tree.x_val = gauss(1., 4.)
+                tree.x_err_y_minus = gauss(0., 1)
+                tree.x_err_y_plus = gauss(0., 1)
+
+                tree.expected_val = gauss(1., 4.)
+                tree.expected_err_y_minus = gauss(1., 4.)
+                tree.expected_err_x_minus = gauss(1., 4.)
+
+                tree.observed_val = gauss(1., 4.)
+                tree.observed_err_y_minus = gauss(1., 4.)
+                tree.observed_err_x_minus = gauss(1., 4.)
+
+                tree.i = i
+                tree.fill()
+
+            tree.write()
+
         f.close()
 
 ```
