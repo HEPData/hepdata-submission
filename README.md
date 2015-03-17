@@ -9,6 +9,9 @@ However, there also needs to be an exchange format between the ROOT data extract
 
 The submission format would ideally be just via the ROOT files. These files should include the plots (that will be automatically plotted), and the data tables related to these plots.
 
+The following representations are there to roughly model data in [Table 8](http://hepdata.cedar.ac.uk/view/ins1331782/d3) of [Aad, et. al, Search for anomalous production of prompt same-sign lepton pairs and pair-produced doubly charged Higgs bosons with s√=8 TeV pp collisions using the ATLAS detector, 2014](http://inspirehep.net/record/1331782).
+More examples could be created to model other data tables, however our model defined below seems to represent the data tables we've so far observed in HEPData.
+
 ### ROOT Data Files
 
 Creating [ROOT TTrees](https://root.cern.ch/root/html/TTree.html) is relatively easy. Formatting the data correctly is the hard part. We've tried to structure the tree to make it both easy to get the data in to the files, and to make it easy for us to reconstruct the data table following submission.
