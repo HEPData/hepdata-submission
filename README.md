@@ -307,3 +307,15 @@ And here is the YAML file rendered using JSON.
 }
 
 ```
+
+## Viewing the ROOT Files
+
+We will use ROOTJS to render the data.
+
+![image](assets/root_upload.png)
+
+![image](assets/root_hsimple_render.png)
+
+![image](assets/root_glbox.png)
+
+![image](assets/root_glbox_zoom.png)
