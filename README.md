@@ -18,6 +18,8 @@ More examples could be created to model other data tables, however our model def
 
 Creating [ROOT TTrees](https://root.cern.ch/root/html/TTree.html) is relatively easy. Formatting the data correctly is the hard part. We've tried to structure the tree to make it both easy to get the data in to the files, and to make it easy for us to reconstruct the data table following submission.
 
+![image](assets/hepdata_root_file_structure-02.png)
+
 ** IN DRAFT **
 
 ```python
