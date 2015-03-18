@@ -5,6 +5,8 @@ It is unclear if ROOT will be completely suitable for the inclusion of data. Thi
 
 However, there also needs to be an exchange format between the ROOT data extraction API and the front end to render the results. JSON would be used for this purpose regardless.
 
+![image](assets/hepdata_root_processing-01.png =700x)
+
 ## Submission Format
 
 The submission format would ideally be just via the ROOT files. These files should include the plots (that will be automatically plotted), and the data tables related to these plots.
@@ -72,7 +74,7 @@ class DataGenerator(object):
 ### YAML
 
 YAML may be a little more difficult to generate and parse than JSON, but it is generally seen as more readable than JSON. YAML could be used and then translated to JSON (or use JSON directly for the upload).
-Moreover, JSON representations of the YAML can also be used.
+Moreover, JSON representations of the YAML can also be used (these were generated using the YAML parser [here](http://yaml-online-parser.appspot.com/).
 We've created verbose and compact representations of the YAML files that vary how data records are represented.
 For each YAML presentation, it's JSON equivalent is also given.
 
