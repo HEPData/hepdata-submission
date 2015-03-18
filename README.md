@@ -18,6 +18,13 @@ More examples could be created to model other data tables, however our model def
 
 Creating [ROOT TTrees](https://root.cern.ch/root/html/TTree.html) is relatively easy. Formatting the data correctly is the hard part. We've tried to structure the tree to make it both easy to get the data in to the files, and to make it easy for us to reconstruct the data table following submission.
 
+The ROOT file is arranged in to three parts that should be linked by a common name pattern, e.g. *table_1::metadata*, *table_1::data*, and *table_1::hpx* would link everything for *table_1* in the main interface.
+
+- The metadata trees: these detail information about reactions and qualifiers for each table. Essentially, all of the information at the top section of the table in the current HEPData instance.
+- The data trees: these store the essence of the data table, that being all of the X and Y values (and their error bar values).
+- The plots.
+
+
 ![image](assets/hepdata_root_file_structure-02.png)
 
 ** IN DRAFT **
