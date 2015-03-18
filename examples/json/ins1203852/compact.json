@@ -4,15 +4,29 @@
     "title": "Upper limit at 95% CL on the fiducial cross section for \u2113\u00b1\u2113\u00b1 pairs from non-SM signals. The expected limits and their 1\u03c3 uncertainties are given together with the observed limits derived from the data. Limits are given separately for the e\u00b1e\u00b1,e\u00b1\u03bc\u00b1 and \u03bc\u00b1\u03bc\u00b1 channel inclusively and separated by charge."
     "reactions": [
       {
-        "reaction": "P P --> $e/\\mu{\\pm} e/\\mu{\\pm}$ (+X)",
+        "reaction": "P P --> Z0 < LEPTON+ LEPTON- > Z0 < LEPTON+ LEPTON- > X",
         "qualifiers": [
           {
-            "type": "sqrt(s)",
-            "value": "8000.0 GeV"
-          },
+            "type": "SQRT(S) IN GEV",
+            "value": "SIG(fiducial) IN FB"
+          }
+        ]
+      },
+      {
+        "reaction": "P P --> Z0 < LEPTON+ LEPTON- > Z0* < LEPTON+ LEPTON- > X",
+        "qualifiers": [
           {
-            "type": null,
-            "value": "95% CL upper limit [fb]"
+            "type": "SQRT(S) IN GEV",
+            "value": "SIG(fiducial) IN FB"
+          }
+        ]
+      },
+      {
+        "reaction": "P P --> Z0 < LEPTON+ LEPTON- > Z0 < NU NUBAR > X",
+        "qualifiers": [
+          {
+            "type": "SQRT(S) IN GEV",
+            "value": "SIG(fiducial) IN FB"
           }
         ]
       }
