@@ -5,7 +5,7 @@ It is unclear if ROOT will be completely suitable for the inclusion of data. Thi
 
 However, there also needs to be an exchange format between the ROOT data extraction API and the front end to render the results. JSON would be used for this purpose regardless.
 
-![image](https://raw.githubusercontent.com/HEPData/hepdata_submission/master/assets/hepdata_root_processing-01.png)
+![image](assets/hepdata_root_processing-01.png)
 
 ## Submission Format
 
