@@ -9,33 +9,16 @@ Table:
            value: "8000.0 GeV"
          - type: ""
            value: "95% CL upper limit [fb]"
-
-  data:
-      x:
-        name: "mass range [GeV]"
-        values: ["m($e^{\\pm}e^{\\pm}$"]
-      y:
+        measurements:
         - name: "Expected"
           values:
           - value: 39
             errors:
-             - label:
-               err_minus: -13
-               err_plus: 10
-          - value: 19
-            errors:
-             - label:
-               err_minus: -6
-               err_plus: 6
-        - name: "Observed"
-          values:
-          - value: 32
-            errors:
-             - label:
-               err_minus: 0
-               err_plus: 0
-          - value: 14
-            errors:
-             - label:
-               err_minus: 0
-               err_plus: 0
+            - label:
+              err_minus: -13
+              err_plus: 10
+
+  
+  x:
+   name: "mass range [GeV]"
+   values: ["m($e^{\\pm}e^{\\pm}$"]

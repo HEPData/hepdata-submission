@@ -5,57 +5,62 @@ Table:
   reactions:
     - reaction: "P P --> Z0 < LEPTON+ LEPTON- > Z0 < LEPTON+ LEPTON- > X"
       qualifiers:
-       - type: "SQRT(S) IN GEV"
-         value: "SIG(fiducial) IN FB"
-    - reaction: "P P --> Z0 < LEPTON+ LEPTON- > Z0* < LEPTON+ LEPTON- > X"
-      qualifiers:
-       - type: "SQRT(S) IN GEV"
-         value: "SIG(fiducial) IN FB"
-    - reaction: "P P --> Z0 < LEPTON+ LEPTON- > Z0 < NU NUBAR > X"
-      qualifiers:
-       - type: "SQRT(S) IN GEV"
-         value: "SIG(fiducial) IN FB"
-  data:
-      x:
-        name: "mass range [GeV]"
-        values: [7000]
-      y:
-        - name: "SIG(fiducial) IN FB"
-          values:
+        - type: "SQRT(S) IN GEV"
+          value: "SIG(fiducial) IN FB"
+      measurements:
+      - name: "SIG(fiducial) IN FB"
+        values:
           - value: 25.4
             errors:
-             - label: stat
-               err_minus: -3.0
-               err_plus: 3.3
-             - label: sys
-               err_minus: -1.0
-               err_plus: 1.2
-             - label: sys,lumi
-               err_minus: -1.0
-               err_plus: 1
-        - name: "SIG(fiducial) IN FB"
-          values:
+            - label: stat
+              err_minus: -3.0
+              err_plus: 3.3
+            - label: sys
+              err_minus: -1.0
+              err_plus: 1.2
+            - label: sys,lumi
+              err_minus: -1.0
+              err_plus: 1
+
+    - reaction: "P P --> Z0 < LEPTON+ LEPTON- > Z0* < LEPTON+ LEPTON- > X"
+      qualifiers:
+        - type: "SQRT(S) IN GEV"
+          value: "SIG(fiducial) IN FB"
+      measurements:
+      - name: "SIG(fiducial) IN FB"
+        values:
           - value: 29.8
             errors:
-             - label: stat
-               err_minus: -3.5
-               err_plus: 3.8
-             - label: sys
-               err_minus: -1.5
-               err_plus: 1.7
-             - label: sys,lumi
-               err_minus: -1.2
-               err_plus: 1.2
-        - name: "SIG(fiducial) IN FB"
-          values:
+            - label: stat
+              err_minus: -3.5
+              err_plus: 3.8
+            - label: sys
+              err_minus: -1.5
+              err_plus: 1.7
+            - label: sys,lumi
+              err_minus: -1.2
+              err_plus: 1.2
+
+    - reaction: "P P --> Z0 < LEPTON+ LEPTON- > Z0 < NU NUBAR > X"
+      qualifiers:
+        - type: "SQRT(S) IN GEV"
+          value: "SIG(fiducial) IN FB"
+      measurements:
+      - name: "SIG(fiducial) IN FB"
+        values:
           - value: 12.7
             errors:
-             - label: stat
-               err_minus: -2.9
-               err_plus: 3.1
-             - label: sys
-               err_minus: -1.7
-               err_plus: 1.7
-             - label: sys,lumi
-               err_minus: -0.5
-               err_plus: 0.5
+            - label: stat
+              err_minus: -2.9
+              err_plus: 3.1
+            - label: sys
+              err_minus: -1.7
+              err_plus: 1.7
+            - label: sys,lumi
+              err_minus: -0.5
+              err_plus: 0.5
+
+  x:
+     name: "mass range [GeV]"
+     values: ["m($e^{\\pm}e^{\\pm}$"]
+
