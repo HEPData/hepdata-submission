@@ -97,6 +97,11 @@ For each YAML presentation, it's JSON equivalent is also given.
 Table:
   name: "Table 3"
   title: "Upper limit at 95% CL on the fiducial cross section for ℓ±ℓ± pairs from non-SM signals. The expected limits and their 1σ uncertainties are given together with the observed limits derived from the data. Limits are given separately for the e±e±,e±μ± and μ±μ± channel inclusively and separated by charge."
+
+  x:
+     name: "mass range [GeV]"
+     values: ["m($e^{\\pm}e^{\\pm}$"]
+
   reactions:
       - reaction: "P P --> $e/\\mu{\\pm} e/\\mu{\\pm}$ (+X)"
         qualifiers:
@@ -112,12 +117,6 @@ Table:
             - label:
               err_minus: -13
               err_plus: 10
-
-  
-  x:
-   name: "mass range [GeV]"
-   values: ["m($e^{\\pm}e^{\\pm}$"]
-   
                         
 ```
 
@@ -132,6 +131,14 @@ Its JSON representation is pretty similar, and translates to this.
   "Table": {
     "title": "Upper limit at 95% CL on the fiducial cross section for \u2113\u00b1\u2113\u00b1 pairs from non-SM signals. The expected limits and their 1\u03c3 uncertainties are given together with the observed limits derived from the data. Limits are given separately for the e\u00b1e\u00b1,e\u00b1\u03bc\u00b1 and \u03bc\u00b1\u03bc\u00b1 channel inclusively and separated by charge.",
     "name": "Table 3",
+
+    "x": {
+      "values": [
+        "m($e^{\\pm}e^{\\pm}$"
+      ],
+      "name": "mass range [GeV]"
+    },
+
     "reactions": [
       {
         "reaction": "P P --> $e/\\mu{\\pm} e/\\mu{\\pm}$ (+X)",
@@ -163,13 +170,7 @@ Its JSON representation is pretty similar, and translates to this.
           }
         ]
       }
-    ],
-    "x": {
-      "values": [
-        "m($e^{\\pm}e^{\\pm}$"
-      ],
-      "name": "mass range [GeV]"
-    }
+    ]
   }
 }
 
@@ -184,12 +185,13 @@ Its JSON representation is pretty similar, and translates to this.
 ---
 Table:
   name: "Table 3"
-  title: "Upper limit at 95% CL on the fiducial cross section for ℓ±ℓ± pairs from non-SM signals. The expected limits and their 1σ uncertainties are given together with the observed limits derived from the data. Limits are given separately for the e±e±,e±μ± and μ±μ± channel inclusively and separated by charge."
+  title: "The measured fiducial cross sections. The first systematic uncertainty is the combined systematic uncertainty excluding luminosity, the second is the luminosity.."
+  x:
+    name: "SQRT(S) IN GEV"
+    values: [7000.0]
+
   reactions:
     - reaction: "P P --> Z0 < LEPTON+ LEPTON- > Z0 < LEPTON+ LEPTON- > X"
-      qualifiers:
-        - type: "SQRT(S) IN GEV"
-          value: "SIG(fiducial) IN FB"
       measurements:
       - name: "SIG(fiducial) IN FB"
         values:
@@ -206,9 +208,6 @@ Table:
               err_plus: 1
 
     - reaction: "P P --> Z0 < LEPTON+ LEPTON- > Z0* < LEPTON+ LEPTON- > X"
-      qualifiers:
-        - type: "SQRT(S) IN GEV"
-          value: "SIG(fiducial) IN FB"
       measurements:
       - name: "SIG(fiducial) IN FB"
         values:
@@ -225,9 +224,6 @@ Table:
               err_plus: 1.2
 
     - reaction: "P P --> Z0 < LEPTON+ LEPTON- > Z0 < NU NUBAR > X"
-      qualifiers:
-        - type: "SQRT(S) IN GEV"
-          value: "SIG(fiducial) IN FB"
       measurements:
       - name: "SIG(fiducial) IN FB"
         values:
@@ -243,9 +239,7 @@ Table:
               err_minus: -0.5
               err_plus: 0.5
 
-  x:
-     name: "mass range [GeV]"
-     values: ["m($e^{\\pm}e^{\\pm}$"]
+
 
 
 ```
@@ -256,24 +250,25 @@ Table:
 
 {
   "Table": {
+
     "name": "Table 3",
-    "title": "Upper limit at 95% CL on the fiducial cross section for \u2113\u00b1\u2113\u00b1 pairs from non-SM signals. The expected limits and their 1\u03c3 uncertainties are given together with the observed limits derived from the data. Limits are given separately for the e\u00b1e\u00b1,e\u00b1\u03bc\u00b1 and \u03bc\u00b1\u03bc\u00b1 channel inclusively and separated by charge.",
+    "title": "The measured fiducial cross sections. The first systematic uncertainty is the combined systematic uncertainty excluding luminosity, the second is the luminosity.",
+
+    "x": {
+      "name": "SQRT(S) IN GEV",
+      "values": [
+        7000.0
+      ]
+    },
 
     "reactions": [
       {
         "reaction": "P P --> Z0 < LEPTON+ LEPTON- > Z0 < LEPTON+ LEPTON- > X",
-        "qualifiers": [
-          {
-            "type": "SQRT(S) IN GEV",
-            "value": "SIG(fiducial) IN FB"
-          }
-        ],
+        "name": "SIG(fiducial) IN FB",
         "measurements": [
           {
-            "name": "SIG(fiducial) IN FB",
             "values": [
               {
-                "value": 25.399999999999999,
                 "errors": [
                   {
                     "err_plus": 3.2999999999999998,
@@ -290,27 +285,20 @@ Table:
                     "err_minus": -1.0,
                     "label": "sys,lumi"
                   }
-                ]
+                ],
+                "value": 25.399999999999999
               }
             ]
           }
         ]
       },
-
       {
         "reaction": "P P --> Z0 < LEPTON+ LEPTON- > Z0* < LEPTON+ LEPTON- > X",
-        "qualifiers": [
-          {
-            "type": "SQRT(S) IN GEV",
-            "value": "SIG(fiducial) IN FB"
-          }
-        ],
+        "name": "SIG(fiducial) IN FB",
         "measurements": [
           {
-            "name": "SIG(fiducial) IN FB",
             "values": [
               {
-                "value": 29.800000000000001,
                 "errors": [
                   {
                     "err_plus": 3.7999999999999998,
@@ -327,27 +315,20 @@ Table:
                     "err_minus": -1.2,
                     "label": "sys,lumi"
                   }
-                ]
+                ],
+                "value": 29.800000000000001
               }
             ]
           }
         ]
       },
-
       {
         "reaction": "P P --> Z0 < LEPTON+ LEPTON- > Z0 < NU NUBAR > X",
-        "qualifiers": [
-          {
-            "type": "SQRT(S) IN GEV",
-            "value": "SIG(fiducial) IN FB"
-          }
-        ],
+        "name": "SIG(fiducial) IN FB",
         "measurements": [
           {
-            "name": "SIG(fiducial) IN FB",
             "values": [
               {
-                "value": 12.699999999999999,
                 "errors": [
                   {
                     "err_plus": 3.1000000000000001,
@@ -364,7 +345,8 @@ Table:
                     "err_minus": -0.5,
                     "label": "sys,lumi"
                   }
-                ]
+                ],
+                "value": 12.699999999999999
               }
             ]
           }
