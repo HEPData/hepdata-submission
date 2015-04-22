@@ -1,22 +1,24 @@
 {
   "Table": {
-
     "name": "Table 3",
     "title": "The measured fiducial cross sections. The first systematic uncertainty is the combined systematic uncertainty excluding luminosity, the second is the luminosity.",
-
     "x": {
       "name": "SQRT(S) IN GEV",
       "values": [
         7000.0
       ]
     },
-
-    "reactions": [
+    "groups": [
       {
-        "reaction": "P P --> Z0 < LEPTON+ LEPTON- > Z0 < LEPTON+ LEPTON- > X",
-        "name": "SIG(fiducial) IN FB",
+        "qualifiers": [
+          {
+            "type": "reaction",
+            "value": "P P --> Z0 < LEPTON+ LEPTON- > Z0 < LEPTON+ LEPTON- > X"
+          }
+        ],
         "measurements": [
           {
+            "name": "SIG(fiducial) IN FB",
             "values": [
               {
                 "errors": [
@@ -43,10 +45,16 @@
         ]
       },
       {
-        "reaction": "P P --> Z0 < LEPTON+ LEPTON- > Z0* < LEPTON+ LEPTON- > X",
-        "name": "SIG(fiducial) IN FB",
+        "qualifiers": [
+          {
+            "type": "reaction",
+            "value": "P P --> Z0 < LEPTON+ LEPTON- > Z0* < LEPTON+ LEPTON- > X"
+          }
+        ],
         "measurements": [
           {
+
+            "name": "SIG(fiducial) IN FB",
             "values": [
               {
                 "errors": [
@@ -73,10 +81,15 @@
         ]
       },
       {
-        "reaction": "P P --> Z0 < LEPTON+ LEPTON- > Z0 < NU NUBAR > X",
-        "name": "SIG(fiducial) IN FB",
+        "qualifiers": [
+          {
+            "type": "reaction",
+            "value": "P P --> Z0 < LEPTON+ LEPTON- > Z0 < NU NUBAR > X"
+          }
+        ],
         "measurements": [
           {
+            "name": "SIG(fiducial) IN FB",
             "values": [
               {
                 "errors": [

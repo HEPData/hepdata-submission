@@ -1,0 +1,39 @@
+---
+submission:
+  data:
+   - name: "Table 1"
+     related_publication_figure: 2
+     description: "The measured fiducial cross sections. The first systematic uncertainty is the combined systematic uncertainty excluding luminosity, the second is the luminosity."
+     data_file: "table1.json"
+     additional_files:
+      - file_name: "analysis_script.py"
+        description: "Analysis script"
+        file_type: "python"
+      - file_name: "root_file.root"
+        description: "root file containing additional data"
+        file_type: "root"
+   
+   - name: "Table 3"
+     related_publication_figure: 3
+     description: "The fitted slope parameter for the elastic cross section fitted over 4 |T| ranges."
+     data_file: "table3.json"
+     additional_files:
+      - file_name: "analysis_script.py"
+        description: "Analysis script"
+        file_type: "python"
+      - file_name: "root_file.root"
+        description: "root file containing additional data"
+        file_type: "root"
+        
+   - name: "Table 2"
+     related_publication_figure: 3
+     description: "The fitted slope parameter for the elastic cross section fitted over 4 |T| ranges."
+     data_file: "table2.json"
+     additional_files:
+      - file_name: "HEPData/hepdata"
+        description: "Full source code for creating this data"
+        file_type: "github"
+      - file_name: "root_file.root"
+        description: "root file containing additional data"
+        file_type: "root"
+   
