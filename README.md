@@ -7,6 +7,7 @@ This links together all the data in to one submission and defines files such as 
 
 An additional important type of file is the data file that defines all the data, qualifiers, error bars, etc.
 
+ ![image](assets/hepdata_root_processing.png)
 
 ## Submission.yaml
 
