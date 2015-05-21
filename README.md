@@ -48,9 +48,9 @@ name: "Table 1"
 location: Page 17 of preprint
 description: The measured fiducial cross sections.  The first systematic uncertainty is the combined systematic uncertainty excluding luminosity, the second is the luminosity
 keywords: # used for searching, possibly multiple values for each keyword
-  - { name: reactions, value: [P P --> Z0 Z0 X]}
-  - { name: observables, value: [SIG]}
-  - { name: energies, value: [7000]}
+  - { name: reactions, values: [P P --> Z0 Z0 X]}
+  - { name: observables, values: [SIG]}
+  - { name: energies, values: [7000]}
 data_file: data1.yaml
 additional_resources:
   - location: "http:github.com/HEPData/hepdata"
@@ -64,9 +64,9 @@ name: "Table 2"
 location: Page 20 of preprint
 description: The measured total cross sections.  The first systematic uncertainty is the combined systematic uncertainty excluding luminosity, the second is the luminosity
 keywords: # used for searching, possibly multiple values for each keyword
-  - { name: reactions, value: [P P --> Z0 Z0 X]}
-  - { name: observables, value: [SIG]}
-  - { name: energies, value: [7000]}
+  - { name: reactions, values: [P P --> Z0 Z0 X]}
+  - { name: observables, values: [SIG]}
+  - { name: energies, values: [7000]}
 data_file: data2.yaml
 
 ---
