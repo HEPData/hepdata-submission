@@ -1,0 +1,540 @@
+# converting histogram data/Sbottom_SRA300.root//hData_SRA300_obs_cuts
+# converting histogram data/Sbottom_SRA300.root//hZNom_SRA300_obs_cuts
+# converting histogram data/Sbottom_SRA300.root//hZScalesSTHigh_SRA300_obs_cutsNorm
+# converting histogram data/Sbottom_SRA300.root//hZScalesSTLow_SRA300_obs_cutsNorm
+# converting histogram data/Sbottom_SRA300.root//hZJRHigh_SRA300_obs_cutsNorm
+# converting histogram data/Sbottom_SRA300.root//hZJRLow_SRA300_obs_cutsNorm
+# converting histogram data/Sbottom_SRA300.root//hZResCellOutHigh_SRA300_obs_cutsNorm
+# converting histogram data/Sbottom_SRA300.root//hZResCellOutLow_SRA300_obs_cutsNorm
+# converting histogram data/Sbottom_SRA300.root//hZcTaggingHigh_SRA300_obs_cutsNorm
+# converting histogram data/Sbottom_SRA300.root//hZcTaggingLow_SRA300_obs_cutsNorm
+# converting histogram data/Sbottom_SRA300.root//hZJCHigh_SRA300_obs_cutsNorm
+# converting histogram data/Sbottom_SRA300.root//hZJCLow_SRA300_obs_cutsNorm
+# converting histogram data/Sbottom_SRA300.root//hZlTaggingHigh_SRA300_obs_cutsNorm
+# converting histogram data/Sbottom_SRA300.root//hZlTaggingLow_SRA300_obs_cutsNorm
+# converting histogram data/Sbottom_SRA300.root//hZbTaggingHigh_SRA300_obs_cutsNorm
+# converting histogram data/Sbottom_SRA300.root//hZbTaggingLow_SRA300_obs_cutsNorm
+# converting histogram data/Sbottom_SRA300.root//hWNom_SRA300_obs_cuts
+# converting histogram data/Sbottom_SRA300.root//hWScalesSTHigh_SRA300_obs_cutsNorm
+# converting histogram data/Sbottom_SRA300.root//hWScalesSTLow_SRA300_obs_cutsNorm
+# converting histogram data/Sbottom_SRA300.root//hWJRHigh_SRA300_obs_cutsNorm
+# converting histogram data/Sbottom_SRA300.root//hWJRLow_SRA300_obs_cutsNorm
+# converting histogram data/Sbottom_SRA300.root//hWResCellOutHigh_SRA300_obs_cutsNorm
+# converting histogram data/Sbottom_SRA300.root//hWResCellOutLow_SRA300_obs_cutsNorm
+# converting histogram data/Sbottom_SRA300.root//hWcTaggingHigh_SRA300_obs_cutsNorm
+# converting histogram data/Sbottom_SRA300.root//hWcTaggingLow_SRA300_obs_cutsNorm
+# converting histogram data/Sbottom_SRA300.root//hWJCHigh_SRA300_obs_cutsNorm
+# converting histogram data/Sbottom_SRA300.root//hWJCLow_SRA300_obs_cutsNorm
+# converting histogram data/Sbottom_SRA300.root//hWlTaggingHigh_SRA300_obs_cutsNorm
+# converting histogram data/Sbottom_SRA300.root//hWlTaggingLow_SRA300_obs_cutsNorm
+# converting histogram data/Sbottom_SRA300.root//hWbTaggingHigh_SRA300_obs_cutsNorm
+# converting histogram data/Sbottom_SRA300.root//hWbTaggingLow_SRA300_obs_cutsNorm
+# converting histogram data/Sbottom_SRA300.root//hOtherNom_SRA300_obs_cuts
+# converting histogram data/Sbottom_SRA300.root//hOtherScalesSTHigh_SRA300_obs_cutsNorm
+# converting histogram data/Sbottom_SRA300.root//hOtherScalesSTLow_SRA300_obs_cutsNorm
+# converting histogram data/Sbottom_SRA300.root//hOtherJRHigh_SRA300_obs_cuts
+# converting histogram data/Sbottom_SRA300.root//hOtherJRLow_SRA300_obs_cuts
+# converting histogram data/Sbottom_SRA300.root//hOtherResCellOutHigh_SRA300_obs_cuts
+# converting histogram data/Sbottom_SRA300.root//hOtherResCellOutLow_SRA300_obs_cuts
+# converting histogram data/Sbottom_SRA300.root//hOthercTaggingHigh_SRA300_obs_cuts
+# converting histogram data/Sbottom_SRA300.root//hOthercTaggingLow_SRA300_obs_cuts
+# converting histogram data/Sbottom_SRA300.root//hOtherJCHigh_SRA300_obs_cutsNorm
+# converting histogram data/Sbottom_SRA300.root//hOtherJCLow_SRA300_obs_cutsNorm
+# converting histogram data/Sbottom_SRA300.root//hOtherlTaggingHigh_SRA300_obs_cuts
+# converting histogram data/Sbottom_SRA300.root//hOtherlTaggingLow_SRA300_obs_cuts
+# converting histogram data/Sbottom_SRA300.root//hOtherbTaggingHigh_SRA300_obs_cuts
+# converting histogram data/Sbottom_SRA300.root//hOtherbTaggingLow_SRA300_obs_cuts
+# converting histogram data/Sbottom_SRA300.root//httbarNom_SRA300_obs_cuts
+# converting histogram data/Sbottom_SRA300.root//httbarScalesSTHigh_SRA300_obs_cutsNorm
+# converting histogram data/Sbottom_SRA300.root//httbarScalesSTLow_SRA300_obs_cutsNorm
+# converting histogram data/Sbottom_SRA300.root//httbarJRHigh_SRA300_obs_cutsNorm
+# converting histogram data/Sbottom_SRA300.root//httbarJRLow_SRA300_obs_cutsNorm
+# converting histogram data/Sbottom_SRA300.root//httbarResCellOutHigh_SRA300_obs_cutsNorm
+# converting histogram data/Sbottom_SRA300.root//httbarResCellOutLow_SRA300_obs_cutsNorm
+# converting histogram data/Sbottom_SRA300.root//httbarcTaggingHigh_SRA300_obs_cutsNorm
+# converting histogram data/Sbottom_SRA300.root//httbarcTaggingLow_SRA300_obs_cutsNorm
+# converting histogram data/Sbottom_SRA300.root//httbarJCHigh_SRA300_obs_cutsNorm
+# converting histogram data/Sbottom_SRA300.root//httbarJCLow_SRA300_obs_cutsNorm
+# converting histogram data/Sbottom_SRA300.root//httbarlTaggingHigh_SRA300_obs_cutsNorm
+# converting histogram data/Sbottom_SRA300.root//httbarlTaggingLow_SRA300_obs_cutsNorm
+# converting histogram data/Sbottom_SRA300.root//httbarbTaggingHigh_SRA300_obs_cutsNorm
+# converting histogram data/Sbottom_SRA300.root//httbarbTaggingLow_SRA300_obs_cutsNorm
+# converting histogram data/Sbottom_SRA300.root//hLQpy8_500Nom_SRA300_obs_cuts
+# converting histogram data/Sbottom_SRA300.root//hLQpy8_500ScalesSTHigh_SRA300_obs_cutsNorm
+# converting histogram data/Sbottom_SRA300.root//hLQpy8_500ScalesSTLow_SRA300_obs_cutsNorm
+# converting histogram data/Sbottom_SRA300.root//hLQpy8_500JRHigh_SRA300_obs_cuts
+# converting histogram data/Sbottom_SRA300.root//hLQpy8_500JRLow_SRA300_obs_cuts
+# converting histogram data/Sbottom_SRA300.root//hLQpy8_500ResCellOutHigh_SRA300_obs_cuts
+# converting histogram data/Sbottom_SRA300.root//hLQpy8_500ResCellOutLow_SRA300_obs_cuts
+# converting histogram data/Sbottom_SRA300.root//hLQpy8_500cTaggingHigh_SRA300_obs_cuts
+# converting histogram data/Sbottom_SRA300.root//hLQpy8_500cTaggingLow_SRA300_obs_cuts
+# converting histogram data/Sbottom_SRA300.root//hLQpy8_500JCHigh_SRA300_obs_cutsNorm
+# converting histogram data/Sbottom_SRA300.root//hLQpy8_500JCLow_SRA300_obs_cutsNorm
+# converting histogram data/Sbottom_SRA300.root//hLQpy8_500lTaggingHigh_SRA300_obs_cuts
+# converting histogram data/Sbottom_SRA300.root//hLQpy8_500lTaggingLow_SRA300_obs_cuts
+# converting histogram data/Sbottom_SRA300.root//hLQpy8_500bTaggingHigh_SRA300_obs_cuts
+# converting histogram data/Sbottom_SRA300.root//hLQpy8_500bTaggingLow_SRA300_obs_cuts
+Channel:
+  HistoName: ''
+  HistoPath: ''
+  InputFile: ''
+  Name: SRA300_cuts
+  children:
+  - Data:
+      HistoName: hData_SRA300_obs_cuts
+      HistoPath: ''
+      InputFile: data/Sbottom_SRA300.root
+  - StatErrorConfig:
+      ConstraintType: Gaussian
+      HistoName: ''
+      HistoPath: ''
+      InputFile: ''
+      RelErrorThreshold: '0.05'
+  - Sample:
+      HistoName: hZNom_SRA300_obs_cuts
+      HistoPath: ''
+      InputFile: data/Sbottom_SRA300.root
+      Name: Z
+      NormalizeByTheory: 'False'
+      children:
+      - StatError:
+          Activate: 'True'
+          HistoName: hZNom_SRA300_obs_cuts
+          HistoPath: ''
+          InputFile: data/Sbottom_SRA300.root
+      - HistoSys:
+          HistoName: hZNom_SRA300_obs_cuts
+          HistoNameHigh: hZScalesSTHigh_SRA300_obs_cutsNorm
+          HistoNameLow: hZScalesSTLow_SRA300_obs_cutsNorm
+          HistoPath: ''
+          InputFile: data/Sbottom_SRA300.root
+          Name: ScalesST
+      - HistoSys:
+          HistoName: hZNom_SRA300_obs_cuts
+          HistoNameHigh: hZJRHigh_SRA300_obs_cutsNorm
+          HistoNameLow: hZJRLow_SRA300_obs_cutsNorm
+          HistoPath: ''
+          InputFile: data/Sbottom_SRA300.root
+          Name: JR
+      - HistoSys:
+          HistoName: hZNom_SRA300_obs_cuts
+          HistoNameHigh: hZResCellOutHigh_SRA300_obs_cutsNorm
+          HistoNameLow: hZResCellOutLow_SRA300_obs_cutsNorm
+          HistoPath: ''
+          InputFile: data/Sbottom_SRA300.root
+          Name: ResCellOut
+      - HistoSys:
+          HistoName: hZNom_SRA300_obs_cuts
+          HistoNameHigh: hZcTaggingHigh_SRA300_obs_cutsNorm
+          HistoNameLow: hZcTaggingLow_SRA300_obs_cutsNorm
+          HistoPath: ''
+          InputFile: data/Sbottom_SRA300.root
+          Name: cTagging
+      - HistoSys:
+          HistoName: hZNom_SRA300_obs_cuts
+          HistoNameHigh: hZJCHigh_SRA300_obs_cutsNorm
+          HistoNameLow: hZJCLow_SRA300_obs_cutsNorm
+          HistoPath: ''
+          InputFile: data/Sbottom_SRA300.root
+          Name: JC
+      - HistoSys:
+          HistoName: hZNom_SRA300_obs_cuts
+          HistoNameHigh: hZlTaggingHigh_SRA300_obs_cutsNorm
+          HistoNameLow: hZlTaggingLow_SRA300_obs_cutsNorm
+          HistoPath: ''
+          InputFile: data/Sbottom_SRA300.root
+          Name: lTagging
+      - HistoSys:
+          HistoName: hZNom_SRA300_obs_cuts
+          HistoNameHigh: hZbTaggingHigh_SRA300_obs_cutsNorm
+          HistoNameLow: hZbTaggingLow_SRA300_obs_cutsNorm
+          HistoPath: ''
+          InputFile: data/Sbottom_SRA300.root
+          Name: bTagging
+      - OverallSys:
+          High: '0.999001'
+          HistoName: hZNom_SRA300_obs_cuts
+          HistoPath: ''
+          InputFile: data/Sbottom_SRA300.root
+          Low: '0.995164'
+          Name: ScalesST
+      - OverallSys:
+          High: '0.965'
+          HistoName: hZNom_SRA300_obs_cuts
+          HistoPath: ''
+          InputFile: data/Sbottom_SRA300.root
+          Low: '0.974'
+          Name: ZTheory
+      - OverallSys:
+          High: '1.03975'
+          HistoName: hZNom_SRA300_obs_cuts
+          HistoPath: ''
+          InputFile: data/Sbottom_SRA300.root
+          Low: '1.03246'
+          Name: JC
+      - NormFactor:
+          Const: 'False'
+          High: '5'
+          HistoName: hZNom_SRA300_obs_cuts
+          HistoPath: ''
+          InputFile: data/Sbottom_SRA300.root
+          Low: '0'
+          Name: mu_Z
+          Val: '1'
+  - Sample:
+      HistoName: hWNom_SRA300_obs_cuts
+      HistoPath: ''
+      InputFile: data/Sbottom_SRA300.root
+      Name: W
+      NormalizeByTheory: 'False'
+      children:
+      - StatError:
+          Activate: 'True'
+          HistoName: hWNom_SRA300_obs_cuts
+          HistoPath: ''
+          InputFile: data/Sbottom_SRA300.root
+      - HistoSys:
+          HistoName: hWNom_SRA300_obs_cuts
+          HistoNameHigh: hWScalesSTHigh_SRA300_obs_cutsNorm
+          HistoNameLow: hWScalesSTLow_SRA300_obs_cutsNorm
+          HistoPath: ''
+          InputFile: data/Sbottom_SRA300.root
+          Name: ScalesST
+      - HistoSys:
+          HistoName: hWNom_SRA300_obs_cuts
+          HistoNameHigh: hWJRHigh_SRA300_obs_cutsNorm
+          HistoNameLow: hWJRLow_SRA300_obs_cutsNorm
+          HistoPath: ''
+          InputFile: data/Sbottom_SRA300.root
+          Name: JR
+      - HistoSys:
+          HistoName: hWNom_SRA300_obs_cuts
+          HistoNameHigh: hWResCellOutHigh_SRA300_obs_cutsNorm
+          HistoNameLow: hWResCellOutLow_SRA300_obs_cutsNorm
+          HistoPath: ''
+          InputFile: data/Sbottom_SRA300.root
+          Name: ResCellOut
+      - HistoSys:
+          HistoName: hWNom_SRA300_obs_cuts
+          HistoNameHigh: hWcTaggingHigh_SRA300_obs_cutsNorm
+          HistoNameLow: hWcTaggingLow_SRA300_obs_cutsNorm
+          HistoPath: ''
+          InputFile: data/Sbottom_SRA300.root
+          Name: cTagging
+      - HistoSys:
+          HistoName: hWNom_SRA300_obs_cuts
+          HistoNameHigh: hWJCHigh_SRA300_obs_cutsNorm
+          HistoNameLow: hWJCLow_SRA300_obs_cutsNorm
+          HistoPath: ''
+          InputFile: data/Sbottom_SRA300.root
+          Name: JC
+      - HistoSys:
+          HistoName: hWNom_SRA300_obs_cuts
+          HistoNameHigh: hWlTaggingHigh_SRA300_obs_cutsNorm
+          HistoNameLow: hWlTaggingLow_SRA300_obs_cutsNorm
+          HistoPath: ''
+          InputFile: data/Sbottom_SRA300.root
+          Name: lTagging
+      - HistoSys:
+          HistoName: hWNom_SRA300_obs_cuts
+          HistoNameHigh: hWbTaggingHigh_SRA300_obs_cutsNorm
+          HistoNameLow: hWbTaggingLow_SRA300_obs_cutsNorm
+          HistoPath: ''
+          InputFile: data/Sbottom_SRA300.root
+          Name: bTagging
+      - OverallSys:
+          High: '1.01605'
+          HistoName: hWNom_SRA300_obs_cuts
+          HistoPath: ''
+          InputFile: data/Sbottom_SRA300.root
+          Low: '0.999794'
+          Name: ScalesST
+      - OverallSys:
+          High: '1.105'
+          HistoName: hWNom_SRA300_obs_cuts
+          HistoPath: ''
+          InputFile: data/Sbottom_SRA300.root
+          Low: '0.778'
+          Name: WTheory
+      - OverallSys:
+          High: '0.939695'
+          HistoName: hWNom_SRA300_obs_cuts
+          HistoPath: ''
+          InputFile: data/Sbottom_SRA300.root
+          Low: '1.01305'
+          Name: JC
+      - NormFactor:
+          Const: 'False'
+          High: '5'
+          HistoName: hWNom_SRA300_obs_cuts
+          HistoPath: ''
+          InputFile: data/Sbottom_SRA300.root
+          Low: '0'
+          Name: mu_W
+          Val: '1'
+  - Sample:
+      HistoName: hOtherNom_SRA300_obs_cuts
+      HistoPath: ''
+      InputFile: data/Sbottom_SRA300.root
+      Name: Other
+      NormalizeByTheory: 'True'
+      children:
+      - StatError:
+          Activate: 'True'
+          HistoName: hOtherNom_SRA300_obs_cuts
+          HistoPath: ''
+          InputFile: data/Sbottom_SRA300.root
+      - HistoSys:
+          HistoName: hOtherNom_SRA300_obs_cuts
+          HistoNameHigh: hOtherScalesSTHigh_SRA300_obs_cutsNorm
+          HistoNameLow: hOtherScalesSTLow_SRA300_obs_cutsNorm
+          HistoPath: ''
+          InputFile: data/Sbottom_SRA300.root
+          Name: ScalesST
+      - HistoSys:
+          HistoName: hOtherNom_SRA300_obs_cuts
+          HistoNameHigh: hOtherJRHigh_SRA300_obs_cuts
+          HistoNameLow: hOtherJRLow_SRA300_obs_cuts
+          HistoPath: ''
+          InputFile: data/Sbottom_SRA300.root
+          Name: JR
+      - HistoSys:
+          HistoName: hOtherNom_SRA300_obs_cuts
+          HistoNameHigh: hOtherResCellOutHigh_SRA300_obs_cuts
+          HistoNameLow: hOtherResCellOutLow_SRA300_obs_cuts
+          HistoPath: ''
+          InputFile: data/Sbottom_SRA300.root
+          Name: ResCellOut
+      - HistoSys:
+          HistoName: hOtherNom_SRA300_obs_cuts
+          HistoNameHigh: hOthercTaggingHigh_SRA300_obs_cuts
+          HistoNameLow: hOthercTaggingLow_SRA300_obs_cuts
+          HistoPath: ''
+          InputFile: data/Sbottom_SRA300.root
+          Name: cTagging
+      - HistoSys:
+          HistoName: hOtherNom_SRA300_obs_cuts
+          HistoNameHigh: hOtherJCHigh_SRA300_obs_cutsNorm
+          HistoNameLow: hOtherJCLow_SRA300_obs_cutsNorm
+          HistoPath: ''
+          InputFile: data/Sbottom_SRA300.root
+          Name: JC
+      - HistoSys:
+          HistoName: hOtherNom_SRA300_obs_cuts
+          HistoNameHigh: hOtherlTaggingHigh_SRA300_obs_cuts
+          HistoNameLow: hOtherlTaggingLow_SRA300_obs_cuts
+          HistoPath: ''
+          InputFile: data/Sbottom_SRA300.root
+          Name: lTagging
+      - HistoSys:
+          HistoName: hOtherNom_SRA300_obs_cuts
+          HistoNameHigh: hOtherbTaggingHigh_SRA300_obs_cuts
+          HistoNameLow: hOtherbTaggingLow_SRA300_obs_cuts
+          HistoPath: ''
+          InputFile: data/Sbottom_SRA300.root
+          Name: bTagging
+      - OverallSys:
+          High: '1.3'
+          HistoName: hOtherNom_SRA300_obs_cuts
+          HistoPath: ''
+          InputFile: data/Sbottom_SRA300.root
+          Low: '0.7'
+          Name: otherTheory
+      - OverallSys:
+          High: '0.229186'
+          HistoName: hOtherNom_SRA300_obs_cuts
+          HistoPath: ''
+          InputFile: data/Sbottom_SRA300.root
+          Low: '0.92486'
+          Name: JC
+      - NormFactor:
+          Const: 'False'
+          High: '5'
+          HistoName: hOtherNom_SRA300_obs_cuts
+          HistoPath: ''
+          InputFile: data/Sbottom_SRA300.root
+          Low: '0'
+          Name: mu_Other
+          Val: '1'
+  - Sample:
+      HistoName: httbarNom_SRA300_obs_cuts
+      HistoPath: ''
+      InputFile: data/Sbottom_SRA300.root
+      Name: ttbar
+      NormalizeByTheory: 'False'
+      children:
+      - StatError:
+          Activate: 'True'
+          HistoName: httbarNom_SRA300_obs_cuts
+          HistoPath: ''
+          InputFile: data/Sbottom_SRA300.root
+      - HistoSys:
+          HistoName: httbarNom_SRA300_obs_cuts
+          HistoNameHigh: httbarScalesSTHigh_SRA300_obs_cutsNorm
+          HistoNameLow: httbarScalesSTLow_SRA300_obs_cutsNorm
+          HistoPath: ''
+          InputFile: data/Sbottom_SRA300.root
+          Name: ScalesST
+      - HistoSys:
+          HistoName: httbarNom_SRA300_obs_cuts
+          HistoNameHigh: httbarJRHigh_SRA300_obs_cutsNorm
+          HistoNameLow: httbarJRLow_SRA300_obs_cutsNorm
+          HistoPath: ''
+          InputFile: data/Sbottom_SRA300.root
+          Name: JR
+      - HistoSys:
+          HistoName: httbarNom_SRA300_obs_cuts
+          HistoNameHigh: httbarResCellOutHigh_SRA300_obs_cutsNorm
+          HistoNameLow: httbarResCellOutLow_SRA300_obs_cutsNorm
+          HistoPath: ''
+          InputFile: data/Sbottom_SRA300.root
+          Name: ResCellOut
+      - HistoSys:
+          HistoName: httbarNom_SRA300_obs_cuts
+          HistoNameHigh: httbarcTaggingHigh_SRA300_obs_cutsNorm
+          HistoNameLow: httbarcTaggingLow_SRA300_obs_cutsNorm
+          HistoPath: ''
+          InputFile: data/Sbottom_SRA300.root
+          Name: cTagging
+      - HistoSys:
+          HistoName: httbarNom_SRA300_obs_cuts
+          HistoNameHigh: httbarJCHigh_SRA300_obs_cutsNorm
+          HistoNameLow: httbarJCLow_SRA300_obs_cutsNorm
+          HistoPath: ''
+          InputFile: data/Sbottom_SRA300.root
+          Name: JC
+      - HistoSys:
+          HistoName: httbarNom_SRA300_obs_cuts
+          HistoNameHigh: httbarlTaggingHigh_SRA300_obs_cutsNorm
+          HistoNameLow: httbarlTaggingLow_SRA300_obs_cutsNorm
+          HistoPath: ''
+          InputFile: data/Sbottom_SRA300.root
+          Name: lTagging
+      - HistoSys:
+          HistoName: httbarNom_SRA300_obs_cuts
+          HistoNameHigh: httbarbTaggingHigh_SRA300_obs_cutsNorm
+          HistoNameLow: httbarbTaggingLow_SRA300_obs_cutsNorm
+          HistoPath: ''
+          InputFile: data/Sbottom_SRA300.root
+          Name: bTagging
+      - OverallSys:
+          High: '1.00429'
+          HistoName: httbarNom_SRA300_obs_cuts
+          HistoPath: ''
+          InputFile: data/Sbottom_SRA300.root
+          Low: '1.00971'
+          Name: ScalesST
+      - OverallSys:
+          High: '1.214'
+          HistoName: httbarNom_SRA300_obs_cuts
+          HistoPath: ''
+          InputFile: data/Sbottom_SRA300.root
+          Low: '0.786'
+          Name: topTheory
+      - OverallSys:
+          High: '0.905975'
+          HistoName: httbarNom_SRA300_obs_cuts
+          HistoPath: ''
+          InputFile: data/Sbottom_SRA300.root
+          Low: '1.12639'
+          Name: JC
+      - NormFactor:
+          Const: 'False'
+          High: '5'
+          HistoName: httbarNom_SRA300_obs_cuts
+          HistoPath: ''
+          InputFile: data/Sbottom_SRA300.root
+          Low: '0'
+          Name: mu_Top
+          Val: '1'
+  - Sample:
+      HistoName: hLQpy8_500Nom_SRA300_obs_cuts
+      HistoPath: ''
+      InputFile: data/Sbottom_SRA300.root
+      Name: LQpy8_500
+      NormalizeByTheory: 'True'
+      children:
+      - StatError:
+          Activate: 'True'
+          HistoName: hLQpy8_500Nom_SRA300_obs_cuts
+          HistoPath: ''
+          InputFile: data/Sbottom_SRA300.root
+      - HistoSys:
+          HistoName: hLQpy8_500Nom_SRA300_obs_cuts
+          HistoNameHigh: hLQpy8_500ScalesSTHigh_SRA300_obs_cutsNorm
+          HistoNameLow: hLQpy8_500ScalesSTLow_SRA300_obs_cutsNorm
+          HistoPath: ''
+          InputFile: data/Sbottom_SRA300.root
+          Name: ScalesST
+      - HistoSys:
+          HistoName: hLQpy8_500Nom_SRA300_obs_cuts
+          HistoNameHigh: hLQpy8_500JRHigh_SRA300_obs_cuts
+          HistoNameLow: hLQpy8_500JRLow_SRA300_obs_cuts
+          HistoPath: ''
+          InputFile: data/Sbottom_SRA300.root
+          Name: JR
+      - HistoSys:
+          HistoName: hLQpy8_500Nom_SRA300_obs_cuts
+          HistoNameHigh: hLQpy8_500ResCellOutHigh_SRA300_obs_cuts
+          HistoNameLow: hLQpy8_500ResCellOutLow_SRA300_obs_cuts
+          HistoPath: ''
+          InputFile: data/Sbottom_SRA300.root
+          Name: ResCellOut
+      - HistoSys:
+          HistoName: hLQpy8_500Nom_SRA300_obs_cuts
+          HistoNameHigh: hLQpy8_500cTaggingHigh_SRA300_obs_cuts
+          HistoNameLow: hLQpy8_500cTaggingLow_SRA300_obs_cuts
+          HistoPath: ''
+          InputFile: data/Sbottom_SRA300.root
+          Name: cTagging
+      - HistoSys:
+          HistoName: hLQpy8_500Nom_SRA300_obs_cuts
+          HistoNameHigh: hLQpy8_500JCHigh_SRA300_obs_cutsNorm
+          HistoNameLow: hLQpy8_500JCLow_SRA300_obs_cutsNorm
+          HistoPath: ''
+          InputFile: data/Sbottom_SRA300.root
+          Name: JC
+      - HistoSys:
+          HistoName: hLQpy8_500Nom_SRA300_obs_cuts
+          HistoNameHigh: hLQpy8_500lTaggingHigh_SRA300_obs_cuts
+          HistoNameLow: hLQpy8_500lTaggingLow_SRA300_obs_cuts
+          HistoPath: ''
+          InputFile: data/Sbottom_SRA300.root
+          Name: lTagging
+      - HistoSys:
+          HistoName: hLQpy8_500Nom_SRA300_obs_cuts
+          HistoNameHigh: hLQpy8_500bTaggingHigh_SRA300_obs_cuts
+          HistoNameLow: hLQpy8_500bTaggingLow_SRA300_obs_cuts
+          HistoPath: ''
+          InputFile: data/Sbottom_SRA300.root
+          Name: bTagging
+      - OverallSys:
+          High: '0.996689'
+          HistoName: hLQpy8_500Nom_SRA300_obs_cuts
+          HistoPath: ''
+          InputFile: data/Sbottom_SRA300.root
+          Low: '1.00015'
+          Name: ScalesST
+      - OverallSys:
+          High: '1.14961'
+          HistoName: hLQpy8_500Nom_SRA300_obs_cuts
+          HistoPath: ''
+          InputFile: data/Sbottom_SRA300.root
+          Low: '0.850389'
+          Name: SigXSec
+      - OverallSys:
+          High: '1.02601'
+          HistoName: hLQpy8_500Nom_SRA300_obs_cuts
+          HistoPath: ''
+          InputFile: data/Sbottom_SRA300.root
+          Low: '0.976822'
+          Name: JC
+      - NormFactor:
+          Const: 'False'
+          High: '5'
+          HistoName: hLQpy8_500Nom_SRA300_obs_cuts
+          HistoPath: ''
+          InputFile: data/Sbottom_SRA300.root
+          Low: '0'
+          Name: mu_SIG
+          Val: '1'

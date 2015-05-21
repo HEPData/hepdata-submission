@@ -1,0 +1,83 @@
+<!DOCTYPE Channel SYSTEM '../HistFactorySchema.dtd'>
+
+<Channel Name="SRA300_cuts">
+
+  <Data HistoName="hData_SRA300_obs_cuts" InputFile="data/Sbottom_SRA300.root" />
+
+  <StatErrorConfig RelErrorThreshold="0.05" ConstraintType="Gaussian"/>
+
+  <Sample Name="Z" HistoName="hZNom_SRA300_obs_cuts" InputFile="data/Sbottom_SRA300.root" NormalizeByTheory="False">
+    <StatError Activate="True"/>
+    <HistoSys Name="ScalesST" HistoNameHigh="hZScalesSTHigh_SRA300_obs_cutsNorm" HistoNameLow="hZScalesSTLow_SRA300_obs_cutsNorm" />
+    <HistoSys Name="JR" HistoNameHigh="hZJRHigh_SRA300_obs_cutsNorm" HistoNameLow="hZJRLow_SRA300_obs_cutsNorm" />
+    <HistoSys Name="ResCellOut" HistoNameHigh="hZResCellOutHigh_SRA300_obs_cutsNorm" HistoNameLow="hZResCellOutLow_SRA300_obs_cutsNorm" />
+    <HistoSys Name="cTagging" HistoNameHigh="hZcTaggingHigh_SRA300_obs_cutsNorm" HistoNameLow="hZcTaggingLow_SRA300_obs_cutsNorm" />
+    <HistoSys Name="JC" HistoNameHigh="hZJCHigh_SRA300_obs_cutsNorm" HistoNameLow="hZJCLow_SRA300_obs_cutsNorm" />
+    <HistoSys Name="lTagging" HistoNameHigh="hZlTaggingHigh_SRA300_obs_cutsNorm" HistoNameLow="hZlTaggingLow_SRA300_obs_cutsNorm" />
+    <HistoSys Name="bTagging" HistoNameHigh="hZbTaggingHigh_SRA300_obs_cutsNorm" HistoNameLow="hZbTaggingLow_SRA300_obs_cutsNorm" />
+    <OverallSys Name="ScalesST" High="0.999001" Low="0.995164" />
+    <OverallSys Name="ZTheory" High="0.965" Low="0.974" />
+    <OverallSys Name="JC" High="1.03975" Low="1.03246" />
+    <NormFactor Name="mu_Z" Val="1" High="5" Low="0" Const="False" />
+  </Sample>
+
+  <Sample Name="W" HistoName="hWNom_SRA300_obs_cuts" InputFile="data/Sbottom_SRA300.root" NormalizeByTheory="False">
+    <StatError Activate="True"/>
+    <HistoSys Name="ScalesST" HistoNameHigh="hWScalesSTHigh_SRA300_obs_cutsNorm" HistoNameLow="hWScalesSTLow_SRA300_obs_cutsNorm" />
+    <HistoSys Name="JR" HistoNameHigh="hWJRHigh_SRA300_obs_cutsNorm" HistoNameLow="hWJRLow_SRA300_obs_cutsNorm" />
+    <HistoSys Name="ResCellOut" HistoNameHigh="hWResCellOutHigh_SRA300_obs_cutsNorm" HistoNameLow="hWResCellOutLow_SRA300_obs_cutsNorm" />
+    <HistoSys Name="cTagging" HistoNameHigh="hWcTaggingHigh_SRA300_obs_cutsNorm" HistoNameLow="hWcTaggingLow_SRA300_obs_cutsNorm" />
+    <HistoSys Name="JC" HistoNameHigh="hWJCHigh_SRA300_obs_cutsNorm" HistoNameLow="hWJCLow_SRA300_obs_cutsNorm" />
+    <HistoSys Name="lTagging" HistoNameHigh="hWlTaggingHigh_SRA300_obs_cutsNorm" HistoNameLow="hWlTaggingLow_SRA300_obs_cutsNorm" />
+    <HistoSys Name="bTagging" HistoNameHigh="hWbTaggingHigh_SRA300_obs_cutsNorm" HistoNameLow="hWbTaggingLow_SRA300_obs_cutsNorm" />
+    <OverallSys Name="ScalesST" High="1.01605" Low="0.999794" />
+    <OverallSys Name="WTheory" High="1.105" Low="0.778" />
+    <OverallSys Name="JC" High="0.939695" Low="1.01305" />
+    <NormFactor Name="mu_W" Val="1" High="5" Low="0" Const="False" />
+  </Sample>
+
+  <Sample Name="Other" HistoName="hOtherNom_SRA300_obs_cuts" InputFile="data/Sbottom_SRA300.root" NormalizeByTheory="True">
+    <StatError Activate="True"/>
+    <HistoSys Name="ScalesST" HistoNameHigh="hOtherScalesSTHigh_SRA300_obs_cutsNorm" HistoNameLow="hOtherScalesSTLow_SRA300_obs_cutsNorm" />
+    <HistoSys Name="JR" HistoNameHigh="hOtherJRHigh_SRA300_obs_cuts" HistoNameLow="hOtherJRLow_SRA300_obs_cuts" />
+    <HistoSys Name="ResCellOut" HistoNameHigh="hOtherResCellOutHigh_SRA300_obs_cuts" HistoNameLow="hOtherResCellOutLow_SRA300_obs_cuts" />
+    <HistoSys Name="cTagging" HistoNameHigh="hOthercTaggingHigh_SRA300_obs_cuts" HistoNameLow="hOthercTaggingLow_SRA300_obs_cuts" />
+    <HistoSys Name="JC" HistoNameHigh="hOtherJCHigh_SRA300_obs_cutsNorm" HistoNameLow="hOtherJCLow_SRA300_obs_cutsNorm" />
+    <HistoSys Name="lTagging" HistoNameHigh="hOtherlTaggingHigh_SRA300_obs_cuts" HistoNameLow="hOtherlTaggingLow_SRA300_obs_cuts" />
+    <HistoSys Name="bTagging" HistoNameHigh="hOtherbTaggingHigh_SRA300_obs_cuts" HistoNameLow="hOtherbTaggingLow_SRA300_obs_cuts" />
+    <OverallSys Name="otherTheory" High="1.3" Low="0.7" />
+    <OverallSys Name="JC" High="0.229186" Low="0.92486" />
+    <NormFactor Name="mu_Other" Val="1" High="5" Low="0" Const="False" />
+  </Sample>
+
+  <Sample Name="ttbar" HistoName="httbarNom_SRA300_obs_cuts" InputFile="data/Sbottom_SRA300.root" NormalizeByTheory="False">
+    <StatError Activate="True"/>
+    <HistoSys Name="ScalesST" HistoNameHigh="httbarScalesSTHigh_SRA300_obs_cutsNorm" HistoNameLow="httbarScalesSTLow_SRA300_obs_cutsNorm" />
+    <HistoSys Name="JR" HistoNameHigh="httbarJRHigh_SRA300_obs_cutsNorm" HistoNameLow="httbarJRLow_SRA300_obs_cutsNorm" />
+    <HistoSys Name="ResCellOut" HistoNameHigh="httbarResCellOutHigh_SRA300_obs_cutsNorm" HistoNameLow="httbarResCellOutLow_SRA300_obs_cutsNorm" />
+    <HistoSys Name="cTagging" HistoNameHigh="httbarcTaggingHigh_SRA300_obs_cutsNorm" HistoNameLow="httbarcTaggingLow_SRA300_obs_cutsNorm" />
+    <HistoSys Name="JC" HistoNameHigh="httbarJCHigh_SRA300_obs_cutsNorm" HistoNameLow="httbarJCLow_SRA300_obs_cutsNorm" />
+    <HistoSys Name="lTagging" HistoNameHigh="httbarlTaggingHigh_SRA300_obs_cutsNorm" HistoNameLow="httbarlTaggingLow_SRA300_obs_cutsNorm" />
+    <HistoSys Name="bTagging" HistoNameHigh="httbarbTaggingHigh_SRA300_obs_cutsNorm" HistoNameLow="httbarbTaggingLow_SRA300_obs_cutsNorm" />
+    <OverallSys Name="ScalesST" High="1.00429" Low="1.00971" />
+    <OverallSys Name="topTheory" High="1.214" Low="0.786" />
+    <OverallSys Name="JC" High="0.905975" Low="1.12639" />
+    <NormFactor Name="mu_Top" Val="1" High="5" Low="0" Const="False" />
+  </Sample>
+
+  <Sample Name="LQpy8_500" HistoName="hLQpy8_500Nom_SRA300_obs_cuts" InputFile="data/Sbottom_SRA300.root" NormalizeByTheory="True">
+    <StatError Activate="True"/>
+    <HistoSys Name="ScalesST" HistoNameHigh="hLQpy8_500ScalesSTHigh_SRA300_obs_cutsNorm" HistoNameLow="hLQpy8_500ScalesSTLow_SRA300_obs_cutsNorm" />
+    <HistoSys Name="JR" HistoNameHigh="hLQpy8_500JRHigh_SRA300_obs_cuts" HistoNameLow="hLQpy8_500JRLow_SRA300_obs_cuts" />
+    <HistoSys Name="ResCellOut" HistoNameHigh="hLQpy8_500ResCellOutHigh_SRA300_obs_cuts" HistoNameLow="hLQpy8_500ResCellOutLow_SRA300_obs_cuts" />
+    <HistoSys Name="cTagging" HistoNameHigh="hLQpy8_500cTaggingHigh_SRA300_obs_cuts" HistoNameLow="hLQpy8_500cTaggingLow_SRA300_obs_cuts" />
+    <HistoSys Name="JC" HistoNameHigh="hLQpy8_500JCHigh_SRA300_obs_cutsNorm" HistoNameLow="hLQpy8_500JCLow_SRA300_obs_cutsNorm" />
+    <HistoSys Name="lTagging" HistoNameHigh="hLQpy8_500lTaggingHigh_SRA300_obs_cuts" HistoNameLow="hLQpy8_500lTaggingLow_SRA300_obs_cuts" />
+    <HistoSys Name="bTagging" HistoNameHigh="hLQpy8_500bTaggingHigh_SRA300_obs_cuts" HistoNameLow="hLQpy8_500bTaggingLow_SRA300_obs_cuts" />
+    <OverallSys Name="ScalesST" High="0.996689" Low="1.00015" />
+    <OverallSys Name="SigXSec" High="1.14961" Low="0.850389" />
+    <OverallSys Name="JC" High="1.02601" Low="0.976822" />
+    <NormFactor Name="mu_SIG" Val="1" High="5" Low="0" Const="False" />
+  </Sample>
+
+</Channel>

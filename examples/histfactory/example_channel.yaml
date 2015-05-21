@@ -1,0 +1,98 @@
+# converting histogram ./example.root//data
+# converting histogram ./example.root//signal
+# converting histogram ./example.root//background1
+# converting histogram ./example.root//bkg1Syst4High
+# converting histogram ./example.root//bkg1Syst4Low
+# converting histogram ./example.root//background2
+# converting histogram ./example.root//bkg2Syst4High
+# converting histogram ./example.root//bkg2Syst4Low
+Channel:
+  HistoName: ''
+  HistoPath: ''
+  InputFile: ./example.root
+  Name: channel1
+  children:
+  - Data:
+      HistoName: data
+      HistoPath: ''
+      InputFile: ./example.root
+  - StatErrorConfig:
+      ConstraintType: Poisson
+      HistoName: ''
+      HistoPath: ''
+      InputFile: ./example.root
+      RelErrorThreshold: '0.05'
+  - Sample:
+      HistoName: signal
+      HistoPath: ''
+      InputFile: ./example.root
+      Name: signal
+      children:
+      - OverallSys:
+          High: '1.05'
+          HistoName: signal
+          HistoPath: ''
+          InputFile: ./example.root
+          Low: '0.95'
+          Name: syst1
+      - NormFactor:
+          High: '3.'
+          HistoName: signal
+          HistoPath: ''
+          InputFile: ./example.root
+          Low: '0.'
+          Name: SigXsecOverSM
+          Val: '1'
+  - Sample:
+      HistoName: background1
+      HistoPath: ''
+      InputFile: ./example.root
+      Name: background1
+      NormalizeByTheory: 'True'
+      children:
+      - StatError:
+          Activate: 'True'
+          HistoName: background1_statUncert
+          HistoPath: ''
+          InputFile: ./example.root
+      - OverallSys:
+          High: '1.05'
+          HistoName: background1
+          HistoPath: ''
+          InputFile: ./example.root
+          Low: '0.95'
+          Name: syst2
+      - HistoSys:
+          HistoName: background1
+          HistoNameHigh: bkg1Syst4High
+          HistoNameLow: bkg1Syst4Low
+          HistoPath: ''
+          InputFile: ./example.root
+          Name: syst4
+  - Sample:
+      HistoName: background2
+      HistoPath: ''
+      InputFile: ./example.root
+      Name: background2
+      NormalizeByTheory: 'True'
+      children:
+      - StatError:
+          Activate: 'True'
+          HistoName: background2
+          HistoPath: ''
+          InputFile: ./example.root
+      - OverallSys:
+          High: '1.05'
+          HistoName: background2
+          HistoPath: ''
+          InputFile: ./example.root
+          Low: '0.95'
+          Name: syst3
+      - HistoSys:
+          HistoName: background2
+          HistoNameHigh: bkg2Syst4High
+          HistoNameLow: bkg2Syst4Low
+          HistoPath: ''
+          InputFile: ./example.root
+          Name: syst4
+      text: "-->\n    "

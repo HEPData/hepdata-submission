@@ -15,7 +15,7 @@
 
 <!DOCTYPE Channel  SYSTEM 'HistFactorySchema.dtd'>
 
-  <Channel Name="channel1" InputFile="./data/example.root" >
+  <Channel Name="channel1" InputFile="./example.root" >
     <Data HistoName="data" HistoPath="" />
 
     <!-- Set the StatError type to Poisson.  Can also be Gaussian -->
