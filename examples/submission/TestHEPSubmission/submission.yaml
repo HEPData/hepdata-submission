@@ -1,39 +1,87 @@
+# Start a new YAML document to indicate a new data table.
+# This is Table 1.
+name: "Table 1"
+location: Page 17 of preprint
+description: The measured fiducial cross sections.  The first systematic uncertainty is the combined systematic uncertainty excluding luminosity, the second is the luminosity
+keywords: # used for searching, possibly multiple values for each keyword
+  reactions: [P P --> Z0 Z0 X]
+  observables: [SIG]
+  energies: [7000, 8000, 9500] # centre-of-mass energy in GeV
+data_file: data1.yaml
+additional_resources:
+  - location: "http:github.com/HEPData/hepdata"
+    description: "Full source code for creating this data"
 ---
-submission:
-  data:
-   - name: "Table 1"
-     related_publication_figure: 2
-     description: "The measured fiducial cross sections. The first systematic uncertainty is the combined systematic uncertainty excluding luminosity, the second is the luminosity."
-     data_file: "table1.json"
-     additional_files:
-      - file_name: "analysis_script.py"
-        description: "Analysis script"
-        file_type: "python"
-      - file_name: "root_file.root"
-        description: "root file containing additional data"
-        file_type: "root"
-   
-   - name: "Table 3"
-     related_publication_figure: 3
-     description: "The fitted slope parameter for the elastic cross section fitted over 4 |T| ranges."
-     data_file: "table3.json"
-     additional_files:
-      - file_name: "analysis_script.py"
-        description: "Analysis script"
-        file_type: "python"
-      - file_name: "root_file.root"
-        description: "root file containing additional data"
-        file_type: "root"
-        
-   - name: "Table 2"
-     related_publication_figure: 3
-     description: "The fitted slope parameter for the elastic cross section fitted over 4 |T| ranges."
-     data_file: "table2.json"
-     additional_files:
-      - file_name: "HEPData/hepdata"
-        description: "Full source code for creating this data"
-        file_type: "github"
-      - file_name: "root_file.root"
-        description: "root file containing additional data"
-        file_type: "root"
-   
+# This is Table 2.
+name: "Table 2"
+location: Page 20 of preprint
+description: The measured total cross sections.  The first systematic uncertainty is the combined systematic uncertainty excluding luminosity, the second is the luminosity
+keywords: # used for searching, possibly multiple values for each keyword
+  reactions: [P P --> Z0 Z0 X]
+  observables: [SIG]
+  energies: [7000] # centre-of-mass energy in GeV
+data_file: data2.yaml
+---
+# This is Table 3.
+name: "Table 3"
+location: Figure 8A
+description: Normalized ZZ fiducial cross section (multiplied by 10^6 for readability) in bins of the leading reconstructed dilepton pT for the 4 lepton channel.  The first systematic uncertainty is detector systematics, the second is background systematic uncertainties
+keywords: # used for searching, possibly multiple values for each keyword
+  reactions: [P P --> Z0 Z0 X]
+  observables: [DSIG/DPT]
+  energies: [7000] # centre-of-mass energy in GeV
+data_file: data3.yaml
+---
+# This is Table 4.
+name: "Table 4"
+location: Figure 8B
+description: Normalized ZZ fiducial cross section (multiplied by 10^6 for readability) in bins of the dilepton pT for the 2l2nu channel.  The first systematic uncertainty is detector systematics, the second is background systematic uncertainties
+keywords: # used for searching, possibly multiple values for each keyword
+  reactions: [P P --> Z0 Z0 X]
+  observables: [DSIG/DPT]
+  energies: [7000] # centre-of-mass energy in GeV
+data_file: data4.yaml
+---
+# This is Table 5.
+name: "Table 5"
+location: Figure 9A
+description: | # preserve newlines
+  Normalized ZZ fiducial cross section (multiplied by 10^6 for readability) in bins of deltaPhi between the two leptons of the leading dileptons for the 4l channel.  The first systematic uncertainty is detector systematics, the second is background systematic uncertainties.
+  UPDATE (30 APR 2014): extra significant digit added for first bin
+keywords: # used for searching, possibly multiple values for each keyword
+  reactions: [P P --> Z0 Z0 X]
+  observables: [DSIG/DPHI]
+  energies: [7000] # centre-of-mass energy in GeV
+data_file: data5.yaml
+---
+# This is Table 6.
+name: "Table 6"
+location: Figure 9B
+description: Normalized ZZ fiducial cross section (multiplied by 10^6 for readability) in bins of deltaPhi between the two leptons for the 2l2nu channel.  The first systematic uncertainty is detector systematics, the second is background systematic uncertainties
+keywords: # used for searching, possibly multiple values for each keyword
+  reactions: ['P P --> Z0 Z0 X, X <-- P']
+  observables: [DSIG/DPHI]
+  energies: [7000] # centre-of-mass energy in GeV
+data_file: data6.yaml
+---
+# This is Table 7.
+name: "Table 7"
+location: Figure 10A
+description: Normalized ZZ fiducial cross section (multiplied by 10^6 for readability) in bins of the mass of the ZZ system for the 4l channel.  The first systematic uncertainty is detector systematics, the second is background systematic uncertainties
+keywords: # used for searching, possibly multiple values for each keyword
+  reactions: [P P --> Z0 Z0 X]
+  observables: [DSIG/DM]
+  energies: [7000] # centre-of-mass energy in GeV
+data_file: data7.yaml
+---
+# This is Table 8.
+name: "Table 7"
+location: Figure 10B
+description: Normalized ZZ fiducial cross section (multiplied by 10^6 for readability) in bins of the transverse mass of the ZZ system for the 2l2nu channel.  The first systematic uncertainty is detector systematics, the second is background systematic uncertainties
+keywords: # used for searching, possibly multiple values for each keyword
+  reactions: [P P --> Z0 Z0 X]
+  observables: [DSIG/DM]
+  energies: [7000] # centre-of-mass energy in GeV
+data_file: data8.yaml
+...
+# End of YAML file.

@@ -14,130 +14,139 @@ An additional important type of file is the data file that defines all the data,
 
 ``` yaml
 
+# Start a new YAML document to indicate a new data table.
+# This is Table 1.
+name: "Table 1"
+location: Page 17 of preprint
+description: The measured fiducial cross sections.  The first systematic uncertainty is the combined systematic uncertainty excluding luminosity, the second is the luminosity
+keywords: # used for searching, possibly multiple values for each keyword
+  reactions: [P P --> Z0 Z0 X]
+  observables: [SIG]
+  energies: [7000, 8000, 9500] # centre-of-mass energy in GeV
+data_file: data1.yaml
+additional_resources:
+  - location: "http:github.com/HEPData/hepdata"
+    description: "Full source code for creating this data"
 ---
-submission:
-  data:
-   - name: "Table 1"
-     related_publication_figure: 2
-     description: "The measured fiducial cross sections. The first systematic uncertainty is the combined systematic uncertainty excluding luminosity, the second is the luminosity."
-     data_file: "table1.json"
-     additional_files:
-      - file_name: "analysis_script.py"
-        description: "Analysis script"
-        file_type: "python"
-      - file_name: "root_file.root"
-        description: "root file containing additional data"
-        file_type: "root"
-
-
-   - name: "Table 2"
-     related_publication_figure: 3
-     description: "The fitted slope parameter for the elastic cross section fitted over 4 |T| ranges."
-     data_file: "table2.json"
-     additional_files:
-      - file_name: "HEPData/hepdata"
-        description: "Full source code for creating this data"
-        file_type: "github"
-
+# This is Table 2.
+name: "Table 2"
+location: Page 20 of preprint
+description: The measured total cross sections.  The first systematic uncertainty is the combined systematic uncertainty excluding luminosity, the second is the luminosity
+keywords: # used for searching, possibly multiple values for each keyword
+  reactions: [P P --> Z0 Z0 X]
+  observables: [SIG]
+  energies: [7000] # centre-of-mass energy in GeV
+data_file: data2.yaml
+---
+# This is Table 3.
+name: "Table 3"
+location: Figure 8A
+description: Normalized ZZ fiducial cross section (multiplied by 10^6 for readability) in bins of the leading reconstructed dilepton pT for the 4 lepton channel.  The first systematic uncertainty is detector systematics, the second is background systematic uncertainties
+keywords: # used for searching, possibly multiple values for each keyword
+  reactions: [P P --> Z0 Z0 X]
+  observables: [DSIG/DPT]
+  energies: [7000] # centre-of-mass energy in GeV
+data_file: data3.yaml
 
 ```
 
 ### Data Files
 
+Data Files can be encoded as either YAML or JSON, the software deals with both the same way.
+
+#### YAML
+
+``` yaml
+
+---
+xaxes:
+  - header: {name: SQRT(S), units: GEV}
+    bins:
+      - value: 7000
+      - value: 8000
+yaxes:
+  - header: {name: SIG(total), units: FB}
+    qualifiers:
+      - {name: RE, value: P P --> Z0 Z0 X}
+    points:
+      - value: 6.7
+        errors:
+          - {symerror: 0.45, label: stat}
+          - {asymerror: {plus: 0.4, minus: 0.3}, label: sys}
+          - {symerror: 0.34, label: "sys,lumi"}
+      - value: 5.7
+        errors:
+          - {symerror: 0.4, label: stat}
+          - {asymerror: {plus: 0.42, minus: 0.31}, label: sys}
+          - {symerror: 0.4, label: "sys,lumi"}
+
+```
+
+
+#### JSON
+
 ``` json
 
 {
-              "x": {
-                  "values": [
-                      "0.005 TO 0.1",
-                      "0.005 TO 0.2",
-                      "0.020 TO 0.1",
-                      "0.020 TO 0.2"
-                  ],
-                  "name": "mass range [GeV]"
-              },
-              "groups": [
-                  {
-                      "qualifiers": [
-                          {
-                              "type": "reaction",
-                              "value": "P P --> P P"
-                          },
-                          {
-                              "type": "sqrt(s)",
-                              "value": "9000.0 GeV"
-                          }
-                      ],
-                      "measurements": [
-                          {
-                              "name": "SLOPE IN GEV**-4",
-                              "values": [
-                                  {
-                                      "errors": [
-                                          {
-                                              "err_plus": 0.04,
-                                              "err_minus": 0.02,
-                                              "label": "stat"
-                                          },
-                                          {
-                                              "err_plus": 0.22,
-                                              "err_minus": 0.22,
-                                              "label": "sys"
-                                          }
-                                      ],
-                                      "value": 19.96
-                                  },
-                                  {
-                                      "errors": [
-                                          {
-                                              "err_plus": 0.02,
-                                              "err_minus": 0.02,
-                                              "label": "stat"
-                                          },
-                                          {
-                                              "err_plus": 0.27,
-                                              "err_minus": 0.27,
-                                              "label": "sys"
-                                          }
-                                      ],
-                                      "value": 19.89
-                                  },
-                                  {
-                                      "errors": [
-                                          {
-                                              "err_plus": 0.05,
-                                              "err_minus": 0.05,
-                                              "label": "stat"
-                                          },
-                                          {
-                                              "err_plus": 0.26,
-                                              "err_minus": 0.21,
-                                              "label": "sys"
-                                          }
-                                      ],
-                                      "value": 19.93
-                                  },
-                                  {
-                                      "errors": [
-                                          {
-                                              "err_plus": 0.03,
-                                              "err_minus": 0.03,
-                                              "label": "stat"
-                                          },
-                                          {
-                                              "err_plus": 0.33,
-                                              "err_minus": 0.33,
-                                              "label": "sys"
-                                          }
-                                      ],
-                                      "value": 19.87
-                                  }
-                              ]
-                          }
-                      ]
-                  }
-              ]
-          }
-
-
+    "xaxes": [
+        {
+            "header": {
+                "name": "SQRT(S)",
+                "units": "GEV"
+            },
+            "bins": [
+                {
+                    "value": 7000
+                },
+                {
+                    "value": 8000
+                }
+            ]
+        }
+    ],
+    "yaxes": [
+        {
+            "header": {
+                "name": "SIG(total)",
+                "units": "FB"
+            },
+            "qualifiers": [
+                {
+                    "name": "RE",
+                    "value": "P P --> Z0 Z0 X"
+                }
+            ],
+            "points": [
+                {
+                    "value": 6.7,
+                    "errors": [
+                        {"symerror": 0.45, "label": "stat"},
+                        {"asymerror": {"plus": 0.4, "minus": 0.3}, "label": "sys"},
+                        {"symerror": 0.34,"label": "sys,lumi"}
+                    ]
+                },
+                {
+                    "value": 5.7,
+                    "errors": [
+                        {"symerror": 0.4, "label": "stat"},
+                        {"asymerror": {"plus": 0.42, "minus": 0.31}, "label": "sys"},
+                        {"symerror": 0.4, "label": "sys,lumi"}
+                    ]
+                }
+            ]
+        }
+    ]
+}
 ```
+
+#### Errors
+
+There are two main classes of errors that can be encoded, symmetric errors, and asymmetric errors.
+Symmetric errors allow you to specify a min and max error using one value, e.g. ```"symerror": 0.4```, will translate to min -0.4, max +0.4.
+Unsurprisingly, an asymmetric error requires both plus and minus values to be explicitly encoded, e.g. ```"asymerror": {"plus": 0.4, "minus": 0.3}```.
+
+#### How Does this translate when rendered by HEPdata?
+
+Although perhaps not a very interesting example, the data table looks as follows in HEPdata.
+
+![image](assets/table-2-rendering.png)
