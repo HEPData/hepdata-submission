@@ -15,6 +15,7 @@ An additional important type of file is the data file that defines all the data,
 ``` yaml
 
 # Start a new submission. This section is optional for the provision of information about the overall submission.
+---
 references: # Additional references (e.g. experiment TWiki page for analysis)
   - http://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/STDM-2012-02/
 comment: | # Information that applies to all data tables.
