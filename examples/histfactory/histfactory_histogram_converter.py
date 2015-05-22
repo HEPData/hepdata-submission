@@ -971,6 +971,49 @@ def main(args = sys.argv[1:]):
     print "DONE."
     hepfile.close()
 
+def newmain(args = sys.argv[1:]):
+        ####### PARSE AND CHECK OPTIONS
+    parser = makeParser()
+
+    # Print help and quit if there are no arguments
+    if len(args) == 0:
+        parser.print_help()
+        sys.exit(1)
+
+    # Parse arguments
+    parse = parser.parse_args(args)
+
+    # Check input file option
+    if parse.inputfiles == None:
+        parser.print_usage()
+        print "ERROR: you need to specify some input files"
+        exit(2)
+
+
+    lines = open(parse.inputfiles[0])
+    for line in lines:
+        if line.find('# ')== -1:
+            continue
+        print line.split(',')
+        (dummy, inputFile, histoPath, histoName) = line.split(',')
+        print "opening", inputFile.strip()
+        rootfile = ROOT.TFile.Open(inputFile.strip(), "READ")
+        if rootfile.IsZombie():
+            print "WARNING: Failed opening file \"", filename, "\", skipping to next file"
+            continue
+
+        #rootObj = rootfile.Get('%s/%s' %(histoPath, histoName))
+        print rootfile 
+        rootfile.ls('v')
+        rootObj = rootfile.Get(histoName)
+        print rootObj
+        rootObj.Print()
+
+
+
+
+
+
 # Ensure main is called by default
 if __name__ == "__main__":
-    main()
+    newmain()

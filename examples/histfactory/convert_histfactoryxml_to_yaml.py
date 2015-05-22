@@ -131,7 +131,7 @@ def convertXml2YamlAlternate(obj, inputFile='',histoPath='', histoName='',explic
 # Utility functions.
 #
 def convertHistogram(inputFile='', histoPath='', histoName=''):
-    print "# converting histogram %s/%s/%s" %(inputFile, histoPath, histoName)
+    print "# converting histogram, %s, %s, %s" %(inputFile, histoPath, histoName)
 
 def addLevel(level, out):
     for idx in range(level):

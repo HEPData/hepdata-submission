@@ -1,79 +1,79 @@
-# converting histogram data/Sbottom_SRA300.root//hData_SRA300_obs_cuts
-# converting histogram data/Sbottom_SRA300.root//hZNom_SRA300_obs_cuts
-# converting histogram data/Sbottom_SRA300.root//hZScalesSTHigh_SRA300_obs_cutsNorm
-# converting histogram data/Sbottom_SRA300.root//hZScalesSTLow_SRA300_obs_cutsNorm
-# converting histogram data/Sbottom_SRA300.root//hZJRHigh_SRA300_obs_cutsNorm
-# converting histogram data/Sbottom_SRA300.root//hZJRLow_SRA300_obs_cutsNorm
-# converting histogram data/Sbottom_SRA300.root//hZResCellOutHigh_SRA300_obs_cutsNorm
-# converting histogram data/Sbottom_SRA300.root//hZResCellOutLow_SRA300_obs_cutsNorm
-# converting histogram data/Sbottom_SRA300.root//hZcTaggingHigh_SRA300_obs_cutsNorm
-# converting histogram data/Sbottom_SRA300.root//hZcTaggingLow_SRA300_obs_cutsNorm
-# converting histogram data/Sbottom_SRA300.root//hZJCHigh_SRA300_obs_cutsNorm
-# converting histogram data/Sbottom_SRA300.root//hZJCLow_SRA300_obs_cutsNorm
-# converting histogram data/Sbottom_SRA300.root//hZlTaggingHigh_SRA300_obs_cutsNorm
-# converting histogram data/Sbottom_SRA300.root//hZlTaggingLow_SRA300_obs_cutsNorm
-# converting histogram data/Sbottom_SRA300.root//hZbTaggingHigh_SRA300_obs_cutsNorm
-# converting histogram data/Sbottom_SRA300.root//hZbTaggingLow_SRA300_obs_cutsNorm
-# converting histogram data/Sbottom_SRA300.root//hWNom_SRA300_obs_cuts
-# converting histogram data/Sbottom_SRA300.root//hWScalesSTHigh_SRA300_obs_cutsNorm
-# converting histogram data/Sbottom_SRA300.root//hWScalesSTLow_SRA300_obs_cutsNorm
-# converting histogram data/Sbottom_SRA300.root//hWJRHigh_SRA300_obs_cutsNorm
-# converting histogram data/Sbottom_SRA300.root//hWJRLow_SRA300_obs_cutsNorm
-# converting histogram data/Sbottom_SRA300.root//hWResCellOutHigh_SRA300_obs_cutsNorm
-# converting histogram data/Sbottom_SRA300.root//hWResCellOutLow_SRA300_obs_cutsNorm
-# converting histogram data/Sbottom_SRA300.root//hWcTaggingHigh_SRA300_obs_cutsNorm
-# converting histogram data/Sbottom_SRA300.root//hWcTaggingLow_SRA300_obs_cutsNorm
-# converting histogram data/Sbottom_SRA300.root//hWJCHigh_SRA300_obs_cutsNorm
-# converting histogram data/Sbottom_SRA300.root//hWJCLow_SRA300_obs_cutsNorm
-# converting histogram data/Sbottom_SRA300.root//hWlTaggingHigh_SRA300_obs_cutsNorm
-# converting histogram data/Sbottom_SRA300.root//hWlTaggingLow_SRA300_obs_cutsNorm
-# converting histogram data/Sbottom_SRA300.root//hWbTaggingHigh_SRA300_obs_cutsNorm
-# converting histogram data/Sbottom_SRA300.root//hWbTaggingLow_SRA300_obs_cutsNorm
-# converting histogram data/Sbottom_SRA300.root//hOtherNom_SRA300_obs_cuts
-# converting histogram data/Sbottom_SRA300.root//hOtherScalesSTHigh_SRA300_obs_cutsNorm
-# converting histogram data/Sbottom_SRA300.root//hOtherScalesSTLow_SRA300_obs_cutsNorm
-# converting histogram data/Sbottom_SRA300.root//hOtherJRHigh_SRA300_obs_cuts
-# converting histogram data/Sbottom_SRA300.root//hOtherJRLow_SRA300_obs_cuts
-# converting histogram data/Sbottom_SRA300.root//hOtherResCellOutHigh_SRA300_obs_cuts
-# converting histogram data/Sbottom_SRA300.root//hOtherResCellOutLow_SRA300_obs_cuts
-# converting histogram data/Sbottom_SRA300.root//hOthercTaggingHigh_SRA300_obs_cuts
-# converting histogram data/Sbottom_SRA300.root//hOthercTaggingLow_SRA300_obs_cuts
-# converting histogram data/Sbottom_SRA300.root//hOtherJCHigh_SRA300_obs_cutsNorm
-# converting histogram data/Sbottom_SRA300.root//hOtherJCLow_SRA300_obs_cutsNorm
-# converting histogram data/Sbottom_SRA300.root//hOtherlTaggingHigh_SRA300_obs_cuts
-# converting histogram data/Sbottom_SRA300.root//hOtherlTaggingLow_SRA300_obs_cuts
-# converting histogram data/Sbottom_SRA300.root//hOtherbTaggingHigh_SRA300_obs_cuts
-# converting histogram data/Sbottom_SRA300.root//hOtherbTaggingLow_SRA300_obs_cuts
-# converting histogram data/Sbottom_SRA300.root//httbarNom_SRA300_obs_cuts
-# converting histogram data/Sbottom_SRA300.root//httbarScalesSTHigh_SRA300_obs_cutsNorm
-# converting histogram data/Sbottom_SRA300.root//httbarScalesSTLow_SRA300_obs_cutsNorm
-# converting histogram data/Sbottom_SRA300.root//httbarJRHigh_SRA300_obs_cutsNorm
-# converting histogram data/Sbottom_SRA300.root//httbarJRLow_SRA300_obs_cutsNorm
-# converting histogram data/Sbottom_SRA300.root//httbarResCellOutHigh_SRA300_obs_cutsNorm
-# converting histogram data/Sbottom_SRA300.root//httbarResCellOutLow_SRA300_obs_cutsNorm
-# converting histogram data/Sbottom_SRA300.root//httbarcTaggingHigh_SRA300_obs_cutsNorm
-# converting histogram data/Sbottom_SRA300.root//httbarcTaggingLow_SRA300_obs_cutsNorm
-# converting histogram data/Sbottom_SRA300.root//httbarJCHigh_SRA300_obs_cutsNorm
-# converting histogram data/Sbottom_SRA300.root//httbarJCLow_SRA300_obs_cutsNorm
-# converting histogram data/Sbottom_SRA300.root//httbarlTaggingHigh_SRA300_obs_cutsNorm
-# converting histogram data/Sbottom_SRA300.root//httbarlTaggingLow_SRA300_obs_cutsNorm
-# converting histogram data/Sbottom_SRA300.root//httbarbTaggingHigh_SRA300_obs_cutsNorm
-# converting histogram data/Sbottom_SRA300.root//httbarbTaggingLow_SRA300_obs_cutsNorm
-# converting histogram data/Sbottom_SRA300.root//hLQpy8_500Nom_SRA300_obs_cuts
-# converting histogram data/Sbottom_SRA300.root//hLQpy8_500ScalesSTHigh_SRA300_obs_cutsNorm
-# converting histogram data/Sbottom_SRA300.root//hLQpy8_500ScalesSTLow_SRA300_obs_cutsNorm
-# converting histogram data/Sbottom_SRA300.root//hLQpy8_500JRHigh_SRA300_obs_cuts
-# converting histogram data/Sbottom_SRA300.root//hLQpy8_500JRLow_SRA300_obs_cuts
-# converting histogram data/Sbottom_SRA300.root//hLQpy8_500ResCellOutHigh_SRA300_obs_cuts
-# converting histogram data/Sbottom_SRA300.root//hLQpy8_500ResCellOutLow_SRA300_obs_cuts
-# converting histogram data/Sbottom_SRA300.root//hLQpy8_500cTaggingHigh_SRA300_obs_cuts
-# converting histogram data/Sbottom_SRA300.root//hLQpy8_500cTaggingLow_SRA300_obs_cuts
-# converting histogram data/Sbottom_SRA300.root//hLQpy8_500JCHigh_SRA300_obs_cutsNorm
-# converting histogram data/Sbottom_SRA300.root//hLQpy8_500JCLow_SRA300_obs_cutsNorm
-# converting histogram data/Sbottom_SRA300.root//hLQpy8_500lTaggingHigh_SRA300_obs_cuts
-# converting histogram data/Sbottom_SRA300.root//hLQpy8_500lTaggingLow_SRA300_obs_cuts
-# converting histogram data/Sbottom_SRA300.root//hLQpy8_500bTaggingHigh_SRA300_obs_cuts
-# converting histogram data/Sbottom_SRA300.root//hLQpy8_500bTaggingLow_SRA300_obs_cuts
+# converting histogram, data/Sbottom_SRA300.root, , hData_SRA300_obs_cuts
+# converting histogram, data/Sbottom_SRA300.root, , hZNom_SRA300_obs_cuts
+# converting histogram, data/Sbottom_SRA300.root, , hZScalesSTHigh_SRA300_obs_cutsNorm
+# converting histogram, data/Sbottom_SRA300.root, , hZScalesSTLow_SRA300_obs_cutsNorm
+# converting histogram, data/Sbottom_SRA300.root, , hZJRHigh_SRA300_obs_cutsNorm
+# converting histogram, data/Sbottom_SRA300.root, , hZJRLow_SRA300_obs_cutsNorm
+# converting histogram, data/Sbottom_SRA300.root, , hZResCellOutHigh_SRA300_obs_cutsNorm
+# converting histogram, data/Sbottom_SRA300.root, , hZResCellOutLow_SRA300_obs_cutsNorm
+# converting histogram, data/Sbottom_SRA300.root, , hZcTaggingHigh_SRA300_obs_cutsNorm
+# converting histogram, data/Sbottom_SRA300.root, , hZcTaggingLow_SRA300_obs_cutsNorm
+# converting histogram, data/Sbottom_SRA300.root, , hZJCHigh_SRA300_obs_cutsNorm
+# converting histogram, data/Sbottom_SRA300.root, , hZJCLow_SRA300_obs_cutsNorm
+# converting histogram, data/Sbottom_SRA300.root, , hZlTaggingHigh_SRA300_obs_cutsNorm
+# converting histogram, data/Sbottom_SRA300.root, , hZlTaggingLow_SRA300_obs_cutsNorm
+# converting histogram, data/Sbottom_SRA300.root, , hZbTaggingHigh_SRA300_obs_cutsNorm
+# converting histogram, data/Sbottom_SRA300.root, , hZbTaggingLow_SRA300_obs_cutsNorm
+# converting histogram, data/Sbottom_SRA300.root, , hWNom_SRA300_obs_cuts
+# converting histogram, data/Sbottom_SRA300.root, , hWScalesSTHigh_SRA300_obs_cutsNorm
+# converting histogram, data/Sbottom_SRA300.root, , hWScalesSTLow_SRA300_obs_cutsNorm
+# converting histogram, data/Sbottom_SRA300.root, , hWJRHigh_SRA300_obs_cutsNorm
+# converting histogram, data/Sbottom_SRA300.root, , hWJRLow_SRA300_obs_cutsNorm
+# converting histogram, data/Sbottom_SRA300.root, , hWResCellOutHigh_SRA300_obs_cutsNorm
+# converting histogram, data/Sbottom_SRA300.root, , hWResCellOutLow_SRA300_obs_cutsNorm
+# converting histogram, data/Sbottom_SRA300.root, , hWcTaggingHigh_SRA300_obs_cutsNorm
+# converting histogram, data/Sbottom_SRA300.root, , hWcTaggingLow_SRA300_obs_cutsNorm
+# converting histogram, data/Sbottom_SRA300.root, , hWJCHigh_SRA300_obs_cutsNorm
+# converting histogram, data/Sbottom_SRA300.root, , hWJCLow_SRA300_obs_cutsNorm
+# converting histogram, data/Sbottom_SRA300.root, , hWlTaggingHigh_SRA300_obs_cutsNorm
+# converting histogram, data/Sbottom_SRA300.root, , hWlTaggingLow_SRA300_obs_cutsNorm
+# converting histogram, data/Sbottom_SRA300.root, , hWbTaggingHigh_SRA300_obs_cutsNorm
+# converting histogram, data/Sbottom_SRA300.root, , hWbTaggingLow_SRA300_obs_cutsNorm
+# converting histogram, data/Sbottom_SRA300.root, , hOtherNom_SRA300_obs_cuts
+# converting histogram, data/Sbottom_SRA300.root, , hOtherScalesSTHigh_SRA300_obs_cutsNorm
+# converting histogram, data/Sbottom_SRA300.root, , hOtherScalesSTLow_SRA300_obs_cutsNorm
+# converting histogram, data/Sbottom_SRA300.root, , hOtherJRHigh_SRA300_obs_cuts
+# converting histogram, data/Sbottom_SRA300.root, , hOtherJRLow_SRA300_obs_cuts
+# converting histogram, data/Sbottom_SRA300.root, , hOtherResCellOutHigh_SRA300_obs_cuts
+# converting histogram, data/Sbottom_SRA300.root, , hOtherResCellOutLow_SRA300_obs_cuts
+# converting histogram, data/Sbottom_SRA300.root, , hOthercTaggingHigh_SRA300_obs_cuts
+# converting histogram, data/Sbottom_SRA300.root, , hOthercTaggingLow_SRA300_obs_cuts
+# converting histogram, data/Sbottom_SRA300.root, , hOtherJCHigh_SRA300_obs_cutsNorm
+# converting histogram, data/Sbottom_SRA300.root, , hOtherJCLow_SRA300_obs_cutsNorm
+# converting histogram, data/Sbottom_SRA300.root, , hOtherlTaggingHigh_SRA300_obs_cuts
+# converting histogram, data/Sbottom_SRA300.root, , hOtherlTaggingLow_SRA300_obs_cuts
+# converting histogram, data/Sbottom_SRA300.root, , hOtherbTaggingHigh_SRA300_obs_cuts
+# converting histogram, data/Sbottom_SRA300.root, , hOtherbTaggingLow_SRA300_obs_cuts
+# converting histogram, data/Sbottom_SRA300.root, , httbarNom_SRA300_obs_cuts
+# converting histogram, data/Sbottom_SRA300.root, , httbarScalesSTHigh_SRA300_obs_cutsNorm
+# converting histogram, data/Sbottom_SRA300.root, , httbarScalesSTLow_SRA300_obs_cutsNorm
+# converting histogram, data/Sbottom_SRA300.root, , httbarJRHigh_SRA300_obs_cutsNorm
+# converting histogram, data/Sbottom_SRA300.root, , httbarJRLow_SRA300_obs_cutsNorm
+# converting histogram, data/Sbottom_SRA300.root, , httbarResCellOutHigh_SRA300_obs_cutsNorm
+# converting histogram, data/Sbottom_SRA300.root, , httbarResCellOutLow_SRA300_obs_cutsNorm
+# converting histogram, data/Sbottom_SRA300.root, , httbarcTaggingHigh_SRA300_obs_cutsNorm
+# converting histogram, data/Sbottom_SRA300.root, , httbarcTaggingLow_SRA300_obs_cutsNorm
+# converting histogram, data/Sbottom_SRA300.root, , httbarJCHigh_SRA300_obs_cutsNorm
+# converting histogram, data/Sbottom_SRA300.root, , httbarJCLow_SRA300_obs_cutsNorm
+# converting histogram, data/Sbottom_SRA300.root, , httbarlTaggingHigh_SRA300_obs_cutsNorm
+# converting histogram, data/Sbottom_SRA300.root, , httbarlTaggingLow_SRA300_obs_cutsNorm
+# converting histogram, data/Sbottom_SRA300.root, , httbarbTaggingHigh_SRA300_obs_cutsNorm
+# converting histogram, data/Sbottom_SRA300.root, , httbarbTaggingLow_SRA300_obs_cutsNorm
+# converting histogram, data/Sbottom_SRA300.root, , hLQpy8_500Nom_SRA300_obs_cuts
+# converting histogram, data/Sbottom_SRA300.root, , hLQpy8_500ScalesSTHigh_SRA300_obs_cutsNorm
+# converting histogram, data/Sbottom_SRA300.root, , hLQpy8_500ScalesSTLow_SRA300_obs_cutsNorm
+# converting histogram, data/Sbottom_SRA300.root, , hLQpy8_500JRHigh_SRA300_obs_cuts
+# converting histogram, data/Sbottom_SRA300.root, , hLQpy8_500JRLow_SRA300_obs_cuts
+# converting histogram, data/Sbottom_SRA300.root, , hLQpy8_500ResCellOutHigh_SRA300_obs_cuts
+# converting histogram, data/Sbottom_SRA300.root, , hLQpy8_500ResCellOutLow_SRA300_obs_cuts
+# converting histogram, data/Sbottom_SRA300.root, , hLQpy8_500cTaggingHigh_SRA300_obs_cuts
+# converting histogram, data/Sbottom_SRA300.root, , hLQpy8_500cTaggingLow_SRA300_obs_cuts
+# converting histogram, data/Sbottom_SRA300.root, , hLQpy8_500JCHigh_SRA300_obs_cutsNorm
+# converting histogram, data/Sbottom_SRA300.root, , hLQpy8_500JCLow_SRA300_obs_cutsNorm
+# converting histogram, data/Sbottom_SRA300.root, , hLQpy8_500lTaggingHigh_SRA300_obs_cuts
+# converting histogram, data/Sbottom_SRA300.root, , hLQpy8_500lTaggingLow_SRA300_obs_cuts
+# converting histogram, data/Sbottom_SRA300.root, , hLQpy8_500bTaggingHigh_SRA300_obs_cuts
+# converting histogram, data/Sbottom_SRA300.root, , hLQpy8_500bTaggingLow_SRA300_obs_cuts
 Channel:
   HistoName: ''
   HistoPath: ''

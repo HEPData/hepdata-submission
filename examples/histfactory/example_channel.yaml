@@ -1,11 +1,11 @@
-# converting histogram ./example.root//data
-# converting histogram ./example.root//signal
-# converting histogram ./example.root//background1
-# converting histogram ./example.root//bkg1Syst4High
-# converting histogram ./example.root//bkg1Syst4Low
-# converting histogram ./example.root//background2
-# converting histogram ./example.root//bkg2Syst4High
-# converting histogram ./example.root//bkg2Syst4Low
+# converting histogram, ./example.root, , data
+# converting histogram, ./example.root, , signal
+# converting histogram, ./example.root, , background1
+# converting histogram, ./example.root, , bkg1Syst4High
+# converting histogram, ./example.root, , bkg1Syst4Low
+# converting histogram, ./example.root, , background2
+# converting histogram, ./example.root, , bkg2Syst4High
+# converting histogram, ./example.root, , bkg2Syst4Low
 Channel:
   HistoName: ''
   HistoPath: ''
