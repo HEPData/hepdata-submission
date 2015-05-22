@@ -195,7 +195,7 @@ We attempt to list some common problems here.
   So if you use these characters in some description string, make sure you quote the whole string.
   So ```value: P P --> Z0 < LEPTON+ LEPTON- > Z0 < LEPTON+ LEPTON- > X``` should be ```value: "P P --> Z0 < LEPTON+ LEPTON- > Z0 < LEPTON+ LEPTON- > X"```
 
-- *** Ensure spacing between colons***
+- ***Ensure spacing between colons***
   
   Another annoyance can be with spacing. ```{"symerror":0.4, "label":"stat"}``` will give you an error.
   Change this to ```{"symerror": 0.4, "label": "stat"}``` however and everything will work nicely!
