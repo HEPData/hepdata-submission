@@ -1,6 +1,6 @@
 ---
 xaxes:
-  - header: {name: Leading dilepton PT, units: GEV}
+  - header: { name: Leading dilepton PT, units: GEV}
     bins:
       - {low: 0, high: 60}
       - {low: 60, high: 100}

@@ -1,13 +1,13 @@
 ---
 xaxes:
-  - header: {name: Leading dilepton DELTA(PHI(LEPTON+,LEPTON-)), units: GEV}
+  - header: {name: 'Leading dilepton DELTA(PHI(LEPTON+, LEPTON\-))', units: GEV}
     bins:
       - {low: 0.0, high: 0.5}
       - {low: 0.5, high: 1.0}
       - {low: 1.0, high: 1.7}
       - {low: 1.7, high: 3.14159}
 yaxes:
-  - header: {name: 10**6 * 1/SIG(fiducial) * D(SIG(fiducial))/DDELTA(PHI(LEPTON+,LEPTON-))}
+  - header: {name: '10**6 * 1/SIG(fiducial) * D(SIG(fiducial))/DDELTA(PHI(LEPTON+,LEPTON-))'}
     qualifiers:
       - {name: RE, value: P P --> Z0 < LEPTON+ LEPTON- > Z0 < LEPTON+ LEPTON- > X}
       - {name: SQRT(S), units: GEV, value: 7000}

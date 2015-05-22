@@ -11,7 +11,6 @@ An additional important type of file is the data file that defines all the data,
 
 ## Submission.yaml
 
-
 ``` yaml
 
 # Start a new submission. This section is optional for the provision of information about the overall submission.
@@ -183,3 +182,20 @@ Unsurprisingly, an asymmetric error requires both plus and minus values to be ex
 Although perhaps not a very interesting example, the data table looks as follows in HEPdata.
 
 ![image](assets/table-2-rendering.png)
+
+## Common Errors and how to solve them
+
+Like all input formats, they have their idiosyncrasies. YAML does not escape these.
+We attempt to list some common problems here.
+
+- ***Escape special characters***
+  
+  Some characters in YAML need to be escaped, otherwise they cause errors when parsing.
+  The two characters that cause most trouble for YAML are ':' and '-'.
+  So if you use these characters in some description string, make sure you quote the whole string.
+  So ```value: P P --> Z0 < LEPTON+ LEPTON- > Z0 < LEPTON+ LEPTON- > X``` should be ```value: "P P --> Z0 < LEPTON+ LEPTON- > Z0 < LEPTON+ LEPTON- > X"```
+
+- *** Ensure spacing between colons***
+  
+  Another annoyance can be with spacing. ```{"symerror":0.4, "label":"stat"}``` will give you an error.
+  Change this to ```{"symerror": 0.4, "label": "stat"}``` however and everything will work nicely!
