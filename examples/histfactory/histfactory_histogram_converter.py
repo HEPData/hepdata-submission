@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python 
 # -*- coding: utf-8 -*-
 """
 histfactory_histogram_converter.py - Convert objects in root files to hepdata format.
@@ -73,6 +73,7 @@ import sys
 from array import array
 import itertools
 import datetime
+import yaml
 
 # Get ROOT, override pyroots command line, (ROOT > 5.24)
 try:
@@ -504,15 +505,23 @@ def getRootObjects(filenames, skip = None, only = None, doerrors = True):
             continue
         files += [rootfile]
 
-        # Loop over all keys in file
-        for key in rootfile.GetListOfKeys():
+        keysToGet = []
+        if only is not None:
+            keysToGet = only
+        else:
+            for key in rootfile.GetListOfKeys():
+                listOfKeys.append(key.GetName())
+
+        # Loop over all keys 
+        print "debug list of keys to get", keysToGet
+        for key in keysToGet:
 
             # Skip histograms associated with TGraph2D objects
-            if key.GetName().endswith("_TG2Dhist"):
+            if key.endswith("_TG2Dhist"):
                 continue
 
             # Get obj from file
-            rootobj = rootfile.Get(key.GetName())
+            rootobj = rootfile.Get(key)
 
             # Check if object should be skipped
             if skip is not None:
@@ -520,8 +529,14 @@ def getRootObjects(filenames, skip = None, only = None, doerrors = True):
                     continue
             # Check if object should be included
             if only is not None:
-                if len([o for o in only if o in rootobj.GetName()]) == 0:
-                    continue
+                #if only[0].find('/')>0:
+                rootobj = rootfile.Get(only[0])
+                print 'got object', rootobj, ' via', only[0]
+                #    continue
+                #if len([o for o in only if o in rootobj.GetName()]) == 0:
+                #    continue
+
+            print 'object = ', rootobj 
 
             # Ensure class is allowed
             if rootobj.ClassName() not in allowedRootClasses:
@@ -990,25 +1005,92 @@ def newmain(args = sys.argv[1:]):
         exit(2)
 
 
-    lines = open(parse.inputfiles[0])
+    yamlFile = open(parse.inputfiles[0])
+    lines = yamlFile.readlines() 
+    yamlFile = open(parse.inputfiles[0])
+    channelName = yaml.load(yamlFile)['Channel']['Name']
+    print channelName
+
     for line in lines:
         if line.find('# ')== -1:
             continue
         print line.split(',')
-        (dummy, inputFile, histoPath, histoName) = line.split(',')
+        (dummy, inputFile, histoPath, histoName) = line.split(',') 
         print "opening", inputFile.strip()
-        rootfile = ROOT.TFile.Open(inputFile.strip(), "READ")
-        if rootfile.IsZombie():
-            print "WARNING: Failed opening file \"", filename, "\", skipping to next file"
-            continue
 
-        #rootObj = rootfile.Get('%s/%s' %(histoPath, histoName))
-        print rootfile 
-        rootfile.ls('v')
-        rootObj = rootfile.Get(histoName)
-        print rootObj
-        rootObj.Print()
+        filenames = [inputFile.strip()]
+        onlyName = ""
+        if len(histoPath.strip())>0:
+            onlyName+=histoPath.strip()+'/'
+        onlyName+=histoName.strip()
+        only = [onlyName]
+        print "only process", only
+        # Get the root objects from inputfile
+        rootobjs, rootfiles = getRootObjects(filenames,  only = only)
+        if len(rootobjs) == 0:
+            print "ERROR: no valid root objects found in input files!"
+            exit(6)
+  
 
+         # Extract the root data from each object
+        for rootobj in rootobjs:
+            extractRootObject(rootobj)
+
+        # Grouping goes here
+        # if parse.group is not None and len(parse.group) > 1:
+        groups = findGroups([r["name"] for r in rootobjs], parse.group)
+        from pprint import pprint
+        print "Groups:"
+        pprint(groups)
+        rootobjs = groupObjects(rootobjs, groups)
+
+        # Overlays happen here
+        rootobjs = addOverlays(rootobjs, parse.overlay, parse.group)
+
+        # Open output file(s)
+        try: hepfile = open(parse.inputfiles[0] + ".hep.dat", "a")
+        except TypeError: hepfile = parse.output # Probably stdout
+
+        # Write header
+        hepfile.write('*author: AAD\n')
+        hepfile.write('*reference: ARXIV:XXXX : 2014\n')
+        hepfile.write('*reference: CERN-PH-EP-XXXX-XX : 2014\n')
+        hepfile.write('*reference: GIVE JOURNAL CITATION (IF KNOWN) : 2014\n')
+        hepfile.write('*reference: http://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/SUSY-XXXX-XXX/ : 2014\n')
+        hepfile.write('*doi: GIVE DOI\n')
+        today = datetime.date.today()
+        hepfile.write('*status: Encoded %i %s %i by ATLAS\n'%(today.day,today.strftime('%B').upper(),today.year))
+        hepfile.write('*experiment: CERN-LHC-ATLAS\n')
+        hepfile.write('*detector: ATLAS\n')
+        hepfile.write('*inspireId: GIVE INSPIRE ID\n')
+        hepfile.write('*cdsId: GIVE CDS ID\n')
+        hepfile.write('*durhamId: \n')
+        hepfile.write('*title: %s, %s, %s, %s \n' %(channelName, inputFile.strip(), histoPath.strip(), histoName.strip()) )
+        hepfile.write('*comment: CERN-LHC. INSERT ABSTRACT\n')
+
+        # Remove bad entries from each object
+        for rootobjlist in rootobjs:
+            xlow = 0
+            xhigh = 0
+            if parse.range is not None:
+                if parse.range[0][0] in rootobj["name"]:
+                    xlow = float(parse.range[0][1])
+                    xhigh = float(parse.range[0][2])
+            cleanObjDict(
+                rootobjlist,
+                cutZero = parse.zero,
+                cutNaN = parse.nan,
+                cutInf = parse.inf,
+                cutXlow = xlow,
+                cutXhigh = xhigh)
+            try:
+                makeHepData(rootobjlist, parse.floatfmt, hepfile)
+            except NameError: pass
+
+        # Write footer
+        hepfile.write('*E\n')
+        print "DONE."
+        hepfile.close()
 
 
 

@@ -1,0 +1,2787 @@
+*author: AAD
+*reference: ARXIV:XXXX : 2014
+*reference: CERN-PH-EP-XXXX-XX : 2014
+*reference: GIVE JOURNAL CITATION (IF KNOWN) : 2014
+*reference: http://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/SUSY-XXXX-XXX/ : 2014
+*doi: GIVE DOI
+*status: Encoded 27 MAY 2015 by ATLAS
+*experiment: CERN-LHC-ATLAS
+*detector: ATLAS
+*inspireId: GIVE INSPIRE ID
+*cdsId: GIVE CDS ID
+*durhamId: 
+*title: channel1, ./example.root, , data 
+*comment: CERN-LHC. INSERT ABSTRACT
+
+
+*dataset:
+*location: Figure GIVE FIGURE NUMBER
+*dscomment: data
+*reackey: P P --> GIVE THE PRODUCTION PROCESSES
+*obskey: GIVE KEY FOR Y-AXIS VARIABLE
+*qual: . : GIVE COLUMN EXPLANATIONS, IF YOU USED OVERLAYS
+*qual: RE : P P --> GIVE THE PRODUCTION PROCESSES + DECAYS (IF RELEVANT)
+*qual: SQRT(S) IN GEV : 8000.0
+*yheader: 
+*xheader: 
+*data: x : y
+ 1.25 (BIN=1 TO 1.5); 122 +- 11.05;
+ 1.75 (BIN=1.5 TO 2); 112 +- 10.58;
+*dataend:
+*E
+*author: AAD
+*reference: ARXIV:XXXX : 2014
+*reference: CERN-PH-EP-XXXX-XX : 2014
+*reference: GIVE JOURNAL CITATION (IF KNOWN) : 2014
+*reference: http://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/SUSY-XXXX-XXX/ : 2014
+*doi: GIVE DOI
+*status: Encoded 27 MAY 2015 by ATLAS
+*experiment: CERN-LHC-ATLAS
+*detector: ATLAS
+*inspireId: GIVE INSPIRE ID
+*cdsId: GIVE CDS ID
+*durhamId: 
+*title: channel1, ./example.root, , signal 
+*comment: CERN-LHC. INSERT ABSTRACT
+
+
+*dataset:
+*location: Figure GIVE FIGURE NUMBER
+*dscomment: signal histogram (pb)
+*reackey: P P --> GIVE THE PRODUCTION PROCESSES
+*obskey: GIVE KEY FOR Y-AXIS VARIABLE
+*qual: . : GIVE COLUMN EXPLANATIONS, IF YOU USED OVERLAYS
+*qual: RE : P P --> GIVE THE PRODUCTION PROCESSES + DECAYS (IF RELEVANT)
+*qual: SQRT(S) IN GEV : 8000.0
+*yheader: 
+*xheader: 
+*data: x : y
+ 1.25 (BIN=1 TO 1.5); 20 +- 4.472;
+ 1.75 (BIN=1.5 TO 2); 10 +- 3.162;
+*dataend:
+*E
+*author: AAD
+*reference: ARXIV:XXXX : 2014
+*reference: CERN-PH-EP-XXXX-XX : 2014
+*reference: GIVE JOURNAL CITATION (IF KNOWN) : 2014
+*reference: http://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/SUSY-XXXX-XXX/ : 2014
+*doi: GIVE DOI
+*status: Encoded 27 MAY 2015 by ATLAS
+*experiment: CERN-LHC-ATLAS
+*detector: ATLAS
+*inspireId: GIVE INSPIRE ID
+*cdsId: GIVE CDS ID
+*durhamId: 
+*title: channel1, ./example.root, , background1 
+*comment: CERN-LHC. INSERT ABSTRACT
+
+
+*dataset:
+*location: Figure GIVE FIGURE NUMBER
+*dscomment: background 1 histogram (pb)
+*reackey: P P --> GIVE THE PRODUCTION PROCESSES
+*obskey: GIVE KEY FOR Y-AXIS VARIABLE
+*qual: . : GIVE COLUMN EXPLANATIONS, IF YOU USED OVERLAYS
+*qual: RE : P P --> GIVE THE PRODUCTION PROCESSES + DECAYS (IF RELEVANT)
+*qual: SQRT(S) IN GEV : 8000.0
+*yheader: 
+*xheader: 
+*data: x : y
+ 1.25 (BIN=1 TO 1.5); 100 +- 10;
+ 1.75 (BIN=1.5 TO 2); 0 +- 0;
+*dataend:
+
+
+*dataset:
+*location: Figure GIVE FIGURE NUMBER
+*dscomment: statUncert
+*reackey: P P --> GIVE THE PRODUCTION PROCESSES
+*obskey: GIVE KEY FOR Y-AXIS VARIABLE
+*qual: . : GIVE COLUMN EXPLANATIONS, IF YOU USED OVERLAYS
+*qual: RE : P P --> GIVE THE PRODUCTION PROCESSES + DECAYS (IF RELEVANT)
+*qual: SQRT(S) IN GEV : 8000.0
+*yheader: 
+*xheader: 
+*data: x : y
+ 1.25 (BIN=1 TO 1.5); 0.05 +- 0.2236;
+ 1.75 (BIN=1.5 TO 2); 0.05 +- 0.2236;
+*dataend:
+*E
+*author: AAD
+*reference: ARXIV:XXXX : 2014
+*reference: CERN-PH-EP-XXXX-XX : 2014
+*reference: GIVE JOURNAL CITATION (IF KNOWN) : 2014
+*reference: http://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/SUSY-XXXX-XXX/ : 2014
+*doi: GIVE DOI
+*status: Encoded 27 MAY 2015 by ATLAS
+*experiment: CERN-LHC-ATLAS
+*detector: ATLAS
+*inspireId: GIVE INSPIRE ID
+*cdsId: GIVE CDS ID
+*durhamId: 
+*title: channel1, ./example.root, , data 
+*comment: CERN-LHC. INSERT ABSTRACT
+
+
+*dataset:
+*location: Figure GIVE FIGURE NUMBER
+*dscomment: data
+*reackey: P P --> GIVE THE PRODUCTION PROCESSES
+*obskey: GIVE KEY FOR Y-AXIS VARIABLE
+*qual: . : GIVE COLUMN EXPLANATIONS, IF YOU USED OVERLAYS
+*qual: RE : P P --> GIVE THE PRODUCTION PROCESSES + DECAYS (IF RELEVANT)
+*qual: SQRT(S) IN GEV : 8000.0
+*yheader: 
+*xheader: 
+*data: x : y
+ 1.25 (BIN=1 TO 1.5); 122 +- 11.05;
+ 1.75 (BIN=1.5 TO 2); 112 +- 10.58;
+*dataend:
+*E
+*author: AAD
+*reference: ARXIV:XXXX : 2014
+*reference: CERN-PH-EP-XXXX-XX : 2014
+*reference: GIVE JOURNAL CITATION (IF KNOWN) : 2014
+*reference: http://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/SUSY-XXXX-XXX/ : 2014
+*doi: GIVE DOI
+*status: Encoded 27 MAY 2015 by ATLAS
+*experiment: CERN-LHC-ATLAS
+*detector: ATLAS
+*inspireId: GIVE INSPIRE ID
+*cdsId: GIVE CDS ID
+*durhamId: 
+*title: channel1, ./example.root, , signal 
+*comment: CERN-LHC. INSERT ABSTRACT
+
+
+*dataset:
+*location: Figure GIVE FIGURE NUMBER
+*dscomment: signal histogram (pb)
+*reackey: P P --> GIVE THE PRODUCTION PROCESSES
+*obskey: GIVE KEY FOR Y-AXIS VARIABLE
+*qual: . : GIVE COLUMN EXPLANATIONS, IF YOU USED OVERLAYS
+*qual: RE : P P --> GIVE THE PRODUCTION PROCESSES + DECAYS (IF RELEVANT)
+*qual: SQRT(S) IN GEV : 8000.0
+*yheader: 
+*xheader: 
+*data: x : y
+ 1.25 (BIN=1 TO 1.5); 20 +- 4.472;
+ 1.75 (BIN=1.5 TO 2); 10 +- 3.162;
+*dataend:
+*E
+*author: AAD
+*reference: ARXIV:XXXX : 2014
+*reference: CERN-PH-EP-XXXX-XX : 2014
+*reference: GIVE JOURNAL CITATION (IF KNOWN) : 2014
+*reference: http://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/SUSY-XXXX-XXX/ : 2014
+*doi: GIVE DOI
+*status: Encoded 27 MAY 2015 by ATLAS
+*experiment: CERN-LHC-ATLAS
+*detector: ATLAS
+*inspireId: GIVE INSPIRE ID
+*cdsId: GIVE CDS ID
+*durhamId: 
+*title: channel1, ./example.root, , background1 
+*comment: CERN-LHC. INSERT ABSTRACT
+
+
+*dataset:
+*location: Figure GIVE FIGURE NUMBER
+*dscomment: background 1 histogram (pb)
+*reackey: P P --> GIVE THE PRODUCTION PROCESSES
+*obskey: GIVE KEY FOR Y-AXIS VARIABLE
+*qual: . : GIVE COLUMN EXPLANATIONS, IF YOU USED OVERLAYS
+*qual: RE : P P --> GIVE THE PRODUCTION PROCESSES + DECAYS (IF RELEVANT)
+*qual: SQRT(S) IN GEV : 8000.0
+*yheader: 
+*xheader: 
+*data: x : y
+ 1.25 (BIN=1 TO 1.5); 100 +- 10;
+ 1.75 (BIN=1.5 TO 2); 0 +- 0;
+*dataend:
+
+
+*dataset:
+*location: Figure GIVE FIGURE NUMBER
+*dscomment: statUncert
+*reackey: P P --> GIVE THE PRODUCTION PROCESSES
+*obskey: GIVE KEY FOR Y-AXIS VARIABLE
+*qual: . : GIVE COLUMN EXPLANATIONS, IF YOU USED OVERLAYS
+*qual: RE : P P --> GIVE THE PRODUCTION PROCESSES + DECAYS (IF RELEVANT)
+*qual: SQRT(S) IN GEV : 8000.0
+*yheader: 
+*xheader: 
+*data: x : y
+ 1.25 (BIN=1 TO 1.5); 0.05 +- 0.2236;
+ 1.75 (BIN=1.5 TO 2); 0.05 +- 0.2236;
+*dataend:
+*E
+*author: AAD
+*reference: ARXIV:XXXX : 2014
+*reference: CERN-PH-EP-XXXX-XX : 2014
+*reference: GIVE JOURNAL CITATION (IF KNOWN) : 2014
+*reference: http://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/SUSY-XXXX-XXX/ : 2014
+*doi: GIVE DOI
+*status: Encoded 27 MAY 2015 by ATLAS
+*experiment: CERN-LHC-ATLAS
+*detector: ATLAS
+*inspireId: GIVE INSPIRE ID
+*cdsId: GIVE CDS ID
+*durhamId: 
+*title: channel1, ./example.root, , data 
+*comment: CERN-LHC. INSERT ABSTRACT
+
+
+*dataset:
+*location: Figure GIVE FIGURE NUMBER
+*dscomment: data
+*reackey: P P --> GIVE THE PRODUCTION PROCESSES
+*obskey: GIVE KEY FOR Y-AXIS VARIABLE
+*qual: . : GIVE COLUMN EXPLANATIONS, IF YOU USED OVERLAYS
+*qual: RE : P P --> GIVE THE PRODUCTION PROCESSES + DECAYS (IF RELEVANT)
+*qual: SQRT(S) IN GEV : 8000.0
+*yheader: 
+*xheader: 
+*data: x : y
+ 1.25 (BIN=1 TO 1.5); 122 +- 11.05;
+ 1.75 (BIN=1.5 TO 2); 112 +- 10.58;
+*dataend:
+*E
+*author: AAD
+*reference: ARXIV:XXXX : 2014
+*reference: CERN-PH-EP-XXXX-XX : 2014
+*reference: GIVE JOURNAL CITATION (IF KNOWN) : 2014
+*reference: http://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/SUSY-XXXX-XXX/ : 2014
+*doi: GIVE DOI
+*status: Encoded 27 MAY 2015 by ATLAS
+*experiment: CERN-LHC-ATLAS
+*detector: ATLAS
+*inspireId: GIVE INSPIRE ID
+*cdsId: GIVE CDS ID
+*durhamId: 
+*title: channel1, ./example.root, , signal 
+*comment: CERN-LHC. INSERT ABSTRACT
+
+
+*dataset:
+*location: Figure GIVE FIGURE NUMBER
+*dscomment: signal histogram (pb)
+*reackey: P P --> GIVE THE PRODUCTION PROCESSES
+*obskey: GIVE KEY FOR Y-AXIS VARIABLE
+*qual: . : GIVE COLUMN EXPLANATIONS, IF YOU USED OVERLAYS
+*qual: RE : P P --> GIVE THE PRODUCTION PROCESSES + DECAYS (IF RELEVANT)
+*qual: SQRT(S) IN GEV : 8000.0
+*yheader: 
+*xheader: 
+*data: x : y
+ 1.25 (BIN=1 TO 1.5); 20 +- 4.472;
+ 1.75 (BIN=1.5 TO 2); 10 +- 3.162;
+*dataend:
+*E
+*author: AAD
+*reference: ARXIV:XXXX : 2014
+*reference: CERN-PH-EP-XXXX-XX : 2014
+*reference: GIVE JOURNAL CITATION (IF KNOWN) : 2014
+*reference: http://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/SUSY-XXXX-XXX/ : 2014
+*doi: GIVE DOI
+*status: Encoded 27 MAY 2015 by ATLAS
+*experiment: CERN-LHC-ATLAS
+*detector: ATLAS
+*inspireId: GIVE INSPIRE ID
+*cdsId: GIVE CDS ID
+*durhamId: 
+*title: channel1, ./example.root, , background1 
+*comment: CERN-LHC. INSERT ABSTRACT
+
+
+*dataset:
+*location: Figure GIVE FIGURE NUMBER
+*dscomment: background 1 histogram (pb)
+*reackey: P P --> GIVE THE PRODUCTION PROCESSES
+*obskey: GIVE KEY FOR Y-AXIS VARIABLE
+*qual: . : GIVE COLUMN EXPLANATIONS, IF YOU USED OVERLAYS
+*qual: RE : P P --> GIVE THE PRODUCTION PROCESSES + DECAYS (IF RELEVANT)
+*qual: SQRT(S) IN GEV : 8000.0
+*yheader: 
+*xheader: 
+*data: x : y
+ 1.25 (BIN=1 TO 1.5); 100 +- 10;
+ 1.75 (BIN=1.5 TO 2); 0 +- 0;
+*dataend:
+
+
+*dataset:
+*location: Figure GIVE FIGURE NUMBER
+*dscomment: statUncert
+*reackey: P P --> GIVE THE PRODUCTION PROCESSES
+*obskey: GIVE KEY FOR Y-AXIS VARIABLE
+*qual: . : GIVE COLUMN EXPLANATIONS, IF YOU USED OVERLAYS
+*qual: RE : P P --> GIVE THE PRODUCTION PROCESSES + DECAYS (IF RELEVANT)
+*qual: SQRT(S) IN GEV : 8000.0
+*yheader: 
+*xheader: 
+*data: x : y
+ 1.25 (BIN=1 TO 1.5); 0.05 +- 0.2236;
+ 1.75 (BIN=1.5 TO 2); 0.05 +- 0.2236;
+*dataend:
+*E
+*author: AAD
+*reference: ARXIV:XXXX : 2014
+*reference: CERN-PH-EP-XXXX-XX : 2014
+*reference: GIVE JOURNAL CITATION (IF KNOWN) : 2014
+*reference: http://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/SUSY-XXXX-XXX/ : 2014
+*doi: GIVE DOI
+*status: Encoded 27 MAY 2015 by ATLAS
+*experiment: CERN-LHC-ATLAS
+*detector: ATLAS
+*inspireId: GIVE INSPIRE ID
+*cdsId: GIVE CDS ID
+*durhamId: 
+*title: channel1, ./example.root, , data 
+*comment: CERN-LHC. INSERT ABSTRACT
+
+
+*dataset:
+*location: Figure GIVE FIGURE NUMBER
+*dscomment: data
+*reackey: P P --> GIVE THE PRODUCTION PROCESSES
+*obskey: GIVE KEY FOR Y-AXIS VARIABLE
+*qual: . : GIVE COLUMN EXPLANATIONS, IF YOU USED OVERLAYS
+*qual: RE : P P --> GIVE THE PRODUCTION PROCESSES + DECAYS (IF RELEVANT)
+*qual: SQRT(S) IN GEV : 8000.0
+*yheader: 
+*xheader: 
+*data: x : y
+ 1.25 (BIN=1 TO 1.5); 122 +- 11.05;
+ 1.75 (BIN=1.5 TO 2); 112 +- 10.58;
+*dataend:
+*E
+*author: AAD
+*reference: ARXIV:XXXX : 2014
+*reference: CERN-PH-EP-XXXX-XX : 2014
+*reference: GIVE JOURNAL CITATION (IF KNOWN) : 2014
+*reference: http://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/SUSY-XXXX-XXX/ : 2014
+*doi: GIVE DOI
+*status: Encoded 27 MAY 2015 by ATLAS
+*experiment: CERN-LHC-ATLAS
+*detector: ATLAS
+*inspireId: GIVE INSPIRE ID
+*cdsId: GIVE CDS ID
+*durhamId: 
+*title: channel1, ./example.root, , signal 
+*comment: CERN-LHC. INSERT ABSTRACT
+
+
+*dataset:
+*location: Figure GIVE FIGURE NUMBER
+*dscomment: signal histogram (pb)
+*reackey: P P --> GIVE THE PRODUCTION PROCESSES
+*obskey: GIVE KEY FOR Y-AXIS VARIABLE
+*qual: . : GIVE COLUMN EXPLANATIONS, IF YOU USED OVERLAYS
+*qual: RE : P P --> GIVE THE PRODUCTION PROCESSES + DECAYS (IF RELEVANT)
+*qual: SQRT(S) IN GEV : 8000.0
+*yheader: 
+*xheader: 
+*data: x : y
+ 1.25 (BIN=1 TO 1.5); 20 +- 4.472;
+ 1.75 (BIN=1.5 TO 2); 10 +- 3.162;
+*dataend:
+*E
+*author: AAD
+*reference: ARXIV:XXXX : 2014
+*reference: CERN-PH-EP-XXXX-XX : 2014
+*reference: GIVE JOURNAL CITATION (IF KNOWN) : 2014
+*reference: http://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/SUSY-XXXX-XXX/ : 2014
+*doi: GIVE DOI
+*status: Encoded 27 MAY 2015 by ATLAS
+*experiment: CERN-LHC-ATLAS
+*detector: ATLAS
+*inspireId: GIVE INSPIRE ID
+*cdsId: GIVE CDS ID
+*durhamId: 
+*title: channel1, ./example.root, , background1 
+*comment: CERN-LHC. INSERT ABSTRACT
+
+
+*dataset:
+*location: Figure GIVE FIGURE NUMBER
+*dscomment: background 1 histogram (pb)
+*reackey: P P --> GIVE THE PRODUCTION PROCESSES
+*obskey: GIVE KEY FOR Y-AXIS VARIABLE
+*qual: . : GIVE COLUMN EXPLANATIONS, IF YOU USED OVERLAYS
+*qual: RE : P P --> GIVE THE PRODUCTION PROCESSES + DECAYS (IF RELEVANT)
+*qual: SQRT(S) IN GEV : 8000.0
+*yheader: 
+*xheader: 
+*data: x : y
+ 1.25 (BIN=1 TO 1.5); 100 +- 10;
+ 1.75 (BIN=1.5 TO 2); 0 +- 0;
+*dataend:
+
+
+*dataset:
+*location: Figure GIVE FIGURE NUMBER
+*dscomment: statUncert
+*reackey: P P --> GIVE THE PRODUCTION PROCESSES
+*obskey: GIVE KEY FOR Y-AXIS VARIABLE
+*qual: . : GIVE COLUMN EXPLANATIONS, IF YOU USED OVERLAYS
+*qual: RE : P P --> GIVE THE PRODUCTION PROCESSES + DECAYS (IF RELEVANT)
+*qual: SQRT(S) IN GEV : 8000.0
+*yheader: 
+*xheader: 
+*data: x : y
+ 1.25 (BIN=1 TO 1.5); 0.05 +- 0.2236;
+ 1.75 (BIN=1.5 TO 2); 0.05 +- 0.2236;
+*dataend:
+*E
+*author: AAD
+*reference: ARXIV:XXXX : 2014
+*reference: CERN-PH-EP-XXXX-XX : 2014
+*reference: GIVE JOURNAL CITATION (IF KNOWN) : 2014
+*reference: http://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/SUSY-XXXX-XXX/ : 2014
+*doi: GIVE DOI
+*status: Encoded 27 MAY 2015 by ATLAS
+*experiment: CERN-LHC-ATLAS
+*detector: ATLAS
+*inspireId: GIVE INSPIRE ID
+*cdsId: GIVE CDS ID
+*durhamId: 
+*title: channel1, ./example.root, , data 
+*comment: CERN-LHC. INSERT ABSTRACT
+
+
+*dataset:
+*location: Figure GIVE FIGURE NUMBER
+*dscomment: data
+*reackey: P P --> GIVE THE PRODUCTION PROCESSES
+*obskey: GIVE KEY FOR Y-AXIS VARIABLE
+*qual: . : GIVE COLUMN EXPLANATIONS, IF YOU USED OVERLAYS
+*qual: RE : P P --> GIVE THE PRODUCTION PROCESSES + DECAYS (IF RELEVANT)
+*qual: SQRT(S) IN GEV : 8000.0
+*yheader: 
+*xheader: 
+*data: x : y
+ 1.25 (BIN=1 TO 1.5); 122 +- 11.05;
+ 1.75 (BIN=1.5 TO 2); 112 +- 10.58;
+*dataend:
+*E
+*author: AAD
+*reference: ARXIV:XXXX : 2014
+*reference: CERN-PH-EP-XXXX-XX : 2014
+*reference: GIVE JOURNAL CITATION (IF KNOWN) : 2014
+*reference: http://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/SUSY-XXXX-XXX/ : 2014
+*doi: GIVE DOI
+*status: Encoded 27 MAY 2015 by ATLAS
+*experiment: CERN-LHC-ATLAS
+*detector: ATLAS
+*inspireId: GIVE INSPIRE ID
+*cdsId: GIVE CDS ID
+*durhamId: 
+*title: channel1, ./example.root, , signal 
+*comment: CERN-LHC. INSERT ABSTRACT
+
+
+*dataset:
+*location: Figure GIVE FIGURE NUMBER
+*dscomment: signal histogram (pb)
+*reackey: P P --> GIVE THE PRODUCTION PROCESSES
+*obskey: GIVE KEY FOR Y-AXIS VARIABLE
+*qual: . : GIVE COLUMN EXPLANATIONS, IF YOU USED OVERLAYS
+*qual: RE : P P --> GIVE THE PRODUCTION PROCESSES + DECAYS (IF RELEVANT)
+*qual: SQRT(S) IN GEV : 8000.0
+*yheader: 
+*xheader: 
+*data: x : y
+ 1.25 (BIN=1 TO 1.5); 20 +- 4.472;
+ 1.75 (BIN=1.5 TO 2); 10 +- 3.162;
+*dataend:
+*E
+*author: AAD
+*reference: ARXIV:XXXX : 2014
+*reference: CERN-PH-EP-XXXX-XX : 2014
+*reference: GIVE JOURNAL CITATION (IF KNOWN) : 2014
+*reference: http://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/SUSY-XXXX-XXX/ : 2014
+*doi: GIVE DOI
+*status: Encoded 27 MAY 2015 by ATLAS
+*experiment: CERN-LHC-ATLAS
+*detector: ATLAS
+*inspireId: GIVE INSPIRE ID
+*cdsId: GIVE CDS ID
+*durhamId: 
+*title: channel1, ./example.root, , background1 
+*comment: CERN-LHC. INSERT ABSTRACT
+
+
+*dataset:
+*location: Figure GIVE FIGURE NUMBER
+*dscomment: background 1 histogram (pb)
+*reackey: P P --> GIVE THE PRODUCTION PROCESSES
+*obskey: GIVE KEY FOR Y-AXIS VARIABLE
+*qual: . : GIVE COLUMN EXPLANATIONS, IF YOU USED OVERLAYS
+*qual: RE : P P --> GIVE THE PRODUCTION PROCESSES + DECAYS (IF RELEVANT)
+*qual: SQRT(S) IN GEV : 8000.0
+*yheader: 
+*xheader: 
+*data: x : y
+ 1.25 (BIN=1 TO 1.5); 100 +- 10;
+ 1.75 (BIN=1.5 TO 2); 0 +- 0;
+*dataend:
+
+
+*dataset:
+*location: Figure GIVE FIGURE NUMBER
+*dscomment: statUncert
+*reackey: P P --> GIVE THE PRODUCTION PROCESSES
+*obskey: GIVE KEY FOR Y-AXIS VARIABLE
+*qual: . : GIVE COLUMN EXPLANATIONS, IF YOU USED OVERLAYS
+*qual: RE : P P --> GIVE THE PRODUCTION PROCESSES + DECAYS (IF RELEVANT)
+*qual: SQRT(S) IN GEV : 8000.0
+*yheader: 
+*xheader: 
+*data: x : y
+ 1.25 (BIN=1 TO 1.5); 0.05 +- 0.2236;
+ 1.75 (BIN=1.5 TO 2); 0.05 +- 0.2236;
+*dataend:
+*E
+*author: AAD
+*reference: ARXIV:XXXX : 2014
+*reference: CERN-PH-EP-XXXX-XX : 2014
+*reference: GIVE JOURNAL CITATION (IF KNOWN) : 2014
+*reference: http://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/SUSY-XXXX-XXX/ : 2014
+*doi: GIVE DOI
+*status: Encoded 27 MAY 2015 by ATLAS
+*experiment: CERN-LHC-ATLAS
+*detector: ATLAS
+*inspireId: GIVE INSPIRE ID
+*cdsId: GIVE CDS ID
+*durhamId: 
+*title: channel1, ./example.root, , data 
+*comment: CERN-LHC. INSERT ABSTRACT
+
+
+*dataset:
+*location: Figure GIVE FIGURE NUMBER
+*dscomment: data
+*reackey: P P --> GIVE THE PRODUCTION PROCESSES
+*obskey: GIVE KEY FOR Y-AXIS VARIABLE
+*qual: . : GIVE COLUMN EXPLANATIONS, IF YOU USED OVERLAYS
+*qual: RE : P P --> GIVE THE PRODUCTION PROCESSES + DECAYS (IF RELEVANT)
+*qual: SQRT(S) IN GEV : 8000.0
+*yheader: 
+*xheader: 
+*data: x : y
+ 1.25 (BIN=1 TO 1.5); 122 +- 11.05;
+ 1.75 (BIN=1.5 TO 2); 112 +- 10.58;
+*dataend:
+*E
+*author: AAD
+*reference: ARXIV:XXXX : 2014
+*reference: CERN-PH-EP-XXXX-XX : 2014
+*reference: GIVE JOURNAL CITATION (IF KNOWN) : 2014
+*reference: http://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/SUSY-XXXX-XXX/ : 2014
+*doi: GIVE DOI
+*status: Encoded 27 MAY 2015 by ATLAS
+*experiment: CERN-LHC-ATLAS
+*detector: ATLAS
+*inspireId: GIVE INSPIRE ID
+*cdsId: GIVE CDS ID
+*durhamId: 
+*title: channel1, ./example.root, , signal 
+*comment: CERN-LHC. INSERT ABSTRACT
+
+
+*dataset:
+*location: Figure GIVE FIGURE NUMBER
+*dscomment: signal histogram (pb)
+*reackey: P P --> GIVE THE PRODUCTION PROCESSES
+*obskey: GIVE KEY FOR Y-AXIS VARIABLE
+*qual: . : GIVE COLUMN EXPLANATIONS, IF YOU USED OVERLAYS
+*qual: RE : P P --> GIVE THE PRODUCTION PROCESSES + DECAYS (IF RELEVANT)
+*qual: SQRT(S) IN GEV : 8000.0
+*yheader: 
+*xheader: 
+*data: x : y
+ 1.25 (BIN=1 TO 1.5); 20 +- 4.472;
+ 1.75 (BIN=1.5 TO 2); 10 +- 3.162;
+*dataend:
+*E
+*author: AAD
+*reference: ARXIV:XXXX : 2014
+*reference: CERN-PH-EP-XXXX-XX : 2014
+*reference: GIVE JOURNAL CITATION (IF KNOWN) : 2014
+*reference: http://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/SUSY-XXXX-XXX/ : 2014
+*doi: GIVE DOI
+*status: Encoded 27 MAY 2015 by ATLAS
+*experiment: CERN-LHC-ATLAS
+*detector: ATLAS
+*inspireId: GIVE INSPIRE ID
+*cdsId: GIVE CDS ID
+*durhamId: 
+*title: channel1, ./example.root, , background1 
+*comment: CERN-LHC. INSERT ABSTRACT
+
+
+*dataset:
+*location: Figure GIVE FIGURE NUMBER
+*dscomment: background 1 histogram (pb)
+*reackey: P P --> GIVE THE PRODUCTION PROCESSES
+*obskey: GIVE KEY FOR Y-AXIS VARIABLE
+*qual: . : GIVE COLUMN EXPLANATIONS, IF YOU USED OVERLAYS
+*qual: RE : P P --> GIVE THE PRODUCTION PROCESSES + DECAYS (IF RELEVANT)
+*qual: SQRT(S) IN GEV : 8000.0
+*yheader: 
+*xheader: 
+*data: x : y
+ 1.25 (BIN=1 TO 1.5); 100 +- 10;
+ 1.75 (BIN=1.5 TO 2); 0 +- 0;
+*dataend:
+
+
+*dataset:
+*location: Figure GIVE FIGURE NUMBER
+*dscomment: statUncert
+*reackey: P P --> GIVE THE PRODUCTION PROCESSES
+*obskey: GIVE KEY FOR Y-AXIS VARIABLE
+*qual: . : GIVE COLUMN EXPLANATIONS, IF YOU USED OVERLAYS
+*qual: RE : P P --> GIVE THE PRODUCTION PROCESSES + DECAYS (IF RELEVANT)
+*qual: SQRT(S) IN GEV : 8000.0
+*yheader: 
+*xheader: 
+*data: x : y
+ 1.25 (BIN=1 TO 1.5); 0.05 +- 0.2236;
+ 1.75 (BIN=1.5 TO 2); 0.05 +- 0.2236;
+*dataend:
+*E
+*author: AAD
+*reference: ARXIV:XXXX : 2014
+*reference: CERN-PH-EP-XXXX-XX : 2014
+*reference: GIVE JOURNAL CITATION (IF KNOWN) : 2014
+*reference: http://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/SUSY-XXXX-XXX/ : 2014
+*doi: GIVE DOI
+*status: Encoded 27 MAY 2015 by ATLAS
+*experiment: CERN-LHC-ATLAS
+*detector: ATLAS
+*inspireId: GIVE INSPIRE ID
+*cdsId: GIVE CDS ID
+*durhamId: 
+*title: channel1, ./example.root, , data 
+*comment: CERN-LHC. INSERT ABSTRACT
+
+
+*dataset:
+*location: Figure GIVE FIGURE NUMBER
+*dscomment: data
+*reackey: P P --> GIVE THE PRODUCTION PROCESSES
+*obskey: GIVE KEY FOR Y-AXIS VARIABLE
+*qual: . : GIVE COLUMN EXPLANATIONS, IF YOU USED OVERLAYS
+*qual: RE : P P --> GIVE THE PRODUCTION PROCESSES + DECAYS (IF RELEVANT)
+*qual: SQRT(S) IN GEV : 8000.0
+*yheader: 
+*xheader: 
+*data: x : y
+ 1.25 (BIN=1 TO 1.5); 122 +- 11.05;
+ 1.75 (BIN=1.5 TO 2); 112 +- 10.58;
+*dataend:
+*E
+*author: AAD
+*reference: ARXIV:XXXX : 2014
+*reference: CERN-PH-EP-XXXX-XX : 2014
+*reference: GIVE JOURNAL CITATION (IF KNOWN) : 2014
+*reference: http://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/SUSY-XXXX-XXX/ : 2014
+*doi: GIVE DOI
+*status: Encoded 27 MAY 2015 by ATLAS
+*experiment: CERN-LHC-ATLAS
+*detector: ATLAS
+*inspireId: GIVE INSPIRE ID
+*cdsId: GIVE CDS ID
+*durhamId: 
+*title: channel1, ./example.root, , signal 
+*comment: CERN-LHC. INSERT ABSTRACT
+
+
+*dataset:
+*location: Figure GIVE FIGURE NUMBER
+*dscomment: signal histogram (pb)
+*reackey: P P --> GIVE THE PRODUCTION PROCESSES
+*obskey: GIVE KEY FOR Y-AXIS VARIABLE
+*qual: . : GIVE COLUMN EXPLANATIONS, IF YOU USED OVERLAYS
+*qual: RE : P P --> GIVE THE PRODUCTION PROCESSES + DECAYS (IF RELEVANT)
+*qual: SQRT(S) IN GEV : 8000.0
+*yheader: 
+*xheader: 
+*data: x : y
+ 1.25 (BIN=1 TO 1.5); 20 +- 4.472;
+ 1.75 (BIN=1.5 TO 2); 10 +- 3.162;
+*dataend:
+*E
+*author: AAD
+*reference: ARXIV:XXXX : 2014
+*reference: CERN-PH-EP-XXXX-XX : 2014
+*reference: GIVE JOURNAL CITATION (IF KNOWN) : 2014
+*reference: http://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/SUSY-XXXX-XXX/ : 2014
+*doi: GIVE DOI
+*status: Encoded 27 MAY 2015 by ATLAS
+*experiment: CERN-LHC-ATLAS
+*detector: ATLAS
+*inspireId: GIVE INSPIRE ID
+*cdsId: GIVE CDS ID
+*durhamId: 
+*title: channel1, ./example.root, , background1 
+*comment: CERN-LHC. INSERT ABSTRACT
+
+
+*dataset:
+*location: Figure GIVE FIGURE NUMBER
+*dscomment: background 1 histogram (pb)
+*reackey: P P --> GIVE THE PRODUCTION PROCESSES
+*obskey: GIVE KEY FOR Y-AXIS VARIABLE
+*qual: . : GIVE COLUMN EXPLANATIONS, IF YOU USED OVERLAYS
+*qual: RE : P P --> GIVE THE PRODUCTION PROCESSES + DECAYS (IF RELEVANT)
+*qual: SQRT(S) IN GEV : 8000.0
+*yheader: 
+*xheader: 
+*data: x : y
+ 1.25 (BIN=1 TO 1.5); 100 +- 10;
+ 1.75 (BIN=1.5 TO 2); 0 +- 0;
+*dataend:
+
+
+*dataset:
+*location: Figure GIVE FIGURE NUMBER
+*dscomment: statUncert
+*reackey: P P --> GIVE THE PRODUCTION PROCESSES
+*obskey: GIVE KEY FOR Y-AXIS VARIABLE
+*qual: . : GIVE COLUMN EXPLANATIONS, IF YOU USED OVERLAYS
+*qual: RE : P P --> GIVE THE PRODUCTION PROCESSES + DECAYS (IF RELEVANT)
+*qual: SQRT(S) IN GEV : 8000.0
+*yheader: 
+*xheader: 
+*data: x : y
+ 1.25 (BIN=1 TO 1.5); 0.05 +- 0.2236;
+ 1.75 (BIN=1.5 TO 2); 0.05 +- 0.2236;
+*dataend:
+*E
+*author: AAD
+*reference: ARXIV:XXXX : 2014
+*reference: CERN-PH-EP-XXXX-XX : 2014
+*reference: GIVE JOURNAL CITATION (IF KNOWN) : 2014
+*reference: http://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/SUSY-XXXX-XXX/ : 2014
+*doi: GIVE DOI
+*status: Encoded 27 MAY 2015 by ATLAS
+*experiment: CERN-LHC-ATLAS
+*detector: ATLAS
+*inspireId: GIVE INSPIRE ID
+*cdsId: GIVE CDS ID
+*durhamId: 
+*title: channel1, ./example.root, , data 
+*comment: CERN-LHC. INSERT ABSTRACT
+
+
+*dataset:
+*location: Figure GIVE FIGURE NUMBER
+*dscomment: data
+*reackey: P P --> GIVE THE PRODUCTION PROCESSES
+*obskey: GIVE KEY FOR Y-AXIS VARIABLE
+*qual: . : GIVE COLUMN EXPLANATIONS, IF YOU USED OVERLAYS
+*qual: RE : P P --> GIVE THE PRODUCTION PROCESSES + DECAYS (IF RELEVANT)
+*qual: SQRT(S) IN GEV : 8000.0
+*yheader: 
+*xheader: 
+*data: x : y
+ 1.25 (BIN=1 TO 1.5); 122 +- 11.05;
+ 1.75 (BIN=1.5 TO 2); 112 +- 10.58;
+*dataend:
+
+
+*dataset:
+*location: Figure GIVE FIGURE NUMBER
+*dscomment: data
+*reackey: P P --> GIVE THE PRODUCTION PROCESSES
+*obskey: GIVE KEY FOR Y-AXIS VARIABLE
+*qual: . : GIVE COLUMN EXPLANATIONS, IF YOU USED OVERLAYS
+*qual: RE : P P --> GIVE THE PRODUCTION PROCESSES + DECAYS (IF RELEVANT)
+*qual: SQRT(S) IN GEV : 8000.0
+*yheader: 
+*xheader: 
+*data: x : y
+ 1.25 (BIN=1 TO 1.5); 122 +- 11.05;
+ 1.75 (BIN=1.5 TO 2); 112 +- 10.58;
+*dataend:
+
+
+*dataset:
+*location: Figure GIVE FIGURE NUMBER
+*dscomment: data
+*reackey: P P --> GIVE THE PRODUCTION PROCESSES
+*obskey: GIVE KEY FOR Y-AXIS VARIABLE
+*qual: . : GIVE COLUMN EXPLANATIONS, IF YOU USED OVERLAYS
+*qual: RE : P P --> GIVE THE PRODUCTION PROCESSES + DECAYS (IF RELEVANT)
+*qual: SQRT(S) IN GEV : 8000.0
+*yheader: 
+*xheader: 
+*data: x : y
+ 1.25 (BIN=1 TO 1.5); 122 +- 11.05;
+ 1.75 (BIN=1.5 TO 2); 112 +- 10.58;
+*dataend:
+
+
+*dataset:
+*location: Figure GIVE FIGURE NUMBER
+*dscomment: data
+*reackey: P P --> GIVE THE PRODUCTION PROCESSES
+*obskey: GIVE KEY FOR Y-AXIS VARIABLE
+*qual: . : GIVE COLUMN EXPLANATIONS, IF YOU USED OVERLAYS
+*qual: RE : P P --> GIVE THE PRODUCTION PROCESSES + DECAYS (IF RELEVANT)
+*qual: SQRT(S) IN GEV : 8000.0
+*yheader: 
+*xheader: 
+*data: x : y
+ 1.25 (BIN=1 TO 1.5); 122 +- 11.05;
+ 1.75 (BIN=1.5 TO 2); 112 +- 10.58;
+*dataend:
+
+
+*dataset:
+*location: Figure GIVE FIGURE NUMBER
+*dscomment: data
+*reackey: P P --> GIVE THE PRODUCTION PROCESSES
+*obskey: GIVE KEY FOR Y-AXIS VARIABLE
+*qual: . : GIVE COLUMN EXPLANATIONS, IF YOU USED OVERLAYS
+*qual: RE : P P --> GIVE THE PRODUCTION PROCESSES + DECAYS (IF RELEVANT)
+*qual: SQRT(S) IN GEV : 8000.0
+*yheader: 
+*xheader: 
+*data: x : y
+ 1.25 (BIN=1 TO 1.5); 122 +- 11.05;
+ 1.75 (BIN=1.5 TO 2); 112 +- 10.58;
+*dataend:
+
+
+*dataset:
+*location: Figure GIVE FIGURE NUMBER
+*dscomment: data
+*reackey: P P --> GIVE THE PRODUCTION PROCESSES
+*obskey: GIVE KEY FOR Y-AXIS VARIABLE
+*qual: . : GIVE COLUMN EXPLANATIONS, IF YOU USED OVERLAYS
+*qual: RE : P P --> GIVE THE PRODUCTION PROCESSES + DECAYS (IF RELEVANT)
+*qual: SQRT(S) IN GEV : 8000.0
+*yheader: 
+*xheader: 
+*data: x : y
+ 1.25 (BIN=1 TO 1.5); 122 +- 11.05;
+ 1.75 (BIN=1.5 TO 2); 112 +- 10.58;
+*dataend:
+*E
+*author: AAD
+*reference: ARXIV:XXXX : 2014
+*reference: CERN-PH-EP-XXXX-XX : 2014
+*reference: GIVE JOURNAL CITATION (IF KNOWN) : 2014
+*reference: http://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/SUSY-XXXX-XXX/ : 2014
+*doi: GIVE DOI
+*status: Encoded 27 MAY 2015 by ATLAS
+*experiment: CERN-LHC-ATLAS
+*detector: ATLAS
+*inspireId: GIVE INSPIRE ID
+*cdsId: GIVE CDS ID
+*durhamId: 
+*title: channel1, ./example.root, , signal 
+*comment: CERN-LHC. INSERT ABSTRACT
+
+
+*dataset:
+*location: Figure GIVE FIGURE NUMBER
+*dscomment: signal histogram (pb)
+*reackey: P P --> GIVE THE PRODUCTION PROCESSES
+*obskey: GIVE KEY FOR Y-AXIS VARIABLE
+*qual: . : GIVE COLUMN EXPLANATIONS, IF YOU USED OVERLAYS
+*qual: RE : P P --> GIVE THE PRODUCTION PROCESSES + DECAYS (IF RELEVANT)
+*qual: SQRT(S) IN GEV : 8000.0
+*yheader: 
+*xheader: 
+*data: x : y
+ 1.25 (BIN=1 TO 1.5); 20 +- 4.472;
+ 1.75 (BIN=1.5 TO 2); 10 +- 3.162;
+*dataend:
+
+
+*dataset:
+*location: Figure GIVE FIGURE NUMBER
+*dscomment: signal histogram (pb)
+*reackey: P P --> GIVE THE PRODUCTION PROCESSES
+*obskey: GIVE KEY FOR Y-AXIS VARIABLE
+*qual: . : GIVE COLUMN EXPLANATIONS, IF YOU USED OVERLAYS
+*qual: RE : P P --> GIVE THE PRODUCTION PROCESSES + DECAYS (IF RELEVANT)
+*qual: SQRT(S) IN GEV : 8000.0
+*yheader: 
+*xheader: 
+*data: x : y
+ 1.25 (BIN=1 TO 1.5); 20 +- 4.472;
+ 1.75 (BIN=1.5 TO 2); 10 +- 3.162;
+*dataend:
+
+
+*dataset:
+*location: Figure GIVE FIGURE NUMBER
+*dscomment: signal histogram (pb)
+*reackey: P P --> GIVE THE PRODUCTION PROCESSES
+*obskey: GIVE KEY FOR Y-AXIS VARIABLE
+*qual: . : GIVE COLUMN EXPLANATIONS, IF YOU USED OVERLAYS
+*qual: RE : P P --> GIVE THE PRODUCTION PROCESSES + DECAYS (IF RELEVANT)
+*qual: SQRT(S) IN GEV : 8000.0
+*yheader: 
+*xheader: 
+*data: x : y
+ 1.25 (BIN=1 TO 1.5); 20 +- 4.472;
+ 1.75 (BIN=1.5 TO 2); 10 +- 3.162;
+*dataend:
+
+
+*dataset:
+*location: Figure GIVE FIGURE NUMBER
+*dscomment: signal histogram (pb)
+*reackey: P P --> GIVE THE PRODUCTION PROCESSES
+*obskey: GIVE KEY FOR Y-AXIS VARIABLE
+*qual: . : GIVE COLUMN EXPLANATIONS, IF YOU USED OVERLAYS
+*qual: RE : P P --> GIVE THE PRODUCTION PROCESSES + DECAYS (IF RELEVANT)
+*qual: SQRT(S) IN GEV : 8000.0
+*yheader: 
+*xheader: 
+*data: x : y
+ 1.25 (BIN=1 TO 1.5); 20 +- 4.472;
+ 1.75 (BIN=1.5 TO 2); 10 +- 3.162;
+*dataend:
+
+
+*dataset:
+*location: Figure GIVE FIGURE NUMBER
+*dscomment: signal histogram (pb)
+*reackey: P P --> GIVE THE PRODUCTION PROCESSES
+*obskey: GIVE KEY FOR Y-AXIS VARIABLE
+*qual: . : GIVE COLUMN EXPLANATIONS, IF YOU USED OVERLAYS
+*qual: RE : P P --> GIVE THE PRODUCTION PROCESSES + DECAYS (IF RELEVANT)
+*qual: SQRT(S) IN GEV : 8000.0
+*yheader: 
+*xheader: 
+*data: x : y
+ 1.25 (BIN=1 TO 1.5); 20 +- 4.472;
+ 1.75 (BIN=1.5 TO 2); 10 +- 3.162;
+*dataend:
+
+
+*dataset:
+*location: Figure GIVE FIGURE NUMBER
+*dscomment: signal histogram (pb)
+*reackey: P P --> GIVE THE PRODUCTION PROCESSES
+*obskey: GIVE KEY FOR Y-AXIS VARIABLE
+*qual: . : GIVE COLUMN EXPLANATIONS, IF YOU USED OVERLAYS
+*qual: RE : P P --> GIVE THE PRODUCTION PROCESSES + DECAYS (IF RELEVANT)
+*qual: SQRT(S) IN GEV : 8000.0
+*yheader: 
+*xheader: 
+*data: x : y
+ 1.25 (BIN=1 TO 1.5); 20 +- 4.472;
+ 1.75 (BIN=1.5 TO 2); 10 +- 3.162;
+*dataend:
+*E
+*author: AAD
+*reference: ARXIV:XXXX : 2014
+*reference: CERN-PH-EP-XXXX-XX : 2014
+*reference: GIVE JOURNAL CITATION (IF KNOWN) : 2014
+*reference: http://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/SUSY-XXXX-XXX/ : 2014
+*doi: GIVE DOI
+*status: Encoded 27 MAY 2015 by ATLAS
+*experiment: CERN-LHC-ATLAS
+*detector: ATLAS
+*inspireId: GIVE INSPIRE ID
+*cdsId: GIVE CDS ID
+*durhamId: 
+*title: channel1, ./example.root, , background1 
+*comment: CERN-LHC. INSERT ABSTRACT
+
+
+*dataset:
+*location: Figure GIVE FIGURE NUMBER
+*dscomment: background 1 histogram (pb)
+*reackey: P P --> GIVE THE PRODUCTION PROCESSES
+*obskey: GIVE KEY FOR Y-AXIS VARIABLE
+*qual: . : GIVE COLUMN EXPLANATIONS, IF YOU USED OVERLAYS
+*qual: RE : P P --> GIVE THE PRODUCTION PROCESSES + DECAYS (IF RELEVANT)
+*qual: SQRT(S) IN GEV : 8000.0
+*yheader: 
+*xheader: 
+*data: x : y
+ 1.25 (BIN=1 TO 1.5); 100 +- 10;
+ 1.75 (BIN=1.5 TO 2); 0 +- 0;
+*dataend:
+
+
+*dataset:
+*location: Figure GIVE FIGURE NUMBER
+*dscomment: background 1 histogram (pb)
+*reackey: P P --> GIVE THE PRODUCTION PROCESSES
+*obskey: GIVE KEY FOR Y-AXIS VARIABLE
+*qual: . : GIVE COLUMN EXPLANATIONS, IF YOU USED OVERLAYS
+*qual: RE : P P --> GIVE THE PRODUCTION PROCESSES + DECAYS (IF RELEVANT)
+*qual: SQRT(S) IN GEV : 8000.0
+*yheader: 
+*xheader: 
+*data: x : y
+ 1.25 (BIN=1 TO 1.5); 100 +- 10;
+ 1.75 (BIN=1.5 TO 2); 0 +- 0;
+*dataend:
+
+
+*dataset:
+*location: Figure GIVE FIGURE NUMBER
+*dscomment: background 1 histogram (pb)
+*reackey: P P --> GIVE THE PRODUCTION PROCESSES
+*obskey: GIVE KEY FOR Y-AXIS VARIABLE
+*qual: . : GIVE COLUMN EXPLANATIONS, IF YOU USED OVERLAYS
+*qual: RE : P P --> GIVE THE PRODUCTION PROCESSES + DECAYS (IF RELEVANT)
+*qual: SQRT(S) IN GEV : 8000.0
+*yheader: 
+*xheader: 
+*data: x : y
+ 1.25 (BIN=1 TO 1.5); 100 +- 10;
+ 1.75 (BIN=1.5 TO 2); 0 +- 0;
+*dataend:
+
+
+*dataset:
+*location: Figure GIVE FIGURE NUMBER
+*dscomment: background 1 histogram (pb)
+*reackey: P P --> GIVE THE PRODUCTION PROCESSES
+*obskey: GIVE KEY FOR Y-AXIS VARIABLE
+*qual: . : GIVE COLUMN EXPLANATIONS, IF YOU USED OVERLAYS
+*qual: RE : P P --> GIVE THE PRODUCTION PROCESSES + DECAYS (IF RELEVANT)
+*qual: SQRT(S) IN GEV : 8000.0
+*yheader: 
+*xheader: 
+*data: x : y
+ 1.25 (BIN=1 TO 1.5); 100 +- 10;
+ 1.75 (BIN=1.5 TO 2); 0 +- 0;
+*dataend:
+
+
+*dataset:
+*location: Figure GIVE FIGURE NUMBER
+*dscomment: background 1 histogram (pb)
+*reackey: P P --> GIVE THE PRODUCTION PROCESSES
+*obskey: GIVE KEY FOR Y-AXIS VARIABLE
+*qual: . : GIVE COLUMN EXPLANATIONS, IF YOU USED OVERLAYS
+*qual: RE : P P --> GIVE THE PRODUCTION PROCESSES + DECAYS (IF RELEVANT)
+*qual: SQRT(S) IN GEV : 8000.0
+*yheader: 
+*xheader: 
+*data: x : y
+ 1.25 (BIN=1 TO 1.5); 100 +- 10;
+ 1.75 (BIN=1.5 TO 2); 0 +- 0;
+*dataend:
+
+
+*dataset:
+*location: Figure GIVE FIGURE NUMBER
+*dscomment: background 1 histogram (pb)
+*reackey: P P --> GIVE THE PRODUCTION PROCESSES
+*obskey: GIVE KEY FOR Y-AXIS VARIABLE
+*qual: . : GIVE COLUMN EXPLANATIONS, IF YOU USED OVERLAYS
+*qual: RE : P P --> GIVE THE PRODUCTION PROCESSES + DECAYS (IF RELEVANT)
+*qual: SQRT(S) IN GEV : 8000.0
+*yheader: 
+*xheader: 
+*data: x : y
+ 1.25 (BIN=1 TO 1.5); 100 +- 10;
+ 1.75 (BIN=1.5 TO 2); 0 +- 0;
+*dataend:
+*E
+*author: AAD
+*reference: ARXIV:XXXX : 2014
+*reference: CERN-PH-EP-XXXX-XX : 2014
+*reference: GIVE JOURNAL CITATION (IF KNOWN) : 2014
+*reference: http://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/SUSY-XXXX-XXX/ : 2014
+*doi: GIVE DOI
+*status: Encoded 27 MAY 2015 by ATLAS
+*experiment: CERN-LHC-ATLAS
+*detector: ATLAS
+*inspireId: GIVE INSPIRE ID
+*cdsId: GIVE CDS ID
+*durhamId: 
+*title: channel1, ./example.root, Sys4, bkg1Syst4High 
+*comment: CERN-LHC. INSERT ABSTRACT
+
+
+*dataset:
+*location: Figure GIVE FIGURE NUMBER
+*dscomment: background 1 histogram (pb)
+*reackey: P P --> GIVE THE PRODUCTION PROCESSES
+*obskey: GIVE KEY FOR Y-AXIS VARIABLE
+*qual: . : GIVE COLUMN EXPLANATIONS, IF YOU USED OVERLAYS
+*qual: RE : P P --> GIVE THE PRODUCTION PROCESSES + DECAYS (IF RELEVANT)
+*qual: SQRT(S) IN GEV : 8000.0
+*yheader: 
+*xheader: 
+*data: x : y
+ 1.25 (BIN=1 TO 1.5); 120 +- 10.95;
+ 1.75 (BIN=1.5 TO 2); 0 +- 0;
+*dataend:
+
+
+*dataset:
+*location: Figure GIVE FIGURE NUMBER
+*dscomment: background 1 histogram (pb)
+*reackey: P P --> GIVE THE PRODUCTION PROCESSES
+*obskey: GIVE KEY FOR Y-AXIS VARIABLE
+*qual: . : GIVE COLUMN EXPLANATIONS, IF YOU USED OVERLAYS
+*qual: RE : P P --> GIVE THE PRODUCTION PROCESSES + DECAYS (IF RELEVANT)
+*qual: SQRT(S) IN GEV : 8000.0
+*yheader: 
+*xheader: 
+*data: x : y
+ 1.25 (BIN=1 TO 1.5); 120 +- 10.95;
+ 1.75 (BIN=1.5 TO 2); 0 +- 0;
+*dataend:
+
+
+*dataset:
+*location: Figure GIVE FIGURE NUMBER
+*dscomment: background 1 histogram (pb)
+*reackey: P P --> GIVE THE PRODUCTION PROCESSES
+*obskey: GIVE KEY FOR Y-AXIS VARIABLE
+*qual: . : GIVE COLUMN EXPLANATIONS, IF YOU USED OVERLAYS
+*qual: RE : P P --> GIVE THE PRODUCTION PROCESSES + DECAYS (IF RELEVANT)
+*qual: SQRT(S) IN GEV : 8000.0
+*yheader: 
+*xheader: 
+*data: x : y
+ 1.25 (BIN=1 TO 1.5); 120 +- 10.95;
+ 1.75 (BIN=1.5 TO 2); 0 +- 0;
+*dataend:
+
+
+*dataset:
+*location: Figure GIVE FIGURE NUMBER
+*dscomment: background 1 histogram (pb)
+*reackey: P P --> GIVE THE PRODUCTION PROCESSES
+*obskey: GIVE KEY FOR Y-AXIS VARIABLE
+*qual: . : GIVE COLUMN EXPLANATIONS, IF YOU USED OVERLAYS
+*qual: RE : P P --> GIVE THE PRODUCTION PROCESSES + DECAYS (IF RELEVANT)
+*qual: SQRT(S) IN GEV : 8000.0
+*yheader: 
+*xheader: 
+*data: x : y
+ 1.25 (BIN=1 TO 1.5); 120 +- 10.95;
+ 1.75 (BIN=1.5 TO 2); 0 +- 0;
+*dataend:
+
+
+*dataset:
+*location: Figure GIVE FIGURE NUMBER
+*dscomment: background 1 histogram (pb)
+*reackey: P P --> GIVE THE PRODUCTION PROCESSES
+*obskey: GIVE KEY FOR Y-AXIS VARIABLE
+*qual: . : GIVE COLUMN EXPLANATIONS, IF YOU USED OVERLAYS
+*qual: RE : P P --> GIVE THE PRODUCTION PROCESSES + DECAYS (IF RELEVANT)
+*qual: SQRT(S) IN GEV : 8000.0
+*yheader: 
+*xheader: 
+*data: x : y
+ 1.25 (BIN=1 TO 1.5); 120 +- 10.95;
+ 1.75 (BIN=1.5 TO 2); 0 +- 0;
+*dataend:
+
+
+*dataset:
+*location: Figure GIVE FIGURE NUMBER
+*dscomment: background 1 histogram (pb)
+*reackey: P P --> GIVE THE PRODUCTION PROCESSES
+*obskey: GIVE KEY FOR Y-AXIS VARIABLE
+*qual: . : GIVE COLUMN EXPLANATIONS, IF YOU USED OVERLAYS
+*qual: RE : P P --> GIVE THE PRODUCTION PROCESSES + DECAYS (IF RELEVANT)
+*qual: SQRT(S) IN GEV : 8000.0
+*yheader: 
+*xheader: 
+*data: x : y
+ 1.25 (BIN=1 TO 1.5); 120 +- 10.95;
+ 1.75 (BIN=1.5 TO 2); 0 +- 0;
+*dataend:
+*E
+*author: AAD
+*reference: ARXIV:XXXX : 2014
+*reference: CERN-PH-EP-XXXX-XX : 2014
+*reference: GIVE JOURNAL CITATION (IF KNOWN) : 2014
+*reference: http://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/SUSY-XXXX-XXX/ : 2014
+*doi: GIVE DOI
+*status: Encoded 27 MAY 2015 by ATLAS
+*experiment: CERN-LHC-ATLAS
+*detector: ATLAS
+*inspireId: GIVE INSPIRE ID
+*cdsId: GIVE CDS ID
+*durhamId: 
+*title: channel1, ./example.root, Sys4, bkg1Syst4Low 
+*comment: CERN-LHC. INSERT ABSTRACT
+
+
+*dataset:
+*location: Figure GIVE FIGURE NUMBER
+*dscomment: background 1 histogram (pb)
+*reackey: P P --> GIVE THE PRODUCTION PROCESSES
+*obskey: GIVE KEY FOR Y-AXIS VARIABLE
+*qual: . : GIVE COLUMN EXPLANATIONS, IF YOU USED OVERLAYS
+*qual: RE : P P --> GIVE THE PRODUCTION PROCESSES + DECAYS (IF RELEVANT)
+*qual: SQRT(S) IN GEV : 8000.0
+*yheader: 
+*xheader: 
+*data: x : y
+ 1.25 (BIN=1 TO 1.5); 80 +- 8.944;
+ 1.75 (BIN=1.5 TO 2); 0 +- 0;
+*dataend:
+
+
+*dataset:
+*location: Figure GIVE FIGURE NUMBER
+*dscomment: background 1 histogram (pb)
+*reackey: P P --> GIVE THE PRODUCTION PROCESSES
+*obskey: GIVE KEY FOR Y-AXIS VARIABLE
+*qual: . : GIVE COLUMN EXPLANATIONS, IF YOU USED OVERLAYS
+*qual: RE : P P --> GIVE THE PRODUCTION PROCESSES + DECAYS (IF RELEVANT)
+*qual: SQRT(S) IN GEV : 8000.0
+*yheader: 
+*xheader: 
+*data: x : y
+ 1.25 (BIN=1 TO 1.5); 80 +- 8.944;
+ 1.75 (BIN=1.5 TO 2); 0 +- 0;
+*dataend:
+
+
+*dataset:
+*location: Figure GIVE FIGURE NUMBER
+*dscomment: background 1 histogram (pb)
+*reackey: P P --> GIVE THE PRODUCTION PROCESSES
+*obskey: GIVE KEY FOR Y-AXIS VARIABLE
+*qual: . : GIVE COLUMN EXPLANATIONS, IF YOU USED OVERLAYS
+*qual: RE : P P --> GIVE THE PRODUCTION PROCESSES + DECAYS (IF RELEVANT)
+*qual: SQRT(S) IN GEV : 8000.0
+*yheader: 
+*xheader: 
+*data: x : y
+ 1.25 (BIN=1 TO 1.5); 80 +- 8.944;
+ 1.75 (BIN=1.5 TO 2); 0 +- 0;
+*dataend:
+
+
+*dataset:
+*location: Figure GIVE FIGURE NUMBER
+*dscomment: background 1 histogram (pb)
+*reackey: P P --> GIVE THE PRODUCTION PROCESSES
+*obskey: GIVE KEY FOR Y-AXIS VARIABLE
+*qual: . : GIVE COLUMN EXPLANATIONS, IF YOU USED OVERLAYS
+*qual: RE : P P --> GIVE THE PRODUCTION PROCESSES + DECAYS (IF RELEVANT)
+*qual: SQRT(S) IN GEV : 8000.0
+*yheader: 
+*xheader: 
+*data: x : y
+ 1.25 (BIN=1 TO 1.5); 80 +- 8.944;
+ 1.75 (BIN=1.5 TO 2); 0 +- 0;
+*dataend:
+
+
+*dataset:
+*location: Figure GIVE FIGURE NUMBER
+*dscomment: background 1 histogram (pb)
+*reackey: P P --> GIVE THE PRODUCTION PROCESSES
+*obskey: GIVE KEY FOR Y-AXIS VARIABLE
+*qual: . : GIVE COLUMN EXPLANATIONS, IF YOU USED OVERLAYS
+*qual: RE : P P --> GIVE THE PRODUCTION PROCESSES + DECAYS (IF RELEVANT)
+*qual: SQRT(S) IN GEV : 8000.0
+*yheader: 
+*xheader: 
+*data: x : y
+ 1.25 (BIN=1 TO 1.5); 80 +- 8.944;
+ 1.75 (BIN=1.5 TO 2); 0 +- 0;
+*dataend:
+
+
+*dataset:
+*location: Figure GIVE FIGURE NUMBER
+*dscomment: background 1 histogram (pb)
+*reackey: P P --> GIVE THE PRODUCTION PROCESSES
+*obskey: GIVE KEY FOR Y-AXIS VARIABLE
+*qual: . : GIVE COLUMN EXPLANATIONS, IF YOU USED OVERLAYS
+*qual: RE : P P --> GIVE THE PRODUCTION PROCESSES + DECAYS (IF RELEVANT)
+*qual: SQRT(S) IN GEV : 8000.0
+*yheader: 
+*xheader: 
+*data: x : y
+ 1.25 (BIN=1 TO 1.5); 80 +- 8.944;
+ 1.75 (BIN=1.5 TO 2); 0 +- 0;
+*dataend:
+*E
+*author: AAD
+*reference: ARXIV:XXXX : 2014
+*reference: CERN-PH-EP-XXXX-XX : 2014
+*reference: GIVE JOURNAL CITATION (IF KNOWN) : 2014
+*reference: http://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/SUSY-XXXX-XXX/ : 2014
+*doi: GIVE DOI
+*status: Encoded 27 MAY 2015 by ATLAS
+*experiment: CERN-LHC-ATLAS
+*detector: ATLAS
+*inspireId: GIVE INSPIRE ID
+*cdsId: GIVE CDS ID
+*durhamId: 
+*title: channel1, ./example.root, , background2 
+*comment: CERN-LHC. INSERT ABSTRACT
+
+
+*dataset:
+*location: Figure GIVE FIGURE NUMBER
+*dscomment: background 2 histogram (pb)
+*reackey: P P --> GIVE THE PRODUCTION PROCESSES
+*obskey: GIVE KEY FOR Y-AXIS VARIABLE
+*qual: . : GIVE COLUMN EXPLANATIONS, IF YOU USED OVERLAYS
+*qual: RE : P P --> GIVE THE PRODUCTION PROCESSES + DECAYS (IF RELEVANT)
+*qual: SQRT(S) IN GEV : 8000.0
+*yheader: 
+*xheader: 
+*data: x : y
+ 1.25 (BIN=1 TO 1.5); 0 +- 0;
+ 1.75 (BIN=1.5 TO 2); 100 +- 10;
+*dataend:
+
+
+*dataset:
+*location: Figure GIVE FIGURE NUMBER
+*dscomment: background 2 histogram (pb)
+*reackey: P P --> GIVE THE PRODUCTION PROCESSES
+*obskey: GIVE KEY FOR Y-AXIS VARIABLE
+*qual: . : GIVE COLUMN EXPLANATIONS, IF YOU USED OVERLAYS
+*qual: RE : P P --> GIVE THE PRODUCTION PROCESSES + DECAYS (IF RELEVANT)
+*qual: SQRT(S) IN GEV : 8000.0
+*yheader: 
+*xheader: 
+*data: x : y
+ 1.25 (BIN=1 TO 1.5); 0 +- 0;
+ 1.75 (BIN=1.5 TO 2); 100 +- 10;
+*dataend:
+
+
+*dataset:
+*location: Figure GIVE FIGURE NUMBER
+*dscomment: background 2 histogram (pb)
+*reackey: P P --> GIVE THE PRODUCTION PROCESSES
+*obskey: GIVE KEY FOR Y-AXIS VARIABLE
+*qual: . : GIVE COLUMN EXPLANATIONS, IF YOU USED OVERLAYS
+*qual: RE : P P --> GIVE THE PRODUCTION PROCESSES + DECAYS (IF RELEVANT)
+*qual: SQRT(S) IN GEV : 8000.0
+*yheader: 
+*xheader: 
+*data: x : y
+ 1.25 (BIN=1 TO 1.5); 0 +- 0;
+ 1.75 (BIN=1.5 TO 2); 100 +- 10;
+*dataend:
+
+
+*dataset:
+*location: Figure GIVE FIGURE NUMBER
+*dscomment: background 2 histogram (pb)
+*reackey: P P --> GIVE THE PRODUCTION PROCESSES
+*obskey: GIVE KEY FOR Y-AXIS VARIABLE
+*qual: . : GIVE COLUMN EXPLANATIONS, IF YOU USED OVERLAYS
+*qual: RE : P P --> GIVE THE PRODUCTION PROCESSES + DECAYS (IF RELEVANT)
+*qual: SQRT(S) IN GEV : 8000.0
+*yheader: 
+*xheader: 
+*data: x : y
+ 1.25 (BIN=1 TO 1.5); 0 +- 0;
+ 1.75 (BIN=1.5 TO 2); 100 +- 10;
+*dataend:
+
+
+*dataset:
+*location: Figure GIVE FIGURE NUMBER
+*dscomment: background 2 histogram (pb)
+*reackey: P P --> GIVE THE PRODUCTION PROCESSES
+*obskey: GIVE KEY FOR Y-AXIS VARIABLE
+*qual: . : GIVE COLUMN EXPLANATIONS, IF YOU USED OVERLAYS
+*qual: RE : P P --> GIVE THE PRODUCTION PROCESSES + DECAYS (IF RELEVANT)
+*qual: SQRT(S) IN GEV : 8000.0
+*yheader: 
+*xheader: 
+*data: x : y
+ 1.25 (BIN=1 TO 1.5); 0 +- 0;
+ 1.75 (BIN=1.5 TO 2); 100 +- 10;
+*dataend:
+
+
+*dataset:
+*location: Figure GIVE FIGURE NUMBER
+*dscomment: background 2 histogram (pb)
+*reackey: P P --> GIVE THE PRODUCTION PROCESSES
+*obskey: GIVE KEY FOR Y-AXIS VARIABLE
+*qual: . : GIVE COLUMN EXPLANATIONS, IF YOU USED OVERLAYS
+*qual: RE : P P --> GIVE THE PRODUCTION PROCESSES + DECAYS (IF RELEVANT)
+*qual: SQRT(S) IN GEV : 8000.0
+*yheader: 
+*xheader: 
+*data: x : y
+ 1.25 (BIN=1 TO 1.5); 0 +- 0;
+ 1.75 (BIN=1.5 TO 2); 100 +- 10;
+*dataend:
+*E
+*author: AAD
+*reference: ARXIV:XXXX : 2014
+*reference: CERN-PH-EP-XXXX-XX : 2014
+*reference: GIVE JOURNAL CITATION (IF KNOWN) : 2014
+*reference: http://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/SUSY-XXXX-XXX/ : 2014
+*doi: GIVE DOI
+*status: Encoded 27 MAY 2015 by ATLAS
+*experiment: CERN-LHC-ATLAS
+*detector: ATLAS
+*inspireId: GIVE INSPIRE ID
+*cdsId: GIVE CDS ID
+*durhamId: 
+*title: channel1, ./example.root, Sys4, bkg2Syst4High 
+*comment: CERN-LHC. INSERT ABSTRACT
+
+
+*dataset:
+*location: Figure GIVE FIGURE NUMBER
+*dscomment: background 2 histogram (pb)
+*reackey: P P --> GIVE THE PRODUCTION PROCESSES
+*obskey: GIVE KEY FOR Y-AXIS VARIABLE
+*qual: . : GIVE COLUMN EXPLANATIONS, IF YOU USED OVERLAYS
+*qual: RE : P P --> GIVE THE PRODUCTION PROCESSES + DECAYS (IF RELEVANT)
+*qual: SQRT(S) IN GEV : 8000.0
+*yheader: 
+*xheader: 
+*data: x : y
+ 1.25 (BIN=1 TO 1.5); 0 +- 0;
+ 1.75 (BIN=1.5 TO 2); 110 +- 10.49;
+*dataend:
+
+
+*dataset:
+*location: Figure GIVE FIGURE NUMBER
+*dscomment: background 2 histogram (pb)
+*reackey: P P --> GIVE THE PRODUCTION PROCESSES
+*obskey: GIVE KEY FOR Y-AXIS VARIABLE
+*qual: . : GIVE COLUMN EXPLANATIONS, IF YOU USED OVERLAYS
+*qual: RE : P P --> GIVE THE PRODUCTION PROCESSES + DECAYS (IF RELEVANT)
+*qual: SQRT(S) IN GEV : 8000.0
+*yheader: 
+*xheader: 
+*data: x : y
+ 1.25 (BIN=1 TO 1.5); 0 +- 0;
+ 1.75 (BIN=1.5 TO 2); 110 +- 10.49;
+*dataend:
+
+
+*dataset:
+*location: Figure GIVE FIGURE NUMBER
+*dscomment: background 2 histogram (pb)
+*reackey: P P --> GIVE THE PRODUCTION PROCESSES
+*obskey: GIVE KEY FOR Y-AXIS VARIABLE
+*qual: . : GIVE COLUMN EXPLANATIONS, IF YOU USED OVERLAYS
+*qual: RE : P P --> GIVE THE PRODUCTION PROCESSES + DECAYS (IF RELEVANT)
+*qual: SQRT(S) IN GEV : 8000.0
+*yheader: 
+*xheader: 
+*data: x : y
+ 1.25 (BIN=1 TO 1.5); 0 +- 0;
+ 1.75 (BIN=1.5 TO 2); 110 +- 10.49;
+*dataend:
+
+
+*dataset:
+*location: Figure GIVE FIGURE NUMBER
+*dscomment: background 2 histogram (pb)
+*reackey: P P --> GIVE THE PRODUCTION PROCESSES
+*obskey: GIVE KEY FOR Y-AXIS VARIABLE
+*qual: . : GIVE COLUMN EXPLANATIONS, IF YOU USED OVERLAYS
+*qual: RE : P P --> GIVE THE PRODUCTION PROCESSES + DECAYS (IF RELEVANT)
+*qual: SQRT(S) IN GEV : 8000.0
+*yheader: 
+*xheader: 
+*data: x : y
+ 1.25 (BIN=1 TO 1.5); 0 +- 0;
+ 1.75 (BIN=1.5 TO 2); 110 +- 10.49;
+*dataend:
+
+
+*dataset:
+*location: Figure GIVE FIGURE NUMBER
+*dscomment: background 2 histogram (pb)
+*reackey: P P --> GIVE THE PRODUCTION PROCESSES
+*obskey: GIVE KEY FOR Y-AXIS VARIABLE
+*qual: . : GIVE COLUMN EXPLANATIONS, IF YOU USED OVERLAYS
+*qual: RE : P P --> GIVE THE PRODUCTION PROCESSES + DECAYS (IF RELEVANT)
+*qual: SQRT(S) IN GEV : 8000.0
+*yheader: 
+*xheader: 
+*data: x : y
+ 1.25 (BIN=1 TO 1.5); 0 +- 0;
+ 1.75 (BIN=1.5 TO 2); 110 +- 10.49;
+*dataend:
+
+
+*dataset:
+*location: Figure GIVE FIGURE NUMBER
+*dscomment: background 2 histogram (pb)
+*reackey: P P --> GIVE THE PRODUCTION PROCESSES
+*obskey: GIVE KEY FOR Y-AXIS VARIABLE
+*qual: . : GIVE COLUMN EXPLANATIONS, IF YOU USED OVERLAYS
+*qual: RE : P P --> GIVE THE PRODUCTION PROCESSES + DECAYS (IF RELEVANT)
+*qual: SQRT(S) IN GEV : 8000.0
+*yheader: 
+*xheader: 
+*data: x : y
+ 1.25 (BIN=1 TO 1.5); 0 +- 0;
+ 1.75 (BIN=1.5 TO 2); 110 +- 10.49;
+*dataend:
+*E
+*author: AAD
+*reference: ARXIV:XXXX : 2014
+*reference: CERN-PH-EP-XXXX-XX : 2014
+*reference: GIVE JOURNAL CITATION (IF KNOWN) : 2014
+*reference: http://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/SUSY-XXXX-XXX/ : 2014
+*doi: GIVE DOI
+*status: Encoded 27 MAY 2015 by ATLAS
+*experiment: CERN-LHC-ATLAS
+*detector: ATLAS
+*inspireId: GIVE INSPIRE ID
+*cdsId: GIVE CDS ID
+*durhamId: 
+*title: channel1, ./example.root, Sys4, bkg2Syst4Low 
+*comment: CERN-LHC. INSERT ABSTRACT
+
+
+*dataset:
+*location: Figure GIVE FIGURE NUMBER
+*dscomment: background 2 histogram (pb)
+*reackey: P P --> GIVE THE PRODUCTION PROCESSES
+*obskey: GIVE KEY FOR Y-AXIS VARIABLE
+*qual: . : GIVE COLUMN EXPLANATIONS, IF YOU USED OVERLAYS
+*qual: RE : P P --> GIVE THE PRODUCTION PROCESSES + DECAYS (IF RELEVANT)
+*qual: SQRT(S) IN GEV : 8000.0
+*yheader: 
+*xheader: 
+*data: x : y
+ 1.25 (BIN=1 TO 1.5); 0 +- 0;
+ 1.75 (BIN=1.5 TO 2); 90 +- 9.487;
+*dataend:
+
+
+*dataset:
+*location: Figure GIVE FIGURE NUMBER
+*dscomment: background 2 histogram (pb)
+*reackey: P P --> GIVE THE PRODUCTION PROCESSES
+*obskey: GIVE KEY FOR Y-AXIS VARIABLE
+*qual: . : GIVE COLUMN EXPLANATIONS, IF YOU USED OVERLAYS
+*qual: RE : P P --> GIVE THE PRODUCTION PROCESSES + DECAYS (IF RELEVANT)
+*qual: SQRT(S) IN GEV : 8000.0
+*yheader: 
+*xheader: 
+*data: x : y
+ 1.25 (BIN=1 TO 1.5); 0 +- 0;
+ 1.75 (BIN=1.5 TO 2); 90 +- 9.487;
+*dataend:
+
+
+*dataset:
+*location: Figure GIVE FIGURE NUMBER
+*dscomment: background 2 histogram (pb)
+*reackey: P P --> GIVE THE PRODUCTION PROCESSES
+*obskey: GIVE KEY FOR Y-AXIS VARIABLE
+*qual: . : GIVE COLUMN EXPLANATIONS, IF YOU USED OVERLAYS
+*qual: RE : P P --> GIVE THE PRODUCTION PROCESSES + DECAYS (IF RELEVANT)
+*qual: SQRT(S) IN GEV : 8000.0
+*yheader: 
+*xheader: 
+*data: x : y
+ 1.25 (BIN=1 TO 1.5); 0 +- 0;
+ 1.75 (BIN=1.5 TO 2); 90 +- 9.487;
+*dataend:
+
+
+*dataset:
+*location: Figure GIVE FIGURE NUMBER
+*dscomment: background 2 histogram (pb)
+*reackey: P P --> GIVE THE PRODUCTION PROCESSES
+*obskey: GIVE KEY FOR Y-AXIS VARIABLE
+*qual: . : GIVE COLUMN EXPLANATIONS, IF YOU USED OVERLAYS
+*qual: RE : P P --> GIVE THE PRODUCTION PROCESSES + DECAYS (IF RELEVANT)
+*qual: SQRT(S) IN GEV : 8000.0
+*yheader: 
+*xheader: 
+*data: x : y
+ 1.25 (BIN=1 TO 1.5); 0 +- 0;
+ 1.75 (BIN=1.5 TO 2); 90 +- 9.487;
+*dataend:
+
+
+*dataset:
+*location: Figure GIVE FIGURE NUMBER
+*dscomment: background 2 histogram (pb)
+*reackey: P P --> GIVE THE PRODUCTION PROCESSES
+*obskey: GIVE KEY FOR Y-AXIS VARIABLE
+*qual: . : GIVE COLUMN EXPLANATIONS, IF YOU USED OVERLAYS
+*qual: RE : P P --> GIVE THE PRODUCTION PROCESSES + DECAYS (IF RELEVANT)
+*qual: SQRT(S) IN GEV : 8000.0
+*yheader: 
+*xheader: 
+*data: x : y
+ 1.25 (BIN=1 TO 1.5); 0 +- 0;
+ 1.75 (BIN=1.5 TO 2); 90 +- 9.487;
+*dataend:
+
+
+*dataset:
+*location: Figure GIVE FIGURE NUMBER
+*dscomment: background 2 histogram (pb)
+*reackey: P P --> GIVE THE PRODUCTION PROCESSES
+*obskey: GIVE KEY FOR Y-AXIS VARIABLE
+*qual: . : GIVE COLUMN EXPLANATIONS, IF YOU USED OVERLAYS
+*qual: RE : P P --> GIVE THE PRODUCTION PROCESSES + DECAYS (IF RELEVANT)
+*qual: SQRT(S) IN GEV : 8000.0
+*yheader: 
+*xheader: 
+*data: x : y
+ 1.25 (BIN=1 TO 1.5); 0 +- 0;
+ 1.75 (BIN=1.5 TO 2); 90 +- 9.487;
+*dataend:
+*E
+*author: AAD
+*reference: ARXIV:XXXX : 2014
+*reference: CERN-PH-EP-XXXX-XX : 2014
+*reference: GIVE JOURNAL CITATION (IF KNOWN) : 2014
+*reference: http://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/SUSY-XXXX-XXX/ : 2014
+*doi: GIVE DOI
+*status: Encoded 27 MAY 2015 by ATLAS
+*experiment: CERN-LHC-ATLAS
+*detector: ATLAS
+*inspireId: GIVE INSPIRE ID
+*cdsId: GIVE CDS ID
+*durhamId: 
+*title: channel1, ./example.root, , data 
+*comment: CERN-LHC. INSERT ABSTRACT
+
+
+*dataset:
+*location: Figure GIVE FIGURE NUMBER
+*dscomment: data
+*reackey: P P --> GIVE THE PRODUCTION PROCESSES
+*obskey: GIVE KEY FOR Y-AXIS VARIABLE
+*qual: . : GIVE COLUMN EXPLANATIONS, IF YOU USED OVERLAYS
+*qual: RE : P P --> GIVE THE PRODUCTION PROCESSES + DECAYS (IF RELEVANT)
+*qual: SQRT(S) IN GEV : 8000.0
+*yheader: 
+*xheader: 
+*data: x : y
+ 1.25 (BIN=1 TO 1.5); 122 +- 11.05;
+ 1.75 (BIN=1.5 TO 2); 112 +- 10.58;
+*dataend:
+
+
+*dataset:
+*location: Figure GIVE FIGURE NUMBER
+*dscomment: data
+*reackey: P P --> GIVE THE PRODUCTION PROCESSES
+*obskey: GIVE KEY FOR Y-AXIS VARIABLE
+*qual: . : GIVE COLUMN EXPLANATIONS, IF YOU USED OVERLAYS
+*qual: RE : P P --> GIVE THE PRODUCTION PROCESSES + DECAYS (IF RELEVANT)
+*qual: SQRT(S) IN GEV : 8000.0
+*yheader: 
+*xheader: 
+*data: x : y
+ 1.25 (BIN=1 TO 1.5); 122 +- 11.05;
+ 1.75 (BIN=1.5 TO 2); 112 +- 10.58;
+*dataend:
+
+
+*dataset:
+*location: Figure GIVE FIGURE NUMBER
+*dscomment: data
+*reackey: P P --> GIVE THE PRODUCTION PROCESSES
+*obskey: GIVE KEY FOR Y-AXIS VARIABLE
+*qual: . : GIVE COLUMN EXPLANATIONS, IF YOU USED OVERLAYS
+*qual: RE : P P --> GIVE THE PRODUCTION PROCESSES + DECAYS (IF RELEVANT)
+*qual: SQRT(S) IN GEV : 8000.0
+*yheader: 
+*xheader: 
+*data: x : y
+ 1.25 (BIN=1 TO 1.5); 122 +- 11.05;
+ 1.75 (BIN=1.5 TO 2); 112 +- 10.58;
+*dataend:
+
+
+*dataset:
+*location: Figure GIVE FIGURE NUMBER
+*dscomment: data
+*reackey: P P --> GIVE THE PRODUCTION PROCESSES
+*obskey: GIVE KEY FOR Y-AXIS VARIABLE
+*qual: . : GIVE COLUMN EXPLANATIONS, IF YOU USED OVERLAYS
+*qual: RE : P P --> GIVE THE PRODUCTION PROCESSES + DECAYS (IF RELEVANT)
+*qual: SQRT(S) IN GEV : 8000.0
+*yheader: 
+*xheader: 
+*data: x : y
+ 1.25 (BIN=1 TO 1.5); 122 +- 11.05;
+ 1.75 (BIN=1.5 TO 2); 112 +- 10.58;
+*dataend:
+
+
+*dataset:
+*location: Figure GIVE FIGURE NUMBER
+*dscomment: data
+*reackey: P P --> GIVE THE PRODUCTION PROCESSES
+*obskey: GIVE KEY FOR Y-AXIS VARIABLE
+*qual: . : GIVE COLUMN EXPLANATIONS, IF YOU USED OVERLAYS
+*qual: RE : P P --> GIVE THE PRODUCTION PROCESSES + DECAYS (IF RELEVANT)
+*qual: SQRT(S) IN GEV : 8000.0
+*yheader: 
+*xheader: 
+*data: x : y
+ 1.25 (BIN=1 TO 1.5); 122 +- 11.05;
+ 1.75 (BIN=1.5 TO 2); 112 +- 10.58;
+*dataend:
+
+
+*dataset:
+*location: Figure GIVE FIGURE NUMBER
+*dscomment: data
+*reackey: P P --> GIVE THE PRODUCTION PROCESSES
+*obskey: GIVE KEY FOR Y-AXIS VARIABLE
+*qual: . : GIVE COLUMN EXPLANATIONS, IF YOU USED OVERLAYS
+*qual: RE : P P --> GIVE THE PRODUCTION PROCESSES + DECAYS (IF RELEVANT)
+*qual: SQRT(S) IN GEV : 8000.0
+*yheader: 
+*xheader: 
+*data: x : y
+ 1.25 (BIN=1 TO 1.5); 122 +- 11.05;
+ 1.75 (BIN=1.5 TO 2); 112 +- 10.58;
+*dataend:
+*E
+*author: AAD
+*reference: ARXIV:XXXX : 2014
+*reference: CERN-PH-EP-XXXX-XX : 2014
+*reference: GIVE JOURNAL CITATION (IF KNOWN) : 2014
+*reference: http://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/SUSY-XXXX-XXX/ : 2014
+*doi: GIVE DOI
+*status: Encoded 27 MAY 2015 by ATLAS
+*experiment: CERN-LHC-ATLAS
+*detector: ATLAS
+*inspireId: GIVE INSPIRE ID
+*cdsId: GIVE CDS ID
+*durhamId: 
+*title: channel1, ./example.root, , signal 
+*comment: CERN-LHC. INSERT ABSTRACT
+
+
+*dataset:
+*location: Figure GIVE FIGURE NUMBER
+*dscomment: signal histogram (pb)
+*reackey: P P --> GIVE THE PRODUCTION PROCESSES
+*obskey: GIVE KEY FOR Y-AXIS VARIABLE
+*qual: . : GIVE COLUMN EXPLANATIONS, IF YOU USED OVERLAYS
+*qual: RE : P P --> GIVE THE PRODUCTION PROCESSES + DECAYS (IF RELEVANT)
+*qual: SQRT(S) IN GEV : 8000.0
+*yheader: 
+*xheader: 
+*data: x : y
+ 1.25 (BIN=1 TO 1.5); 20 +- 4.472;
+ 1.75 (BIN=1.5 TO 2); 10 +- 3.162;
+*dataend:
+
+
+*dataset:
+*location: Figure GIVE FIGURE NUMBER
+*dscomment: signal histogram (pb)
+*reackey: P P --> GIVE THE PRODUCTION PROCESSES
+*obskey: GIVE KEY FOR Y-AXIS VARIABLE
+*qual: . : GIVE COLUMN EXPLANATIONS, IF YOU USED OVERLAYS
+*qual: RE : P P --> GIVE THE PRODUCTION PROCESSES + DECAYS (IF RELEVANT)
+*qual: SQRT(S) IN GEV : 8000.0
+*yheader: 
+*xheader: 
+*data: x : y
+ 1.25 (BIN=1 TO 1.5); 20 +- 4.472;
+ 1.75 (BIN=1.5 TO 2); 10 +- 3.162;
+*dataend:
+
+
+*dataset:
+*location: Figure GIVE FIGURE NUMBER
+*dscomment: signal histogram (pb)
+*reackey: P P --> GIVE THE PRODUCTION PROCESSES
+*obskey: GIVE KEY FOR Y-AXIS VARIABLE
+*qual: . : GIVE COLUMN EXPLANATIONS, IF YOU USED OVERLAYS
+*qual: RE : P P --> GIVE THE PRODUCTION PROCESSES + DECAYS (IF RELEVANT)
+*qual: SQRT(S) IN GEV : 8000.0
+*yheader: 
+*xheader: 
+*data: x : y
+ 1.25 (BIN=1 TO 1.5); 20 +- 4.472;
+ 1.75 (BIN=1.5 TO 2); 10 +- 3.162;
+*dataend:
+
+
+*dataset:
+*location: Figure GIVE FIGURE NUMBER
+*dscomment: signal histogram (pb)
+*reackey: P P --> GIVE THE PRODUCTION PROCESSES
+*obskey: GIVE KEY FOR Y-AXIS VARIABLE
+*qual: . : GIVE COLUMN EXPLANATIONS, IF YOU USED OVERLAYS
+*qual: RE : P P --> GIVE THE PRODUCTION PROCESSES + DECAYS (IF RELEVANT)
+*qual: SQRT(S) IN GEV : 8000.0
+*yheader: 
+*xheader: 
+*data: x : y
+ 1.25 (BIN=1 TO 1.5); 20 +- 4.472;
+ 1.75 (BIN=1.5 TO 2); 10 +- 3.162;
+*dataend:
+
+
+*dataset:
+*location: Figure GIVE FIGURE NUMBER
+*dscomment: signal histogram (pb)
+*reackey: P P --> GIVE THE PRODUCTION PROCESSES
+*obskey: GIVE KEY FOR Y-AXIS VARIABLE
+*qual: . : GIVE COLUMN EXPLANATIONS, IF YOU USED OVERLAYS
+*qual: RE : P P --> GIVE THE PRODUCTION PROCESSES + DECAYS (IF RELEVANT)
+*qual: SQRT(S) IN GEV : 8000.0
+*yheader: 
+*xheader: 
+*data: x : y
+ 1.25 (BIN=1 TO 1.5); 20 +- 4.472;
+ 1.75 (BIN=1.5 TO 2); 10 +- 3.162;
+*dataend:
+
+
+*dataset:
+*location: Figure GIVE FIGURE NUMBER
+*dscomment: signal histogram (pb)
+*reackey: P P --> GIVE THE PRODUCTION PROCESSES
+*obskey: GIVE KEY FOR Y-AXIS VARIABLE
+*qual: . : GIVE COLUMN EXPLANATIONS, IF YOU USED OVERLAYS
+*qual: RE : P P --> GIVE THE PRODUCTION PROCESSES + DECAYS (IF RELEVANT)
+*qual: SQRT(S) IN GEV : 8000.0
+*yheader: 
+*xheader: 
+*data: x : y
+ 1.25 (BIN=1 TO 1.5); 20 +- 4.472;
+ 1.75 (BIN=1.5 TO 2); 10 +- 3.162;
+*dataend:
+*E
+*author: AAD
+*reference: ARXIV:XXXX : 2014
+*reference: CERN-PH-EP-XXXX-XX : 2014
+*reference: GIVE JOURNAL CITATION (IF KNOWN) : 2014
+*reference: http://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/SUSY-XXXX-XXX/ : 2014
+*doi: GIVE DOI
+*status: Encoded 27 MAY 2015 by ATLAS
+*experiment: CERN-LHC-ATLAS
+*detector: ATLAS
+*inspireId: GIVE INSPIRE ID
+*cdsId: GIVE CDS ID
+*durhamId: 
+*title: channel1, ./example.root, , background1 
+*comment: CERN-LHC. INSERT ABSTRACT
+
+
+*dataset:
+*location: Figure GIVE FIGURE NUMBER
+*dscomment: background 1 histogram (pb)
+*reackey: P P --> GIVE THE PRODUCTION PROCESSES
+*obskey: GIVE KEY FOR Y-AXIS VARIABLE
+*qual: . : GIVE COLUMN EXPLANATIONS, IF YOU USED OVERLAYS
+*qual: RE : P P --> GIVE THE PRODUCTION PROCESSES + DECAYS (IF RELEVANT)
+*qual: SQRT(S) IN GEV : 8000.0
+*yheader: 
+*xheader: 
+*data: x : y
+ 1.25 (BIN=1 TO 1.5); 100 +- 10;
+ 1.75 (BIN=1.5 TO 2); 0 +- 0;
+*dataend:
+
+
+*dataset:
+*location: Figure GIVE FIGURE NUMBER
+*dscomment: background 1 histogram (pb)
+*reackey: P P --> GIVE THE PRODUCTION PROCESSES
+*obskey: GIVE KEY FOR Y-AXIS VARIABLE
+*qual: . : GIVE COLUMN EXPLANATIONS, IF YOU USED OVERLAYS
+*qual: RE : P P --> GIVE THE PRODUCTION PROCESSES + DECAYS (IF RELEVANT)
+*qual: SQRT(S) IN GEV : 8000.0
+*yheader: 
+*xheader: 
+*data: x : y
+ 1.25 (BIN=1 TO 1.5); 100 +- 10;
+ 1.75 (BIN=1.5 TO 2); 0 +- 0;
+*dataend:
+
+
+*dataset:
+*location: Figure GIVE FIGURE NUMBER
+*dscomment: background 1 histogram (pb)
+*reackey: P P --> GIVE THE PRODUCTION PROCESSES
+*obskey: GIVE KEY FOR Y-AXIS VARIABLE
+*qual: . : GIVE COLUMN EXPLANATIONS, IF YOU USED OVERLAYS
+*qual: RE : P P --> GIVE THE PRODUCTION PROCESSES + DECAYS (IF RELEVANT)
+*qual: SQRT(S) IN GEV : 8000.0
+*yheader: 
+*xheader: 
+*data: x : y
+ 1.25 (BIN=1 TO 1.5); 100 +- 10;
+ 1.75 (BIN=1.5 TO 2); 0 +- 0;
+*dataend:
+
+
+*dataset:
+*location: Figure GIVE FIGURE NUMBER
+*dscomment: background 1 histogram (pb)
+*reackey: P P --> GIVE THE PRODUCTION PROCESSES
+*obskey: GIVE KEY FOR Y-AXIS VARIABLE
+*qual: . : GIVE COLUMN EXPLANATIONS, IF YOU USED OVERLAYS
+*qual: RE : P P --> GIVE THE PRODUCTION PROCESSES + DECAYS (IF RELEVANT)
+*qual: SQRT(S) IN GEV : 8000.0
+*yheader: 
+*xheader: 
+*data: x : y
+ 1.25 (BIN=1 TO 1.5); 100 +- 10;
+ 1.75 (BIN=1.5 TO 2); 0 +- 0;
+*dataend:
+
+
+*dataset:
+*location: Figure GIVE FIGURE NUMBER
+*dscomment: background 1 histogram (pb)
+*reackey: P P --> GIVE THE PRODUCTION PROCESSES
+*obskey: GIVE KEY FOR Y-AXIS VARIABLE
+*qual: . : GIVE COLUMN EXPLANATIONS, IF YOU USED OVERLAYS
+*qual: RE : P P --> GIVE THE PRODUCTION PROCESSES + DECAYS (IF RELEVANT)
+*qual: SQRT(S) IN GEV : 8000.0
+*yheader: 
+*xheader: 
+*data: x : y
+ 1.25 (BIN=1 TO 1.5); 100 +- 10;
+ 1.75 (BIN=1.5 TO 2); 0 +- 0;
+*dataend:
+
+
+*dataset:
+*location: Figure GIVE FIGURE NUMBER
+*dscomment: background 1 histogram (pb)
+*reackey: P P --> GIVE THE PRODUCTION PROCESSES
+*obskey: GIVE KEY FOR Y-AXIS VARIABLE
+*qual: . : GIVE COLUMN EXPLANATIONS, IF YOU USED OVERLAYS
+*qual: RE : P P --> GIVE THE PRODUCTION PROCESSES + DECAYS (IF RELEVANT)
+*qual: SQRT(S) IN GEV : 8000.0
+*yheader: 
+*xheader: 
+*data: x : y
+ 1.25 (BIN=1 TO 1.5); 100 +- 10;
+ 1.75 (BIN=1.5 TO 2); 0 +- 0;
+*dataend:
+*E
+*author: AAD
+*reference: ARXIV:XXXX : 2014
+*reference: CERN-PH-EP-XXXX-XX : 2014
+*reference: GIVE JOURNAL CITATION (IF KNOWN) : 2014
+*reference: http://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/SUSY-XXXX-XXX/ : 2014
+*doi: GIVE DOI
+*status: Encoded 27 MAY 2015 by ATLAS
+*experiment: CERN-LHC-ATLAS
+*detector: ATLAS
+*inspireId: GIVE INSPIRE ID
+*cdsId: GIVE CDS ID
+*durhamId: 
+*title: channel1, ./example.root, Sys4, bkg1Syst4High 
+*comment: CERN-LHC. INSERT ABSTRACT
+
+
+*dataset:
+*location: Figure GIVE FIGURE NUMBER
+*dscomment: background 1 histogram (pb)
+*reackey: P P --> GIVE THE PRODUCTION PROCESSES
+*obskey: GIVE KEY FOR Y-AXIS VARIABLE
+*qual: . : GIVE COLUMN EXPLANATIONS, IF YOU USED OVERLAYS
+*qual: RE : P P --> GIVE THE PRODUCTION PROCESSES + DECAYS (IF RELEVANT)
+*qual: SQRT(S) IN GEV : 8000.0
+*yheader: 
+*xheader: 
+*data: x : y
+ 1.25 (BIN=1 TO 1.5); 120 +- 10.95;
+ 1.75 (BIN=1.5 TO 2); 0 +- 0;
+*dataend:
+
+
+*dataset:
+*location: Figure GIVE FIGURE NUMBER
+*dscomment: background 1 histogram (pb)
+*reackey: P P --> GIVE THE PRODUCTION PROCESSES
+*obskey: GIVE KEY FOR Y-AXIS VARIABLE
+*qual: . : GIVE COLUMN EXPLANATIONS, IF YOU USED OVERLAYS
+*qual: RE : P P --> GIVE THE PRODUCTION PROCESSES + DECAYS (IF RELEVANT)
+*qual: SQRT(S) IN GEV : 8000.0
+*yheader: 
+*xheader: 
+*data: x : y
+ 1.25 (BIN=1 TO 1.5); 120 +- 10.95;
+ 1.75 (BIN=1.5 TO 2); 0 +- 0;
+*dataend:
+
+
+*dataset:
+*location: Figure GIVE FIGURE NUMBER
+*dscomment: background 1 histogram (pb)
+*reackey: P P --> GIVE THE PRODUCTION PROCESSES
+*obskey: GIVE KEY FOR Y-AXIS VARIABLE
+*qual: . : GIVE COLUMN EXPLANATIONS, IF YOU USED OVERLAYS
+*qual: RE : P P --> GIVE THE PRODUCTION PROCESSES + DECAYS (IF RELEVANT)
+*qual: SQRT(S) IN GEV : 8000.0
+*yheader: 
+*xheader: 
+*data: x : y
+ 1.25 (BIN=1 TO 1.5); 120 +- 10.95;
+ 1.75 (BIN=1.5 TO 2); 0 +- 0;
+*dataend:
+
+
+*dataset:
+*location: Figure GIVE FIGURE NUMBER
+*dscomment: background 1 histogram (pb)
+*reackey: P P --> GIVE THE PRODUCTION PROCESSES
+*obskey: GIVE KEY FOR Y-AXIS VARIABLE
+*qual: . : GIVE COLUMN EXPLANATIONS, IF YOU USED OVERLAYS
+*qual: RE : P P --> GIVE THE PRODUCTION PROCESSES + DECAYS (IF RELEVANT)
+*qual: SQRT(S) IN GEV : 8000.0
+*yheader: 
+*xheader: 
+*data: x : y
+ 1.25 (BIN=1 TO 1.5); 120 +- 10.95;
+ 1.75 (BIN=1.5 TO 2); 0 +- 0;
+*dataend:
+
+
+*dataset:
+*location: Figure GIVE FIGURE NUMBER
+*dscomment: background 1 histogram (pb)
+*reackey: P P --> GIVE THE PRODUCTION PROCESSES
+*obskey: GIVE KEY FOR Y-AXIS VARIABLE
+*qual: . : GIVE COLUMN EXPLANATIONS, IF YOU USED OVERLAYS
+*qual: RE : P P --> GIVE THE PRODUCTION PROCESSES + DECAYS (IF RELEVANT)
+*qual: SQRT(S) IN GEV : 8000.0
+*yheader: 
+*xheader: 
+*data: x : y
+ 1.25 (BIN=1 TO 1.5); 120 +- 10.95;
+ 1.75 (BIN=1.5 TO 2); 0 +- 0;
+*dataend:
+
+
+*dataset:
+*location: Figure GIVE FIGURE NUMBER
+*dscomment: background 1 histogram (pb)
+*reackey: P P --> GIVE THE PRODUCTION PROCESSES
+*obskey: GIVE KEY FOR Y-AXIS VARIABLE
+*qual: . : GIVE COLUMN EXPLANATIONS, IF YOU USED OVERLAYS
+*qual: RE : P P --> GIVE THE PRODUCTION PROCESSES + DECAYS (IF RELEVANT)
+*qual: SQRT(S) IN GEV : 8000.0
+*yheader: 
+*xheader: 
+*data: x : y
+ 1.25 (BIN=1 TO 1.5); 120 +- 10.95;
+ 1.75 (BIN=1.5 TO 2); 0 +- 0;
+*dataend:
+*E
+*author: AAD
+*reference: ARXIV:XXXX : 2014
+*reference: CERN-PH-EP-XXXX-XX : 2014
+*reference: GIVE JOURNAL CITATION (IF KNOWN) : 2014
+*reference: http://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/SUSY-XXXX-XXX/ : 2014
+*doi: GIVE DOI
+*status: Encoded 27 MAY 2015 by ATLAS
+*experiment: CERN-LHC-ATLAS
+*detector: ATLAS
+*inspireId: GIVE INSPIRE ID
+*cdsId: GIVE CDS ID
+*durhamId: 
+*title: channel1, ./example.root, Sys4, bkg1Syst4Low 
+*comment: CERN-LHC. INSERT ABSTRACT
+
+
+*dataset:
+*location: Figure GIVE FIGURE NUMBER
+*dscomment: background 1 histogram (pb)
+*reackey: P P --> GIVE THE PRODUCTION PROCESSES
+*obskey: GIVE KEY FOR Y-AXIS VARIABLE
+*qual: . : GIVE COLUMN EXPLANATIONS, IF YOU USED OVERLAYS
+*qual: RE : P P --> GIVE THE PRODUCTION PROCESSES + DECAYS (IF RELEVANT)
+*qual: SQRT(S) IN GEV : 8000.0
+*yheader: 
+*xheader: 
+*data: x : y
+ 1.25 (BIN=1 TO 1.5); 80 +- 8.944;
+ 1.75 (BIN=1.5 TO 2); 0 +- 0;
+*dataend:
+
+
+*dataset:
+*location: Figure GIVE FIGURE NUMBER
+*dscomment: background 1 histogram (pb)
+*reackey: P P --> GIVE THE PRODUCTION PROCESSES
+*obskey: GIVE KEY FOR Y-AXIS VARIABLE
+*qual: . : GIVE COLUMN EXPLANATIONS, IF YOU USED OVERLAYS
+*qual: RE : P P --> GIVE THE PRODUCTION PROCESSES + DECAYS (IF RELEVANT)
+*qual: SQRT(S) IN GEV : 8000.0
+*yheader: 
+*xheader: 
+*data: x : y
+ 1.25 (BIN=1 TO 1.5); 80 +- 8.944;
+ 1.75 (BIN=1.5 TO 2); 0 +- 0;
+*dataend:
+
+
+*dataset:
+*location: Figure GIVE FIGURE NUMBER
+*dscomment: background 1 histogram (pb)
+*reackey: P P --> GIVE THE PRODUCTION PROCESSES
+*obskey: GIVE KEY FOR Y-AXIS VARIABLE
+*qual: . : GIVE COLUMN EXPLANATIONS, IF YOU USED OVERLAYS
+*qual: RE : P P --> GIVE THE PRODUCTION PROCESSES + DECAYS (IF RELEVANT)
+*qual: SQRT(S) IN GEV : 8000.0
+*yheader: 
+*xheader: 
+*data: x : y
+ 1.25 (BIN=1 TO 1.5); 80 +- 8.944;
+ 1.75 (BIN=1.5 TO 2); 0 +- 0;
+*dataend:
+
+
+*dataset:
+*location: Figure GIVE FIGURE NUMBER
+*dscomment: background 1 histogram (pb)
+*reackey: P P --> GIVE THE PRODUCTION PROCESSES
+*obskey: GIVE KEY FOR Y-AXIS VARIABLE
+*qual: . : GIVE COLUMN EXPLANATIONS, IF YOU USED OVERLAYS
+*qual: RE : P P --> GIVE THE PRODUCTION PROCESSES + DECAYS (IF RELEVANT)
+*qual: SQRT(S) IN GEV : 8000.0
+*yheader: 
+*xheader: 
+*data: x : y
+ 1.25 (BIN=1 TO 1.5); 80 +- 8.944;
+ 1.75 (BIN=1.5 TO 2); 0 +- 0;
+*dataend:
+
+
+*dataset:
+*location: Figure GIVE FIGURE NUMBER
+*dscomment: background 1 histogram (pb)
+*reackey: P P --> GIVE THE PRODUCTION PROCESSES
+*obskey: GIVE KEY FOR Y-AXIS VARIABLE
+*qual: . : GIVE COLUMN EXPLANATIONS, IF YOU USED OVERLAYS
+*qual: RE : P P --> GIVE THE PRODUCTION PROCESSES + DECAYS (IF RELEVANT)
+*qual: SQRT(S) IN GEV : 8000.0
+*yheader: 
+*xheader: 
+*data: x : y
+ 1.25 (BIN=1 TO 1.5); 80 +- 8.944;
+ 1.75 (BIN=1.5 TO 2); 0 +- 0;
+*dataend:
+
+
+*dataset:
+*location: Figure GIVE FIGURE NUMBER
+*dscomment: background 1 histogram (pb)
+*reackey: P P --> GIVE THE PRODUCTION PROCESSES
+*obskey: GIVE KEY FOR Y-AXIS VARIABLE
+*qual: . : GIVE COLUMN EXPLANATIONS, IF YOU USED OVERLAYS
+*qual: RE : P P --> GIVE THE PRODUCTION PROCESSES + DECAYS (IF RELEVANT)
+*qual: SQRT(S) IN GEV : 8000.0
+*yheader: 
+*xheader: 
+*data: x : y
+ 1.25 (BIN=1 TO 1.5); 80 +- 8.944;
+ 1.75 (BIN=1.5 TO 2); 0 +- 0;
+*dataend:
+*E
+*author: AAD
+*reference: ARXIV:XXXX : 2014
+*reference: CERN-PH-EP-XXXX-XX : 2014
+*reference: GIVE JOURNAL CITATION (IF KNOWN) : 2014
+*reference: http://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/SUSY-XXXX-XXX/ : 2014
+*doi: GIVE DOI
+*status: Encoded 27 MAY 2015 by ATLAS
+*experiment: CERN-LHC-ATLAS
+*detector: ATLAS
+*inspireId: GIVE INSPIRE ID
+*cdsId: GIVE CDS ID
+*durhamId: 
+*title: channel1, ./example.root, , background2 
+*comment: CERN-LHC. INSERT ABSTRACT
+
+
+*dataset:
+*location: Figure GIVE FIGURE NUMBER
+*dscomment: background 2 histogram (pb)
+*reackey: P P --> GIVE THE PRODUCTION PROCESSES
+*obskey: GIVE KEY FOR Y-AXIS VARIABLE
+*qual: . : GIVE COLUMN EXPLANATIONS, IF YOU USED OVERLAYS
+*qual: RE : P P --> GIVE THE PRODUCTION PROCESSES + DECAYS (IF RELEVANT)
+*qual: SQRT(S) IN GEV : 8000.0
+*yheader: 
+*xheader: 
+*data: x : y
+ 1.25 (BIN=1 TO 1.5); 0 +- 0;
+ 1.75 (BIN=1.5 TO 2); 100 +- 10;
+*dataend:
+
+
+*dataset:
+*location: Figure GIVE FIGURE NUMBER
+*dscomment: background 2 histogram (pb)
+*reackey: P P --> GIVE THE PRODUCTION PROCESSES
+*obskey: GIVE KEY FOR Y-AXIS VARIABLE
+*qual: . : GIVE COLUMN EXPLANATIONS, IF YOU USED OVERLAYS
+*qual: RE : P P --> GIVE THE PRODUCTION PROCESSES + DECAYS (IF RELEVANT)
+*qual: SQRT(S) IN GEV : 8000.0
+*yheader: 
+*xheader: 
+*data: x : y
+ 1.25 (BIN=1 TO 1.5); 0 +- 0;
+ 1.75 (BIN=1.5 TO 2); 100 +- 10;
+*dataend:
+
+
+*dataset:
+*location: Figure GIVE FIGURE NUMBER
+*dscomment: background 2 histogram (pb)
+*reackey: P P --> GIVE THE PRODUCTION PROCESSES
+*obskey: GIVE KEY FOR Y-AXIS VARIABLE
+*qual: . : GIVE COLUMN EXPLANATIONS, IF YOU USED OVERLAYS
+*qual: RE : P P --> GIVE THE PRODUCTION PROCESSES + DECAYS (IF RELEVANT)
+*qual: SQRT(S) IN GEV : 8000.0
+*yheader: 
+*xheader: 
+*data: x : y
+ 1.25 (BIN=1 TO 1.5); 0 +- 0;
+ 1.75 (BIN=1.5 TO 2); 100 +- 10;
+*dataend:
+
+
+*dataset:
+*location: Figure GIVE FIGURE NUMBER
+*dscomment: background 2 histogram (pb)
+*reackey: P P --> GIVE THE PRODUCTION PROCESSES
+*obskey: GIVE KEY FOR Y-AXIS VARIABLE
+*qual: . : GIVE COLUMN EXPLANATIONS, IF YOU USED OVERLAYS
+*qual: RE : P P --> GIVE THE PRODUCTION PROCESSES + DECAYS (IF RELEVANT)
+*qual: SQRT(S) IN GEV : 8000.0
+*yheader: 
+*xheader: 
+*data: x : y
+ 1.25 (BIN=1 TO 1.5); 0 +- 0;
+ 1.75 (BIN=1.5 TO 2); 100 +- 10;
+*dataend:
+
+
+*dataset:
+*location: Figure GIVE FIGURE NUMBER
+*dscomment: background 2 histogram (pb)
+*reackey: P P --> GIVE THE PRODUCTION PROCESSES
+*obskey: GIVE KEY FOR Y-AXIS VARIABLE
+*qual: . : GIVE COLUMN EXPLANATIONS, IF YOU USED OVERLAYS
+*qual: RE : P P --> GIVE THE PRODUCTION PROCESSES + DECAYS (IF RELEVANT)
+*qual: SQRT(S) IN GEV : 8000.0
+*yheader: 
+*xheader: 
+*data: x : y
+ 1.25 (BIN=1 TO 1.5); 0 +- 0;
+ 1.75 (BIN=1.5 TO 2); 100 +- 10;
+*dataend:
+
+
+*dataset:
+*location: Figure GIVE FIGURE NUMBER
+*dscomment: background 2 histogram (pb)
+*reackey: P P --> GIVE THE PRODUCTION PROCESSES
+*obskey: GIVE KEY FOR Y-AXIS VARIABLE
+*qual: . : GIVE COLUMN EXPLANATIONS, IF YOU USED OVERLAYS
+*qual: RE : P P --> GIVE THE PRODUCTION PROCESSES + DECAYS (IF RELEVANT)
+*qual: SQRT(S) IN GEV : 8000.0
+*yheader: 
+*xheader: 
+*data: x : y
+ 1.25 (BIN=1 TO 1.5); 0 +- 0;
+ 1.75 (BIN=1.5 TO 2); 100 +- 10;
+*dataend:
+*E
+*author: AAD
+*reference: ARXIV:XXXX : 2014
+*reference: CERN-PH-EP-XXXX-XX : 2014
+*reference: GIVE JOURNAL CITATION (IF KNOWN) : 2014
+*reference: http://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/SUSY-XXXX-XXX/ : 2014
+*doi: GIVE DOI
+*status: Encoded 27 MAY 2015 by ATLAS
+*experiment: CERN-LHC-ATLAS
+*detector: ATLAS
+*inspireId: GIVE INSPIRE ID
+*cdsId: GIVE CDS ID
+*durhamId: 
+*title: channel1, ./example.root, Sys4, bkg2Syst4High 
+*comment: CERN-LHC. INSERT ABSTRACT
+
+
+*dataset:
+*location: Figure GIVE FIGURE NUMBER
+*dscomment: background 2 histogram (pb)
+*reackey: P P --> GIVE THE PRODUCTION PROCESSES
+*obskey: GIVE KEY FOR Y-AXIS VARIABLE
+*qual: . : GIVE COLUMN EXPLANATIONS, IF YOU USED OVERLAYS
+*qual: RE : P P --> GIVE THE PRODUCTION PROCESSES + DECAYS (IF RELEVANT)
+*qual: SQRT(S) IN GEV : 8000.0
+*yheader: 
+*xheader: 
+*data: x : y
+ 1.25 (BIN=1 TO 1.5); 0 +- 0;
+ 1.75 (BIN=1.5 TO 2); 110 +- 10.49;
+*dataend:
+
+
+*dataset:
+*location: Figure GIVE FIGURE NUMBER
+*dscomment: background 2 histogram (pb)
+*reackey: P P --> GIVE THE PRODUCTION PROCESSES
+*obskey: GIVE KEY FOR Y-AXIS VARIABLE
+*qual: . : GIVE COLUMN EXPLANATIONS, IF YOU USED OVERLAYS
+*qual: RE : P P --> GIVE THE PRODUCTION PROCESSES + DECAYS (IF RELEVANT)
+*qual: SQRT(S) IN GEV : 8000.0
+*yheader: 
+*xheader: 
+*data: x : y
+ 1.25 (BIN=1 TO 1.5); 0 +- 0;
+ 1.75 (BIN=1.5 TO 2); 110 +- 10.49;
+*dataend:
+
+
+*dataset:
+*location: Figure GIVE FIGURE NUMBER
+*dscomment: background 2 histogram (pb)
+*reackey: P P --> GIVE THE PRODUCTION PROCESSES
+*obskey: GIVE KEY FOR Y-AXIS VARIABLE
+*qual: . : GIVE COLUMN EXPLANATIONS, IF YOU USED OVERLAYS
+*qual: RE : P P --> GIVE THE PRODUCTION PROCESSES + DECAYS (IF RELEVANT)
+*qual: SQRT(S) IN GEV : 8000.0
+*yheader: 
+*xheader: 
+*data: x : y
+ 1.25 (BIN=1 TO 1.5); 0 +- 0;
+ 1.75 (BIN=1.5 TO 2); 110 +- 10.49;
+*dataend:
+
+
+*dataset:
+*location: Figure GIVE FIGURE NUMBER
+*dscomment: background 2 histogram (pb)
+*reackey: P P --> GIVE THE PRODUCTION PROCESSES
+*obskey: GIVE KEY FOR Y-AXIS VARIABLE
+*qual: . : GIVE COLUMN EXPLANATIONS, IF YOU USED OVERLAYS
+*qual: RE : P P --> GIVE THE PRODUCTION PROCESSES + DECAYS (IF RELEVANT)
+*qual: SQRT(S) IN GEV : 8000.0
+*yheader: 
+*xheader: 
+*data: x : y
+ 1.25 (BIN=1 TO 1.5); 0 +- 0;
+ 1.75 (BIN=1.5 TO 2); 110 +- 10.49;
+*dataend:
+
+
+*dataset:
+*location: Figure GIVE FIGURE NUMBER
+*dscomment: background 2 histogram (pb)
+*reackey: P P --> GIVE THE PRODUCTION PROCESSES
+*obskey: GIVE KEY FOR Y-AXIS VARIABLE
+*qual: . : GIVE COLUMN EXPLANATIONS, IF YOU USED OVERLAYS
+*qual: RE : P P --> GIVE THE PRODUCTION PROCESSES + DECAYS (IF RELEVANT)
+*qual: SQRT(S) IN GEV : 8000.0
+*yheader: 
+*xheader: 
+*data: x : y
+ 1.25 (BIN=1 TO 1.5); 0 +- 0;
+ 1.75 (BIN=1.5 TO 2); 110 +- 10.49;
+*dataend:
+
+
+*dataset:
+*location: Figure GIVE FIGURE NUMBER
+*dscomment: background 2 histogram (pb)
+*reackey: P P --> GIVE THE PRODUCTION PROCESSES
+*obskey: GIVE KEY FOR Y-AXIS VARIABLE
+*qual: . : GIVE COLUMN EXPLANATIONS, IF YOU USED OVERLAYS
+*qual: RE : P P --> GIVE THE PRODUCTION PROCESSES + DECAYS (IF RELEVANT)
+*qual: SQRT(S) IN GEV : 8000.0
+*yheader: 
+*xheader: 
+*data: x : y
+ 1.25 (BIN=1 TO 1.5); 0 +- 0;
+ 1.75 (BIN=1.5 TO 2); 110 +- 10.49;
+*dataend:
+*E
+*author: AAD
+*reference: ARXIV:XXXX : 2014
+*reference: CERN-PH-EP-XXXX-XX : 2014
+*reference: GIVE JOURNAL CITATION (IF KNOWN) : 2014
+*reference: http://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/SUSY-XXXX-XXX/ : 2014
+*doi: GIVE DOI
+*status: Encoded 27 MAY 2015 by ATLAS
+*experiment: CERN-LHC-ATLAS
+*detector: ATLAS
+*inspireId: GIVE INSPIRE ID
+*cdsId: GIVE CDS ID
+*durhamId: 
+*title: channel1, ./example.root, Sys4, bkg2Syst4Low 
+*comment: CERN-LHC. INSERT ABSTRACT
+
+
+*dataset:
+*location: Figure GIVE FIGURE NUMBER
+*dscomment: background 2 histogram (pb)
+*reackey: P P --> GIVE THE PRODUCTION PROCESSES
+*obskey: GIVE KEY FOR Y-AXIS VARIABLE
+*qual: . : GIVE COLUMN EXPLANATIONS, IF YOU USED OVERLAYS
+*qual: RE : P P --> GIVE THE PRODUCTION PROCESSES + DECAYS (IF RELEVANT)
+*qual: SQRT(S) IN GEV : 8000.0
+*yheader: 
+*xheader: 
+*data: x : y
+ 1.25 (BIN=1 TO 1.5); 0 +- 0;
+ 1.75 (BIN=1.5 TO 2); 90 +- 9.487;
+*dataend:
+
+
+*dataset:
+*location: Figure GIVE FIGURE NUMBER
+*dscomment: background 2 histogram (pb)
+*reackey: P P --> GIVE THE PRODUCTION PROCESSES
+*obskey: GIVE KEY FOR Y-AXIS VARIABLE
+*qual: . : GIVE COLUMN EXPLANATIONS, IF YOU USED OVERLAYS
+*qual: RE : P P --> GIVE THE PRODUCTION PROCESSES + DECAYS (IF RELEVANT)
+*qual: SQRT(S) IN GEV : 8000.0
+*yheader: 
+*xheader: 
+*data: x : y
+ 1.25 (BIN=1 TO 1.5); 0 +- 0;
+ 1.75 (BIN=1.5 TO 2); 90 +- 9.487;
+*dataend:
+
+
+*dataset:
+*location: Figure GIVE FIGURE NUMBER
+*dscomment: background 2 histogram (pb)
+*reackey: P P --> GIVE THE PRODUCTION PROCESSES
+*obskey: GIVE KEY FOR Y-AXIS VARIABLE
+*qual: . : GIVE COLUMN EXPLANATIONS, IF YOU USED OVERLAYS
+*qual: RE : P P --> GIVE THE PRODUCTION PROCESSES + DECAYS (IF RELEVANT)
+*qual: SQRT(S) IN GEV : 8000.0
+*yheader: 
+*xheader: 
+*data: x : y
+ 1.25 (BIN=1 TO 1.5); 0 +- 0;
+ 1.75 (BIN=1.5 TO 2); 90 +- 9.487;
+*dataend:
+
+
+*dataset:
+*location: Figure GIVE FIGURE NUMBER
+*dscomment: background 2 histogram (pb)
+*reackey: P P --> GIVE THE PRODUCTION PROCESSES
+*obskey: GIVE KEY FOR Y-AXIS VARIABLE
+*qual: . : GIVE COLUMN EXPLANATIONS, IF YOU USED OVERLAYS
+*qual: RE : P P --> GIVE THE PRODUCTION PROCESSES + DECAYS (IF RELEVANT)
+*qual: SQRT(S) IN GEV : 8000.0
+*yheader: 
+*xheader: 
+*data: x : y
+ 1.25 (BIN=1 TO 1.5); 0 +- 0;
+ 1.75 (BIN=1.5 TO 2); 90 +- 9.487;
+*dataend:
+
+
+*dataset:
+*location: Figure GIVE FIGURE NUMBER
+*dscomment: background 2 histogram (pb)
+*reackey: P P --> GIVE THE PRODUCTION PROCESSES
+*obskey: GIVE KEY FOR Y-AXIS VARIABLE
+*qual: . : GIVE COLUMN EXPLANATIONS, IF YOU USED OVERLAYS
+*qual: RE : P P --> GIVE THE PRODUCTION PROCESSES + DECAYS (IF RELEVANT)
+*qual: SQRT(S) IN GEV : 8000.0
+*yheader: 
+*xheader: 
+*data: x : y
+ 1.25 (BIN=1 TO 1.5); 0 +- 0;
+ 1.75 (BIN=1.5 TO 2); 90 +- 9.487;
+*dataend:
+
+
+*dataset:
+*location: Figure GIVE FIGURE NUMBER
+*dscomment: background 2 histogram (pb)
+*reackey: P P --> GIVE THE PRODUCTION PROCESSES
+*obskey: GIVE KEY FOR Y-AXIS VARIABLE
+*qual: . : GIVE COLUMN EXPLANATIONS, IF YOU USED OVERLAYS
+*qual: RE : P P --> GIVE THE PRODUCTION PROCESSES + DECAYS (IF RELEVANT)
+*qual: SQRT(S) IN GEV : 8000.0
+*yheader: 
+*xheader: 
+*data: x : y
+ 1.25 (BIN=1 TO 1.5); 0 +- 0;
+ 1.75 (BIN=1.5 TO 2); 90 +- 9.487;
+*dataend:
+*E
+*author: AAD
+*reference: ARXIV:XXXX : 2014
+*reference: CERN-PH-EP-XXXX-XX : 2014
+*reference: GIVE JOURNAL CITATION (IF KNOWN) : 2014
+*reference: http://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/SUSY-XXXX-XXX/ : 2014
+*doi: GIVE DOI
+*status: Encoded 27 MAY 2015 by ATLAS
+*experiment: CERN-LHC-ATLAS
+*detector: ATLAS
+*inspireId: GIVE INSPIRE ID
+*cdsId: GIVE CDS ID
+*durhamId: 
+*title: channel1, ./example.root, , data 
+*comment: CERN-LHC. INSERT ABSTRACT
+
+
+*dataset:
+*location: Figure GIVE FIGURE NUMBER
+*dscomment: data
+*reackey: P P --> GIVE THE PRODUCTION PROCESSES
+*obskey: GIVE KEY FOR Y-AXIS VARIABLE
+*qual: . : GIVE COLUMN EXPLANATIONS, IF YOU USED OVERLAYS
+*qual: RE : P P --> GIVE THE PRODUCTION PROCESSES + DECAYS (IF RELEVANT)
+*qual: SQRT(S) IN GEV : 8000.0
+*yheader: 
+*xheader: 
+*data: x : y
+ 1.25 (BIN=1 TO 1.5); 122 +- 11.05;
+ 1.75 (BIN=1.5 TO 2); 112 +- 10.58;
+*dataend:
+*E
+*author: AAD
+*reference: ARXIV:XXXX : 2014
+*reference: CERN-PH-EP-XXXX-XX : 2014
+*reference: GIVE JOURNAL CITATION (IF KNOWN) : 2014
+*reference: http://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/SUSY-XXXX-XXX/ : 2014
+*doi: GIVE DOI
+*status: Encoded 27 MAY 2015 by ATLAS
+*experiment: CERN-LHC-ATLAS
+*detector: ATLAS
+*inspireId: GIVE INSPIRE ID
+*cdsId: GIVE CDS ID
+*durhamId: 
+*title: channel1, ./example.root, , signal 
+*comment: CERN-LHC. INSERT ABSTRACT
+
+
+*dataset:
+*location: Figure GIVE FIGURE NUMBER
+*dscomment: signal histogram (pb)
+*reackey: P P --> GIVE THE PRODUCTION PROCESSES
+*obskey: GIVE KEY FOR Y-AXIS VARIABLE
+*qual: . : GIVE COLUMN EXPLANATIONS, IF YOU USED OVERLAYS
+*qual: RE : P P --> GIVE THE PRODUCTION PROCESSES + DECAYS (IF RELEVANT)
+*qual: SQRT(S) IN GEV : 8000.0
+*yheader: 
+*xheader: 
+*data: x : y
+ 1.25 (BIN=1 TO 1.5); 20 +- 4.472;
+ 1.75 (BIN=1.5 TO 2); 10 +- 3.162;
+*dataend:
+*E
+*author: AAD
+*reference: ARXIV:XXXX : 2014
+*reference: CERN-PH-EP-XXXX-XX : 2014
+*reference: GIVE JOURNAL CITATION (IF KNOWN) : 2014
+*reference: http://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/SUSY-XXXX-XXX/ : 2014
+*doi: GIVE DOI
+*status: Encoded 27 MAY 2015 by ATLAS
+*experiment: CERN-LHC-ATLAS
+*detector: ATLAS
+*inspireId: GIVE INSPIRE ID
+*cdsId: GIVE CDS ID
+*durhamId: 
+*title: channel1, ./example.root, , background1 
+*comment: CERN-LHC. INSERT ABSTRACT
+
+
+*dataset:
+*location: Figure GIVE FIGURE NUMBER
+*dscomment: background 1 histogram (pb)
+*reackey: P P --> GIVE THE PRODUCTION PROCESSES
+*obskey: GIVE KEY FOR Y-AXIS VARIABLE
+*qual: . : GIVE COLUMN EXPLANATIONS, IF YOU USED OVERLAYS
+*qual: RE : P P --> GIVE THE PRODUCTION PROCESSES + DECAYS (IF RELEVANT)
+*qual: SQRT(S) IN GEV : 8000.0
+*yheader: 
+*xheader: 
+*data: x : y
+ 1.25 (BIN=1 TO 1.5); 100 +- 10;
+ 1.75 (BIN=1.5 TO 2); 0 +- 0;
+*dataend:
+*E
+*author: AAD
+*reference: ARXIV:XXXX : 2014
+*reference: CERN-PH-EP-XXXX-XX : 2014
+*reference: GIVE JOURNAL CITATION (IF KNOWN) : 2014
+*reference: http://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/SUSY-XXXX-XXX/ : 2014
+*doi: GIVE DOI
+*status: Encoded 27 MAY 2015 by ATLAS
+*experiment: CERN-LHC-ATLAS
+*detector: ATLAS
+*inspireId: GIVE INSPIRE ID
+*cdsId: GIVE CDS ID
+*durhamId: 
+*title: channel1, ./example.root, Sys4, bkg1Syst4High 
+*comment: CERN-LHC. INSERT ABSTRACT
+
+
+*dataset:
+*location: Figure GIVE FIGURE NUMBER
+*dscomment: background 1 histogram (pb)
+*reackey: P P --> GIVE THE PRODUCTION PROCESSES
+*obskey: GIVE KEY FOR Y-AXIS VARIABLE
+*qual: . : GIVE COLUMN EXPLANATIONS, IF YOU USED OVERLAYS
+*qual: RE : P P --> GIVE THE PRODUCTION PROCESSES + DECAYS (IF RELEVANT)
+*qual: SQRT(S) IN GEV : 8000.0
+*yheader: 
+*xheader: 
+*data: x : y
+ 1.25 (BIN=1 TO 1.5); 120 +- 10.95;
+ 1.75 (BIN=1.5 TO 2); 0 +- 0;
+*dataend:
+*E
+*author: AAD
+*reference: ARXIV:XXXX : 2014
+*reference: CERN-PH-EP-XXXX-XX : 2014
+*reference: GIVE JOURNAL CITATION (IF KNOWN) : 2014
+*reference: http://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/SUSY-XXXX-XXX/ : 2014
+*doi: GIVE DOI
+*status: Encoded 27 MAY 2015 by ATLAS
+*experiment: CERN-LHC-ATLAS
+*detector: ATLAS
+*inspireId: GIVE INSPIRE ID
+*cdsId: GIVE CDS ID
+*durhamId: 
+*title: channel1, ./example.root, Sys4, bkg1Syst4Low 
+*comment: CERN-LHC. INSERT ABSTRACT
+
+
+*dataset:
+*location: Figure GIVE FIGURE NUMBER
+*dscomment: background 1 histogram (pb)
+*reackey: P P --> GIVE THE PRODUCTION PROCESSES
+*obskey: GIVE KEY FOR Y-AXIS VARIABLE
+*qual: . : GIVE COLUMN EXPLANATIONS, IF YOU USED OVERLAYS
+*qual: RE : P P --> GIVE THE PRODUCTION PROCESSES + DECAYS (IF RELEVANT)
+*qual: SQRT(S) IN GEV : 8000.0
+*yheader: 
+*xheader: 
+*data: x : y
+ 1.25 (BIN=1 TO 1.5); 80 +- 8.944;
+ 1.75 (BIN=1.5 TO 2); 0 +- 0;
+*dataend:
+*E
+*author: AAD
+*reference: ARXIV:XXXX : 2014
+*reference: CERN-PH-EP-XXXX-XX : 2014
+*reference: GIVE JOURNAL CITATION (IF KNOWN) : 2014
+*reference: http://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/SUSY-XXXX-XXX/ : 2014
+*doi: GIVE DOI
+*status: Encoded 27 MAY 2015 by ATLAS
+*experiment: CERN-LHC-ATLAS
+*detector: ATLAS
+*inspireId: GIVE INSPIRE ID
+*cdsId: GIVE CDS ID
+*durhamId: 
+*title: channel1, ./example.root, , background2 
+*comment: CERN-LHC. INSERT ABSTRACT
+
+
+*dataset:
+*location: Figure GIVE FIGURE NUMBER
+*dscomment: background 2 histogram (pb)
+*reackey: P P --> GIVE THE PRODUCTION PROCESSES
+*obskey: GIVE KEY FOR Y-AXIS VARIABLE
+*qual: . : GIVE COLUMN EXPLANATIONS, IF YOU USED OVERLAYS
+*qual: RE : P P --> GIVE THE PRODUCTION PROCESSES + DECAYS (IF RELEVANT)
+*qual: SQRT(S) IN GEV : 8000.0
+*yheader: 
+*xheader: 
+*data: x : y
+ 1.25 (BIN=1 TO 1.5); 0 +- 0;
+ 1.75 (BIN=1.5 TO 2); 100 +- 10;
+*dataend:
+*E
+*author: AAD
+*reference: ARXIV:XXXX : 2014
+*reference: CERN-PH-EP-XXXX-XX : 2014
+*reference: GIVE JOURNAL CITATION (IF KNOWN) : 2014
+*reference: http://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/SUSY-XXXX-XXX/ : 2014
+*doi: GIVE DOI
+*status: Encoded 27 MAY 2015 by ATLAS
+*experiment: CERN-LHC-ATLAS
+*detector: ATLAS
+*inspireId: GIVE INSPIRE ID
+*cdsId: GIVE CDS ID
+*durhamId: 
+*title: channel1, ./example.root, Sys4, bkg2Syst4High 
+*comment: CERN-LHC. INSERT ABSTRACT
+
+
+*dataset:
+*location: Figure GIVE FIGURE NUMBER
+*dscomment: background 2 histogram (pb)
+*reackey: P P --> GIVE THE PRODUCTION PROCESSES
+*obskey: GIVE KEY FOR Y-AXIS VARIABLE
+*qual: . : GIVE COLUMN EXPLANATIONS, IF YOU USED OVERLAYS
+*qual: RE : P P --> GIVE THE PRODUCTION PROCESSES + DECAYS (IF RELEVANT)
+*qual: SQRT(S) IN GEV : 8000.0
+*yheader: 
+*xheader: 
+*data: x : y
+ 1.25 (BIN=1 TO 1.5); 0 +- 0;
+ 1.75 (BIN=1.5 TO 2); 110 +- 10.49;
+*dataend:
+*E
+*author: AAD
+*reference: ARXIV:XXXX : 2014
+*reference: CERN-PH-EP-XXXX-XX : 2014
+*reference: GIVE JOURNAL CITATION (IF KNOWN) : 2014
+*reference: http://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/SUSY-XXXX-XXX/ : 2014
+*doi: GIVE DOI
+*status: Encoded 27 MAY 2015 by ATLAS
+*experiment: CERN-LHC-ATLAS
+*detector: ATLAS
+*inspireId: GIVE INSPIRE ID
+*cdsId: GIVE CDS ID
+*durhamId: 
+*title: channel1, ./example.root, Sys4, bkg2Syst4Low 
+*comment: CERN-LHC. INSERT ABSTRACT
+
+
+*dataset:
+*location: Figure GIVE FIGURE NUMBER
+*dscomment: background 2 histogram (pb)
+*reackey: P P --> GIVE THE PRODUCTION PROCESSES
+*obskey: GIVE KEY FOR Y-AXIS VARIABLE
+*qual: . : GIVE COLUMN EXPLANATIONS, IF YOU USED OVERLAYS
+*qual: RE : P P --> GIVE THE PRODUCTION PROCESSES + DECAYS (IF RELEVANT)
+*qual: SQRT(S) IN GEV : 8000.0
+*yheader: 
+*xheader: 
+*data: x : y
+ 1.25 (BIN=1 TO 1.5); 0 +- 0;
+ 1.75 (BIN=1.5 TO 2); 90 +- 9.487;
+*dataend:
+*E

@@ -28,11 +28,11 @@
     <Sample Name="background1" HistoPath="" NormalizeByTheory="True" HistoName="background1">
       <StatError Activate="True" HistoName="background1_statUncert"  />
       <OverallSys Name="syst2" Low="0.95" High="1.05"/>
-      <HistoSys Name="syst4" HistoNameHigh="bkg1Syst4High" HistoNameLow="bkg1Syst4Low"/>
+      <HistoSys Name="syst4" HistoPath="Sys4" HistoNameHigh="bkg1Syst4High" HistoNameLow="bkg1Syst4Low"/>
     </Sample>
     <Sample Name="background2" HistoPath="" NormalizeByTheory="True" HistoName="background2">
       <StatError Activate="True" /> <!-- Use Default Histogram Errors as input to StatError -->
       <OverallSys Name="syst3" Low="0.95" High="1.05"/>
-      <HistoSys Name="syst4" HistoNameHigh="bkg2Syst4High" HistoNameLow="bkg2Syst4Low"/>-->
+      <HistoSys Name="syst4" HistoPath="Sys4" HistoNameHigh="bkg2Syst4High" HistoNameLow="bkg2Syst4Low"/>-->
     </Sample>
   </Channel>

@@ -1,11 +1,11 @@
-# converting histogram, ./example.root, , data
-# converting histogram, ./example.root, , signal
-# converting histogram, ./example.root, , background1
-# converting histogram, ./example.root, , bkg1Syst4High
-# converting histogram, ./example.root, , bkg1Syst4Low
-# converting histogram, ./example.root, , background2
-# converting histogram, ./example.root, , bkg2Syst4High
-# converting histogram, ./example.root, , bkg2Syst4Low
+# converting histogram,  ./example.root, , data
+# converting histogram,  ./example.root, , signal
+# converting histogram,  ./example.root, , background1
+# converting histogram,  ./example.root, Sys4, bkg1Syst4High
+# converting histogram,  ./example.root, Sys4, bkg1Syst4Low
+# converting histogram,  ./example.root, , background2
+# converting histogram,  ./example.root, Sys4, bkg2Syst4High
+# converting histogram,  ./example.root, Sys4, bkg2Syst4Low
 Channel:
   HistoName: ''
   HistoPath: ''
@@ -66,7 +66,7 @@ Channel:
           HistoName: background1
           HistoNameHigh: bkg1Syst4High
           HistoNameLow: bkg1Syst4Low
-          HistoPath: ''
+          HistoPath: Sys4
           InputFile: ./example.root
           Name: syst4
   - Sample:
@@ -92,7 +92,7 @@ Channel:
           HistoName: background2
           HistoNameHigh: bkg2Syst4High
           HistoNameLow: bkg2Syst4Low
-          HistoPath: ''
+          HistoPath: Sys4
           InputFile: ./example.root
           Name: syst4
       text: "-->\n    "
