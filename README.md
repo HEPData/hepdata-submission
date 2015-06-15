@@ -11,6 +11,49 @@ An additional important type of file is the data file that defines all the data,
 
 ## Submission.yaml
 
+The submission.yaml file tells HEPdata about your entire submission, but most importantly, what files are in your submission, what they contain, any related material, keywords, etc. 
+
+Some information, like the *name, description, keywords, and the reference to the data file* are required. For example, the table definition below is perfectly valid.
+
+``` yaml
+name: "Table 1"
+description: Describe the data. The more you say, the easier it'll be to search for it later.
+keywords: # used for searching, possibly multiple values for each keyword
+  - { name: reactions, values: [P P --> Z0 Z0 X]}
+  - { name: observables, values: [SIG]}
+  - { name: energies, values: [7000]}
+data_file: data1.yaml
+
+```
+
+Then, there are some *optional* things, such as the *license* for your data, or pointing to *additional resources*, e.g. code or ROOT files you've used to create this data.
+Sharing this will enable others to do meaningful things with your data long after you've finished with it...and that's a good thing.
+
+
+``` yaml
+name: "Table 1"
+description: Describe the data. The more you say, the easier it'll be to search for it later.
+keywords: # used for searching, possibly multiple values for each keyword
+  - { name: reactions, values: [P P --> Z0 Z0 X]}
+  - { name: observables, values: [SIG]}
+  - { name: energies, values: [7000]}
+data_file: data1.yaml
+data_license: # (optional) you can specify a license for the data 
+  name: 'GPL 2'
+  url: 'url for license'
+  description: 'Tell me about it. This can appear in the main record display' # (optional)
+additional_resources: # (optional)
+  - location: "http:github.com/HEPData/hepdata"
+    description: "Full source code for creating this data"
+  - location: "root.root"
+    description: "Some file"
+    license: # (optional)
+      name: 'GPL 2'
+      url: 'url for license'
+      description: 'Tell me about it. This can appear in the main record display' # (optional)
+```
+
+
 ``` yaml
 
 # Start a new submission. This section is optional for the provision of information about the overall submission.
@@ -52,11 +95,19 @@ keywords: # used for searching, possibly multiple values for each keyword
   - { name: observables, values: [SIG]}
   - { name: energies, values: [7000]}
 data_file: data1.yaml
-additional_resources:
+data_license: # (optional) you can specify a license for the data 
+  name: 'GPL 2'
+  url: 'url for license'
+  description: 'Tell me about it. This can appear in the main record display' # (optional)
+additional_resources: # (optional)
   - location: "http:github.com/HEPData/hepdata"
     description: "Full source code for creating this data"
   - location: "root.root"
     description: "Some file"
+    license: # (optional)
+      name: 'GPL 2'
+      url: 'url for license'
+      description: 'Tell me about it. This can appear in the main record display' # (optional)
 
 ---
 # This is Table 2.
