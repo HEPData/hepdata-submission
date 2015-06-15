@@ -53,6 +53,8 @@ additional_resources: # (optional)
       description: 'Tell me about it. This can appear in the main record display' # (optional)
 ```
 
+### Submission.yaml Full Example
+
 
 ``` yaml
 
