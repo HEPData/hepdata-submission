@@ -1,16 +1,16 @@
 ---
-xaxes:
+independent_variables:
   - header: {name: MT(ZZ), units: GEV}
-    bins:
+    values:
       - {low: 220, high: 250}
       - {low: 250, high: 300}
       - {low: 300, high: 400}
-yaxes:
+dependent_variables:
   - header: {name: 10**6 * 1/SIG(fiducial) * D(SIG(fiducial))/DMT(ZZ), units: GEV**-1}
     qualifiers:
       - {name: RE, value: P P --> Z0 < LEPTON+ LEPTON- > Z0 < NU NUBAR > X}
       - {name: SQRT(S), units: GEV, value: 7000}
-    points:
+    values:
       - value: 10500
         errors:
           - {symerror: 4400, label: stat}

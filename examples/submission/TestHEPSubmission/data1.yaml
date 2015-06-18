@@ -1,29 +1,29 @@
 ---
-xaxes:
+independent_variables:
   - header: {name: SQRT(S), units: GEV}
-    bins:
+    values:
       - value: 7000
       - value: 8000
       - value: 9000
-yaxes:
+dependent_variables:
   - header: {name: SIG(fiducial), units: FB}
     qualifiers:
       - {name: RE, value: P P --> Z0 < LEPTON+ LEPTON- > Z0 < LEPTON+ LEPTON- > X}
-    points:
+    values:
       - value: 25.4
         errors:
-          - {asymerror: {plus: 3.3, minus: 3.0}, label: stat}
-          - {asymerror: {plus: 1, minus: 1.2}, label: sys}
-          - {asymerror: {plus: 1, minus: 1}, label: 'sys,lumi'}
+          - {asymerror: {plus: 3.3, minus: -3.0}, label: stat}
+          - {asymerror: {plus: 1, minus: -1.2}, label: sys}
+          - {asymerror: {plus: 1, minus: -1}, label: 'sys,lumi'}
   
       - value: 29.8
         errors:
-          - {asymerror: {plus: 3.8, minus: 3.5}, label: stat}
-          - {asymerror: {plus: 1.7, minus: 1.5}, label: sys}
+          - {asymerror: {plus: 3.8, minus: -3.5}, label: stat}
+          - {asymerror: {plus: 1.7, minus: -1.5}, label: sys}
           - {symerror: 1.2, label: 'sys,lumi'}
   
       - value: 12.7 
         errors:
-          - {asymerror:{plus: 3.1, minus: 2.9}, label: stat}
+          - {asymerror:{plus: 3.1, minus: -2.9}, label: stat}
           - {symerror: 1.7, label: sys}
           - {symerror: 0.5, label: 'sys,lumi'}

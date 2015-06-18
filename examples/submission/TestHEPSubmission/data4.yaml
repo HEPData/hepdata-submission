@@ -1,16 +1,16 @@
 ---
-xaxes:
+independent_variables:
   - header: {name: Leading dilepton PT, units: GEV}
-    bins:
+    values:
       - {low: 50, high: 90}
       - {low: 90, high: 130}
       - {low: 130, high: 200}
-yaxes:
+dependent_variables:
   - header: {name: 10**6 * 1/SIG(fiducial) * D(SIG(fiducial))/DPT, units: GEV**-1}
     qualifiers:
       - {name: RE, value: P P --> Z0 < LEPTON+ LEPTON- > Z0 < NU NUBAR > X}
       - {name: SQRT(S), units: GEV, value: 7000}
-    points:
+    values:
       - value: 9930
         errors:
           - {symerror: 3340, label: stat}

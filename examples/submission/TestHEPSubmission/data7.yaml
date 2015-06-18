@@ -1,7 +1,7 @@
 --- 
-xaxes: 
+independent_variables:
   - 
-    bins: 
+    values:
       - 
         high: 240
         low: 0
@@ -17,12 +17,12 @@ xaxes:
     header: 
       name: M(ZZ)
       units: GEV
-yaxes: 
+dependent_variables:
   - 
     header: 
       name: "10**6 * 1/SIG(fiducial) * D(SIG(fiducial))/DM(ZZ)"
       units: GEV**-1
-    points: 
+    values:
       - 
         errors: 
           - 

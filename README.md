@@ -60,8 +60,15 @@ additional_resources: # (optional)
 
 # Start a new submission. This section is optional for the provision of information about the overall submission.
 ---
-references: # Additional references (e.g. experiment TWiki page for analysis)
-  - http://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/STDM-2012-02/
+record_ids: # optional - we can infer this in the hepdata upload as well. 
+  - {type:'inspire', id: 846853}
+  - {type:'red', id: 4042}
+  
+additional_resources: # additional references (e.g. experiment TWiki page for analysis)
+  - {location:http://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/STDM-2012-02/, description:""}
+  - {location:http://hepdata.cedar.ac.uk/resource/3553/table6.html, description:"Individual systematic uncertainties for the differential cross sections in bins of Q^2 and Y (Table 4 of paper)"}
+  - {location:http://hepdata.cedar.ac.uk/resource/3553/table6.txt, description:"(Plain Text) Individual systematic uncertainties for the differential cross sections in bins of Q^2 and Y (Table 4 of paper)"}
+
 comment: | # Information that applies to all data tables.
   CERN-LHC.  Measurements of the cross section  for ZZ production using the 4l and 2l2nu decay channels in proton-proton collisions at a centre-of-mass energy of 7 TeV with 4.6 fb^-1 of data collected in 2011.  The final states used are 4 electrons, 4 muons, 2 electrons and 2 muons, 2 electrons and missing transverse momentum, and 2 muons and missing transverse momentum (MET).
 
@@ -138,31 +145,41 @@ data_file: data3.yaml
 ### Data Files
 
 Data Files can be encoded as either YAML or JSON, the software deals with both the same way.
+We define the data file in two parts which describe:
+
+ - a) the independent variables (the x-axis)
+ - b) the dependent variables (the thing you're measuring, e.g. the y axis)
+ 
+ Inside each you can define the header (the column name), and the values (the rows in your table).
+ For the dependent variables, you can also define 'qualifiers', these are extra more metadata about how the measurement 
+ was made, such as the energy, the reaction type, and other independent variable limits.
+   
 
 #### YAML
 
 ``` yaml
 
 ---
-xaxes:
+name: 'data1.yaml' #optional, only required for single file submissions to identify the record from the submission section. 
+independent_variables:
   - header: {name: SQRT(S), units: GEV}
-    bins:
+    values:
       - value: 7000
       - value: 8000
-yaxes:
+dependent_variables:
   - header: {name: SIG(total), units: FB}
     qualifiers:
       - {name: RE, value: P P --> Z0 Z0 X}
-    points:
+    values:
       - value: 6.7
         errors:
           - {symerror: 0.45, label: stat}
-          - {asymerror: {plus: 0.4, minus: 0.3}, label: sys}
+          - {asymerror: {plus: 0.4, minus: -0.3}, label: sys}
           - {symerror: 0.34, label: "sys,lumi"}
       - value: 5.7
         errors:
           - {symerror: 0.4, label: stat}
-          - {asymerror: {plus: 0.42, minus: 0.31}, label: sys}
+          - {asymerror: {plus: 0.42, minus: -0.31}, label: sys}
           - {symerror: 0.4, label: "sys,lumi"}
 
 ```
@@ -173,13 +190,13 @@ yaxes:
 ``` json
 
 {
-    "xaxes": [
+    "independent_variables": [
         {
             "header": {
                 "name": "SQRT(S)",
                 "units": "GEV"
             },
-            "bins": [
+            "values": [
                 {
                     "value": 7000
                 },
@@ -189,7 +206,7 @@ yaxes:
             ]
         }
     ],
-    "yaxes": [
+    "dependent_variables": [
         {
             "header": {
                 "name": "SIG(total)",
@@ -201,12 +218,12 @@ yaxes:
                     "value": "P P --> Z0 Z0 X"
                 }
             ],
-            "points": [
+            "values": [
                 {
                     "value": 6.7,
                     "errors": [
                         {"symerror": 0.45, "label": "stat"},
-                        {"asymerror": {"plus": 0.4, "minus": 0.3}, "label": "sys"},
+                        {"asymerror": {"plus": 0.4, "minus": -0.3}, "label": "sys"},
                         {"symerror": 0.34,"label": "sys,lumi"}
                     ]
                 },
@@ -214,7 +231,7 @@ yaxes:
                     "value": 5.7,
                     "errors": [
                         {"symerror": 0.4, "label": "stat"},
-                        {"asymerror": {"plus": 0.42, "minus": 0.31}, "label": "sys"},
+                        {"asymerror": {"plus": 0.42, "minus": -0.31}, "label": "sys"},
                         {"symerror": 0.4, "label": "sys,lumi"}
                     ]
                 }
