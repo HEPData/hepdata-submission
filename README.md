@@ -39,9 +39,9 @@ keywords: # used for searching, possibly multiple values for each keyword
   - { name: energies, values: [7000]}
 data_file: data1.yaml
 data_license: # (optional) you can specify a license for the data 
-  name: 'GPL 2'
-  url: 'url for license'
-  description: 'Tell me about it. This can appear in the main record display' # (optional)
+  name: "GPL 2"
+  url: "url for license"
+  description: "Tell me about it. This can appear in the main record display" # (optional)
 additional_resources: # (optional)
   - location: "http:github.com/HEPData/hepdata"
     description: "Full source code for creating this data"
@@ -49,8 +49,8 @@ additional_resources: # (optional)
     description: "Some file"
     license: # (optional)
       name: 'GPL 2'
-      url: 'url for license'
-      description: 'Tell me about it. This can appear in the main record display' # (optional)
+      url: "url for license"
+      description: "Tell me about it. This can appear in the main record display" # (optional)
 ```
 
 ### Submission.yaml Full Example
@@ -61,13 +61,13 @@ additional_resources: # (optional)
 # Start a new submission. This section is optional for the provision of information about the overall submission.
 ---
 record_ids: # optional - we can infer this in the hepdata upload as well. 
-  - {type:'inspire', id: 846853}
-  - {type:'red', id: 4042}
+  - {type: "inspire", id: 846853}
+  - {type: "red", id: 4042}
   
 additional_resources: # additional references (e.g. experiment TWiki page for analysis)
-  - {location:http://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/STDM-2012-02/, description:""}
-  - {location:http://hepdata.cedar.ac.uk/resource/3553/table6.html, description:"Individual systematic uncertainties for the differential cross sections in bins of Q^2 and Y (Table 4 of paper)"}
-  - {location:http://hepdata.cedar.ac.uk/resource/3553/table6.txt, description:"(Plain Text) Individual systematic uncertainties for the differential cross sections in bins of Q^2 and Y (Table 4 of paper)"}
+  - {location: "http://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/STDM-2012-02/", description: ""}
+  - {location: "http://hepdata.cedar.ac.uk/resource/3553/table6.html", description: "Individual systematic uncertainties for the differential cross sections in bins of Q^2 and Y (Table 4 of paper)"}
+  - {location: "http://hepdata.cedar.ac.uk/resource/3553/table6.txt", description: "(Plain Text) Individual systematic uncertainties for the differential cross sections in bins of Q^2 and Y (Table 4 of paper)"}
 
 comment: | # Information that applies to all data tables.
   CERN-LHC.  Measurements of the cross section  for ZZ production using the 4l and 2l2nu decay channels in proton-proton collisions at a centre-of-mass energy of 7 TeV with 4.6 fb^-1 of data collected in 2011.  The final states used are 4 electrons, 4 muons, 2 electrons and 2 muons, 2 electrons and missing transverse momentum, and 2 muons and missing transverse momentum (MET).
@@ -105,18 +105,18 @@ keywords: # used for searching, possibly multiple values for each keyword
   - { name: energies, values: [7000]}
 data_file: data1.yaml
 data_license: # (optional) you can specify a license for the data 
-  name: 'GPL 2'
-  url: 'url for license'
-  description: 'Tell me about it. This can appear in the main record display' # (optional)
+  name: "GPL 2"
+  url: "url for license"
+  description: "Tell me about it. This can appear in the main record display" # (optional)
 additional_resources: # (optional)
   - location: "http:github.com/HEPData/hepdata"
     description: "Full source code for creating this data"
   - location: "root.root"
     description: "Some file"
     license: # (optional)
-      name: 'GPL 2'
-      url: 'url for license'
-      description: 'Tell me about it. This can appear in the main record display' # (optional)
+      name: "GPL 2"
+      url: "url for license"
+      description: "Tell me about it. This can appear in the main record display" # (optional)
 
 ---
 # This is Table 2.
