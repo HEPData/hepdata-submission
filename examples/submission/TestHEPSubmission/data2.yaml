@@ -1,21 +1,13 @@
----
-independent_variables:
-  - header: {name: SQRT(S), units: GEV}
-    values:
-      - value: 7000
-      - value: 8000
+independent_variables: []
 dependent_variables:
-  - header: {name: SIG(total), units: FB}
-    qualifiers:
-      - {name: RE, value: P P --> Z0 Z0 X}
-    values:
-      - value: 6.7
-        errors:
-          - {symerror: 0.45, label: stat}
-          - {asymerror: {plus: 0.4, minus: -0.3}, label: sys}
-          - {symerror: 0.34, label: "sys,lumi"}
-      - value: 5.7
-        errors:
-          - {symerror: 0.4, label: stat}
-          - {asymerror: {plus: 0.42, minus: -0.31}, label: sys}
-          - {symerror: 0.4, label: "sys,lumi"}
+- header: {name: SIG(total), units: FB}
+  qualifiers:
+  - {name: RE, value: P P --> Z0 Z0 X}
+  - {name: SQRT(S), units: GEV, value: 7000}
+  values:
+  - value: 6.7
+    errors:
+    - {symerror: 0.7, label: stat}
+    - asymerror: {minus: -0.3, plus: 0.4}
+      label: sys
+    - {symerror: 0.3, label: 'sys,lumi'}
