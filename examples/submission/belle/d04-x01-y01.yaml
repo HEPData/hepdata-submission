@@ -1,0 +1,48 @@
+dependent_variables:
+- header: {name: $\Delta\Gamma/\Delta \chi$, units: '$10^{-15}$ GeV'}
+  qualifiers:
+  - {name: RE, value: '$\bar{B}^0\to D^{*+}\ell^-\bar{\nu}_\ell$'}
+  values:
+  - errors:
+    - {symerror: 0.1603038}
+    value: 1.858876
+  - errors:
+    - {symerror: 0.1590942}
+    value: 2.310846
+  - errors:
+    - {symerror: 0.1646744}
+    value: 2.585328
+  - errors:
+    - {symerror: 0.1572296}
+    value: 2.36633
+  - errors:
+    - {symerror: 0.1304245}
+    value: 1.945463
+  - errors:
+    - {symerror: 0.152497}
+    value: 1.873821
+  - errors:
+    - {symerror: 0.1496803}
+    value: 2.111709
+  - errors:
+    - {symerror: 0.1588761}
+    value: 2.3252
+  - errors:
+    - {symerror: 0.1510489}
+    value: 2.1516
+  - errors:
+    - {symerror: 0.1623077}
+    value: 1.886141
+independent_variables:
+- header: {name: $\chi$}
+  values:
+  - {high: 0.62832, low: 0.0}
+  - {high: 1.25664, low: 0.62832}
+  - {high: 1.88496, low: 1.25664}
+  - {high: 2.51328, low: 1.88496}
+  - {high: 3.1416, low: 2.51328}
+  - {high: 3.76992, low: 3.1416}
+  - {high: 4.39824, low: 3.76992}
+  - {high: 5.02656, low: 4.39824}
+  - {high: 5.65488, low: 5.02656}
+  - {high: 6.2832, low: 5.65488}
