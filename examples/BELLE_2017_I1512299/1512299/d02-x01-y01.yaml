@@ -1,0 +1,48 @@
+dependent_variables:
+- header: {name: $\Delta\Gamma/\Delta \cos\theta_\nu$, units: '$10^{-15}$ GeV'}
+  qualifiers:
+  - {name: RE, value: '$\bar{B}^0\to D^{*+}\ell^-\bar{\nu}_\ell$'}
+  values:
+  - errors:
+    - {symerror: 0.1980013}
+    value: 2.804054
+  - errors:
+    - {symerror: 0.1415874}
+    value: 2.297274
+  - errors:
+    - {symerror: 0.1338869}
+    value: 1.94773
+  - errors:
+    - {symerror: 0.1167089}
+    value: 1.697506
+  - errors:
+    - {symerror: 0.1150373}
+    value: 1.581993
+  - errors:
+    - {symerror: 0.1143593}
+    value: 1.650243
+  - errors:
+    - {symerror: 0.1208367}
+    value: 1.771547
+  - errors:
+    - {symerror: 0.1409427}
+    value: 1.996114
+  - errors:
+    - {symerror: 0.1662996}
+    value: 2.503046
+  - errors:
+    - {symerror: 0.2520561}
+    value: 3.186291
+independent_variables:
+- header: {name: $\cos\theta_\nu$}
+  values:
+  - {high: -0.8, low: -1.0}
+  - {high: -0.6, low: -0.8}
+  - {high: -0.4, low: -0.6}
+  - {high: -0.2, low: -0.4}
+  - {high: 0.0, low: -0.2}
+  - {high: 0.2, low: 0.0}
+  - {high: 0.4, low: 0.2}
+  - {high: 0.6, low: 0.4}
+  - {high: 0.8, low: 0.6}
+  - {high: 1.0, low: 0.8}

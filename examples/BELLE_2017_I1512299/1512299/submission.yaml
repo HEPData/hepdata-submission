@@ -1,0 +1,62 @@
+{comment: 'Unfolded differential decay rates of four kinematic variables fully describing
+    the $\bar B^0 \to D^{*\,+} \, \ell^- \, \bar \nu_\ell$ decay in the $B$-meson
+    rest frame are presented.  Numbers taken from a YODA file provided by Holger Schulz,
+    in turn prepared from a ROOT file provided by Florian Bernlochner (Belle).'}
+---
+data_file: d01-x01-y01.yaml
+description: The unfolded differential rate as a function of $w$.
+keywords:
+- name: reactions
+  values: [BBAR0 --> D*(2010)+ LEPTON- NUBAR]
+- name: observables
+  values: [WIDTH]
+- name: phrases
+  values: [Decay, Charm Production]
+name: Table 1
+---
+data_file: d02-x01-y01.yaml
+description: The unfolded differential rate as a function of $\cos\theta_\nu$.
+keywords:
+- name: reactions
+  values: [BBAR0 --> D*(2010)+ LEPTON- NUBAR]
+- name: observables
+  values: [WIDTH]
+- name: phrases
+  values: [Decay, Charm Production]
+name: Table 2
+---
+data_file: d03-x01-y01.yaml
+description: The unfolded differential rate as a function of $\cos\theta_\ell$.
+keywords:
+- name: reactions
+  values: [BBAR0 --> D*(2010)+ LEPTON- NUBAR]
+- name: observables
+  values: [WIDTH]
+- name: phrases
+  values: [Decay, Charm Production]
+name: Table 3
+---
+data_file: d04-x01-y01.yaml
+description: The unfolded differential rate as a function of $\chi$.
+keywords:
+- name: reactions
+  values: [BBAR0 --> D*(2010)+ LEPTON- NUBAR]
+- name: observables
+  values: [WIDTH]
+- name: phrases
+  values: [Decay, Charm Production]
+name: Table 4
+---
+data_file: d05-x01-y01.yaml
+description: The correlation matrix of the unfolded differential rates.  The full
+  error covariance can be obtained by combining the quoted error in the other tables
+  with these values.  The ordering of the correlations is {$w$, $\cos\theta_\nu$,
+  $\cos\theta_\ell$, $\chi$}, where each variable has 10 bins.
+keywords:
+- name: reactions
+  values: [BBAR0 --> D*(2010)+ LEPTON- NUBAR]
+- name: observables
+  values: [WIDTH]
+- name: phrases
+  values: [Decay, Charm Production]
+name: Table 5
