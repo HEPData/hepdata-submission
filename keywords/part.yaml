@@ -1,0 +1,671 @@
+---
+Classes:
+  Gauge_Higgs_Bosons:
+    - {name: GAMMA, aliases: [''], description: 'photon'}
+    - {name: GAMMA*, aliases: [''], description: 'virtual photon'}
+    - {name: GLUON, aliases: [''], description: 'gluon'}
+    - {name: GRAVITON, aliases: [''], description: 'particle carrying gravitational force'}
+    - {name: W+, aliases: [''], description: 'positive weak gauge boson'}
+    - {name: W-, aliases: [''], description: 'negative weak gauge boson'}
+    - {name: Z0, aliases: [''], description: 'neutral weak gauge boson'}
+    - {name: HIGGS, aliases: [''], description: 'Higgs boson'}
+    - {name: WPRIME, aliases: [''], description: 'additional charged W-boson'}
+    - {name: ZPRIME, aliases: [''], description: 'additional Z-boson'}
+    - {name: AXION, aliases: [''], description: 'hypothetical particle to resolve string CP problem in QCD'}
+  Leptons:
+    - {name: LEPTON+, aliases: [''], description: 'any positively charged lepton'}
+    - {name: LEPTON-, aliases: [''], description: 'any negatively charged lepton'}
+    - {name: E+, aliases: [''], description: 'positive electron'}
+    - {name: E-, aliases: [''], description: 'negative electron'}
+    - {name: MU+, aliases: [''], description: 'positive muon'}
+    - {name: MU-, aliases: [''], description: 'negative muon'}
+    - {name: TAU+, aliases: [''], description: 'positive tau lepton'}
+    - {name: TAU-, aliases: [''], description: 'negative tau lepton'}
+    - {name: NU, aliases: [''], description: 'unspecified neutrino'}
+    - {name: NUBAR, aliases: [''], description: 'unspecified anti-neutrino'}
+    - {name: NUE, aliases: [''], description: 'electron neutrino'}
+    - {name: NUEBAR, aliases: [''], description: 'electron antineutrino'}
+    - {name: NUMU, aliases: [''], description: 'muon neutrino'}
+    - {name: NUMUBAR, aliases: [''], description: 'muon anti-neutrino'}
+    - {name: NUTAU, aliases: [''], description: 'tau neutrino'}
+    - {name: NUTAUBAR, aliases: [''], description: 'tau anti-neutrino'}
+  Quarks:
+    - {name: UQ, aliases: ['UP'], description: 'up quark'}
+    - {name: DQ, aliases: ['DOWN'], description: 'down quark'}
+    - {name: SQ, aliases: ['STRANGE'], description: 'stange quark'}
+    - {name: CQ, aliases: ['CHARM'], description: 'charmed quark'}
+    - {name: BQ, aliases: ['BOTTOM'], description: 'bottom quark'}
+    - {name: TQ, aliases: ['TOP'], description: 'top quark'}
+    - {name: UQBAR, aliases: ['UPBAR'], description: 'anti-up quark'}
+    - {name: DQBAR, aliases: ['DOWNBAR'], description: 'anti-down quark'}
+    - {name: SQBAR, aliases: ['STRANGEBAR'], description: 'anti-stange quark'}
+    - {name: CQBAR, aliases: ['CHARMBAR'], description: 'anti-charmed quark'}
+    - {name: BQBAR, aliases: ['BOTTOMBAR'], description: 'anti-bottom quark'}
+    - {name: TQBAR, aliases: ['TOPBAR'], description: 'anti-top quark'}
+  Light_Unflavoured_Mesons:
+    - {name: PI+, aliases: [''], description: ''}
+    - {name: PI-, aliases: [''], description: ''}
+    - {name: PI0, aliases: [''], description: ''}
+    - {name: PION, aliases: [''], description: 'unspecified pion'}
+    - {name: ETA, aliases: [''], description: ''}
+    - {name: F0(500), aliases: ['F0(600)'], description: ''}
+    - {name: RHO+, aliases: [''], description: ''}
+    - {name: RHO-, aliases: [''], description: ''}
+    - {name: RHO0, aliases: ['RHO'], description: ''}
+    - {name: OMEGA, aliases: [''], description: ''}
+    - {name: ETAPRIME, aliases: [''], description: ''}
+    - {name: F0(980), aliases: ['F0(975)'], description: ''}
+    - {name: A0(980)+, aliases: [''], description: ''}
+    - {name: A0(980)-, aliases: [''], description: ''}
+    - {name: A0(980)0, aliases: ['A0(980)'], description: ''}
+    - {name: PHI(1020), aliases: [''], description: ''}
+    - {name: H1(1190), aliases: [''], description: ''}
+    - {name: B1(1235)+, aliases: [''], description: ''}
+    - {name: B1(1235)-, aliases: [''], description: ''}
+    - {name: B1(1235)0, aliases: [''], description: ''}
+    - {name: A1(1260)+, aliases: [''], description: ''}
+    - {name: A1(1260)-, aliases: [''], description: ''}
+    - {name: A1(1260)0, aliases: [''], description: ''}
+    - {name: F2(1270), aliases: [''], description: ''}
+    - {name: F1(1285), aliases: [''], description: ''}
+    - {name: ETA(1295), aliases: [''], description: ''}
+    - {name: PI(1300)+, aliases: [''], description: ''}
+    - {name: PI(1300)-, aliases: [''], description: ''}
+    - {name: PI(1300)0, aliases: [''], description: ''}
+    - {name: A2(1320)+, aliases: [''], description: ''}
+    - {name: A2(1320)-, aliases: [''], description: ''}
+    - {name: A2(1320)0, aliases: [''], description: ''}
+    - {name: F0(1370), aliases: [''], description: ''}
+    - {name: PI1(1400)+, aliases: [''], description: ''}
+    - {name: PI1(1400)-, aliases: [''], description: ''}
+    - {name: PI1(1400)0, aliases: [''], description: ''}
+    - {name: ETA(1405), aliases: [''], description: ''}
+    - {name: F1(1420), aliases: [''], description: ''}
+    - {name: OMEGA(1420), aliases: [''], description: ''}
+    - {name: A0(1450)+, aliases: [''], description: ''}
+    - {name: A0(1450)-, aliases: [''], description: ''}
+    - {name: A0(1450)0, aliases: ['A0(1450)'], description: ''}
+    - {name: RHO(1450)+, aliases: [''], description: ''}
+    - {name: RHO(1450)-, aliases: [''], description: ''}
+    - {name: RHO(1450)0, aliases: [''], description: ''}
+    - {name: ETA(1475), aliases: [''], description: ''}
+    - {name: F0(1500), aliases: [''], description: ''}
+    - {name: F2PRIME(1525), aliases: [''], description: ''}
+    - {name: PI1(1600)+, aliases: [''], description: ''}
+    - {name: PI1(1600)-, aliases: [''], description: ''}
+    - {name: PI1(1600)0, aliases: [''], description: ''}
+    - {name: ETA2(1645), aliases: [''], description: ''}
+    - {name: OMEGA(1650), aliases: [''], description: ''}
+    - {name: OMEGA3(1670), aliases: [''], description: ''}
+    - {name: PI2(1670)+, aliases: [''], description: ''}
+    - {name: PI2(1670)-, aliases: [''], description: ''}
+    - {name: PI2(1670)0, aliases: [''], description: ''}
+    - {name: PHI(1680), aliases: [''], description: ''}
+    - {name: RHO3(1690)+, aliases: [''], description: ''}
+    - {name: RHO3(1690)-, aliases: [''], description: ''}
+    - {name: RHO3(1690)0, aliases: [''], description: ''}
+    - {name: RHO(1700)+, aliases: [''], description: ''}
+    - {name: RHO(1700)-, aliases: [''], description: ''}
+    - {name: RHO(1700)0, aliases: [''], description: ''}
+    - {name: F0(1710), aliases: [''], description: ''}
+    - {name: PI(1800)+, aliases: [''], description: ''}
+    - {name: PI(1800)-, aliases: [''], description: ''}
+    - {name: PI(1800)0, aliases: [''], description: ''}
+    - {name: PHI3(1850), aliases: [''], description: ''}
+    - {name: F2(1950), aliases: [''], description: ''}
+    - {name: F2(2010), aliases: [''], description: ''}
+    - {name: A4(2040)+, aliases: [''], description: ''}
+    - {name: A4(2040)-, aliases: [''], description: ''}
+    - {name: A4(2040)0, aliases: [''], description: ''}
+    - {name: F4(2050), aliases: [''], description: ''}
+    - {name: PHI(2170), aliases: [''], description: ''}
+    - {name: F2(2300), aliases: [''], description: ''}
+    - {name: F2(2340), aliases: [''], description: ''}
+  Strange_Mesons:
+    - {name: K+, aliases: [''], description: ''}
+    - {name: K-, aliases: [''], description: ''}
+    - {name: K0, aliases: [''], description: ''}
+    - {name: KBAR0, aliases: [''], description: ''}
+    - {name: KS, aliases: [''], description: ''}
+    - {name: KL, aliases: [''], description: ''}
+    - {name: K*(892)0, aliases: [''], description: ''}
+    - {name: K*BAR(892)0, aliases: [''], description: ''}
+    - {name: K*(892)+, aliases: [''], description: ''}
+    - {name: K*(892)-, aliases: [''], description: ''}
+    - {name: K1(1270)+, aliases: [''], description: ''}
+    - {name: K1(1270)-, aliases: [''], description: ''}
+    - {name: K1(1270)0, aliases: [''], description: ''}
+    - {name: K1BAR(1270)0, aliases: [''], description: ''}
+    - {name: K1(1400)+, aliases: [''], description: ''}
+    - {name: K1(1400)-, aliases: [''], description: ''}
+    - {name: K1(1400)0, aliases: [''], description: ''}
+    - {name: K1BAR(1400)0, aliases: [''], description: ''}
+    - {name: K*(1410)+, aliases: [''], description: ''}
+    - {name: K*(1410)-, aliases: [''], description: ''}
+    - {name: K*(1410)0, aliases: [''], description: ''}
+    - {name: K*BAR(1410)0, aliases: [''], description: ''}
+    - {name: K0*(1430)+, aliases: [''], description: ''}
+    - {name: K0*(1430)-, aliases: [''], description: ''}
+    - {name: K0*(1430)0, aliases: [''], description: ''}
+    - {name: K0*BAR(1430)0, aliases: [''], description: ''}
+    - {name: K2*(1430)+, aliases: [''], description: ''}
+    - {name: K2*(1430)-, aliases: [''], description: ''}
+    - {name: K2*(1430)0, aliases: [''], description: ''}
+    - {name: K2*BAR(1430)0, aliases: [''], description: ''}
+    - {name: K0*(1680)+, aliases: [''], description: ''}
+    - {name: K0*(1680)-, aliases: [''], description: ''}
+    - {name: K0*(1680)0, aliases: [''], description: ''}
+    - {name: K0*BAR(1680)0, aliases: [''], description: ''}
+    - {name: K2(1770)+, aliases: [''], description: ''}
+    - {name: K2(1770)-, aliases: [''], description: ''}
+    - {name: K2(1770)0, aliases: [''], description: ''}
+    - {name: K2BAR(1770)0, aliases: [''], description: ''}
+    - {name: K3*(1780)+, aliases: [''], description: ''}
+    - {name: K3*(1780)-, aliases: [''], description: ''}
+    - {name: K3*(1780)0, aliases: [''], description: ''}
+    - {name: K3*BAR(1780)0, aliases: [''], description: ''}
+    - {name: K2(1820)+, aliases: [''], description: ''}
+    - {name: K2(1820)-, aliases: [''], description: ''}
+    - {name: K2(1820)0, aliases: [''], description: ''}
+    - {name: K2BAR(1820)0, aliases: [''], description: ''}
+    - {name: K4*(2045)+, aliases: [''], description: ''}
+    - {name: K4*(2045)-, aliases: [''], description: ''}
+    - {name: K4*(2045)0, aliases: [''], description: ''}
+    - {name: K4*BAR(2045)0, aliases: [''], description: ''}
+  Charmed_Mesons:
+    - {name: D+, aliases: [''], description: ''}
+    - {name: D-, aliases: [''], description: ''}
+    - {name: D0, aliases: [''], description: ''}
+    - {name: DBAR0, aliases: [''], description: ''}
+    - {name: D*(2007)0, aliases: [''], description: ''}
+    - {name: D*(2010)+, aliases: [''], description: ''}
+    - {name: D*(2010)-, aliases: [''], description: ''}
+    - {name: D0*(2400)0, aliases: [''], description: ''}
+    - {name: D0*(2400)+, aliases: [''], description: ''}
+    - {name: D0*(2400)-, aliases: [''], description: ''}
+    - {name: D1(2420)0, aliases: [''], description: ''}
+    - {name: D2*(2460)0, aliases: [''], description: ''}
+    - {name: D2*(2460)+, aliases: [''], description: ''}
+    - {name: D2*(2460)-, aliases: [''], description: ''}
+  Charmed_Strange_Mesons:
+    - {name: D/S+, aliases: [''], description: ''}
+    - {name: D/S-, aliases: [''], description: ''}
+    - {name: D*/S+, aliases: [''], description: ''}
+    - {name: D*/S-, aliases: [''], description: ''}
+    - {name: D*/S0(2317)+, aliases: [''], description: ''}
+    - {name: D*/S0(2317)-, aliases: [''], description: ''}
+    - {name: D/S1(2460)+, aliases: [''], description: ''}
+    - {name: D/S1(2460)-, aliases: [''], description: ''}
+    - {name: D/S1(2536)+, aliases: [''], description: ''}
+    - {name: D/S1(2536)-, aliases: [''], description: ''}
+    - {name: D*/S2(2573)+, aliases: [''], description: ''}
+    - {name: D*/S2(2573)-, aliases: [''], description: ''}
+  Bottom_Mesons:
+    - {name: B+, aliases: [''], description: ''}
+    - {name: B-, aliases: [''], description: ''}
+    - {name: B0, aliases: [''], description: ''}
+    - {name: B*0, aliases: [''], description: ''}
+    - {name: B*+, aliases: [''], description: ''}
+    - {name: B*-, aliases: [''], description: ''}
+    - {name: B2*(5747)0, aliases: [''], description: ''}
+    - {name: B2*(5747)+, aliases: [''], description: ''}
+    - {name: B2*(5747)-, aliases: [''], description: ''}
+  Bottom_Strange_Mesons:
+    - {name: B/S, aliases: [''], description: ''}
+    - {name: B*/S, aliases: [''], description: ''}
+    - {name: B*/S2(5840)0, aliases: [''], description: ''}
+  Bottom_Charmed_Mesons:
+    - {name: B/C+, aliases: [''], description: ''}
+    - {name: B/C-, aliases: [''], description: ''}
+  C-CBAR_Mesons:
+    - {name: ETA/C(1S), aliases: [''], description: ''}
+    - {name: J/PSI(1S), aliases: [''], description: ''}
+    - {name: CHI/C0(1P), aliases: [''], description: ''}
+    - {name: CHI/C1(1P), aliases: [''], description: ''}
+    - {name: H/C(1P), aliases: [''], description: ''}
+    - {name: CHI/C2(1P), aliases: [''], description: ''}
+    - {name: ETA/C(2S), aliases: [''], description: ''}
+    - {name: PSI(2S), aliases: [''], description: ''}
+    - {name: PSI(3770), aliases: [''], description: ''}
+    - {name: CHI/C2(2P), aliases: [''], description: ''}
+    - {name: PSI(4040), aliases: [''], description: ''}
+    - {name: PSI(4160), aliases: [''], description: ''}
+    - {name: PSI(4415), aliases: [''], description: ''}
+  B-BBAR_Mesons:
+    - {name: UPSI(1S), aliases: [''], description: ''}
+    - {name: CHI/B0(1P), aliases: [''], description: ''}
+    - {name: CHI/B1(1P), aliases: [''], description: ''}
+    - {name: H/B(1P), aliases: [''], description: ''}
+    - {name: CHI/B2(1P), aliases: [''], description: ''}
+    - {name: UPSI(2S), aliases: [''], description: ''}
+    - {name: UPSI(1D), aliases: [''], description: ''}
+    - {name: CHI/B0(2P), aliases: [''], description: ''}
+    - {name: CHI/B1(2P), aliases: [''], description: ''}
+    - {name: CHI/B2(2P), aliases: [''], description: ''}
+    - {name: UPSI(3S), aliases: [''], description: ''}
+    - {name: CHI/B(3P), aliases: [''], description: ''}
+    - {name: UPSI(4S), aliases: [''], description: ''}
+    - {name: UPSI(10860), aliases: [''], description: ''}
+    - {name: UPSI(11020), aliases: [''], description: ''}
+  N_Baryons:
+    - {name: P, aliases: [''], description: 'proton'}
+    - {name: N, aliases: [''], description: 'neutron'}
+    - {name: NBAR, aliases: [''], description: 'anti-neutron'}
+    - {name: PBAR, aliases: [''], description: 'anti-proton'}
+    - {name: NUCLEON, aliases: [''], description: 'unspecified nucleon'}
+    - {name: N(1440)+, aliases: [''], description: ''}
+    - {name: N(1440)0, aliases: [''], description: ''}
+    - {name: NBAR(1440)0, aliases: [''], description: ''}
+    - {name: NBAR(1440)-, aliases: [''], description: ''}
+    - {name: N(1520)+, aliases: [''], description: ''}
+    - {name: N(1520)0, aliases: [''], description: ''}
+    - {name: NBAR(1520)0, aliases: [''], description: ''}
+    - {name: NBAR(1520)-, aliases: [''], description: ''}
+    - {name: N(1535)+, aliases: [''], description: ''}
+    - {name: N(1535)0, aliases: [''], description: ''}
+    - {name: NBAR(1535)0, aliases: [''], description: ''}
+    - {name: NBAR(1535)-, aliases: [''], description: ''}
+    - {name: N(1875)+, aliases: [''], description: ''}
+    - {name: N(1875)0, aliases: [''], description: ''}
+    - {name: NBAR(1875)0, aliases: [''], description: ''}
+    - {name: NBAR(1875)-, aliases: [''], description: ''}
+    - {name: N(1900)+, aliases: [''], description: ''}
+    - {name: N(1900)0, aliases: [''], description: ''}
+    - {name: NBAR(1900)0, aliases: [''], description: ''}
+    - {name: NBAR(1900)-, aliases: [''], description: ''}
+  DELTA_Baryons:
+    - {name: DELTA(1232)++, aliases: [''], description: ''}
+    - {name: DELTA(1232)+, aliases: [''], description: ''}
+    - {name: DELTA(1232)0, aliases: [''], description: ''}
+    - {name: DELTA(1232)-, aliases: [''], description: ''}
+    - {name: DELTABAR(1232)+, aliases: [''], description: ''}
+    - {name: DELTABAR(1232)0, aliases: [''], description: ''}
+    - {name: DELTABAR(1232)-, aliases: [''], description: ''}
+    - {name: DELTABAR(1232)--, aliases: [''], description: ''}
+    - {name: DELTA(1600)++, aliases: [''], description: ''}
+    - {name: DELTA(1600)+, aliases: [''], description: ''}
+    - {name: DELTA(1600)0, aliases: [''], description: ''}
+    - {name: DELTA(1600)-, aliases: [''], description: ''}
+    - {name: DELTABAR(1600)+, aliases: [''], description: ''}
+    - {name: DELTABAR(1600)0, aliases: [''], description: ''}
+    - {name: DELTABAR(1600)-, aliases: [''], description: ''}
+    - {name: DELTABAR(1600)--, aliases: [''], description: ''}
+    - {name: DELTA(1620)++, aliases: [''], description: ''}
+    - {name: DELTA(1620)+, aliases: [''], description: ''}
+    - {name: DELTA(1620)0, aliases: [''], description: ''}
+    - {name: DELTA(1620)-, aliases: [''], description: ''}
+    - {name: DELTABAR(1620)+, aliases: [''], description: ''}
+    - {name: DELTABAR(1620)0, aliases: [''], description: ''}
+    - {name: DELTABAR(1620)-, aliases: [''], description: ''}
+    - {name: DELTABAR(1620)--, aliases: [''], description: ''}
+    - {name: DELTA(1700)++, aliases: [''], description: ''}
+    - {name: DELTA(1700)+, aliases: [''], description: ''}
+    - {name: DELTA(1700)0, aliases: [''], description: ''}
+    - {name: DELTA(1700)-, aliases: [''], description: ''}
+    - {name: DELTABAR(1700)+, aliases: [''], description: ''}
+    - {name: DELTABAR(1700)0, aliases: [''], description: ''}
+    - {name: DELTABAR(1700)-, aliases: [''], description: ''}
+    - {name: DELTABAR(1700)--, aliases: [''], description: ''}
+    - {name: DELTA(1905)++, aliases: [''], description: ''}
+    - {name: DELTA(1905)+, aliases: [''], description: ''}
+    - {name: DELTA(1905)0, aliases: [''], description: ''}
+    - {name: DELTA(1905)-, aliases: [''], description: ''}
+    - {name: DELTABAR(1905)+, aliases: [''], description: ''}
+    - {name: DELTABAR(1905)0, aliases: [''], description: ''}
+    - {name: DELTABAR(1905)-, aliases: [''], description: ''}
+    - {name: DELTABAR(1905)--, aliases: [''], description: ''}
+    - {name: DELTA(1910)++, aliases: [''], description: ''}
+    - {name: DELTA(1910)+, aliases: [''], description: ''}
+    - {name: DELTA(1910)0, aliases: [''], description: ''}
+    - {name: DELTA(1910)-, aliases: [''], description: ''}
+    - {name: DELTABAR(1910)+, aliases: [''], description: ''}
+    - {name: DELTABAR(1910)0, aliases: [''], description: ''}
+    - {name: DELTABAR(1910)-, aliases: [''], description: ''}
+    - {name: DELTABAR(1910)--, aliases: [''], description: ''}
+    - {name: DELTA(1920)++, aliases: [''], description: ''}
+    - {name: DELTA(1920)+, aliases: [''], description: ''}
+    - {name: DELTA(1920)0, aliases: [''], description: ''}
+    - {name: DELTA(1920)-, aliases: [''], description: ''}
+    - {name: DELTABAR(1920)+, aliases: [''], description: ''}
+    - {name: DELTABAR(1920)0, aliases: [''], description: ''}
+    - {name: DELTABAR(1920)-, aliases: [''], description: ''}
+    - {name: DELTABAR(1920)--, aliases: [''], description: ''}
+    - {name: DELTA(1930)++, aliases: [''], description: ''}
+    - {name: DELTA(1930)+, aliases: [''], description: ''}
+    - {name: DELTA(1930)0, aliases: [''], description: ''}
+    - {name: DELTA(1930)-, aliases: [''], description: ''}
+    - {name: DELTABAR(1930)+, aliases: [''], description: ''}
+    - {name: DELTABAR(1930)0, aliases: [''], description: ''}
+    - {name: DELTABAR(1930)-, aliases: [''], description: ''}
+    - {name: DELTABAR(1930)--, aliases: [''], description: ''}
+    - {name: DELTA(1950)++, aliases: [''], description: ''}
+    - {name: DELTA(1950)+, aliases: [''], description: ''}
+    - {name: DELTA(1950)0, aliases: [''], description: ''}
+    - {name: DELTA(1950)-, aliases: [''], description: ''}
+    - {name: DELTABAR(1950)+, aliases: [''], description: ''}
+    - {name: DELTABAR(1950)0, aliases: [''], description: ''}
+    - {name: DELTABAR(1950)-, aliases: [''], description: ''}
+    - {name: DELTABAR(1950)--, aliases: [''], description: ''}
+    - {name: DELTA(2420)++, aliases: [''], description: ''}
+    - {name: DELTA(2420)+, aliases: [''], description: ''}
+    - {name: DELTA(2420)0, aliases: [''], description: ''}
+    - {name: DELTA(2420)-, aliases: [''], description: ''}
+    - {name: DELTABAR(2420)+, aliases: [''], description: ''}
+    - {name: DELTABAR(2420)0, aliases: [''], description: ''}
+    - {name: DELTABAR(2420)-, aliases: [''], description: ''}
+    - {name: DELTABAR(2420)--, aliases: [''], description: ''}
+  LAMBDA_Baryons:
+    - {name: LAMBDA, aliases: [''], description: ''}
+    - {name: LAMBDABAR, aliases: [''], description: ''}
+    - {name: LAMBDA(1405), aliases: [''], description: ''}
+    - {name: LAMBDABAR(1405), aliases: [''], description: ''}
+    - {name: LAMBDA(1520), aliases: [''], description: ''}
+    - {name: LAMBDABAR(1520), aliases: [''], description: ''}
+    - {name: LAMBDA(1600), aliases: [''], description: ''}
+    - {name: LAMBDABAR(1600), aliases: [''], description: ''}
+    - {name: LAMBDA(1670), aliases: [''], description: ''}
+    - {name: LAMBDABAR(1670), aliases: [''], description: ''}
+    - {name: LAMBDA(1690), aliases: [''], description: ''}
+    - {name: LAMBDABAR(1690), aliases: [''], description: ''}
+    - {name: LAMBDA(1800), aliases: [''], description: ''}
+    - {name: LAMBDABAR(1800), aliases: [''], description: ''}
+    - {name: LAMBDA(1810), aliases: [''], description: ''}
+    - {name: LAMBDABAR(1810), aliases: [''], description: ''}
+    - {name: LAMBDA(1820), aliases: [''], description: ''}
+    - {name: LAMBDABAR(1820), aliases: [''], description: ''}
+    - {name: LAMBDA(1830), aliases: [''], description: ''}
+    - {name: LAMBDABAR(1830), aliases: [''], description: ''}
+    - {name: LAMBDA(1890), aliases: [''], description: ''}
+    - {name: LAMBDABAR(1890), aliases: [''], description: ''}
+    - {name: LAMBDA(2100), aliases: [''], description: ''}
+    - {name: LAMBDABAR(2100), aliases: [''], description: ''}
+    - {name: LAMBDA(2110), aliases: [''], description: ''}
+    - {name: LAMBDABAR(2110), aliases: [''], description: ''}
+    - {name: LAMBDA(2350), aliases: [''], description: ''}
+    - {name: LAMBDABAR(2350), aliases: [''], description: ''}
+  SIGMA_Baryons:
+    - {name: SIGMA+, aliases: [''], description: ''}
+    - {name: SIGMA0, aliases: [''], description: ''}
+    - {name: SIGMA-, aliases: [''], description: ''}
+    - {name: SIGMABAR-, aliases: [''], description: ''}
+    - {name: SIGMABAR0, aliases: [''], description: ''}
+    - {name: SIGMABAR+, aliases: [''], description: ''}
+    - {name: SIGMA(1385)+, aliases: [''], description: ''}
+    - {name: SIGMA(1385)0, aliases: [''], description: ''}
+    - {name: SIGMA(1385)-, aliases: [''], description: ''}
+    - {name: SIGMABAR(1385)-, aliases: [''], description: ''}
+    - {name: SIGMABAR(1385)0, aliases: [''], description: ''}
+    - {name: SIGMABAR(1385)+, aliases: [''], description: ''}
+    - {name: SIGMA(1660)+, aliases: [''], description: ''}
+    - {name: SIGMA(1660)0, aliases: [''], description: ''}
+    - {name: SIGMA(1660)-, aliases: [''], description: ''}
+    - {name: SIGMABAR(1660)-, aliases: [''], description: ''}
+    - {name: SIGMABAR(1660)0, aliases: [''], description: ''}
+    - {name: SIGMABAR(1660)+, aliases: [''], description: ''}
+    - {name: SIGMA(1670)+, aliases: [''], description: ''}
+    - {name: SIGMA(1670)0, aliases: [''], description: ''}
+    - {name: SIGMA(1670)-, aliases: [''], description: ''}
+    - {name: SIGMABAR(1670)-, aliases: [''], description: ''}
+    - {name: SIGMABAR(1670)0, aliases: [''], description: ''}
+    - {name: SIGMABAR(1670)+, aliases: [''], description: ''}
+    - {name: SIGMA(1750)+, aliases: [''], description: ''}
+    - {name: SIGMA(1750)0, aliases: [''], description: ''}
+    - {name: SIGMA(1750)-, aliases: [''], description: ''}
+    - {name: SIGMABAR(1750)-, aliases: [''], description: ''}
+    - {name: SIGMABAR(1750)0, aliases: [''], description: ''}
+    - {name: SIGMABAR(1750)+, aliases: [''], description: ''}
+    - {name: SIGMA(1775)+, aliases: [''], description: ''}
+    - {name: SIGMA(1775)0, aliases: [''], description: ''}
+    - {name: SIGMA(1775)-, aliases: [''], description: ''}
+    - {name: SIGMABAR(1775)-, aliases: [''], description: ''}
+    - {name: SIGMABAR(1775)0, aliases: [''], description: ''}
+    - {name: SIGMABAR(1775)+, aliases: [''], description: ''}
+    - {name: SIGMA(1915)+, aliases: [''], description: ''}
+    - {name: SIGMA(1915)0, aliases: [''], description: ''}
+    - {name: SIGMA(1915)-, aliases: [''], description: ''}
+    - {name: SIGMABAR(1915)-, aliases: [''], description: ''}
+    - {name: SIGMABAR(1915)0, aliases: [''], description: ''}
+    - {name: SIGMABAR(1915)+, aliases: [''], description: ''}
+    - {name: SIGMA(1940)+, aliases: [''], description: ''}
+    - {name: SIGMA(1940)0, aliases: [''], description: ''}
+    - {name: SIGMA(1940)-, aliases: [''], description: ''}
+    - {name: SIGMABAR(1940)-, aliases: [''], description: ''}
+    - {name: SIGMABAR(1940)0, aliases: [''], description: ''}
+    - {name: SIGMABAR(1940)+, aliases: [''], description: ''}
+    - {name: SIGMA(2030)+, aliases: [''], description: ''}
+    - {name: SIGMA(2030)0, aliases: [''], description: ''}
+    - {name: SIGMA(2030)-, aliases: [''], description: ''}
+    - {name: SIGMABAR(2030)-, aliases: [''], description: ''}
+    - {name: SIGMABAR(2030)0, aliases: [''], description: ''}
+    - {name: SIGMABAR(2030)+, aliases: [''], description: ''}
+    - {name: SIGMA(2250)+, aliases: [''], description: ''}
+    - {name: SIGMA(2250)0, aliases: [''], description: ''}
+    - {name: SIGMA(2250)-, aliases: [''], description: ''}
+    - {name: SIGMABAR(2250)-, aliases: [''], description: ''}
+    - {name: SIGMABAR(2250)0, aliases: [''], description: ''}
+    - {name: SIGMABAR(2250)+, aliases: [''], description: ''}
+  XI_Baryons:
+    - {name: XI0, aliases: [''], description: ''}
+    - {name: XIBAR0, aliases: [''], description: ''}
+    - {name: XI-, aliases: [''], description: ''}
+    - {name: XIBAR+, aliases: [''], description: ''}
+    - {name: XI(1530)0, aliases: [''], description: ''}
+    - {name: XI(1530)-, aliases: [''], description: ''}
+    - {name: XIBAR(1530)+, aliases: [''], description: ''}
+    - {name: XIBAR(1530)0, aliases: [''], description: ''}
+    - {name: XI(1690)0, aliases: [''], description: ''}
+    - {name: XI(1690)-, aliases: [''], description: ''}
+    - {name: XIBAR(1690)+, aliases: [''], description: ''}
+    - {name: XIBAR(1690)0, aliases: [''], description: ''}
+    - {name: XI(1820)0, aliases: [''], description: ''}
+    - {name: XI(1820)-, aliases: [''], description: ''}
+    - {name: XIBAR(1820)+, aliases: [''], description: ''}
+    - {name: XIBAR(1820)0, aliases: [''], description: ''}
+    - {name: XI(1950)0, aliases: [''], description: ''}
+    - {name: XI(1950)-, aliases: [''], description: ''}
+    - {name: XIBAR(1950)+, aliases: [''], description: ''}
+    - {name: XIBAR(1950)0, aliases: [''], description: ''}
+    - {name: XI(2030)0, aliases: [''], description: ''}
+    - {name: XI(2030)-, aliases: [''], description: ''}
+    - {name: XIBAR(2030)+, aliases: [''], description: ''}
+    - {name: XIBAR(2030)0, aliases: [''], description: ''}
+  OMEGA_Baryons:
+    - {name: OMEGA-, aliases: [''], description: ''}
+    - {name: OMEGABAR+, aliases: [''], description: ''}
+    - {name: OMEGA(2250)-, aliases: [''], description: ''}
+    - {name: OMEGABAR(2250)+, aliases: [''], description: ''}
+  CHARMED_Baryons:
+    - {name: LAMBDA/C+, aliases: [''], description: ''}
+    - {name: LAMBDA/CBAR-, aliases: [''], description: ''}
+    - {name: LAMBDA(2595)/C+, aliases: [''], description: ''}
+    - {name: LAMBDA(2595)/CBAR-, aliases: [''], description: ''}
+    - {name: LAMBDA(2625)/C+, aliases: [''], description: ''}
+    - {name: LAMBDA(2625)/CBAR-, aliases: [''], description: ''}
+    - {name: LAMBDA(2880)/C+, aliases: [''], description: ''}
+    - {name: LAMBDA(2880)/CBAR-, aliases: [''], description: ''}
+    - {name: LAMBDA(2940)/C+, aliases: [''], description: ''}
+    - {name: LAMBDA(2940)/CBAR-, aliases: [''], description: ''}
+    - {name: SIGMA(2455)/C++, aliases: [''], description: ''}
+    - {name: SIGMA(2455)/C+, aliases: [''], description: ''}
+    - {name: SIGMA(2455)/C0, aliases: [''], description: ''}
+    - {name: SIGMA(2455)/CBAR--, aliases: [''], description: ''}
+    - {name: SIGMA(2455)/CBAR-, aliases: [''], description: ''}
+    - {name: SIGMA(2455)/CBAR0, aliases: [''], description: ''}
+    - {name: SIGMA(2520)/C++, aliases: [''], description: ''}
+    - {name: SIGMA(2520)/C+, aliases: [''], description: ''}
+    - {name: SIGMA(2520)/C0, aliases: [''], description: ''}
+    - {name: SIGMA(2520)/CBAR--, aliases: [''], description: ''}
+    - {name: SIGMA(2520)/CBAR-, aliases: [''], description: ''}
+    - {name: SIGMA(2520)/CBAR0, aliases: [''], description: ''}
+    - {name: XI/C+, aliases: [''], description: ''}
+    - {name: XI/C0, aliases: [''], description: ''}
+    - {name: XI/CBAR-, aliases: [''], description: ''}
+    - {name: XI/CBAR0, aliases: [''], description: ''}
+    - {name: XIPRIME/C+, aliases: [''], description: ''}
+    - {name: XIPRIME/C0, aliases: [''], description: ''}
+    - {name: XIPRIME/CBAR-, aliases: [''], description: ''}
+    - {name: XIPRIME/CBAR0, aliases: [''], description: ''}
+    - {name: XI(2645)/C+, aliases: [''], description: ''}
+    - {name: XI(2645)/C0, aliases: [''], description: ''}
+    - {name: XI(2645)/CBAR-, aliases: [''], description: ''}
+    - {name: XI(2645)/CBAR0, aliases: [''], description: ''}
+    - {name: XI(2790)/C+, aliases: [''], description: ''}
+    - {name: XI(2790)/C0, aliases: [''], description: ''}
+    - {name: XI(2790)/CBAR-, aliases: [''], description: ''}
+    - {name: XI(2790)/CBAR0, aliases: [''], description: ''}
+    - {name: XI(2815)/C+, aliases: [''], description: ''}
+    - {name: XI(2815)/C0, aliases: [''], description: ''}
+    - {name: XI(2815)/CBAR-, aliases: [''], description: ''}
+    - {name: XI(2815)/CBAR0, aliases: [''], description: ''}
+    - {name: OMEGA/C0, aliases: [''], description: ''}
+    - {name: OMEGA(2770)/C0, aliases: [''], description: ''}
+  BOTTOM_Baryons:
+    - {name: LAMBDA/B0, aliases: [''], description: ''}
+    - {name: LAMBDA/BBAR0, aliases: [''], description: ''}
+    - {name: SIGMA/B-, aliases: [''], description: ''}
+    - {name: SIGMA/B+, aliases: [''], description: ''}
+    - {name: SIGMA/B*-, aliases: [''], description: ''}
+    - {name: SIGMA/B*+, aliases: [''], description: ''}
+    - {name: OMEGA/B-, aliases: [''], description: ''}
+    - {name: OMEGA/BBAR+, aliases: [''], description: ''}
+  SUSY:
+    - {name: SPARTICLE, aliases: [''], description: ''}
+    - {name: GAUGINO, aliases: [''], description: ''}
+    - {name: NEUTRALINO, aliases: [''], description: ''}
+    - {name: NEUTRALINO1, aliases: [''], description: ''}
+    - {name: NEUTRALINO2, aliases: [''], description: ''}
+    - {name: CHARGINO, aliases: [''], description: ''}
+    - {name: CHARGINO1, aliases: [''], description: ''}
+    - {name: CHARGINO+, aliases: [''], description: ''}
+    - {name: CHARGINO-, aliases: [''], description: ''}
+    - {name: PHOTINO, aliases: [''], description: ''}
+    - {name: PHOTINOBAR, aliases: [''], description: ''}
+    - {name: WINO, aliases: [''], description: ''}
+    - {name: WINO+, aliases: [''], description: ''}
+    - {name: WINO-, aliases: [''], description: ''}
+    - {name: ZINO, aliases: [''], description: ''}
+    - {name: GLUINO, aliases: [''], description: ''}
+    - {name: AXINO, aliases: [''], description: ''}
+    - {name: GRAVITINO, aliases: [''], description: ''}
+    - {name: HIGGS++, aliases: [''], description: ''}
+    - {name: HIGGS+, aliases: [''], description: ''}
+    - {name: HIGGS-, aliases: [''], description: ''}
+    - {name: HIGGS--, aliases: [''], description: ''}
+    - {name: HIGGSINO, aliases: [''], description: ''}
+    - {name: HIGGSINO+, aliases: [''], description: ''}
+    - {name: HIGGSINO0, aliases: [''], description: ''}
+    - {name: HIGGSINO-, aliases: [''], description: ''}
+    - {name: GOLDSTINO, aliases: [''], description: ''}
+    - {name: GOLDSTINOBAR, aliases: [''], description: ''}
+    - {name: STOP, aliases: [''], description: ''}
+    - {name: SBOTTOM, aliases: [''], description: ''}
+    - {name: SLEPTON, aliases: [''], description: ''}
+    - {name: SNU, aliases: [''], description: ''}
+    - {name: SNUE, aliases: [''], description: ''}
+    - {name: SNUMU, aliases: [''], description: ''}
+    - {name: SNUTAU, aliases: [''], description: ''}
+    - {name: SMUON, aliases: [''], description: ''}
+    - {name: STAU, aliases: [''], description: ''}
+    - {name: SQUARK, aliases: [''], description: ''}
+    - {name: GLUINIUM, aliases: [''], description: ''}
+  OTHER:
+    - {name: UNSPEC, aliases: [''], description: 'Particle of unspecified type'}
+    - {name: NEUTRAL, aliases: [''], description: 'Unspecified neutral particle'}
+    - {name: INVISIBLE, aliases: [''], description: 'One or more weakly interacting particles not visible'}
+    - {name: HIGGS, aliases: [''], description: ''}
+    - {name: CHARGED, aliases: [''], description: ''}
+    - {name: CHARGED++, aliases: [''], description: ''}
+    - {name: CHARGED+, aliases: [''], description: ''}
+    - {name: CHARGED-, aliases: [''], description: ''}
+    - {name: CHARGED--, aliases: [''], description: ''}
+    - {name: MULTICHARGED, aliases: [''], description: ''}
+    - {name: JET, aliases: [''], description: ''}
+    - {name: JET+, aliases: [''], description: ''}
+    - {name: JET-, aliases: [''], description: ''}
+    - {name: HADRON, aliases: [''], description: ''}
+    - {name: HADRON+, aliases: [''], description: ''}
+    - {name: HADRON-, aliases: [''], description: ''}
+    - {name: MESON, aliases: [''], description: ''}
+    - {name: CHARGED-MESON, aliases: [''], description: ''}
+    - {name: VMESON, aliases: [''], description: ''}
+    - {name: HEAVY, aliases: [''], description: ''}
+    - {name: HEAVY-FLAVOR, aliases: [''], description: ''}
+    - {name: LONGLIVED, aliases: [''], description: ''}
+    - {name: NARROW, aliases: [''], description: ''}
+    - {name: VEE, aliases: [''], description: ''}
+    - {name: KINK, aliases: [''], description: ''}
+    - {name: STAR, aliases: [''], description: ''}
+    - {name: SHOWER, aliases: [''], description: ''}
+    - {name: GREY, aliases: [''], description: ''}
+    - {name: HTRACK, aliases: [''], description: ''}
+    - {name: BLACK, aliases: [''], description: ''}
+    - {name: LEPTOQUARK, aliases: ['LQ'], description: ''}
+  Nuclei:
+    - {name: NUCLEUS, aliases: [''], description: 'Unspecified Nucleus'}
+    - {name: AG, aliases: [''], description: 'Silver'}
+    - {name: AIR, aliases: [''], description: 'Unspecified Air Nucleus'}
+    - {name: AL, aliases: [''], description: 'Aluminium'}
+    - {name: AR, aliases: [''], description: 'Argon'}
+    - {name: BE, aliases: [''], description: 'Beryllium'}
+    - {name: BI, aliases: [''], description: 'Bismuth'}
+    - {name: BOR, aliases: [''], description: 'Boron'}
+    - {name: BR, aliases: [''], description: 'Bromine'}
+    - {name: C, aliases: [''], description: 'Carbon'}
+    - {name: CA, aliases: [''], description: 'Calcium'}
+    - {name: CD, aliases: [''], description: 'Cadmium'}
+    - {name: CE, aliases: [''], description: 'Cerium'}
+    - {name: CL, aliases: [''], description: 'Chlorine'}
+    - {name: CO, aliases: [''], description: 'Cobalt'}
+    - {name: CR, aliases: [''], description: 'Chromium'}
+    - {name: CU, aliases: [''], description: 'Copper'}
+    - {name: DEUT, aliases: [''], description: 'Deuterium/Deuteron'}
+    - {name: FE, aliases: [''], description: 'Iron'}
+    - {name: FL, aliases: [''], description: 'Fluorine'}
+    - {name: GD, aliases: [''], description: 'Gadolinium'}
+    - {name: GE, aliases: [''], description: 'Germanium'}
+    - {name: HE, aliases: [''], description: 'Helium'}
+    - {name: HF, aliases: [''], description: 'Hafnium'}
+    - {name: HO, aliases: [''], description: 'Holmium'}
+    - {name: I, aliases: [''], description: 'Iodine'}
+    - {name: IN, aliases: [''], description: 'Indium'}
+    - {name: KK, aliases: [''], description: 'Potassium'}
+    - {name: KR, aliases: [''], description: 'Krypton'}
+    - {name: LA, aliases: [''], description: 'Lanthanium'}
+    - {name: LI, aliases: [''], description: 'Lithium'}
+    - {name: MG, aliases: [''], description: 'Magnesium'}
+    - {name: MN, aliases: [''], description: 'Manganese'}
+    - {name: MO, aliases: [''], description: 'Molybdenum'}
+    - {name: NA, aliases: [''], description: 'Sodium'}
+    - {name: NB, aliases: [''], description: 'Noibium'}
+    - {name: NE, aliases: [''], description: 'Neon'}
+    - {name: NI, aliases: [''], description: 'Nickel'}
+    - {name: NIT, aliases: [''], description: 'Nitrogen'}
+    - {name: O, aliases: [''], description: 'Oxygen'}
+    - {name: PB, aliases: [''], description: 'Lead'}
+    - {name: PD, aliases: [''], description: 'Palladium'}
+    - {name: PH, aliases: [''], description: 'Phosphorus'}
+    - {name: PT, aliases: [''], description: 'Platinum'}
+    - {name: RE, aliases: [''], description: 'Rhenium'}
+    - {name: RU, aliases: [''], description: 'Ruthenium'}
+    - {name: SC, aliases: [''], description: 'Scandiuim'}
+    - {name: SE, aliases: [''], description: 'Selenium'}
+    - {name: SI, aliases: [''], description: 'Silicon'}
+    - {name: SM, aliases: [''], description: 'Samarium'}
+    - {name: SN, aliases: [''], description: 'Tin'}
+    - {name: SR, aliases: [''], description: 'Strontium'}
+    - {name: SU, aliases: [''], description: 'Sulphur'}
+    - {name: TA, aliases: [''], description: 'Tantalum'}
+    - {name: TB, aliases: [''], description: 'Terbiuim'}
+    - {name: TE, aliases: [''], description: 'Tellurium'}
+    - {name: TH, aliases: [''], description: 'Thorium'}
+    - {name: TI, aliases: [''], description: 'Titanium'}
+    - {name: TM, aliases: [''], description: 'Thulium'}
+    - {name: TRIT, aliases: [''], description: 'Tritium'}
+    - {name: U, aliases: [''], description: 'Uranium'}
+    - {name: VA, aliases: [''], description: 'Vanadium'}
+    - {name: WT, aliases: [''], description: 'Tungsten'}
+    - {name: XE, aliases: [''], description: 'Xenon'}
+    - {name: YB, aliases: [''], description: 'Yetterbium'}
+    - {name: YT, aliases: [''], description: 'Yttrium'}
+    - {name: ZN, aliases: [''], description: 'Zinc'}
+    - {name: ZR, aliases: [''], description: 'Zirconium'}

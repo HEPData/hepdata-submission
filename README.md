@@ -1,20 +1,29 @@
 # HEPData Submission
 
-HEPData submission will largely involve the upload of archives (.zip, .tar, .tar.gz) that specify the data associated with a publication.
+HEPData submission will largely involve the upload of archive files (`.zip`, `.tar`, `.tar.gz`) containing a number
+of [YAML](http://yaml.org) files together with possible auxiliary files of any format.  However, it is also possible
+to upload a single text file with extension `.oldhepdata` (see
+*[sample.oldhepdata](examples/oldhepdata/sample.oldhepdata)*) containing the "input" format that was used for data
+submissions from the old HepData site.  Upon upload, the `.oldhepdata` file will be automatically
+[converted](https://github.com/HEPData/hepdata-converter) to the new YAML format.
 
 The main file for a submission is the *submission.yaml* file.
-This links together all the data tables into one submission and defines auxiliary files such as scripts used to create the data, ROOT files, or even links to GitHub/Bitbucket/Zenodo etc. for more substantial pieces of code.
+This links together all the data tables into one submission and specifies auxiliary files such as scripts used to
+create the data, ROOT files, or even links to GitHub/Bitbucket/Zenodo etc. for more substantial pieces of code.
 
-The data files for each table, in either YAML or JSON format, specifies the data points in terms of independent and dependent variables.
+The data files for each table, in either [YAML](http://yaml.org) or [JSON](http://www.json.org) format, specify the
+data points in terms of independent and dependent variables.
 
- ![image](assets/hepdata_root_processing.png)
+See also Section 6 of [arXiv:1704.05473](https://arxiv.org/abs/1704.05473) for an overview of the submission process.
+
+![image](assets/hepdata_root_processing.png)
 
 ## submission.yaml
 
-The *submission.yaml* file tells HEPdata about your entire submission, but most importantly, what data files are in your submission, what they contain, any related material, keywords, etc.
+The *submission.yaml* file tells HEPData about your entire submission, but most importantly, what data files are in
+your submission, what they contain, any related material, keywords, etc.
 
-Some information, like the *name*, *description*, *keywords*, and the reference to the *data_file* are required.  For example, the table definition below is perfectly valid.
-
+Some information, like the *name* (64 characters or less), *description*, *keywords*, and the *data_file* are required.  For example, the table definition below is perfectly valid.
 ``` yaml
 name: "Table 1"
 description: Describe the data.  The more you say, the easier it'll be to search for it later.
@@ -24,13 +33,12 @@ keywords: # used for searching, possibly multiple values for each keyword
   - {name: cmenergies, values: [7000.0]}
   - {name: phrases, values: [Inclusive, Integrated Cross Section, Cross Section, Proton-Proton Scattering, Z Production, Z pair Production]}
 data_file: data1.yaml
-
 ```
 
-Then, there are some *optional* things, such as the *location* of the data within the associated paper, a *license* for your data, or pointing to *additional_resources*, e.g. code or ROOT files you've used to create this data.
-Sharing this will enable others to do meaningful things with your data long after you've finished with it...and that's a good thing.
-
-
+Then, there are some *optional* things, such as the *location* (256 characters or less) of the data within the
+associated paper, a *license* for your data, or pointing to *additional_resources*, e.g. code or ROOT files you've
+used to create this data.  Sharing this will enable others to do meaningful things with your data long after you've
+finished with it...and that's a good thing.
 ``` yaml
 name: "Table 1"
 description: Describe the data.  The more you say, the easier it'll be to search for it later.
@@ -58,7 +66,7 @@ additional_resources: # (optional)
 
 ### submission.yaml Full Example
 
-
+Here is an example *submission.yaml* file comprising three data tables preceded by some additional information.
 ``` yaml
 
 # Start a new submission. This section is optional for the provision of information about the overall submission.
@@ -92,7 +100,7 @@ comment: | # Information that applies to all data tables.
   - min(DeltaR(l,l)) > 0.3
 
 ---
-# Start of table entries
+# Start of table entries.
 # This is Table 1.
 name: "Table 1"
 location: Data from Page 17 of preprint
@@ -143,23 +151,24 @@ data_file: data3.yaml
 additional_resources:
 - {description: Image file, location: figFigure8A.png}
 - {description: Thumbnail image file, location: thumb_figFigure8A.png}
-
 ```
 
 ## Data Files
 
-Data files can be encoded as either YAML or JSON: the software deals with both the same way.
-We define the data file in two parts which describe:
+Data files can be encoded as either [YAML](http://yaml.org) or [JSON](http://www.json.org): the software deals with
+both the same way.  We define the data file in two parts which describe:
 
- - a) the independent variables (the x-axis of a plot)
- - b) the dependent variables (the thing you're measuring, e.g. the y-axis of a plot)
+- a) the independent variables (e.g. the x-axis of a plot);
+- b) the dependent variables (the thing you're measuring, e.g. the y-axis of a plot).
+
+Each table can have any number of independent and dependent variables (columns), but each must have the same number
+of data points (rows).
  
- Inside each you can define the header (the column name), and the values (the rows in your table).
- For the dependent variables, you can also define 'qualifiers'.  These are extra metadata describing the measurement,
- such as the energy, the reaction type, and possible kinematic cuts.
+Each variable comprises a header (the column name) and a list of values (the rows in your table).  For the dependent
+variables, you can also define 'qualifiers'.  These are extra metadata describing the measurement, such as the energy,
+the reaction type, and possible kinematic cuts on variables such as transverse momentum and (pseudo)rapidity.
 
-
-### YAML
+### YAML data file example
 
 ``` yaml
 independent_variables:
@@ -199,24 +208,115 @@ dependent_variables:
 
 ### Uncertainties
 
-There are two main classes of uncertainty that can be encoded: symmetric errors and asymmetric errors.
-Symmetric errors allow you to specify plus and minus errors using one value, e.g. ```symerror: 0.4```.
-Unsurprisingly, an asymmetric error allows both plus and minus errors to be explicitly encoded, e.g. ```asymerror: {plus: 0.4, minus: -0.3}```.
-Note that "plus" and "minus" can refer to "up" and "down" variations of the source of uncertainty, and do not necessarily match the
-sign of the resultant uncertainty on the measurement (which can change sign along a distribution).
+Multiple uncertainties can be assigned to each data point.  There are two main classes of uncertainty that can be
+encoded: symmetric errors and asymmetric errors.  A symmetric error allows you to specify plus and minus errors using
+one value, e.g. `symerror: 0.4`, while an asymmetric error allows both plus and minus errors to be explicitly
+encoded, e.g. `asymerror: {plus: 0.4, minus: -0.3}`.  Note that here "plus" and "minus" can refer to "up" and "down"
+variations of the source of uncertainty, and do not necessarily match the sign of the resultant uncertainty on the
+measurement (which can change sign along a distribution).
 
+### Correlation/covariance matrices
+
+Correlation/covariance matrices can be encoded in a format with two independent variables (giving the bins) and one
+dependent variable (giving the covariance/correlation), e.g.
+```yaml
+independent_variables:
+- header: {name: PTjet, units: GeV}
+  values:
+  - {low: 25, high: 45}
+  - {low: 45, high: 65}
+  - {low: 45, high: 65}
+  ...
+- header: {name: PTjet, units: GeV}
+  values:
+  - {low: 25, high: 45}
+  - {low: 25, high: 45}
+  - {low: 45, high: 65}
+  ...
+dependent_variables:
+- header: {name: Correlation}
+  values:
+  - {value: 1.0000}
+  - {value: 0.8727}
+  - {value: 1.0000}
+  ...
+```
+
+## Keywords
+
+Current keywords are `cmenergies` (in units of GeV), [`observables`](keywords/observables.html),
+[`phrases`](keywords/phrases.html), and [`reactions`](keywords/partlist.html).  Individual keywords can be omitted if
+they are not relevant.  Each keyword is associated with a list of possibly multiple values, e.g.
+```yaml
+keywords: # used for searching, possibly multiple values for each keyword
+  - {name: reactions, values: [P P --> Z0 Z0 X]}
+  - {name: observables, values: [SIG]}
+  - {name: cmenergies, values: [7000.0]}
+  - {name: phrases, values: [Inclusive, Integrated Cross Section, Cross Section, Proton-Proton Scattering, Z Production, Z pair Production]}
+```
+Each *reaction* should consist of initial- and final-state particles separated by `-->`, with particles on each side
+of the arrow separated by spaces ` `.  The right-hand side should usually have an `X` to indicate an inclusive
+reaction (as opposed to exclusive where all final-state particles are known, e.g. elastic proton scattering).
+A standard [`notation`](keywords/part.yaml) should be used for each particle.  Omit the decay products or give them
+as a separate reaction.
+
+Each *observable* should consist of only a single word, for example, use `SIG` for a cross section, `DSIG/DPT` for
+a differential cross section, `N` for number of events, etc., again using a standard
+[`notation`](keywords/observables.html).
 
 ## Common mistakes and how to avoid them
 
-YAML has its idiosyncrasies, like all input formats.  We attempt to list some common problems here.
+[YAML](http://yaml.org) has its idiosyncrasies, like all input formats.  We attempt to list some common problems here.
+
+- ***Validate your files offline before uploading***
+
+  Try pasting your text into an online YAML validator (find several with Google) like http://www.yamllint.com/ .
+  Or write some code that parses YAML using one of the available [libraries](http://yaml.org) for different languages.
+  
+  Even better: install the Python [hepdata-validator](https://github.com/HEPData/hepdata-validator) package which checks
+  that the YAML files match the HEPData [schema](https://github.com/HEPData/hepdata-validator/tree/master/hepdata_validator/schemas).
+  Then write a script to validate your YAML files offline.  Here is a simple [example](scripts/check.py) which
+  validates the *submission.yaml* file and all data files against the HEPData schema if the
+  [hepdata-validator](https://github.com/HEPData/hepdata-validator) package is installed, otherwise it performs a more
+  basic (but still useful) check that the files are valid YAML.
 
 - ***Escape special characters***
   
   Some characters in YAML need to be escaped, otherwise they cause errors when parsing.
-  The two characters that cause most trouble for YAML are ':' and '-'.
-  So if you use these characters in some description string, make sure you quote the whole string.
+  The two characters that cause most trouble for YAML are `:` and `-`.  Other problematic characters are `{`, `}`, and `%`.
+  So if you use these characters in some description string, please make sure you put quotes around the whole string.
 
 - ***Ensure spacing between colons***
   
   Another annoyance can be with spacing. ```{symerror:0.4, label:stat}``` will give you an error.
   Change this to ```{symerror: 0.4, label: stat}``` however and everything will work nicely!
+
+- ***Use `---` to separate tables in the submission.yaml file***
+
+  A line `---` separates YAML documents in the same file and is used to denote the start of a new table in the
+  *submission.yaml* file.  But don't end the *submission.yaml* file with `---` otherwise a final (empty) table will be
+  created, which might cause some problems.
+
+- ***Optionally include thumbnail images***
+
+  Thumbnail images of the original figures can be displayed alongside the tables as in the example above:
+  ```yaml
+  additional_resources:
+  - {description: Image file, location: figFigure8A.png}
+  - {description: Thumbnail image file, location: thumb_figFigure8A.png}
+  ```
+  The image files should be included in the submitted archive.  Note that thumbnail images need to have a filename
+  beginning with `thumb_`.
+
+- ***The table `name` should follow a standard convention***
+ 
+  There are no formal restrictions imposed on the `name` of a table, however the standard convention is to use
+  "Table 1", "Table 2", etc.  While it might be useful to give more descriptive `name` values, this is not completely
+  supported by the current code.  We therefore recommend for now that you stick to the standard convention to avoid
+  creating broken links etc. in the records.
+
+- ***Make sure that the archive file extension is accurate***
+
+  We rely on the file extension of an archive file (`.zip`, `.tar`, `.tar.gz`) to decide how to unpack it in the code.
+  If you experience problems uploading, please check that e.g. a `.tar` file *is not* gzipped or that a `.tar.gz` file
+  *is* gzipped. 
