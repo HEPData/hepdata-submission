@@ -242,6 +242,116 @@ dependent_variables:
   ...
 ```
 
+### Two-dimensional measurements
+
+Two-dimensional measurements can be encoded in a similar way to correlation/covariance matrices with two independent
+variables and one dependent variable.  For example, suppose we have:
+
+ind_var_1 | ind_var_2 | dep_var
+--------- | --------- | -------
+x | a | 1
+y | a | 2
+x | b | 3
+y | b | 4
+
+The YAML encoding would be:
+```yaml
+independent_variables:
+- header: {name: ind_var_1}
+  values:
+  - {value: x}
+  - {value: y}
+  - {value: x}
+  - {value: y}
+- header: {name: ind_var_2}
+  values:
+  - {value: a}
+  - {value: a}
+  - {value: b}
+  - {value: b}
+dependent_variables:
+- header: {name: dep_var}
+  values:
+  - {value: 1}
+  - {value: 2}
+  - {value: 3}
+  - {value: 4}
+```
+Note that each independent variable must contain the same number of values as the dependent variable.  The ordering is
+not important, for example, we might choose to loop over the second independent variable before the first:
+```yaml
+independent_variables:
+- header: {name: ind_var_1}
+  values:
+  - {value: x}
+  - {value: x}
+  - {value: y}
+  - {value: y}
+- header: {name: ind_var_2}
+  values:
+  - {value: a}
+  - {value: b}
+  - {value: a}
+  - {value: b}
+dependent_variables:
+- header: {name: dep_var}
+  values:
+  - {value: 1}
+  - {value: 3}
+  - {value: 2}
+  - {value: 4}
+```
+Such a representation will give a heat map visualisation, while export to ROOT will use `TH2F` and `TGraph2DErrors`
+objects, and export to YODA will use `Scatter3D` objects.
+
+However, often a more appropriate representation is to encode a two-dimensional measurement in a format with one
+independent variable and multiple dependent variables (one for each value of the second independent variable).  Then
+export to ROOT will use `TH1F` and `TGraphAsymmErrors` objects, and export to YODA will use `Scatter2D` objects.  For
+example, the table above could be encoded with the dependent variable as a function of the first independent variable
+(with the second independent variable acting as a qualifier):
+```yaml
+independent_variables:
+- header: {name: ind_var_1}
+  values:
+  - {value: x}
+  - {value: y}
+dependent_variables:
+- header: {name: dep_var}
+  qualifiers:
+  - {name: ind_var_2, value: a}
+  values:
+  - {value: 1}
+  - {value: 2}
+- header: {name: dep_var}
+  qualifiers:
+  - {name: ind_var_2, value: b}
+  values:
+  - {value: 3}
+  - {value: 4}
+```
+or with the dependent variable as a function of the second independent variable (with the first independent variable
+acting as a qualifier):
+```yaml
+independent_variables:
+- header: {name: ind_var_2}
+  values:
+  - {value: a}
+  - {value: b}
+dependent_variables:
+- header: {name: dep_var}
+  qualifiers:
+  - {name: ind_var_1, value: x}
+  values:
+  - {value: 1}
+  - {value: 3}
+- header: {name: dep_var}
+  qualifiers:
+  - {name: ind_var_1, value: y}
+  values:
+  - {value: 2}
+  - {value: 4}
+```
+
 ## Keywords
 
 Current keywords are `cmenergies` (in units of GeV), [`observables`](keywords/observables.html),
