@@ -42,6 +42,11 @@ Classes:
     - {name: CQBAR, aliases: ['CHARMBAR'], description: 'anti-charmed quark'}
     - {name: BQBAR, aliases: ['BOTTOMBAR'], description: 'anti-bottom quark'}
     - {name: TQBAR, aliases: ['TOPBAR'], description: 'anti-top quark'}
+    - {name: VLQ, aliases: [''], description: 'hypothetical vector-like quark'}
+    - {name: VLT, aliases: [''], description: 'hypothetical vector-like quark (electric charge 2/3)'}
+    - {name: VLB, aliases: [''], description: 'hypothetical vector-like quark (electric charge -1/3)'}
+    - {name: VLX, aliases: [''], description: 'hypothetical vector-like quark (electric charge 5/3)'}
+    - {name: VLY, aliases: [''], description: 'hypothetical vector-like quark (electric charge -4/3)'}
   Light_Unflavoured_Mesons:
     - {name: PI+, aliases: [''], description: ''}
     - {name: PI-, aliases: [''], description: ''}

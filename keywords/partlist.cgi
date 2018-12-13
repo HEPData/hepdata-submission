@@ -1,7 +1,7 @@
 #!/usr/bin/perl
 use CGI qw ( param header p);;
 
-print header('text/html');
+#print header('text/html');
 
 open YAML,'<part.yaml';
 $line=<YAML>;

@@ -1,0 +1,6 @@
+# PyCharm
+.idea/
+
+# Sphinx
+docs/_build/
+docs/_templates/
