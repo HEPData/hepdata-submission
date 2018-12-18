@@ -5,7 +5,7 @@ The `examples <https://github.com/HEPData/hepdata-submission/tree/master/example
 directory contains a few example submissions, including the
 :download:`TestHEPSubmission.zip <../examples/submission/TestHEPSubmission.zip>` file.
 You can also easily obtain the YAML format of any existing
-`HEPData <https:/www.hepdata.net>`_ record by clicking "Download All" then "YAML".
+`HEPData <https://www.hepdata.net>`_ record by clicking "Download All" then "YAML".
 
 Note that libraries exist for a variety of programming languages that
 can parse and emit the YAML standard, linked from the
@@ -28,7 +28,7 @@ HEPData submission.  Here is a :download:`validation script <../scripts/check.py
 which validates the *submission.yaml* file and all data files (optionally requiring
 the `hepdata-validator <https://github.com/HEPData/hepdata-validator>`_ package).
 
-A library called `hepdata_lib <https://github.com/clelange/hepdata_lib>`_
+A library called `hepdata_lib <https://github.com/HEPData/hepdata_lib>`_
 (see `docs <https://hepdata-lib.readthedocs.io>`_) has been developed
 independently by members of the CMS Collaboration to help with both
 (i) reading data into Python from common formats such as

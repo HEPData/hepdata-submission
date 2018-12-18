@@ -72,9 +72,16 @@ with open(submission_file_path, 'r') as stream:
                 if not location.startswith('http'):
                     if not os.path.isfile(location):
                         print('%s is missing.' % location)
+                    elif '/' in resource['location']:
+                        print('%s should not contain "/".' % resource['location'])
 
         # Check for non-empty YAML documents with a 'data_file' key.
         if 'data_file' in doc:
+
+            # Check for presence of '/' in data_file value.
+            if '/' in doc['data_file']:
+                print('%s should not contain "/".' % doc['data_file'])
+                continue
 
             # Extract data file from YAML document.
             data_file_path = directory + '/' + doc['data_file'] if directory else doc['data_file']
