@@ -217,9 +217,15 @@ def write_lowq2_tables(
 
     # Read the input file into a Pandas DataFrame, leaving numbers as strings.
     df_str = pd.read_csv(filename, delim_whitespace=True, dtype=str)
+    df_str.rename(
+        columns={"RW402+": "ModelRW+", "RW402-": "ModelRW-"}, inplace=True
+    )  # rename RW402 to ModelRW
 
     # Define another Pandas DataFrame with numbers converted to ints or floats.
     df_num = pd.read_csv(filename, delim_whitespace=True)
+    df_num.rename(
+        columns={"RW402+": "ModelRW+", "RW402-": "ModelRW-"}, inplace=True
+    )  # rename RW402 to ModelRW
 
     # Get systematic error labels and make some checks of the summed errors.
     syst_labels = check_errors(df_str, df_num)
@@ -343,13 +349,22 @@ def write_lowq2_tables(
                 }
             )
             dependent_variable["qualifiers"].append(
-                {"name": r"$N_{\rm jet}$", "value": r"$\ge {}$".format(njet)}
-            )
-            dependent_variable["qualifiers"].append(
                 {"name": r"$\eta_{\rm lab}^{\rm jet}$", "value": "-1.0-2.5"}
             )
             dependent_variable["qualifiers"].append(
                 {"name": r"$P_T^{\rm jet}$", "value": "> 4", "units": "GeV"}
+            )
+            dependent_variable["qualifiers"].append(
+                {"name": r"$N_{\rm jet}$", "value": r"$\ge {}$".format(njet)}
+            )
+            dependent_variable["qualifiers"].append(
+                {
+                    "name": r"{}".format(variable),
+                    "value": "{}-{}".format(
+                        df_num.Pt_min.min(), df_num.Pt_max.max()
+                    ),
+                    "units": "GeV",
+                }
             )
         # Iterate over each P_T bin.
         for ipt, pt_min in enumerate(df_str.Pt_min.unique()):
@@ -444,7 +459,14 @@ def write_lowq2_tables(
         description += r"sections $c^{\rm had}$ are listed together with their"
         description += " uncertainties.  The radiative correction factors "
         description += r"$c^{\rm rad}$ are already included in the quoted "
-        description += "cross sections."
+        description += "cross sections.  "
+        description += "Note that the uncertainties labelled "
+        description += r"$\delta^{E_{e^\prime}}$ and "
+        description += r"$\delta^{\theta_{e^\prime}}$"
+        description += " in Table {} of the paper ".format(table_num)
+        description += "(arXiv:1611.03421v3) should be swapped."
+        description += "  See Table 5 of arXiv:1406.4709v2 for "
+        description += "details of the correlation model."
 
         # Append a Python dictionary to the list of submission tables.
         submission_tables.append(
@@ -670,6 +692,15 @@ def write_correlation_table(
             "normalised " if norm else "", "high" if highq2 else "low"
         )
     )
+    if highq2:
+        description += (
+            r"  The statistical correlations have "
+            + "been determined in the scope of the analysis of an "
+            + 'earlier H1 publication (<a href="'
+            + 'https://inspirehep.net/record/1301218">INSPIRE</a>'
+            + ', <a href="https://www.hepdata.net/record/'
+            + 'ins1301218">HEPData</a>).'
+        )
 
     # Define the Python dictionary with metadata to be returned.
     submission_table = {
@@ -807,10 +838,10 @@ def write_highq2_tables(
                 }
             )
             dependent_variable["qualifiers"].append(
-                {"name": r"$N_{\rm jet}$", "value": r"$\ge 1$"}
+                {"name": r"$\eta_{\rm lab}^{\rm jet}$", "value": "-1.0-2.5"}
             )
             dependent_variable["qualifiers"].append(
-                {"name": r"$\eta_{\rm lab}^{\rm jet}$", "value": "-1.0-2.5"}
+                {"name": r"$N_{\rm jet}$", "value": r"$\ge 1$"}
             )
             dependent_variable["qualifiers"].append(
                 {
@@ -957,12 +988,14 @@ def write_highq2_tables(
         )
         description += (
             r"The cross section values and uncertainties have "
-            + "been determined in the scope of the analysis of "
+            + "been determined in the scope of the analysis of an "
             + 'earlier H1 publication (<a href="'
             + 'https://inspirehep.net/record/1301218">INSPIRE</a>'
             + ', <a href="https://www.hepdata.net/record/'
             + 'ins1301218">HEPData</a>).'
         )
+        description += "  See Table 5 of arXiv:1406.4709v2 for "
+        description += "details of the correlation model."
 
         # Append a Python dictionary to the list of submission tables.
         submission_tables.append(
