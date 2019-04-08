@@ -258,7 +258,9 @@ class Validator:
                     #
                     # If the document has the field
                     # 'independent_variables', then it is a data table
-                    # entry
+                    # entry.
+                    # If the same document also has a 'description' field,
+                    # then it comes from a single YAML file.
                     #
                     # If neither of those fields are found, we assume
                     # that we have additional information in the
@@ -267,7 +269,16 @@ class Validator:
                     if 'data_file' in doc:
                         self.validate_sub(filename,doc,verb)
                     elif 'independent_variables' in doc:
-                        self.validate_dat(filename,doc,verb)
+                        if 'description' in doc:  # check for single-YAML-file format
+                            doc_dat = {
+                                'independent_variables': doc.pop('independent_variables', None),
+                                'dependent_variables': doc.pop('dependent_variables', None)
+                            }
+                            self.validate_dat(filename, doc_dat, verb)
+                            doc['data_file'] = ''  # since schema requires a data_file
+                            self.validate_sub(filename, doc, verb)
+                        else:  # usual YAML data file
+                            self.validate_dat(filename,doc,verb)
                     else:
                         self.validate_add(filename,doc,verb)
 
