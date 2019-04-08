@@ -68,8 +68,8 @@ with open(submission_file_path, 'r') as stream:
         # Check for presence of local files given as additional_resources.
         if 'additional_resources' in doc:
             for resource in doc['additional_resources']:
-                location = os.path.join(directory, resource['location'])
-                if not location.startswith('http'):
+                if not resource['location'].startswith('http'):
+                    location = os.path.join(directory, resource['location'])
                     if not os.path.isfile(location):
                         print('%s is missing.' % location)
                     elif '/' in resource['location']:

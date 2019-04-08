@@ -21,6 +21,11 @@ We attempt to list some common problems here.
   package is installed, otherwise it performs a more basic (but still
   useful) check that the files are valid YAML.
 
+  An :download:`alternative validation script <../scripts/validate.py>` has been written in Python 3
+  by Christian Holm Christensen (see `#8 <https://github.com/HEPData/hepdata-submission/issues/8>`_),
+  which reimplements (and attempts to improve) the main functionality of the
+  `hepdata-validator <https://github.com/HEPData/hepdata-validator>`_ package.
+
 **Escape special characters.**
   Some characters in YAML need to be escaped, otherwise they cause
   errors when parsing.  The two characters that cause most trouble for

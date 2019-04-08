@@ -28,6 +28,11 @@ HEPData submission.  Here is a :download:`validation script <../scripts/check.py
 which validates the *submission.yaml* file and all data files (optionally requiring
 the `hepdata-validator <https://github.com/HEPData/hepdata-validator>`_ package).
 
+An :download:`alternative validation script <../scripts/validate.py>` has been written in Python 3
+by Christian Holm Christensen (see `#8 <https://github.com/HEPData/hepdata-submission/issues/8>`_),
+which reimplements (and attempts to improve) the main functionality of the
+`hepdata-validator <https://github.com/HEPData/hepdata-validator>`_ package.
+
 A library called `hepdata_lib <https://github.com/HEPData/hepdata_lib>`_
 (see `docs <https://hepdata-lib.readthedocs.io>`_) has been developed
 independently by members of the CMS Collaboration to help with both
