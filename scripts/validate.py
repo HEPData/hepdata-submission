@@ -2,6 +2,11 @@
 
 """Try to validate a submission file and possible data files
 
+See https://github.com/HEPData/hepdata-submission/issues/8
+Specify the path to the schema files with either the -s option
+or by giving the location of the hepdata-validator repository
+using the PYTHONPATH environment variable.
+
 Author: Christian Holm Christensen <cholm@nbi.dk>
 
 """
@@ -107,14 +112,14 @@ class Validator:
                 (m._level>=least and not exact)]
                 
     def get_messages(self,filename=None,least=None,exact=False):
-        """Get messsages for a given filename or all messages
+        """Get messages for a given filename or all messages
         
         :param filename: File to get messages for, or None to get all
         :param least: Least level of messages 
         """
         if filename is None:
             if least is None:
-                return self._messages;
+                return self._messages
 
             ret = {}
             for f in self._messages:
@@ -217,7 +222,7 @@ class Validator:
             data = list(data)
 
             # Loop over documents in data to extract tables.
-            # We build a dictonary from table name to data table document
+            # We build a dictionary from table name to data table document
             for doc in data:
                 # Check for empty document 
                 if doc is None:
@@ -311,7 +316,7 @@ class Validator:
             if not os.path.isfile(location):
                   self.add_warning(filename,'Resource {} not found'
                                    .format(location))
-            if '/' in location:
+            if '/' in resource.get('location',''):
                   self.add_warning(filename,'Resource {} should not contain "/"'
                                    .format(location))
             
@@ -362,13 +367,12 @@ class Validator:
         # This raises in case of problems - handled one level up
         jsonschema.validate(doc,self._dat_schema)
 
-        len_indep = [len(i['values']) for i in doc['independent_variables']
-                     if len(i['values']) > 0]
+        len_indep = [len(i['values']) for i in doc['independent_variables']]
         len_dep   = [len(d['values']) for d in doc['dependent_variables']]
         
         if len(set(len_indep+len_dep)) > 1:
             # If we have one or more unique counts, it's a problem
-            add_warning(filename,"Inconsistent lengths of independent "
+            self.add_warning(filename,"Inconsistent lengths of independent "
                         "variables {} and dependent variables {}"
                         .format(str(len_indep),str(len_dep)))
 
