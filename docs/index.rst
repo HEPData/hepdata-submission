@@ -14,5 +14,6 @@ HEPData Submission
    examples
    submission_yaml
    data_yaml
+   single_yaml
    keywords
    tips

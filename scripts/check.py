@@ -6,25 +6,42 @@ Call this script from the directory containing these files:
   ./check.py
 Or specify the directory as an additional argument:
   ./check.py directory
+Or specify a single YAML file to validate:
+  ./check.py single_yaml_file
 """
 
+import sys
 import os.path
 
-# Get directory as optional command-line argument.
-import sys
+# Get directory or single YAML file as optional command-line argument.
+directory = ''
+single_yaml_file = ''
 if len(sys.argv) == 2:
-    directory = sys.argv[1]
-    print('Checking YAML files in directory %s.' % directory)
+    argument = sys.argv[1]
+    if os.path.isdir(argument):
+        directory = argument
+        print('Checking YAML files in directory %s.' % directory)
+    elif os.path.isfile(argument):
+        single_yaml_file = argument
+        print('Checking single YAML file %s.' % single_yaml_file)
+    else:
+        print('Argument %s is not a directory or file.' % argument)
 elif len(sys.argv) > 2:
     print('Invalid number of arguments: %d' % len(sys.argv))
     quit()
 else:
-    directory = ''
     print('Checking YAML files in current directory.')
 
 # Import a YAML parser if available.
 try:
     import yaml
+    # We try to load using the CSafeLoader for speed improvements.
+    try:
+        from yaml import CSafeLoader as Loader
+        from yaml import CSafeDumper as Dumper
+    except ImportError:
+        from yaml import SafeLoader as Loader
+        from yaml import SafeDumper as Dumper
 except ImportError:
     print('ImportError: please install a YAML implementation for Python.')
     quit()
@@ -40,23 +57,36 @@ except ImportError:
     print('See https://github.com/HEPData/hepdata-validator to install.')
     validator_imported = False
 
-# Give location of the submission.yaml file.
-submission_file_path = os.path.join(directory, 'submission.yaml')
-
-# Validate the submission.yaml file if validator imported.
-if validator_imported:
-    submission_file_validator = SubmissionFileValidator()
-    is_valid_submission_file = submission_file_validator.validate(file_path=submission_file_path)
-    if not is_valid_submission_file:
-        print('%s is invalid HEPData YAML.' % submission_file_path)
-        submission_file_validator.print_errors(submission_file_path)
-        quit()
-    else:
-        print('%s is valid HEPData YAML.' % submission_file_path)
+# Give location of the submission.yaml file or the single YAML file.
+if single_yaml_file:
+    submission_file_path = single_yaml_file
+else:
+    submission_file_path = os.path.join(directory, 'submission.yaml')
 
 # Open the submission.yaml file and load all YAML documents.
 with open(submission_file_path, 'r') as stream:
-    docs = yaml.safe_load_all(stream)
+    docs = list(yaml.load_all(stream, Loader=Loader))
+
+    # Need to remove independent_variables and dependent_variables from single YAML file.
+    if single_yaml_file:
+        for doc in docs:
+            if 'name' in doc:
+                file_name = doc['name'].replace(' ', '_').replace('/', '-') + '.yaml'
+                doc['data_file'] = file_name
+                with open(file_name, 'w') as data_file:
+                    yaml.dump({'independent_variables': doc.pop('independent_variables', None),
+                               'dependent_variables': doc.pop('dependent_variables', None)}, data_file, Dumper=Dumper)
+
+    # Validate the submission.yaml file if validator imported.
+    if validator_imported:
+        submission_file_validator = SubmissionFileValidator()
+        is_valid_submission_file = submission_file_validator.validate(file_path=submission_file_path, data=docs)
+        if not is_valid_submission_file:
+            print('%s is invalid HEPData YAML.' % submission_file_path)
+            submission_file_validator.print_errors(submission_file_path)
+            quit()
+        else:
+            print('%s is valid HEPData YAML.' % submission_file_path)
 
     # Loop over all YAML documents in the submission.yaml file.
     for doc in docs:
@@ -88,7 +118,7 @@ with open(submission_file_path, 'r') as stream:
 
             # Just try to load YAML data file without validating schema.
             # Script will terminate with an exception if there is a problem.
-            contents = yaml.safe_load(open(data_file_path, 'r'))
+            contents = yaml.load(open(data_file_path, 'r'), Loader=Loader)
 
             # Validate the YAML data file if validator imported.
             if not validator_imported:
@@ -109,3 +139,8 @@ with open(submission_file_path, 'r') as stream:
                               "independent_variables%s, dependent_variables%s." % (str(indep_count), str(dep_count)))
                     else:
                         print('%s is valid HEPData YAML.' % data_file_path)
+
+            # For single YAML file, clean up by removing temporary data_file created above.
+            if single_yaml_file:
+                print('Removing %s.' % doc['data_file'])
+                os.remove(doc['data_file'])
