@@ -81,9 +81,9 @@ encoded, e.g. ``asymerror: {plus: 0.4, minus: -0.3}``.  Note that here
 source of uncertainty, and do not necessarily match the sign of the
 resultant uncertainty on the measurement (which can change sign along a
 distribution).  Note that ``symerror: 0.4`` is equivalent to
-``asymerror: {plus: 0.4, minus: -0.4}``.  For the opposite-sign case,
-please use the encoding ``asymerror: {plus: -0.4, minus: 0.4}`` and
-*not* ``symerror: -0.4``.  A one-sided uncertainty can be represented
+``asymerror: {plus: 0.4, minus: -0.4}``.  The opposite-sign case,
+``symerror: -0.4`` is equivalent to ``asymerror: {plus: -0.4, minus: 0.4}``.
+A one-sided uncertainty can be represented
 using an empty string, e.g. ``asymerror: {plus: '', minus: -0.3}``.
 Error values are normally taken as absolute, but relative errors
 can be specified by including a ``%`` symbol after the number to define
