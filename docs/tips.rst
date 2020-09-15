@@ -65,3 +65,61 @@ We attempt to list some common problems here.
   table names, in particular, containing special characters, were
   initially not completely supported by the HEPData code.  These
   initial problems should now have been resolved.
+
+**Use only simple HTML in comments and descriptions**
+  Limited HTML markup is allowed in the ``comment`` and ``description`` fields,
+  as shown in the following table. Disallowed HTML tags will be escaped, and
+  disallowed HTML attributes will be removed. In some cases your HTML may not
+  appear as expected; in this case please remove any disallowed tags and
+  attributes and try again. If you are using < or > signs and they do not
+  appear as expected, try escaping them, i.e. replace **<** with ``&lt;`` and
+  **>** with ``&gt;``.
+
+.. list-table:: Allowed HTML tags and attributes
+   :widths: 50 50
+   :header-rows: 1
+
+   * - Tag
+     - Allowed attributes
+   * - ``a``
+     - ``href``, ``title``, ``name``, ``class``, ``rel``
+   * - ``abbr``
+     - ``class``, ``title``
+   * - ``acronym``
+     - ``class``, ``title``
+   * - ``b``
+     - ``class``
+   * - ``blockquote``
+     - ``class``
+   * - ``br``
+     - ``class``
+   * - ``code``
+     - ``class``
+   * - ``div``
+     - ``class``
+   * - ``em``
+     - ``class``
+   * - ``i``
+     - ``class``
+   * - ``li``
+     - ``class``
+   * - ``ol``
+     - ``class``
+   * - ``p``
+     - ``class``
+   * - ``pre``
+     - ``class``
+   * - ``span``
+     - ``class``
+   * - ``strike``
+     - ``class``
+   * - ``strong``
+     - ``class``
+   * - ``sub``
+     - ``class``
+   * - ``sup``
+     - ``class``
+   * - ``u``
+     - ``class``
+   * - ``ul``
+     - ``class``
