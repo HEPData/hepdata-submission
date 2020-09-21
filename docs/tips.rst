@@ -82,44 +82,44 @@ We attempt to list some common problems here.
    * - Tag
      - Allowed attributes
    * - ``a``
-     - ``href``, ``title``, ``name``, ``class``, ``rel``
+     - ``href``, ``title``, ``name``, ``rel``
    * - ``abbr``
-     - ``class``, ``title``
+     - ``title``
    * - ``acronym``
-     - ``class``, ``title``
+     - ``title``
    * - ``b``
-     - ``class``
+     -
    * - ``blockquote``
-     - ``class``
+     -
    * - ``br``
-     - ``class``
+     -
    * - ``code``
-     - ``class``
+     -
    * - ``div``
-     - ``class``
+     -
    * - ``em``
-     - ``class``
+     -
    * - ``i``
-     - ``class``
+     -
    * - ``li``
-     - ``class``
+     -
    * - ``ol``
-     - ``class``
+     -
    * - ``p``
-     - ``class``
+     -
    * - ``pre``
-     - ``class``
+     -
    * - ``span``
-     - ``class``
+     -
    * - ``strike``
-     - ``class``
+     -
    * - ``strong``
-     - ``class``
+     -
    * - ``sub``
-     - ``class``
+     -
    * - ``sup``
-     - ``class``
+     -
    * - ``u``
-     - ``class``
+     -
    * - ``ul``
-     - ``class``
+     -
