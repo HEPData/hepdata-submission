@@ -28,12 +28,9 @@ or the journal reference and DOI, is pulled from the corresponding
 to be included in the *submission.yaml* file.  The publication
 information is added to the HEPData record when a Coordinator first
 attaches the INSPIRE ID, and it is updated when a HEPData record is
-finalised by a Coordinator.  In future, we will try to automatically
-update publication information from INSPIRE even after a HEPData
-record has been finalised (see
-`HEPData/hepdata#100 <https://github.com/HEPData/hepdata/issues/100>`_).
-For now, a command can be run on the server to update publication
-information for a given HEPData record; contact info@hepdata.net.
+finalised by a Coordinator.  After a HEPData record has been finalised,
+publication information from INSPIRE is automatically updated, for example,
+if a preprint is later published in a journal.
 
 The data files for each table, in either `YAML <http://yaml.org>`_ or
 `JSON <http://www.json.org>`_ format, specify the data points in terms of
