@@ -97,6 +97,13 @@ to provide a breakdown of individual uncertainty contributions rather
 than a correlation/covariance matrix for systematic uncertainties.
 However, a statistical correlation matrix will still be needed.
 
+Note that only ``dependent_variables`` can have ``errors``, not ``independent_variables``.  If you want to express
+uncertainty in an independent variable, it can be given ``low`` and ``high`` limits.  But it is often better to instead
+encode the variable as a dependent variable with ``errors``, and assign a dummy independent variable like a bin index.
+This means that the generated plot may not match the publication plot if the latter plots two dependent
+variables against each other.  (It is an open `issue <https://github.com/HEPData/hepdata/issues/212>`_ to provide an
+option for such a generated plot.)
+
 
 Correlation/covariance matrices
 -------------------------------
