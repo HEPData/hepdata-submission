@@ -39,3 +39,10 @@ independently by members of the CMS Collaboration to help with both
 (i) reading data into Python from common formats such as
 `ROOT <https://root.cern.ch>`_ and text files, and (ii) writing data
 from Python into the HEPData YAML submission format.
+Simple example scripts using the `hepdata_lib <https://github.com/HEPData/hepdata_lib>`_ library can be found in the
+`APEX_ins923960 <https://github.com/HEPData/hepdata-submission/tree/master/examples/APEX_ins923960>`_ and
+`ATLAS_ins1241574 <https://github.com/HEPData/hepdata-submission/tree/master/examples/ATLAS_ins1241574>`_ directories.
+
+An `alternative library <https://gitlab.com/cholmcc/hepdata>`_
+(see `docs <https://cholmcc.gitlab.io/hepdata/>`_) with similar functionality
+to `hepdata_lib <https://github.com/HEPData/hepdata_lib>`_ has been developed by Christian Holm Christensen.
