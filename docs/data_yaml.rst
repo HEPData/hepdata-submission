@@ -89,6 +89,14 @@ Error values are normally taken as absolute, but relative errors
 can be specified by including a ``%`` symbol after the number to define
 the error as a percentage of the central ``value``.
 
+The `hepdata-validator <https://github.com/HEPData/hepdata-validator>`_ (v0.2.0 or greater)
+code will invalidate bins where all uncertainties are zero.  This check was introduced to
+avoid `problems <https://gitlab.com/hepcedar/rivet/-/issues/69>`_ in fitting applications.
+Bins with zero content should preferably be omitted completely from the HEPData table.
+Alternatively, missing bins can be indicated with a non-numerical central value like ``'-'``
+or an empty string ``''`` and no uncertainties.  In this case, the ``errors`` key should
+either be omitted completely or specified as an empty list ``errors: []``.
+
 Within the context of the
 `LHC Electroweak Working Group <https://twiki.cern.ch/twiki/bin/view/LHCPhysics/LHCEW>`_,
 it has been proposed (see
