@@ -24,9 +24,13 @@ for HEPData submission.  Here is a
 :download:`more complicated example script <../examples/DESY-16-200/process_ins1496981.py>`
 that downloads text files from an experiment web page and processes them into an
 :download:`archive file <../examples/DESY-16-200/ins1496981.zip>` ready for
-HEPData submission.  Here is a :download:`validation script <../scripts/check.py>`
-which validates the *submission.yaml* file and all data files (optionally requiring
-the `hepdata-validator <https://github.com/HEPData/hepdata-validator>`_ package).
+HEPData submission.
+
+The `hepdata-validator <https://github.com/HEPData/hepdata-validator>`_
+package provides a ``hepdata-validate`` command to validate a local tar/zip,
+directory or :doc:`single YAML file <single_yaml>`. See the
+`hepdata-validator docs <https://hepdata-validator.readthedocs.io/en/latest/>`_
+for more details.
 
 An :download:`alternative validation script <../scripts/validate.py>` has been written in Python 3
 by Christian Holm Christensen (see `#8 <https://github.com/HEPData/hepdata-submission/issues/8>`_),

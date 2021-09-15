@@ -14,12 +14,10 @@ We attempt to list some common problems here.
   `hepdata-validator <https://github.com/HEPData/hepdata-validator>`_
   package which checks that the YAML files match the HEPData
   `schema <https://github.com/HEPData/hepdata-validator/tree/master/hepdata_validator/schemas>`_.
-  Then write a script to validate your YAML files offline.  Here is a
-  simple :download:`example <../scripts/check.py>` which validates the
-  *submission.yaml* file and all data files against the HEPData schema
-  if the `hepdata-validator <https://github.com/HEPData/hepdata-validator>`_
-  package is installed, otherwise it performs a more basic (but still
-  useful) check that the files are valid YAML.
+  You can then validate a zip, directory or :doc:`single YAML file <single_yaml>`
+  using the ``hepdata-validate`` command. See the
+  `hepdata-validator docs <https://hepdata-validator.readthedocs.io/en/latest/>`_
+  for more details.
 
   An :download:`alternative validation script <../scripts/validate.py>` has been written in Python 3
   by Christian Holm Christensen (see `#8 <https://github.com/HEPData/hepdata-submission/issues/8>`_),
