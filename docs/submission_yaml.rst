@@ -62,7 +62,7 @@ it.  The YAML table below includes all these optional fields.
 
 It is also possible to add a section at the top of the submission file, containing *additional_resources*
 or a *comment* that relate to the whole submission, for example adding likelihoods in HistFactory format
-as a resources, or providing useful information in a comment that applies to all tables.
+as a resource file, or providing useful information in a comment that applies to all tables.
 
 .. code-block:: yaml
 
@@ -70,8 +70,8 @@ as a resources, or providing useful information in a comment that applies to all
    ---
    additional_resources: # additional references (e.g. experiment TWiki page for analysis)
    - {location: "http://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/STDM-2012-02/", description: "web page with auxiliary material"}
-   - location: "HistFactory.tgz"
-     description: "Likelihoods in HistFactory format"
+   - location: "Likelihoods.tar.gz"
+     description: "Archive of full likelihoods in the HistFactory JSON format"
      type: "HistFactory" # (optional) currently supports 'HistFactory' type to allow HistFactory JSON/pyhf files to be highlighted
 
    comment: | # Information that applies to all data tables.
@@ -91,8 +91,8 @@ Here is an example *submission.yaml* file comprising three data tables preceded 
 
    additional_resources: # additional references (e.g. experiment TWiki page for analysis)
    - {location: "http://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/STDM-2012-02/", description: "web page with auxiliary material"}
-   - location: "HistFactory.tgz"
-     description: "Likelihoods in HistFactory format"
+   - location: "Likelihoods.tar.gz"
+     description: "Archive of full likelihoods in the HistFactory JSON format"
      type: "HistFactory" # (optional) currently supports 'HistFactory' type to allow HistFactory JSON/pyhf files to be highlighted
 
    comment: | # Information that applies to all data tables.

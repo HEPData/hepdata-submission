@@ -1,8 +1,8 @@
 ---
 additional_resources: # additional references (e.g. experiment TWiki page for analysis)
   - {location: "http://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/STDM-2012-02/", description: "web page with auxiliary material"}
-  - location: "HistFactory.tgz"
-    description: "Likelihoods in HistFactory format"
+  - location: "Likelihoods.tar.gz"
+    description: "Archive of full likelihoods in the HistFactory JSON format"
     type: "HistFactory" # (optional) currently supports 'HistFactory' type to allow HistFactory JSON/pyhf files to be highlighted
 
 
