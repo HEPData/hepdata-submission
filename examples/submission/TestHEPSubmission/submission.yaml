@@ -1,6 +1,10 @@
 ---
 additional_resources: # additional references (e.g. experiment TWiki page for analysis)
   - {location: "http://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/STDM-2012-02/", description: "web page with auxiliary material"}
+  - location: "HistFactory.tgz"
+    description: "Likelihoods in HistFactory format"
+    type: "HistFactory" # (optional) currently supports 'HistFactory' type to allow HistFactory JSON/pyhf files to be highlighted
+
 
 comment: | # preserve newlines
   CERN-LHC.  Measurements of the cross section  for ZZ production using the 4l and 2l2nu decay channels in proton-proton collisions at a centre-of-mass energy of 7 TeV with 4.6 fb^-1 of data collected in 2011.  The final states used are 4 electrons, 4 muons, 2 electrons and 2 muons, 2 electrons and missing transverse momentum, and 2 muons and missing transverse momentum (MET).
