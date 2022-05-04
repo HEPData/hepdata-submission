@@ -60,9 +60,9 @@ it.  The YAML table below includes all these optional fields.
        url: "url for license"
        description: "Tell me about it. This can appear in the main record display" # (optional)
 
-It is also possible to add a section at the top of the submission file, containing *additional_resources* or *comment*s
-relating to the whole submission, for example adding likelihoods in HistFactory format as a resources,
-or providing useful information in a comment that applies to all tables.
+It is also possible to add a section at the top of the submission file, containing *additional_resources*
+or a *comment* that relate to the whole submission, for example adding likelihoods in HistFactory format
+as a resources, or providing useful information in a comment that applies to all tables.
 
 .. code-block:: yaml
 

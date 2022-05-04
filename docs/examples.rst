@@ -34,7 +34,7 @@ which reimplements (and attempts to improve) the main functionality of the
 `hepdata-validator <https://github.com/HEPData/hepdata-validator>`_ package.
 
 A library called `hepdata_lib <https://github.com/HEPData/hepdata_lib>`_
-(see `docs <https://hepdata-lib.readthedocs.io>`_) has been developed
+(see `hepdata-lib docs <https://hepdata-lib.readthedocs.io>`_) has been developed
 independently by members of the CMS Collaboration to help with both
 (i) reading data into Python from common formats such as
 `ROOT <https://root.cern.ch>`_ and text files, and (ii) writing data
@@ -44,5 +44,5 @@ Simple example scripts using the `hepdata_lib <https://github.com/HEPData/hepdat
 `ATLAS_ins1241574 <https://github.com/HEPData/hepdata-submission/tree/master/examples/ATLAS_ins1241574>`_ directories.
 
 An `alternative library <https://gitlab.com/cholmcc/hepdata>`_
-(see `docs <https://cholmcc.gitlab.io/hepdata/>`_) with similar functionality
+(see `cholmcc hepdata docs <https://cholmcc.gitlab.io/hepdata/>`_) with similar functionality
 to `hepdata_lib <https://github.com/HEPData/hepdata_lib>`_ has been developed by Christian Holm Christensen.
