@@ -1,6 +1,9 @@
 #!/usr/bin/env python
 
 """
+DEPRECATED: please use the "hepdata-validate" command instead.
+See https://hepdata-validator.readthedocs.io/en/latest/#command-line
+
 Offline validation of submission.yaml and YAML data files.
 Call this script from the directory containing these files:
   ./check.py

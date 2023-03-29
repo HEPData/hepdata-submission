@@ -5,7 +5,8 @@ The `examples <https://github.com/HEPData/hepdata-submission/tree/master/example
 directory contains a few example submissions, including the
 :download:`TestHEPSubmission.zip <../examples/submission/TestHEPSubmission.zip>` file.
 You can also easily obtain the YAML format of any existing
-`HEPData <https://www.hepdata.net>`_ record by clicking "Download All" then "YAML".
+`HEPData <https://www.hepdata.net>`_ record by clicking "Download All" then "YAML"
+or "YAML with resource files".
 
 Note that libraries exist for a variety of programming languages that
 can parse and emit the YAML standard, linked from the
@@ -24,14 +25,13 @@ for HEPData submission.  Here is a
 :download:`more complicated example script <../examples/DESY-16-200/process_ins1496981.py>`
 that downloads text files from an experiment web page and processes them into an
 :download:`archive file <../examples/DESY-16-200/ins1496981.zip>` ready for
-HEPData submission.  Here is a :download:`validation script <../scripts/check.py>`
-which validates the *submission.yaml* file and all data files (optionally requiring
-the `hepdata-validator <https://github.com/HEPData/hepdata-validator>`_ package).
+HEPData submission.
 
-An :download:`alternative validation script <../scripts/validate.py>` has been written in Python 3
-by Christian Holm Christensen (see `#8 <https://github.com/HEPData/hepdata-submission/issues/8>`_),
-which reimplements (and attempts to improve) the main functionality of the
-`hepdata-validator <https://github.com/HEPData/hepdata-validator>`_ package.
+The `hepdata-validator <https://github.com/HEPData/hepdata-validator>`_
+package provides a ``hepdata-validate`` command to validate a local archive file
+(.zip, .tar, .tar.gz, .tgz), directory or :doc:`single YAML file <single_yaml>`. See the
+`hepdata-validator docs <https://hepdata-validator.readthedocs.io/en/latest/>`_
+for more details.
 
 A library called `hepdata_lib <https://github.com/HEPData/hepdata_lib>`_
 (see `hepdata-lib docs <https://hepdata-lib.readthedocs.io>`_) has been developed
