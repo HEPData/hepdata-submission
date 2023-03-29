@@ -1,6 +1,10 @@
 #!/usr/bin/env python3
 
-"""Try to validate a submission file and possible data files
+"""
+DEPRECATED: please use the "hepdata-validate" command instead.
+See https://hepdata-validator.readthedocs.io/en/latest/#command-line
+
+Try to validate a submission file and possible data files
 
 See https://github.com/HEPData/hepdata-submission/issues/8
 Specify the path to the schema files with either the -s option
