@@ -1,6 +1,6 @@
 # HEPData Submission
 
-[![License](https://img.shields.io/github/license/HEPData/hepdata-submission.svg)](https://github.com/HEPData/hepdata-submission/blob/master/LICENSE)
+[![License](https://img.shields.io/github/license/HEPData/hepdata-submission.svg)](https://github.com/HEPData/hepdata-submission/blob/main/LICENSE)
 [![GitHub Issues](https://img.shields.io/github/issues/hepdata/hepdata-submission.svg?maxAge=2592000)](https://github.com/HEPData/hepdata-submission/issues)
 [![Documentation Status](https://readthedocs.org/projects/hepdata-submission/badge/?version=latest)](https://hepdata-submission.readthedocs.io/en/latest/?badge=latest)
 

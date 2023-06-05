@@ -1,7 +1,7 @@
 Examples
 ========
 
-The `examples <https://github.com/HEPData/hepdata-submission/tree/master/examples>`_
+The `examples <https://github.com/HEPData/hepdata-submission/tree/main/examples>`_
 directory contains a few example submissions, including the
 :download:`TestHEPSubmission.zip <../examples/submission/TestHEPSubmission.zip>` file.
 You can also easily obtain the YAML format of any existing
@@ -29,8 +29,8 @@ HEPData submission.
 
 The `hepdata-validator <https://github.com/HEPData/hepdata-validator>`_
 package provides a ``hepdata-validate`` command to validate a local archive file
-(.zip, .tar, .tar.gz, .tgz), directory or :doc:`single YAML file <single_yaml>`. See the
-`hepdata-validator docs <https://hepdata-validator.readthedocs.io/en/latest/>`_
+(`.zip`, `.tar`, `.tar.gz`, `.tgz`), directory or :doc:`single YAML file <single_yaml>`.
+See the `hepdata-validator docs <https://hepdata-validator.readthedocs.io/en/latest/>`_
 for more details.
 
 A library called `hepdata_lib <https://github.com/HEPData/hepdata_lib>`_
@@ -40,9 +40,9 @@ independently by members of the CMS Collaboration to help with both
 `ROOT <https://root.cern.ch>`_ and text files, and (ii) writing data
 from Python into the HEPData YAML submission format.
 Simple example scripts using the `hepdata_lib <https://github.com/HEPData/hepdata_lib>`_ library can be found in the
-`APEX_ins923960 <https://github.com/HEPData/hepdata-submission/tree/master/examples/APEX_ins923960>`_ and
-`ATLAS_ins1241574 <https://github.com/HEPData/hepdata-submission/tree/master/examples/ATLAS_ins1241574>`_ directories.
+`APEX_ins923960 <https://github.com/HEPData/hepdata-submission/tree/main/examples/APEX_ins923960>`_ and
+`ATLAS_ins1241574 <https://github.com/HEPData/hepdata-submission/tree/main/examples/ATLAS_ins1241574>`_ directories.
 
 An `alternative library <https://gitlab.com/cholmcc/hepdata>`_
-(see `cholmcc hepdata docs <https://cholmcc.gitlab.io/hepdata/>`_) with similar functionality
+(see `(py)HEPData docs <https://cholmcc.gitlab.io/hepdata/>`_) with similar functionality
 to `hepdata_lib <https://github.com/HEPData/hepdata_lib>`_ has been developed by Christian Holm Christensen.

@@ -41,7 +41,7 @@ data_file: data1.yaml
 data_license: # (optional) you can specify a license for the data
   name: "GPL 2"
   url: "url for license"
-  description: "Tell me about it. This can appear in the main record display" # (optional)
+  description: "Tell me about it" # (optional)
 additional_resources: # (optional)
   - location: "analysis_script.py"
     description: "Analysis script"
@@ -52,7 +52,7 @@ additional_resources: # (optional)
     license: # (optional)
       name: 'GPL 2'
       url: "url for license"
-      description: "Tell me about it. This can appear in the main record display" # (optional)
+      description: "Tell me about it" # (optional)
 ---
 # This is Table 2.
 name: "Table 2"

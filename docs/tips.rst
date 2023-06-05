@@ -13,16 +13,14 @@ We attempt to list some common problems here.
   Even better: install the Python
   `hepdata-validator <https://github.com/HEPData/hepdata-validator>`_
   package which checks that the YAML files match the HEPData
-  `schema <https://github.com/HEPData/hepdata-validator/tree/master/hepdata_validator/schemas>`_.
+  `schema <https://github.com/HEPData/hepdata-validator/tree/main/hepdata_validator/schemas>`_.
   You can then validate a zip, directory or :doc:`single YAML file <single_yaml>`
   using the ``hepdata-validate`` command. See the
   `hepdata-validator docs <https://hepdata-validator.readthedocs.io/en/latest/>`_
   for more details.
 
-  An :download:`alternative validation script <../scripts/validate.py>` has been written in Python 3
-  by Christian Holm Christensen (see `#8 <https://github.com/HEPData/hepdata-submission/issues/8>`_),
-  which reimplements (and attempts to improve) the main functionality of the
-  `hepdata-validator <https://github.com/HEPData/hepdata-validator>`_ package.
+  The validator will be run automatically if you create your submission using the
+  `hepdata-lib <https://github.com/HEPData/hepdata-lib>`_ package.
 
 **Escape special characters.**
   Some characters in YAML need to be escaped, otherwise they cause
@@ -54,6 +52,10 @@ We attempt to list some common problems here.
 
   The image files should be included in the submitted archive.  Note
   that thumbnail images need to have a filename beginning with ``thumb_``.
+  If a separate thumbnail image file is not specified, the original image file
+  will also be used as the thumbnail image.  Valid image file types that will
+  be displayed as thumbnails are ``png``, ``jpeg``, ``jpg``, ``tiff`` or ``gif``,
+  but *not* ``pdf``.
 
 **The table** ``name`` **should not be too lengthy.**
   There are no formal restrictions imposed on the ``name`` of a table,
@@ -121,3 +123,21 @@ We attempt to list some common problems here.
      -
    * - ``ul``
      -
+
+**Check that your submission is not too large**
+  HEPData was designed for interactive visualisation and conversion of mostly tabular data.
+  This means that the size of submissions is restricted.  A limit of 50 MB is currently imposed on each uploaded
+  archive file.  There is a client-side timeout on each request (such as a file upload) of 298s to avoid the 300s
+  server timeout.  Each YAML data file should be less than 10 MB in size.  It should be checked that data tables close
+  to this upper limit can be rendered sufficiently quickly in a web browser.  The Uploader should also check that large
+  submissions can be converted to other formats (YAML, YODA, ROOT, CSV) within the converter timeout limit of 220s.
+  Large data tables can alternatively be provided as ``additional_resources`` attached to either a whole submission or
+  to a specific (possibly empty) table.
+
+**Remove unused files from the submission archive**
+  The HEPData validation code will check that all files specified via the ``data_file`` and ``additional_resources``
+  fields of the ``submission.yaml`` file are included in the uploaded submission archive file.  It will also check that
+  there are no included extra files, so it is important when creating the archive file that no hidden system files are
+  inadvertently included.  For example, when using the ``tar`` command on macOS, extra files starting with ``._`` can
+  be included in the archive file, but this behaviour can be switched off by setting the ``COPYFILE_DISABLE``
+  environment variable, for example, ``export COPYFILE_DISABLE=1``.

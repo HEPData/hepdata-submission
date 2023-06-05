@@ -17,3 +17,4 @@ HEPData Submission
    single_yaml
    keywords
    tips
+   analyses

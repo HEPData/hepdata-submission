@@ -3,23 +3,23 @@ Introduction
 
 `HEPData <https://www.hepdata.net>`_ submission will largely involve the
 upload of archive files (``.zip``, ``.tar``, ``.tar.gz``, ``.tgz``)
-containing a number of
-`YAML <http://yaml.org>`_ files together with possible auxiliary files
-of any format.  However, it is also possible to upload a single text
-file with extension ``.oldhepdata`` (see
+containing a number of `YAML <http://yaml.org>`_ files together with
+possible auxiliary files of any format.  Basic introductions to YAML
+can easily be found via `Google <https://www.google.com/search?q=YAML>`_,
+for example, `Wikipedia <https://en.wikipedia.org/wiki/YAML>`_ or
+`Learn X in Y minutes <https://learnxinyminutes.com/docs/yaml/>`_.
+
+It is also possible to upload a single text file with extension ``.oldhepdata`` (see
 :download:`sample.oldhepdata <../examples/oldhepdata/sample.oldhepdata>`) containing
 the "input" format that was used for data submissions from the old
-HepData site.  Upon upload, the ``.oldhepdata`` file will be automatically
-`converted <https://github.com/HEPData/hepdata-converter>`_ to the new
-YAML format.  Basic introductions to YAML can easily be found via
-`Google <https://www.google.com/search?q=YAML>`_, for example,
-`Wikipedia <https://en.wikipedia.org/wiki/YAML>`_ or
-`Learn X in Y minutes <https://learnxinyminutes.com/docs/yaml/>`_.
+HepData site (before 2017).  Upon upload, the ``.oldhepdata`` file will be automatically
+`converted <https://github.com/HEPData/hepdata-converter>`_ to the new YAML format.
+However, this method is not recommended and it may eventually be phased out.
 
 The main file for a submission is the *submission.yaml* file.
 This links together all the data tables into one submission and
-specifies auxiliary files such as scripts used to
-create the data, ROOT files, or even links to GitHub/Bitbucket/Zenodo
+specifies auxiliary files such as scripts used to create the data,
+ROOT files, or even links to repositories like GitHub/GitLab/Bitbucket/Zenodo
 etc. for more substantial pieces of code.
 
 Publication information such as the paper title, authors and abstract,

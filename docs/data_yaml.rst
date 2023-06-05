@@ -14,8 +14,21 @@ Independent variables consist of a list of values, each of which generally compr
 ``low`` and ``high`` bin limits, together with a central ``value``.  However, the
 central ``value`` can be omitted if it coincides with the bin midpoint, while the
 ``low`` and ``high`` bin limits can be omitted if they are not applicable.
+
+It is not possible to give a ``low`` bin limit without a ``high`` bin limit
+(or vice versa), that is, one-sided bin limits are not currently supported
+(`HEPData/hepdata#358 <https://github.com/HEPData/hepdata/issues/358>`_).
+The current workarounds are either to give a string ``{value: '> 250'}`` instead of
+``low`` and ``high`` limits, or alternatively insert an artificial upper limit like
+``{low: 250, high: 500}`` and explain in the table description that there is really
+no bin upper limit.
+
 If there are no independent variables, for example, an inclusive cross-section
 measurement, an empty list should be specified, ``independent_variables: []``.
+Specifying one or more ``independent_variables`` and an empty list for the
+``dependent_variables`` is not supported.  An empty table can be given with
+``{independent_variables: [], dependent_variables: []}`` if only metadata and
+``additional__resources`` are needed for a particular dataset.
 
 Each variable comprises a header (the column name) and a list of values
 (the rows in your table).  The header should define the variable
@@ -93,7 +106,7 @@ The `hepdata-validator <https://github.com/HEPData/hepdata-validator>`_ (v0.2.0 
 code will invalidate bins where all uncertainties are zero.  This check was introduced to
 avoid `problems <https://gitlab.com/hepcedar/rivet/-/issues/69>`_ in fitting applications.
 Bins with zero content should preferably be omitted completely from the HEPData table.
-Alternatively, missing bins can be indicated with a non-numerical central value like ``'-'``
+Alternatively, missing bins can be indicated with a non-numeric central value like ``'-'``
 or an empty string ``''`` and no uncertainties.  In this case, the ``errors`` key should
 either be omitted completely or specified as an empty list ``errors: []``.
 
@@ -142,6 +155,12 @@ independent variables (giving the bins) and one dependent variable
      - {value: 0.8727}
      - {value: 1.0000}
      ...
+
+The current heatmap visualisation code does not cope well for tables with more than, say, 5000 rows, corresponding to a
+correlation/covariance matrix with 50-100 bins (see
+`HEPData Forum post <https://hepdata-forum.cern.ch/t/large-correlation-matrix-data-require-excessive-cpu-and-memory-resources-when-browsing/28/1>`_).
+A workaround is to provide a large matrix not as a data table, but as ``additional_resources`` attached to either a whole
+submission or to a specific (possibly empty) table.
 
 
 Two-dimensional measurements
