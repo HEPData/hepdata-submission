@@ -18,3 +18,4 @@ HEPData Submission
    keywords
    tips
    analyses
+   bidirectional
