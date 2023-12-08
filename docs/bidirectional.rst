@@ -20,9 +20,17 @@ from a common prefix (``10.17182/hepdata``), the HEPData record identifier (for 
 HEPData record version (``v1``, ``v2``, etc.), and the table number within the HEPData record (``t1``, ``t2``, etc.).
 
 After upload, the ``related_to_table_dois`` field is persisted to the database and rendered above the table description
-with links to the related tables.  The linked tables will also display links back to the referring tables, but only
-*after* the records containing the referring tables have been finalised.  The ``related_to_table_dois`` field is
-*ignored* for uploads to the HEPData Sandbox.
+with links to the related tables.  The name of the linked tables will be displayed instead of the DOI, with a tooltip
+containing their description displayed when the user hovers over the table name.
+
+The linked tables will also display links back to the referring tables, but only *after* the records containing the
+referring tables have been finalised.  The backward link is only displayed if the referring record is the most
+recent finalised version.  The ``related_to_table_dois`` field is *ignored* for uploads to the HEPData Sandbox.
+
+The `hepdata_lib`_ tool can be used to write the ``related_to_table_dois`` field (see `Adding links to related tables
+<https://hepdata-lib.readthedocs.io/en/latest/usage.html#adding-links-to-related-tables>`_).
+
+.. _`hepdata_lib`: https://github.com/HEPData/hepdata_lib
 
 Linking records
 ---------------
@@ -43,6 +51,10 @@ the integer after the prefix ``10.17182/hepdata`` in the HEPData record DOI disp
 information in the left-hand panel of a HEPData record.
 
 Again, after upload, the ``related_to_hepdata_records`` field is persisted to the database and rendered in the
-left-hand panel of a HEPData record with links to the related records.  The linked records will also display links back
-to the referring records, but only *after* the referring records have been finalised.  The
-``related_to_hepdata_records`` field is *ignored* for uploads to the HEPData Sandbox.
+left-hand panel of a HEPData record with links to the related records.  A tooltip containing the title of the linked
+record is displayed when the user hovers over the record identifier.  The linked records will also display links back
+to the referring records, but only *after* the referring records have been finalised and if the referring record is the
+most recent version.  The ``related_to_hepdata_records`` field is *ignored* for uploads to the HEPData Sandbox.
+
+The `hepdata_lib`_ tool can be used to write the ``related_to_hepdata_records`` field (see `Adding links to related
+records <https://hepdata-lib.readthedocs.io/en/latest/usage.html#adding-links-to-related-records>`_).
