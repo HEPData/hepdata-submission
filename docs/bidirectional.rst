@@ -15,6 +15,8 @@ new field ``related_to_table_dois`` comprising a list of table DOIs:
    - 10.17182/hepdata.12345.v1/t2
    - 10.17182/hepdata.67890.v3/t4
 
+**Please note:** This field should not be used for self-referencing, the DOIs inserted should be for OTHER related tables.
+
 You can find the desired table DOI displayed next to the table name on the relevant HEPData record page.  It is built
 from a common prefix (``10.17182/hepdata``), the HEPData record identifier (for example, ``12345`` or ``67890``), the
 HEPData record version (``v1``, ``v2``, etc.), and the table number within the HEPData record (``t1``, ``t2``, etc.).
@@ -44,6 +46,8 @@ alongside the ``comment`` and ``additional_resources``.  It should be given as a
    related_to_hepdata_records:
    - 12345
    - 67890
+
+**Please note:** This field should not be used for self-referencing, the IDs inserted should be for OTHER related records.
 
 Note that the HEPData record identifier must be given as an integer (not a string) and it differs from the INSPIRE
 record identifier often found after ``ins`` in a HEPData record URL.  You can find the HEPData record identifier from
