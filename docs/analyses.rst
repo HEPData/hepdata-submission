@@ -1,18 +1,24 @@
 Analyses
 ========
 
-HEPData provides some level of integration for two analysis frameworks.
+HEPData provides some level of integration for four analysis frameworks: :ref:`Rivet<Rivet section>`,
+:ref:`MadAnalysis 5<MadAnalysis 5 section>`, :ref:`pyhf<pyhf section>` and :ref:`NUISANCE<NUISANCE section>`.
+For the first two, :ref:`Rivet<Rivet section>` and :ref:`MadAnalysis 5<MadAnalysis 5 section>`, the analysis code is
+hosted externally, while for the latter two, :ref:`pyhf<pyhf section>` and :ref:`NUISANCE<NUISANCE section>`, files are
+stored as additional resources in HEPData itself.  In each case, links are made from relevant HEPData records under
+"View Analyses".  Badges are also added to search results and to the publication information of a record shown in the
+left panel.
 
 .. contents:: :local:
+
+.. _Rivet section:
 
 Rivet
 -----
 
-HEPData can export data in the `YODA <https://yoda.hepforge.org>`_ format for use in a
-`Rivet <https://rivet.hepforge.org>`_ analysis.  The list of `Rivet analyses
-<https://rivet.hepforge.org/analyses.html>`_ (in `JSON format <https://rivet.hepforge.org/analyses.json>`_) is parsed
-nightly and links are made from relevant HEPData records under "View Analyses".  Badges are also added to search results
-and to the publication information of a record shown in the left panel.  A search query
+HEPData can export data in the `YODA <https://yoda.hepforge.org>`_ format for use in a `Rivet
+<https://rivet.hepforge.org>`_ analysis.  The list of `Rivet analyses <https://rivet.hepforge.org/analyses.html>`_ (in
+`JSON format <https://cedar-tools.web.cern.ch/rivet/analyses.json>`_) is parsed nightly.  A search query
 `analysis:rivet <https://www.hepdata.net/search?q=analysis:rivet>`_ can be used to find HEPData records that have an
 associated Rivet analysis.
 
@@ -22,9 +28,9 @@ of the first document of the ``submission.yaml`` file if the Rivet analysis is a
 .. code-block:: yaml
 
    additional_resources:
-   - {location: 'https://rivet.hepforge.org/analyses/ATLAS_2016_I1424838', description: 'Rivet analysis'}
+   - {location: 'http://rivet.hepforge.org/analyses/ATLAS_2016_I1424838', description: 'Rivet analysis'}
 
-But this should not be necessary and it is not recommended, since the Rivet analysis will anyway be picked up by the
+But this should not be necessary and it is **not recommended**, since the Rivet analysis will anyway be picked up by the
 nightly harvesting after the HEPData record has been made public.
 
 If a HEPData record has an associated Rivet analysis, then the Rivet analysis name (for example,
@@ -41,7 +47,7 @@ This can be done for either of the two download URL formats:
 2. Add ``?format=yoda&rivet=ATLAS_2016_I1424838`` to the normal record URL, e.g.
    https://www.hepdata.net/record/ins1424838?format=yoda&rivet=ATLAS_2016_I1424838
 
-Similarly, an explicit Rivet analysis name can be passed when downloading individual tables in the YODA format.
+Similarly, an explicit Rivet analysis name can be passed when downloading individual *tables* in the YODA format.
 
 The Rivet identifier (e.g. ``d01-x01-y01``) written in the path of the YODA file is generated from the table number
 (``d01``) and the index of the dependent variable within a table (``y01``), while ``x01`` always takes the same value.
@@ -54,6 +60,20 @@ conversion:
    qualifiers:
    - {name: 'Custom Rivet identifier', value: 'd01-x01-y01'}
 
+
+.. _MadAnalysis 5 section:
+
+MadAnalysis 5
+-------------
+
+Similarly to the Rivet case, a list of `MadAnalysis 5 analyses
+<https://madanalysis.irmp.ucl.ac.be/wiki/PublicAnalysisDatabase#AvailableAnalyses>`_ (as `JSON
+<https://madanalysis.irmp.ucl.ac.be/attachment/wiki/MA5SandBox/analyses.json>`_) is parsed nightly.  A search query
+`analysis:MadAnalysis <https://www.hepdata.net/search?q=analysis:MadAnalysis>`_ can be used to find HEPData records
+that have an associated MadAnalysis 5 analysis.
+
+
+.. _pyhf section:
 
 pyhf
 ----
@@ -74,10 +94,35 @@ the ``submission.yaml`` file, for example,
      description: "Archive of full likelihoods in the HistFactory JSON format"
      type: "HistFactory" # (optional) currently supports 'HistFactory' type to allow HistFactory JSON (pyhf) files to be highlighted
 
-Links are made from relevant HEPData records with attached HistFactory JSON files under "View Analyses".  Badges are
-also added to search results and to the publication information of a record shown in the left panel.  A search query
-`analysis:HistFactory <https://www.hepdata.net/search?q=analysis:HistFactory>`_ can be used to find HEPData records
-that have associated HistFactory JSON files.
+If using the ``hepdata_lib`` package, pass ``file_type = "HistFactory"`` to the `add_additional_resource`_ function.
+Links are made from relevant HEPData records (after finalisation) with attached HistFactory JSON files under
+"View Analyses".  A search query `analysis:HistFactory <https://www.hepdata.net/search?q=analysis:HistFactory>`_
+can be used to find HEPData records that have associated HistFactory JSON files.
 
 HEPData makes no checks of the formatting of the HistFactory JSON files.  In case of questions, please contact either
 experts within your experiment or the pyhf developers.
+
+.. _`add_additional_resource`: https://hepdata-lib.readthedocs.io/en/latest/source/hepdata_lib.html#hepdata_lib.AdditionalResourceMixin.add_additional_resource
+
+
+.. _NUISANCE section:
+
+NUISANCE
+--------
+
+`NUISANCE <https://nuisance.hepforge.org>`_ is a framework for event generators in neutrino physics that plays a
+similar role to Rivet in collider physics.  Analysis code provided as C++ snippets in the
+`ProSelecta <https://github.com/NUISANCEMC/ProSelecta>`_ format can be attached to HEPData records as
+``additional_resources`` with ``type: ProSelecta``, for example,
+
+.. code-block:: yaml
+
+   additional_resources:
+   - location: analysis.cxx
+     description: "Selection and projection function examples. Can be executed in the ProSelecta environment v1.0."
+     type: ProSelecta
+
+If using the ``hepdata_lib`` package, pass ``file_type = "ProSelecta"`` to the `add_additional_resource`_ function.
+Links are made from relevant HEPData records (after finalisation) with attached ProSelecta C++ files under
+"View Analyses".  A search query `analysis:NUISANCE <https://www.hepdata.net/search?q=analysis:NUISANCE>`_
+can be used to find HEPData records that have associated ProSelecta C++ snippets for use with NUISANCE.
