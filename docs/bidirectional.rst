@@ -32,13 +32,12 @@ recent finalised version.  The ``related_to_table_dois`` field is *ignored* for 
 An example record is https://www.hepdata.net/record/ins2729396?version=1.  However, note that the links between tables
 are automatically *bidirectional* so that, for example, if specifying the ``related_to_table_dois`` field in Table 1
 (linked to Table 11), then the ``related_to_table_dois`` field does *not* also need to be specified in Table 11 (linked
-to Table 1).  Doing so will result in duplicate links.  Note that a HEPData software `bug`_ currently means that the
-links will only be rendered after a record has been finalised.
+to Table 1).  Doing so will result in duplicate links.  Another example record without duplicate links is
+https://www.hepdata.net/record/ins2759899?version=1.
 
 The `hepdata_lib`_ tool can be used to write the ``related_to_table_dois`` field (see `Adding links to related tables
 <https://hepdata-lib.readthedocs.io/en/latest/usage.html#adding-links-to-related-tables>`_).
 
-.. _`bug`: https://github.com/HEPData/hepdata/issues/796
 .. _`hepdata_lib`: https://github.com/HEPData/hepdata_lib
 
 Linking records
@@ -66,6 +65,9 @@ left-hand panel of a HEPData record with links to the related records.  A toolti
 record is displayed when the user hovers over the record identifier.  The linked records will also display links back
 to the referring records, but only *after* the referring records have been finalised and if the referring record is the
 most recent version.  The ``related_to_hepdata_records`` field is *ignored* for uploads to the HEPData Sandbox.
+
+An example record is https://www.hepdata.net/record/152804 that links to the earlier record
+https://www.hepdata.net/record/102468.
 
 The `hepdata_lib`_ tool can be used to write the ``related_to_hepdata_records`` field (see `Adding links to related
 records <https://hepdata-lib.readthedocs.io/en/latest/usage.html#adding-links-to-related-records>`_).
