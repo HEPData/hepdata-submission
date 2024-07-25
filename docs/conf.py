@@ -20,7 +20,7 @@
 # -- Project information -----------------------------------------------------
 
 project = u'HEPData Submission'
-copyright = u'2018, HEPData'
+copyright = u'2018-2024, HEPData'
 author = u'HEPData'
 
 # The short X.Y version
