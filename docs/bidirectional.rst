@@ -29,11 +29,11 @@ The linked tables will also display links back to the referring tables, but only
 referring tables have been finalised.  The backward link is only displayed if the referring record is the most
 recent finalised version.  The ``related_to_table_dois`` field is *ignored* for uploads to the HEPData Sandbox.
 
-An example record is https://www.hepdata.net/record/ins2729396?version=1.  However, note that the links between tables
+An example record is https://www.hepdata.net/record/141650.  However, note that the links between tables
 are automatically *bidirectional* so that, for example, if specifying the ``related_to_table_dois`` field in Table 1
 (linked to Table 11), then the ``related_to_table_dois`` field does *not* also need to be specified in Table 11 (linked
-to Table 1).  Doing so will result in duplicate links.  Another example record without duplicate links is
-https://www.hepdata.net/record/ins2759899?version=1.
+to Table 1).  Doing so will result in duplicate links.  Other example records without duplicate links are
+https://www.hepdata.net/record/138878, https://www.hepdata.net/record/149990 and https://www.hepdata.net/record/151815.
 
 The `hepdata_lib`_ tool can be used to write the ``related_to_table_dois`` field (see `Adding links to related tables
 <https://hepdata-lib.readthedocs.io/en/latest/usage.html#adding-links-to-related-tables>`_).
