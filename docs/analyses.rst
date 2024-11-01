@@ -2,12 +2,15 @@ Analyses
 ========
 
 HEPData provides some level of integration for four analysis frameworks: :ref:`Rivet<Rivet section>`,
-:ref:`MadAnalysis 5<MadAnalysis 5 section>`, :ref:`pyhf<pyhf section>` and :ref:`NUISANCE<NUISANCE section>`.
-For the first two, :ref:`Rivet<Rivet section>` and :ref:`MadAnalysis 5<MadAnalysis 5 section>`, the analysis code is
+:ref:`MadAnalysis 5<MadAnalysis 5 section>`, :ref:`SModelS<SModelS section>`, :ref:`pyhf<pyhf section>`
+and :ref:`NUISANCE<NUISANCE section>`.  For the first three, :ref:`Rivet<Rivet section>`,
+:ref:`MadAnalysis 5<MadAnalysis 5 section>` and :ref:`SModelS<SModelS section>`, the analysis code is
 hosted externally, while for the latter two, :ref:`pyhf<pyhf section>` and :ref:`NUISANCE<NUISANCE section>`, files are
 stored as additional resources in HEPData itself.  In each case, links are made from relevant HEPData records under
 "View Analyses".  Badges are also added to search results and to the publication information of a record shown in the
-left panel.
+left panel.  For the externally hosted analyses, a bulk subscription feature means that analysis framework authors can
+receive automatic HEPData record update notifications if they desire (contact info@hepdata.net to request bulk
+subscription).
 
 .. contents:: :local:
 
@@ -71,6 +74,18 @@ Similarly to the Rivet case, a list of `MadAnalysis 5 analyses
 <https://madanalysis.irmp.ucl.ac.be/attachment/wiki/MA5SandBox/analyses.json>`_) is parsed nightly.  A search query
 `analysis:MadAnalysis <https://www.hepdata.net/search?q=analysis:MadAnalysis>`_ can be used to find HEPData records
 that have an associated MadAnalysis 5 analysis.
+
+
+.. _SModelS section:
+
+SModelS
+-------
+
+Similarly to the Rivet and MadAnalysis 5 cases, a list of `SModelS analyses
+<https://smodels.github.io/docs/ListOfAnalyses>`_ (`as JSON
+<https://doi.org/10.5281/zenodo.13952092>`_) is parsed nightly.  A search query
+`analysis:SModelS <https://www.hepdata.net/search?q=analysis:SModelS>`_ can be used to find HEPData records
+that have an associated SModelS analysis.
 
 
 .. _pyhf section:
