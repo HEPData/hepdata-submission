@@ -1,16 +1,21 @@
 Analyses
 ========
 
-HEPData provides some level of integration for four analysis frameworks: :ref:`Rivet<Rivet section>`,
-:ref:`MadAnalysis 5<MadAnalysis 5 section>`, :ref:`SModelS<SModelS section>`, :ref:`pyhf<pyhf section>`
-and :ref:`NUISANCE<NUISANCE section>`.  For the first three, :ref:`Rivet<Rivet section>`,
-:ref:`MadAnalysis 5<MadAnalysis 5 section>` and :ref:`SModelS<SModelS section>`, the analysis code is
+HEPData provides some level of integration for six analysis frameworks: :ref:`Rivet<Rivet section>`,
+:ref:`MadAnalysis 5<MadAnalysis 5 section>`, :ref:`SModelS<SModelS section>`, :ref:`Combine<Combine section>`,
+:ref:`pyhf<pyhf section>` and :ref:`NUISANCE<NUISANCE section>`.  For the first four, :ref:`Rivet<Rivet section>`,
+:ref:`MadAnalysis 5<MadAnalysis 5 section>`, :ref:`SModelS<SModelS section>` and :ref:`Combine<Combine section>`,
+the analysis code is
 hosted externally, while for the latter two, :ref:`pyhf<pyhf section>` and :ref:`NUISANCE<NUISANCE section>`, files are
 stored as additional resources in HEPData itself.  In each case, links are made from relevant HEPData records under
 "View Analyses".  Badges are also added to search results and to the publication information of a record shown in the
-left panel.  For the externally hosted analyses, a bulk subscription feature means that analysis framework authors can
-receive automatic HEPData record update notifications if they desire (contact info@hepdata.net to request bulk
-subscription).
+left panel.
+
+For the externally hosted analyses, a bulk subscription feature means that analysis framework authors can
+receive automatic HEPData record update notifications if they desire, and a license can be added if it differs from the
+default `CC0 <https://creativecommons.org/publicdomain/zero/1.0/legalcode>`_ license mentioned in the HEPData
+`Terms of Use <https://www.hepdata.net/terms>`_.  Contact info@hepdata.net to request bulk subscription or addition of
+license information.
 
 .. contents:: :local:
 
@@ -86,6 +91,19 @@ Similarly to the Rivet and MadAnalysis 5 cases, a list of `SModelS analyses
 <https://doi.org/10.5281/zenodo.13952092>`_) is parsed nightly.  A search query
 `analysis:SModelS <https://www.hepdata.net/search?q=analysis:SModelS>`_ can be used to find HEPData records
 that have an associated SModelS analysis.
+
+
+.. _Combine section:
+
+Combine
+-------
+
+Similarly to the Rivet, MadAnalysis 5 and SModelS cases, a list of `CMS statistical models
+<https://repository.cern/communities/cms-statistical-models>`_ in the `Combine
+<https://cms-analysis.github.io/HiggsAnalysis-CombinedLimit/>`_ format is parsed nightly via a
+`simplified JSON file <https://cms-public-likelihoods-list.web.cern.ch>`_.  A search query
+`analysis:Combine <https://www.hepdata.net/search?q=analysis:Combine>`_ can be used to find HEPData records
+that have associated statistical models in the ``Combine`` format.
 
 
 .. _pyhf section:
