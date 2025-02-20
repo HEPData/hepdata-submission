@@ -2,7 +2,8 @@ Analyses
 ========
 
 HEPData provides some level of integration for six analysis frameworks: :ref:`Rivet<Rivet section>`,
-:ref:`MadAnalysis 5<MadAnalysis 5 section>`, :ref:`SModelS<SModelS section>`, :ref:`Combine<Combine section>`,
+:ref:`MadAnalysis 5<MadAnalysis 5 section>`, :ref:`SModelS<SModelS section>`, :ref:`CheckMATE<CheckMATE section>`,
+:ref:`Combine<Combine section>`,
 :ref:`pyhf<pyhf section>` and :ref:`NUISANCE<NUISANCE section>`.  For the first four, :ref:`Rivet<Rivet section>`,
 :ref:`MadAnalysis 5<MadAnalysis 5 section>`, :ref:`SModelS<SModelS section>` and :ref:`Combine<Combine section>`,
 the analysis code is
@@ -93,12 +94,23 @@ Similarly to the Rivet and MadAnalysis 5 cases, a list of `SModelS analyses
 that have an associated SModelS analysis.
 
 
+.. _CheckMATE section:
+
+CheckMATE
+---------
+
+Similarly to the Rivet, MadAnalysis 5 and SModelS cases, a list of `CheckMATE <https://checkmate.hepforge.org>`_
+analyses (`in JSON format <https://checkmate.hepforge.org/AnalysesList/analyses.json>`_) is parsed nightly.  A search
+query `analysis:CheckMATE <https://www.hepdata.net/search?q=analysis:CheckMATE>`_ can be used to find HEPData records
+that have an associated CheckMATE analysis.
+
+
 .. _Combine section:
 
 Combine
 -------
 
-Similarly to the Rivet, MadAnalysis 5 and SModelS cases, a list of `CMS statistical models
+Similarly to the Rivet, MadAnalysis 5, SModelS and CheckMATE cases, a list of `CMS statistical models
 <https://repository.cern/communities/cms-statistical-models>`_ in the `Combine
 <https://cms-analysis.github.io/HiggsAnalysis-CombinedLimit/>`_ format is parsed nightly via a
 `simplified JSON file <https://cms-public-likelihoods-list.web.cern.ch>`_.  A search query
