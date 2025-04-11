@@ -16,12 +16,12 @@ central ``value`` can be omitted if it coincides with the bin midpoint, while th
 ``low`` and ``high`` bin limits can be omitted if they are not applicable.
 
 It is not possible to give a ``low`` bin limit without a ``high`` bin limit
-(or vice versa), that is, one-sided bin limits are not currently supported
-(`HEPData/hepdata#358 <https://github.com/HEPData/hepdata/issues/358>`_).
-The current workarounds are either to give a string ``{value: '> 250'}`` instead of
-``low`` and ``high`` limits, or alternatively insert an artificial upper limit like
-``{low: 250, high: 500}`` and explain in the table description that there is really
-no bin upper limit.
+(or vice versa), but one-sided bin limits are supported by specifying an
+infinite bin limit, for example, ``low: -.inf`` for an underflow bin (with
+``high`` finite) or ``high: .inf`` for an overflow bin (with ``low`` finite).
+These one-sided bins will be written to appropriate underflow/overflow bins in
+the ROOT/YODA export.  Note that the presence of an underflow/overflow bin
+requires at least one finite bin for the ROOT/YODA export to be successful.
 
 If there are no independent variables, for example, an inclusive cross-section
 measurement, an empty list should be specified, ``independent_variables: []``.
