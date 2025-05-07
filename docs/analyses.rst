@@ -1,11 +1,12 @@
 Analyses
 ========
 
-HEPData provides some level of integration for six analysis frameworks: :ref:`Rivet<Rivet section>`,
+HEPData provides some level of integration for eight analysis frameworks: :ref:`Rivet<Rivet section>`,
 :ref:`MadAnalysis 5<MadAnalysis 5 section>`, :ref:`SModelS<SModelS section>`, :ref:`CheckMATE<CheckMATE section>`,
-:ref:`Combine<Combine section>`,
-:ref:`pyhf<pyhf section>` and :ref:`NUISANCE<NUISANCE section>`.  For the first four, :ref:`Rivet<Rivet section>`,
-:ref:`MadAnalysis 5<MadAnalysis 5 section>`, :ref:`SModelS<SModelS section>` and :ref:`Combine<Combine section>`,
+:ref:`HackAnalysis<HackAnalysis section>`, :ref:`Combine<Combine section>`,
+:ref:`pyhf<pyhf section>` and :ref:`NUISANCE<NUISANCE section>`.  For the first six, :ref:`Rivet<Rivet section>`,
+:ref:`MadAnalysis 5<MadAnalysis 5 section>`, :ref:`SModelS<SModelS section>`, :ref:`CheckMATE<CheckMATE section>`,
+:ref:`HackAnalysis<HackAnalysis section>` and :ref:`Combine<Combine section>`,
 the analysis code is
 hosted externally, while for the latter two, :ref:`pyhf<pyhf section>` and :ref:`NUISANCE<NUISANCE section>`, files are
 stored as additional resources in HEPData itself.  In each case, links are made from relevant HEPData records under
@@ -105,12 +106,24 @@ query `analysis:CheckMATE <https://www.hepdata.net/search?q=analysis:CheckMATE>`
 that have an associated CheckMATE analysis.
 
 
+.. _HackAnalysis section:
+
+HackAnalysis
+------------
+
+Similarly to the Rivet, MadAnalysis 5, SModelS and CheckMATE cases, a list of `HackAnalysis
+<https://goodsell.pages.in2p3.fr/hackanalysis/>`_ analyses
+`(in JSON format) <https://goodsell.pages.in2p3.fr/hackanalysis/json/HackAnalysis_HEPData.json>`_ is parsed nightly.  A
+search query `analysis:HackAnalysis <https://www.hepdata.net/search?q=analysis:HackAnalysis>`_ can be used to find
+HEPData records that have an associated HackAnalysis analysis.
+
+
 .. _Combine section:
 
 Combine
 -------
 
-Similarly to the Rivet, MadAnalysis 5, SModelS and CheckMATE cases, a list of `CMS statistical models
+Similarly to the Rivet, MadAnalysis 5, SModelS, CheckMATE and HackAnalysis cases, a list of `CMS statistical models
 <https://repository.cern/communities/cms-statistical-models>`_ in the `Combine
 <https://cms-analysis.github.io/HiggsAnalysis-CombinedLimit/>`_ format is parsed nightly via a
 `simplified JSON file <https://cms-public-likelihoods-list.web.cern.ch>`_.  A search query
