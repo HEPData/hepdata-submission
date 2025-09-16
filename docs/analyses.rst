@@ -13,13 +13,16 @@ stored as additional resources in HEPData itself.  In each case, links are made 
 "View Analyses".  Badges are also added to search results and to the publication information of a record shown in the
 left panel.
 
-For the externally hosted analyses, a bulk subscription feature means that analysis framework authors can
-receive automatic HEPData record update notifications if they desire, and a license can be added if it differs from the
-default `CC0 <https://creativecommons.org/publicdomain/zero/1.0/legalcode>`_ license mentioned in the HEPData
-`Terms of Use <https://www.hepdata.net/terms>`_.  Contact info@hepdata.net to request bulk subscription or addition of
-license information.
+Externally hosted analyses are exposed to HEPData via an :ref:`analyses JSON file<analysesJSON section>`.
+For these, a bulk subscription feature means that analysis framework authors can receive automatic HEPData record update notifications if they desire.
+Contact `info@hepdata.net <mailto:info@hepdata.net>`_ to request bulk subscription.
 
 .. contents:: :local:
+
+.. _Tools section:
+
+Analyses tools
+++++++++++++++
 
 .. _Rivet section:
 
@@ -90,7 +93,7 @@ SModelS
 
 Similarly to the Rivet and MadAnalysis 5 cases, a list of `SModelS analyses
 <https://smodels.github.io/docs/ListOfAnalyses>`_ (`as JSON
-<https://doi.org/10.5281/zenodo.13952092>`_) is parsed nightly.  A search query
+<https://smodels.github.io/docs/smodels-analyses.hepdata.json>`_) is parsed nightly.  A search query
 `analysis:SModelS <https://www.hepdata.net/search?q=analysis:SModelS>`_ can be used to find HEPData records
 that have an associated SModelS analysis.
 
@@ -184,3 +187,51 @@ If using the ``hepdata_lib`` package, pass ``file_type = "ProSelecta"`` to the `
 Links are made from relevant HEPData records (after finalisation) with attached ProSelecta C++ files under
 "View Analyses".  A search query `analysis:NUISANCE <https://www.hepdata.net/search?q=analysis:NUISANCE>`_
 can be used to find HEPData records that have associated ProSelecta C++ snippets for use with NUISANCE.
+
+.. _analysesJSON section:
+
+Analyses JSON schema
+++++++++++++++++++++
+
+A JSON format was defined which is used by reinterpretation tools to communicate to HEPData which analyses are implemented in that tool and where to find the implementations such that this information is *Findable* on HEPData.
+The current standard is version 1.0.0, usage of the previous standard is deprecated at this point.
+
+The goals of v1.0.0 are
+
+- **Self-descriptiveness**: the JSON format includes information about the tool and tool version it's valid for as well as basic information of the analyses implemented in the tool. It also allows tools to include very rough human-readable information instead of just bare identifiers.
+
+- **Standardisation**: a common standard for everyone ensures easy exchange and *Findability* of information.
+
+- **Future-proofness**: the standard aims to foresee future needs such that it doesn't require frequent updates.
+
+- **Redundancy reduction**: the JSON format allows to codify URLs such that the URL stem doesn't have to be repeated. This makes it more compact, better human-readable and better maintainable.
+
+A JSON file exposed by a tool to HEPData could look as follows
+
+.. code-block:: JSON
+
+   {
+      "schema_version": "1.0.0",
+      "tool": "SModelS",
+      "version": "3.0.0",
+      "date_created": "2018-11-13T20:20:39+00:00",
+      "implementations_description": "SModelS analysis",
+      "url_templates": {
+         "main_url": "https://github.com/SModelS/smodels-database-release/tree/main/{name}"
+      },
+      "analyses": [
+         {
+            "inspire_id": 1795076,
+            "implementations": [
+               {
+                  "name": "ATLAS-EXOT-2018-48",
+               }
+            ]
+         }
+      ]
+   }
+
+License information can be added if it differs from the default `CC0 <https://creativecommons.org/publicdomain/zero/1.0/legalcode>`_ license mentioned in the HEPData
+`Terms of Use <https://www.hepdata.net/terms>`_.
+For more details on the standard, see `the HEPData repository <https://github.com/HEPData/hepdata/tree/main/hepdata/templates/analyses_schema/1.0.0>`_!
+Contact `info@hepdata.net <mailto:info@hepdata.net>`_ to request being added to the list of supported tools.
