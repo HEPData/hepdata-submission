@@ -20,7 +20,7 @@
 # -- Project information -----------------------------------------------------
 
 project = u'HEPData Submission'
-copyright = u'2018-2024, HEPData'
+copyright = u'2018-2025, HEPData'
 author = u'HEPData'
 
 # The short X.Y version
@@ -49,7 +49,7 @@ templates_path = ['_templates']
 # You can specify multiple suffix as a list of string:
 #
 # source_suffix = ['.rst', '.md']
-source_suffix = '.rst'
+source_suffix = {'.rst': 'restructuredtext'}  # default
 
 # The root toctree document.
 root_doc = 'index'
