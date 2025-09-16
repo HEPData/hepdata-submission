@@ -1,10 +1,10 @@
 Analyses
 ========
 
-HEPData provides some level of integration for eight analysis frameworks: :ref:`Rivet<Rivet section>`,
+HEPData provides some level of integration for nine analysis frameworks: :ref:`Rivet<Rivet section>`,
 :ref:`MadAnalysis 5<MadAnalysis 5 section>`, :ref:`SModelS<SModelS section>`, :ref:`CheckMATE<CheckMATE section>`,
-:ref:`HackAnalysis<HackAnalysis section>`, :ref:`Combine<Combine section>`,
-:ref:`pyhf<pyhf section>` and :ref:`NUISANCE<NUISANCE section>`.  For the first six, :ref:`Rivet<Rivet section>`,
+:ref:`HackAnalysis<HackAnalysis section>`, :ref:`GAMBIT<GAMBIT section>`, :ref:`Combine<Combine section>`,
+:ref:`pyhf<pyhf section>` and :ref:`NUISANCE<NUISANCE section>`.  For the first seven, :ref:`Rivet<Rivet section>`,
 :ref:`MadAnalysis 5<MadAnalysis 5 section>`, :ref:`SModelS<SModelS section>`, :ref:`CheckMATE<CheckMATE section>`,
 :ref:`HackAnalysis<HackAnalysis section>` and :ref:`Combine<Combine section>`,
 the analysis code is
@@ -121,12 +121,24 @@ search query `analysis:HackAnalysis <https://www.hepdata.net/search?q=analysis:H
 HEPData records that have an associated HackAnalysis analysis.
 
 
+.. _GAMBIT section:
+
+GAMBIT
+------
+
+Similarly to the Rivet, MadAnalysis 5, SModelS, CheckMATE and HackAnalysis cases, a list of `GAMBIT
+<https://gambitbsm.org/documentation/physics/analyses/>`_ analyses
+`(in the new JSON format) <https://gambitbsm.org/analyses.json>`_ is parsed nightly.  A
+search query `analysis:GAMBIT <https://www.hepdata.net/search?q=analysis:GAMBIT>`_ can be used to find
+HEPData records that have an associated GAMBIT analysis.
+
+
 .. _Combine section:
 
 Combine
 -------
 
-Similarly to the Rivet, MadAnalysis 5, SModelS, CheckMATE and HackAnalysis cases, a list of `CMS statistical models
+Similarly to the Rivet, MadAnalysis 5, SModelS, CheckMATE, HackAnalysis and GAMBIT cases, a list of `CMS statistical models
 <https://repository.cern/communities/cms-statistical-models>`_ in the `Combine
 <https://cms-analysis.github.io/HiggsAnalysis-CombinedLimit/>`_ format is parsed nightly via a
 `simplified JSON file <https://cms-public-likelihoods-list.web.cern.ch>`_.  A search query
