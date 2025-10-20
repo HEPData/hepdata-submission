@@ -72,7 +72,7 @@ as a resource file, or providing useful information in a comment that applies to
    - {location: "http://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/STDM-2012-02/", description: "web page with auxiliary material"}
    - location: "Likelihoods.tar.gz"
      description: "Archive of full likelihoods in the HistFactory JSON format"
-     type: "HistFactory" # (optional) currently supports 'HistFactory' type to allow HistFactory JSON (pyhf) files to be highlighted
+     type: "HistFactory"  # to allow HistFactory JSON (pyhf) files to be highlighted
 
    comment: | # Information that applies to all data tables.
      CERN-LHC.  Measurements of the cross section for ZZ production using the 4l and 2l2nu decay channels in proton-proton collisions at a centre-of-mass energy of 7 TeV with 4.6 fb^-1 of data collected in 2011.  The final states used are 4 electrons, 4 muons, 2 electrons and 2 muons, 2 electrons and missing transverse momentum, and 2 muons and missing transverse momentum (MET).
@@ -93,7 +93,7 @@ Here is an example *submission.yaml* file comprising three data tables preceded 
    - {location: "http://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/STDM-2012-02/", description: "web page with auxiliary material"}
    - location: "Likelihoods.tar.gz"
      description: "Archive of full likelihoods in the HistFactory JSON format"
-     type: "HistFactory" # (optional) currently supports 'HistFactory' type to allow HistFactory JSON (pyhf) files to be highlighted
+     type: "HistFactory"  # to allow HistFactory JSON (pyhf) files to be highlighted
 
    comment: | # Information that applies to all data tables.
      CERN-LHC.  Measurements of the cross section  for ZZ production using the 4l and 2l2nu decay channels in proton-proton collisions at a centre-of-mass energy of 7 TeV with 4.6 fb^-1 of data collected in 2011.  The final states used are 4 electrons, 4 muons, 2 electrons and 2 muons, 2 electrons and missing transverse momentum, and 2 muons and missing transverse momentum (MET).

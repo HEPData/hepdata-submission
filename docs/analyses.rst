@@ -1,21 +1,23 @@
 Analyses
 ========
 
-HEPData provides some level of integration for nine analysis frameworks: :ref:`Rivet<Rivet section>`,
+HEPData provides some level of integration for eleven analysis frameworks: :ref:`Rivet<Rivet section>`,
 :ref:`MadAnalysis 5<MadAnalysis 5 section>`, :ref:`SModelS<SModelS section>`, :ref:`CheckMATE<CheckMATE section>`,
 :ref:`HackAnalysis<HackAnalysis section>`, :ref:`GAMBIT<GAMBIT section>`, :ref:`Combine<Combine section>`,
-:ref:`pyhf<pyhf section>` and :ref:`NUISANCE<NUISANCE section>`.  For the first seven, :ref:`Rivet<Rivet section>`,
+:ref:`pyhf<pyhf section>`, :ref:`HS3<HS3 section>`, :ref:`SimpleAnalysis<SimpleAnalysis section>`
+and :ref:`NUISANCE<NUISANCE section>`.  For the first seven, :ref:`Rivet<Rivet section>`,
 :ref:`MadAnalysis 5<MadAnalysis 5 section>`, :ref:`SModelS<SModelS section>`, :ref:`CheckMATE<CheckMATE section>`,
-:ref:`HackAnalysis<HackAnalysis section>` and :ref:`Combine<Combine section>`,
-the analysis code is
-hosted externally, while for the latter two, :ref:`pyhf<pyhf section>` and :ref:`NUISANCE<NUISANCE section>`, files are
-stored as additional resources in HEPData itself.  In each case, links are made from relevant HEPData records under
-"View Analyses".  Badges are also added to search results and to the publication information of a record shown in the
-left panel.
+:ref:`HackAnalysis<HackAnalysis section>`, :ref:`GAMBIT<GAMBIT section>` and :ref:`Combine<Combine section>`,
+the analysis code is hosted externally, while for the latter four, :ref:`pyhf<pyhf section>`, :ref:`HS3<HS3 section>`,
+:ref:`SimpleAnalysis<SimpleAnalysis section>` and :ref:`NUISANCE<NUISANCE section>`, files are
+stored as additional resources in HEPData itself (attached to a whole submission, not to individual data tables).
+In each case, links are made from relevant HEPData records under "View Analyses".  Badges are also added to search
+results and to the publication information of a record shown in the left panel.
 
 Externally hosted analyses are exposed to HEPData via an :ref:`analyses JSON file<analysesJSON section>`.
 For these, a bulk subscription feature means that analysis framework authors can receive automatic HEPData record update notifications if they desire.
-Contact `info@hepdata.net <mailto:info@hepdata.net>`_ to request bulk subscription.
+Contact `info@hepdata.net <mailto:info@hepdata.net>`_ to request bulk subscription, giving the email address of the
+HEPData account that you wish notifications to be sent to.
 
 .. contents:: :local:
 
@@ -154,10 +156,11 @@ pyhf
 HEPData provides similar highlighting of additional resource files corresponding to statistical models provided in the
 HistFactory JSON (`pyhf <https://pyhf.readthedocs.io>`_) format.  Multiple HistFactory JSON files should preferably
 be packaged in an archive file (``.zip``, ``.tar``, ``.tar.gz``, ``.tgz``, ``.tar.xz``) together with an explanatory
-README file.  However, a single ``.json`` file can also be uploaded.  HistFactory JSON files are identified by the
-``description`` of the additional resource file containing one of a number of case-insensitive trigger words
-(``histfactory``, ``pyhf``, ``likelihoods``, ``workspaces``).  To avoid relying on trigger words, a
-``type: HistFactory`` field (case-insensitive) can be added to the ``additional_resources`` of the first document of
+README file.  However, a single ``.json`` file can also be uploaded.  Originally, HistFactory JSON files were
+identified by the ``description`` of the additional resource file containing one of a number of case-insensitive
+trigger words (``histfactory``, ``pyhf``, ``likelihoods``, ``workspaces``).  However, this method is ambiguous and is
+now phased out (as of 17th October 2025).  To avoid relying on trigger words, a
+``type: HistFactory`` field (case-insensitive) should be added to the ``additional_resources`` of the first document of
 the ``submission.yaml`` file, for example,
 
 .. code-block:: yaml
@@ -165,17 +168,55 @@ the ``submission.yaml`` file, for example,
    additional_resources:
    - location: "Likelihoods.tar.gz"
      description: "Archive of full likelihoods in the HistFactory JSON format"
-     type: "HistFactory" # (optional) currently supports 'HistFactory' type to allow HistFactory JSON (pyhf) files to be highlighted
+     type: "HistFactory"  # to allow HistFactory JSON (pyhf) files to be highlighted
 
 If using the ``hepdata_lib`` package, pass ``file_type = "HistFactory"`` to the `add_additional_resource`_ function.
 Links are made from relevant HEPData records (after finalisation) with attached HistFactory JSON files under
 "View Analyses".  A search query `analysis:HistFactory <https://www.hepdata.net/search?q=analysis:HistFactory>`_
-can be used to find HEPData records that have associated HistFactory JSON files.
+can be used to find HEPData records that have associated HistFactory JSON files.  Note that HistFactory JSON files
+attached to individual data tables are not currently highlighted in this way, only resource files attached to the
+whole HEPData record.
 
 HEPData makes no checks of the formatting of the HistFactory JSON files.  In case of questions, please contact either
 experts within your experiment or the pyhf developers.
 
 .. _`add_additional_resource`: https://hepdata-lib.readthedocs.io/en/latest/source/hepdata_lib.html#hepdata_lib.AdditionalResourceMixin.add_additional_resource
+
+
+.. _HS3 section:
+
+HS3
+---
+
+Similar highlighting is provided for additional resource files in the `HEP Statistics Serialization Standard
+(HS3)`_ format.  A ``type: HS3`` field (case-insensitive) should be added to the relevant resource file metadata in the
+``additional_resources`` of a whole HEPData record.  HS3 files will also be automatically identified by the presence of
+the trigger word ``HS3`` in the ``description``, but it is still recommended to add the explicit ``type: HS3`` field.
+If using the ``hepdata_lib`` package, pass ``file_type = "HS3"`` to the `add_additional_resource`_ function.  A search
+query `analysis:HS3 <https://www.hepdata.net/search?q=analysis:HS3>`_ can be used to find HEPData records that have
+associated HS3 files.  Note that HS3 files attached to individual data tables are not currently highlighted in this way,
+only resource files attached to the whole HEPData record.
+
+.. _`HEP Statistics Serialization Standard (HS3)`: https://hep-statistics-serialization-standard.github.io
+
+
+.. _SimpleAnalysis section:
+
+SimpleAnalysis
+--------------
+
+Similar highlighting is provided for code snippets given as additional resource files in the
+`Simplified ATLAS SUSY analysis framework (SimpleAnalysis)`_ format.  A ``type: SimpleAnalysis`` field
+(case-insensitive) should be added to the relevant resource file metadata in the ``additional_resources`` of a
+whole HEPData record.  SimpleAnalysis files will also be automatically identified by the presence of the trigger word
+``SimpleAnalysis`` in the ``description``, but it is still recommended to add the explicit ``type: SimpleAnalysis``
+field.  If using the ``hepdata_lib`` package, pass ``file_type = "SimpleAnalysis"`` to the `add_additional_resource`_
+function.  A search query `analysis:SimpleAnalysis <https://www.hepdata.net/search?q=analysis:SimpleAnalysis>`_ can be
+used to find HEPData records that have associated SimpleAnalysis files.  Note that SimpleAnalysis files attached to
+individual data tables are not currently highlighted in this way, only resource files attached to the whole HEPData
+record.
+
+.. _`Simplified ATLAS SUSY analysis framework (SimpleAnalysis)`: https://simpleanalysis.docs.cern.ch
 
 
 .. _NUISANCE section:
@@ -199,6 +240,9 @@ If using the ``hepdata_lib`` package, pass ``file_type = "ProSelecta"`` to the `
 Links are made from relevant HEPData records (after finalisation) with attached ProSelecta C++ files under
 "View Analyses".  A search query `analysis:NUISANCE <https://www.hepdata.net/search?q=analysis:NUISANCE>`_
 can be used to find HEPData records that have associated ProSelecta C++ snippets for use with NUISANCE.
+Note that ProSelecta files attached to individual data tables are not currently highlighted in this way, only resource
+files attached to the whole HEPData record.
+
 
 .. _analysesJSON section:
 
