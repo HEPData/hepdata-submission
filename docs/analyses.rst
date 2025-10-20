@@ -207,7 +207,7 @@ SimpleAnalysis
 
 Similar highlighting is provided for code snippets given as additional resource files in the
 `Simplified ATLAS SUSY analysis framework (SimpleAnalysis)`_ format.  A ``type: SimpleAnalysis`` field
-(case-insensitive) should be added to the to the relevant resource file metadata in the ``additional_resources`` of a
+(case-insensitive) should be added to the relevant resource file metadata in the ``additional_resources`` of a
 whole HEPData record.  SimpleAnalysis files will also be automatically identified by the presence of the trigger word
 ``SimpleAnalysis`` in the ``description``, but it is still recommended to add the explicit ``type: SimpleAnalysis``
 field.  If using the ``hepdata_lib`` package, pass ``file_type = "SimpleAnalysis"`` to the `add_additional_resource`_
