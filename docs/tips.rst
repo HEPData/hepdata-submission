@@ -29,6 +29,11 @@ We attempt to list some common problems here.
   ``%``.  So if you use these characters in some description string,
   please make sure you put quotes around the whole string.
 
+  If using LaTeX encoding
+  (delimited by ``$`` symbols) like ``\mathrm``, no special treatment is usually needed
+  if the string is unquoted or enclosed in single quotes ``'``, but the backslashes need to
+  be escaped (e.g. ``\\mathrm``) if the string is enclosed in double quotes (``"``).
+
 **Ensure spaces after colons.**
   Another annoyance can be with spacing. ``{symerror:0.4, label:stat}``
   will give you an error.  Change this to ``{symerror: 0.4, label: stat}``
