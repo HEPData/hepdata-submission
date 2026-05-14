@@ -5,12 +5,15 @@ HEPData provides some level of integration for eleven analysis frameworks: :ref:
 :ref:`MadAnalysis 5<MadAnalysis 5 section>`, :ref:`SModelS<SModelS section>`, :ref:`CheckMATE<CheckMATE section>`,
 :ref:`HackAnalysis<HackAnalysis section>`, :ref:`GAMBIT<GAMBIT section>`, :ref:`Combine<Combine section>`,
 :ref:`pyhf<pyhf section>`, :ref:`HS3<HS3 section>`, :ref:`SimpleAnalysis<SimpleAnalysis section>`
-and :ref:`NUISANCE<NUISANCE section>`.  For the first seven, :ref:`Rivet<Rivet section>`,
+and :ref:`NUISANCE<NUISANCE section>`.  For :ref:`Rivet<Rivet section>`,
 :ref:`MadAnalysis 5<MadAnalysis 5 section>`, :ref:`SModelS<SModelS section>`, :ref:`CheckMATE<CheckMATE section>`,
 :ref:`HackAnalysis<HackAnalysis section>`, :ref:`GAMBIT<GAMBIT section>` and :ref:`Combine<Combine section>`,
-the analysis code is hosted externally, while for the latter four, :ref:`pyhf<pyhf section>`, :ref:`HS3<HS3 section>`,
-:ref:`SimpleAnalysis<SimpleAnalysis section>` and :ref:`NUISANCE<NUISANCE section>`, files are
+the analysis code is hosted externally, while for :ref:`pyhf<pyhf section>`, :ref:`HS3<HS3 section>` and
+:ref:`NUISANCE<NUISANCE section>`, files are
 stored as additional resources in HEPData itself (attached to a whole submission, not to individual data tables).
+For :ref:`SimpleAnalysis<SimpleAnalysis section>`, some files are stored in HEPData itself, while links are also made
+to external analysis code.
+
 In each case, links are made from relevant HEPData records under "View Analyses".  Badges are also added to search
 results and to the publication information of a record shown in the left panel.
 
@@ -216,8 +219,12 @@ used to find HEPData records that have associated SimpleAnalysis files.  Note th
 individual data tables are not currently highlighted in this way, only resource files attached to the whole HEPData
 record.
 
-.. _`Simplified ATLAS SUSY analysis framework (SimpleAnalysis)`: https://simpleanalysis.docs.cern.ch
+Links are also made to SimpleAnalysis files hosted in a `CERN GitLab repository`_ specified via a
+`SimpleAnalysis JSON file`_.
 
+.. _`Simplified ATLAS SUSY analysis framework (SimpleAnalysis)`: https://simpleanalysis.docs.cern.ch
+.. _`CERN GitLab repository`: https://gitlab.cern.ch/atlas-sa/simple-analysis/-/tree/master/SimpleAnalysisCodes/src/
+.. _`SimpleAnalysis JSON file`: https://simpleanalysis.docs.cern.ch/analyses.json
 
 .. _NUISANCE section:
 
@@ -238,7 +245,7 @@ similar role to Rivet in collider physics.  Analysis code provided as C++ snippe
 
 If using the ``hepdata_lib`` package, pass ``file_type = "ProSelecta"`` to the `add_additional_resource`_ function.
 Links are made from relevant HEPData records (after finalisation) with attached ProSelecta C++ files under
-"View Analyses".  A search query `analysis:NUISANCE <https://www.hepdata.net/search?q=analysis:NUISANCE>`_
+"View Analyses".  A search query `analysis:NUISANCE <https://www.hepdata.net/search?q=analysis:NUISANCE>`_ (no results yet)
 can be used to find HEPData records that have associated ProSelecta C++ snippets for use with NUISANCE.
 Note that ProSelecta files attached to individual data tables are not currently highlighted in this way, only resource
 files attached to the whole HEPData record.
