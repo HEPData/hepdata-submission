@@ -37,8 +37,8 @@ Rivet
 -----
 
 HEPData can export data in the `YODA <https://yoda.hepforge.org>`_ format for use in a `Rivet
-<https://rivet.hepforge.org>`_ analysis.  The list of `Rivet analyses <https://rivet.hepforge.org/analyses.html>`_ (in
-`JSON format <https://cedar-tools.web.cern.ch/rivet/analyses.json>`_) is parsed nightly.  A search query
+<https://heprivet.org>`_ analysis.  The list of `Rivet analyses <https://heprivet.org/analyses/>`_ (in
+`JSON format <https://heprivet.org/analyses.json>`_) is parsed nightly.  A search query
 `analysis:rivet <https://www.hepdata.net/search?q=analysis:rivet>`_ can be used to find HEPData records that have an
 associated Rivet analysis.
 
@@ -48,7 +48,7 @@ of the first document of the ``submission.yaml`` file if the Rivet analysis is a
 .. code-block:: yaml
 
    additional_resources:
-   - {location: 'http://rivet.hepforge.org/analyses/ATLAS_2016_I1424838', description: 'Rivet analysis'}
+   - {location: 'https://heprivet.org/analyses/ATLAS_2016_I1424838/', description: 'Rivet analysis'}
 
 But this should not be necessary and it is **not recommended**, since the Rivet analysis will anyway be picked up by the
 nightly harvesting after the HEPData record has been made public.
