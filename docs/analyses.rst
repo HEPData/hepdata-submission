@@ -1,13 +1,15 @@
 Analyses
 ========
 
-HEPData provides some level of integration for eleven analysis frameworks: :ref:`Rivet<Rivet section>`,
+HEPData provides some level of integration for 12 analysis frameworks: :ref:`Rivet<Rivet section>`,
 :ref:`MadAnalysis 5<MadAnalysis 5 section>`, :ref:`SModelS<SModelS section>`, :ref:`CheckMATE<CheckMATE section>`,
 :ref:`HackAnalysis<HackAnalysis section>`, :ref:`GAMBIT<GAMBIT section>`, :ref:`Combine<Combine section>`,
+:ref:`ADL/CutLang<ADL/CutLang section>`,
 :ref:`pyhf<pyhf section>`, :ref:`HS3<HS3 section>`, :ref:`SimpleAnalysis<SimpleAnalysis section>`
 and :ref:`NUISANCE<NUISANCE section>`.  For :ref:`Rivet<Rivet section>`,
 :ref:`MadAnalysis 5<MadAnalysis 5 section>`, :ref:`SModelS<SModelS section>`, :ref:`CheckMATE<CheckMATE section>`,
-:ref:`HackAnalysis<HackAnalysis section>`, :ref:`GAMBIT<GAMBIT section>` and :ref:`Combine<Combine section>`,
+:ref:`HackAnalysis<HackAnalysis section>`, :ref:`GAMBIT<GAMBIT section>`, :ref:`Combine<Combine section>` and
+:ref:`ADL/CutLang<ADL/CutLang section>`,
 the analysis code is hosted externally, while for :ref:`pyhf<pyhf section>`, :ref:`HS3<HS3 section>` and
 :ref:`NUISANCE<NUISANCE section>`, files are
 stored as additional resources in HEPData itself (attached to a whole submission, not to individual data tables).
@@ -149,6 +151,19 @@ Similarly to the Rivet, MadAnalysis 5, SModelS, CheckMATE, HackAnalysis and GAMB
 `simplified JSON file <https://cms-public-likelihoods-list.web.cern.ch>`_.  A search query
 `analysis:Combine <https://www.hepdata.net/search?q=analysis:Combine>`_ can be used to find HEPData records
 that have associated statistical models in the ``Combine`` format.
+
+
+.. _ADL/CutLang section:
+
+ADL/CutLang
+-----------
+
+Similarly to the Rivet, MadAnalysis 5, SModelS, CheckMATE, HackAnalysis and GAMBIT cases, a list of `ADL (Analysis Description Language)
+<https://github.com/ADL4HEP/ADL4Reinterpretation>`_ implementations (executed using the `CutLang <https://github.com/unelg/CutLang>`_
+runtime interpreter) is parsed nightly via a
+`JSON file <https://raw.githubusercontent.com/ADL4HEP/ADL4Reinterpretation/main/analyses.json>`_.  A search query
+`analysis:ADL <https://www.hepdata.net/search?q=analysis:ADL>`_ can be used to find HEPData records
+that have associated ADL implementations.
 
 
 .. _pyhf section:
