@@ -111,7 +111,7 @@ CheckMATE
 ---------
 
 Similarly to the Rivet, MadAnalysis 5 and SModelS cases, a list of `CheckMATE <https://checkmate.hepforge.org>`_
-analyses (`in JSON format <https://checkmate.hepforge.org/AnalysesList/analyses.json>`_) is parsed nightly.  A search
+analyses (`in JSON format <https://github.com/CheckMATE2/checkmate2/blob/master/data/analyses.json>`_) is parsed nightly.  A search
 query `analysis:CheckMATE <https://www.hepdata.net/search?q=analysis:CheckMATE>`_ can be used to find HEPData records
 that have an associated CheckMATE analysis.
 
